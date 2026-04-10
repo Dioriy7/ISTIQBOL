@@ -1,0 +1,762 @@
+{
+    "grade": 11,
+    "part": 2,
+    "subjects": [
+        {
+            "subject": "Native Language (Uzbek)",
+            "questions": [
+                {
+                    "id": "g11_uzb_q1",
+                    "question_uz": "\"Semiotika\" nima va u tilshunoslik bilan qanday bog'liq?",
+                    "question_ru": "Что такое семиотика и как она связана с лингвистикой?",
+                    "question_en": "What is semiotics and how is it related to linguistics?",
+                    "options": {
+                        "A": "Faqat matematik fan",
+                        "B": "Belgilar va ramzlar tizimini o'rganuvchi fan; til belgilarning bir tizimi",
+                        "C": "Adabiyot tanqidi",
+                        "D": "Tarix fani"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_uzb_q2",
+                    "question_uz": "Pragmatikaning til o'rganishdagi roli?",
+                    "question_ru": "Какова роль прагматики в изучении языка?",
+                    "question_en": "What is the role of pragmatics in language study?",
+                    "options": {
+                        "A": "Grammatika qoidalari",
+                        "B": "Til birliklarining kontekstga qarab qo'llanilishini o'rganadi",
+                        "C": "So'z boyligini o'rganadi",
+                        "D": "Fonetikani o'rganadi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_uzb_q3",
+                    "question_uz": "O'zbek tilining UNESCO tomonidan muhofaza qilinishi nima uchun muhim?",
+                    "question_ru": "Почему важна охрана узбекского языка ЮНЕСКО?",
+                    "question_en": "Why is the UNESCO protection of the Uzbek language important?",
+                    "options": {
+                        "A": "Mablag' olish uchun",
+                        "B": "Milliy identitet, madaniy meros va tildagi xilma-xillikni saqlash uchun",
+                        "C": "Turizm uchun",
+                        "D": "Iqtisodiy sabab"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_uzb_q4",
+                    "question_uz": "Zamonaviy o'zbek she'riyatida \"erkin she'r\" (vers libre) nima?",
+                    "question_ru": "Что такое «верлибр» (vers libre) в современной узбекской поэзии?",
+                    "question_en": "What is 'vers libre' (free verse) in modern Uzbek poetry?",
+                    "options": {
+                        "A": "Qatʻiy qofiya va vaznli she'r",
+                        "B": "Qofiya va vazndan ozod, lekin ritmik tashkillanishga ega she'r",
+                        "C": "Nasr ko'rinishidagi asar",
+                        "D": "Klassik she'r shakli"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_uzb_q5",
+                    "question_uz": "O'zbek milliy gʻururi adabiyotda qanday ifoda topadi?",
+                    "question_ru": "Как национальная гордость узбеков выражается в литературе?",
+                    "question_en": "How is Uzbek national pride expressed in literature?",
+                    "options": {
+                        "A": "Faqat tarix asarlarida",
+                        "B": "Milliy qahramonlar, mustaqillik g'oyasi, vatanparvarlik lirikasi va xalq eposi orqali",
+                        "C": "Faqat she'r shaklida",
+                        "D": "Faqat romanlar orqali"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_uzb_q6",
+                    "question_uz": "'Ijodiy yozish' jarayonida planning, drafting, revising bosqichlarini izohlang.",
+                    "question_ru": "Объясните этапы planning, drafting, revising в процессе творческого письма.",
+                    "question_en": "Explain the stages of planning, drafting, and revising in the creative writing process.",
+                    "options": {
+                        "A": "Ular bir xil jarayon",
+                        "B": "Planning — g'oyalash, drafting — yozish, revising — tahrirlash va yaxshilash",
+                        "C": "Faqat revising muhim",
+                        "D": "Faqat drafting muhim"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_uzb_q7",
+                    "question_uz": "\"Kolokatsiya\" nima va u til o'rganishda nima uchun muhim?",
+                    "question_ru": "Что такое коллокация и почему она важна в изучении языка?",
+                    "question_en": "What is collocation and why is it important in language learning?",
+                    "options": {
+                        "A": "Grammatik qoida",
+                        "B": "Birga tez-tez qo'llaniladigan so'z juftlari — til tabiiyligini ta'minlaydi",
+                        "C": "Imlo qoidasi",
+                        "D": "She'r turi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_uzb_q8",
+                    "question_uz": "\"Giperbola\" adabiy vosita sifatida qanday qo'llaniladi?",
+                    "question_ru": "Как используется гипербола как литературный приём?",
+                    "question_en": "How is hyperbole used as a literary device?",
+                    "options": {
+                        "A": "So'zma-so'z tasvirlash",
+                        "B": "Hissiy ta'sirni kuchaytirish uchun ataylab oshirib-tasvirlar",
+                        "C": "Raqamli ma'lumot",
+                        "D": "So'zning to'g'ri ma'nosida qo'llash"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_uzb_q9",
+                    "question_uz": "O'zbek adabiyotida \"yangi to'lqin\" (new wave) mualliflari kimlar?",
+                    "question_ru": "Кто такие авторы «новой волны» в узбекской литературе?",
+                    "question_en": "Who are the 'new wave' authors in Uzbek literature?",
+                    "options": {
+                        "A": "Navoiy va Cho'lpon",
+                        "B": "Ulmas Umarbekov, Tohir Malik, Xurshid Davron va boshqa zamonaviy adiblar",
+                        "C": "Faqat klassik shoirlar",
+                        "D": "Faqat xorijiy ta'sirlangan yozuvchilar"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_uzb_q10",
+                    "question_uz": "Til va madaniyat o'zaro qanday bog'liq?",
+                    "question_ru": "Как язык и культура взаимосвязаны?",
+                    "question_en": "How are language and culture interconnected?",
+                    "options": {
+                        "A": "Ular mustaqil",
+                        "B": "Til madaniyatni o'zida saqlaydi va akslantiradi; madaniyat esa tilning rivojlanishiga ta'sir qiladi",
+                        "C": "Madaniyat tildan ustun",
+                        "D": "Til madaniyatdan mustaqil"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g11_uzb_it1",
+                    "task_uz": "O'zbek tilining kelajagi haqida yozing: raqamli texnologiyalar, global ta'sir va avlodlararo uzatish kontekstida tilni saqlash strategiyalarini ifodalang (300 so'z).",
+                    "task_ru": "Напишите о будущем узбекского языка: стратегии сохранения языка в контексте цифровых технологий, глобального влияния и межпоколенческой передачи (300 слов).",
+                    "task_en": "Write about the future of the Uzbek language: strategies for preserving it in the context of digital technology, global influence, and intergenerational transmission (300 words).",
+                    "skill": "creativity"
+                },
+                {
+                    "id": "g11_uzb_it2",
+                    "task_uz": "Zamonaviy o'zbek she'riyatidan bitta she'rni tanlang va uni semiotik yondashuv bilan tahlil qiling: belgilar, ramzlar va yashirin ma'nolar.",
+                    "task_ru": "Выберите одно современное узбекское стихотворение и проанализируйте его семиотически: знаки, символы и скрытые значения.",
+                    "task_en": "Choose a modern Uzbek poem and analyse it semiotically: signs, symbols, and hidden meanings.",
+                    "skill": "analysis"
+                }
+            ]
+        },
+        {
+            "subject": "Russian",
+            "questions": [
+                {
+                    "id": "g11_rus_q1",
+                    "question_uz": "Brodskiyning she'riy uslubi qanday?",
+                    "question_ru": "Каков поэтический стиль Бродского?",
+                    "question_en": "What is Joseph Brodsky's poetic style?",
+                    "options": {
+                        "A": "Romantik va sodda",
+                        "B": "Murakkab metaforalar, intellektual chuqurlik, individualizam va ozodlik",
+                        "C": "Sovet mafkurasi bilan to'yingan",
+                        "D": "Folklorga asoslangan"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_rus_q2",
+                    "question_uz": "\"Код коммуникации\" nima?",
+                    "question_ru": "Что такое «код коммуникации»?",
+                    "question_en": "What is a 'communication code' in linguistics?",
+                    "options": {
+                        "A": "Shifr",
+                        "B": "Muloqot ishtirokchilari foydalanadigan umumiy til va belgilar tizimi",
+                        "C": "Kompyuter tili",
+                        "D": "Diplomatik atama"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_rus_q3",
+                    "question_uz": "Rus tilida \"публицистический стиль\" qanday xususiyatlarga ega?",
+                    "question_ru": "Каковы особенности публицистического стиля русского языка?",
+                    "question_en": "What are the features of the publicistic style in Russian?",
+                    "options": {
+                        "A": "Qat'iy ilmiy va quruq",
+                        "B": "Ekspressif, ta'sirchan, jamiyat muammolarini tahlil qiluvchi, ommaga yo'naltirilgan",
+                        "C": "Faqat rasmiy",
+                        "D": "Lirik va she'riy"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_rus_q4",
+                    "question_uz": "Sovet davrida rus adabiyoti qanday qismlarga bo'lingan?",
+                    "question_ru": "На какие части делилась русская литература советского периода?",
+                    "question_en": "How was Russian literature divided during the Soviet era?",
+                    "options": {
+                        "A": "Faqat bitta yo'nalish",
+                        "B": "Rasmiy sovet realizmi, \"катакомба\" (yerosti) adabiyoti va emigratsiya adabiyoti",
+                        "C": "Romantizm va realizm",
+                        "D": "She'r va nasr"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_rus_q5",
+                    "question_uz": "Perestroykadan keyin rus adabiyotida qanday o'zgarishlar bo'ldi?",
+                    "question_ru": "Какие изменения произошли в русской литературе после перестройки?",
+                    "question_en": "What changes occurred in Russian literature after perestroika?",
+                    "options": {
+                        "A": "Hech qanday o'zgarish",
+                        "B": "Ilgari taqiqlangan asarlar nashr etildi, yangi janrlar va postmodernizm paydo bo'ldi",
+                        "C": "Adabiyot kamaydi",
+                        "D": "Faqat siyosiy adabiyot"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_rus_q6",
+                    "question_uz": "Rus tili o'qitishda kommunikativ yondashuv nima?",
+                    "question_ru": "Что такое коммуникативный подход в обучении русскому языку?",
+                    "question_en": "What is the communicative approach in teaching Russian?",
+                    "options": {
+                        "A": "Faqat grammatika ta'limoti",
+                        "B": "Haqiqiy vaziyatlarda til qo'llash va muloqotga yo'naltirish",
+                        "C": "Faqat yozuv ko'nikmasini shakllantirish",
+                        "D": "Lug'at yodlash"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_rus_q7",
+                    "question_uz": "Rus tilidagi tartibsiz (irregular) fe'llarga misol?",
+                    "question_ru": "Пример неправильного глагола в русском языке?",
+                    "question_en": "An example of an irregular verb in Russian?",
+                    "options": {
+                        "A": "Читать",
+                        "B": "Идти (иду, идёт, шёл)",
+                        "C": "Говорить",
+                        "D": "Думать"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_rus_q8",
+                    "question_uz": "Rus tilidagi «жаргон» nima?",
+                    "question_ru": "Что такое «жаргон» в русском языке?",
+                    "question_en": "What is 'jargon' (жаргон) in Russian?",
+                    "options": {
+                        "A": "Adabiy so'z",
+                        "B": "Muayyan guruh yoki kasb vakillari tomonidan ishlatiladigan maxsus so'z va iboralar",
+                        "C": "Grammatik atama",
+                        "D": "She'riy ibora"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_rus_q9",
+                    "question_uz": "Nobelviy mukofot g'olibi Brodskiy qaysi adabiy yo'nalishga mansub?",
+                    "question_ru": "К какому литературному направлению относился нобелевский лауреат Бродский?",
+                    "question_en": "What literary movement did Nobel laureate Brodsky belong to?",
+                    "options": {
+                        "A": "Sovet realizmi",
+                        "B": "Aksiyonizm va individualizmga yaqin — betartib bo'lmagan modernizm",
+                        "C": "Simvolizm",
+                        "D": "Futurizm"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_rus_q10",
+                    "question_uz": "\"Авиаторы, бастарды\" — bu tushuncha adabiyotda nima?",
+                    "question_ru": "«Авиаторы, бастарды» — что это в литературе?",
+                    "question_en": "What is the concept of 'lost generation' in literature?",
+                    "options": {
+                        "A": "Harbiy qahramon",
+                        "B": "Birinchi jahon urushidan keyin ruhiy jihatdan inqiroz sezgan va hayot ma'nosini yo'qotgan avlod",
+                        "C": "Iqtisodiy krizis avlodi",
+                        "D": "Zamonaviy yoshlar"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g11_rus_it1",
+                    "task_uz": "Brodskiyning «Dunyoda hamma narsa bir marotaba bo'ladi» g'oyasini uning she'rlarida qanday namoyon bo'lishini rus tilida 200–250 so'z tahlil qiling.",
+                    "task_ru": "Проанализируйте на русском (200–250 слов), как идея Бродского «в мире всё происходит единожды» проявляется в его стихах.",
+                    "task_en": "Analyse in Russian (200-250 words) how Brodsky's idea 'everything in the world happens only once' is expressed in his poetry.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g11_rus_it2",
+                    "task_uz": "O'zingiz haqingizda zamonaviy tarzda avtobiografik matn yozing: kim ekanligingiz, nimaga intilyapsiz va dunyo haqidagi dunyoqarashingiz — rus tilida 250 so'z.",
+                    "task_ru": "Напишите о себе в современном автобиографическом стиле: кто вы, к чему стремитесь, ваш взгляд на мир — на русском, 250 слов.",
+                    "task_en": "Write a modern autobiographical text about yourself in Russian: who you are, what you aspire to, and your worldview — 250 words.",
+                    "skill": "creativity"
+                }
+            ]
+        },
+        {
+            "subject": "Literature",
+            "questions": [
+                {
+                    "id": "g11_lit_q1",
+                    "question_uz": "\"Harflar o'limi\" (Death of the Author — Barthes) nazariyasi nimani bildiradi?",
+                    "question_ru": "Что означает теория «Смерть автора» Барта?",
+                    "question_en": "What does Barthes' theory 'Death of the Author' mean?",
+                    "options": {
+                        "A": "Muallifning vafoti",
+                        "B": "Asarning ma'nosi muallifning niyatiga emas, o'quvchi talqiniga bog'liq",
+                        "C": "Muallif identifikatsiyasi",
+                        "D": "Adabiy tanqid usuli"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_lit_q2",
+                    "question_uz": "Dekonstrüktsiya (Derrida) nima?",
+                    "question_ru": "Что такое деконструкция (Деррида)?",
+                    "question_en": "What is deconstruction (Derrida)?",
+                    "options": {
+                        "A": "Bino buzish",
+                        "B": "Matn ma'nolarining noaniqligini va ichki ziddiyatlarini ochib berishga yo'naltirilgan falsafiy-adabiy tahlil usuli",
+                        "C": "Grammatik tahlil",
+                        "D": "Janr tasnifi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_lit_q3",
+                    "question_uz": "\"World literature\" tushunchasi nimani anglatadi?",
+                    "question_ru": "Что означает понятие «мировая литература»?",
+                    "question_en": "What does 'World Literature' as a concept mean?",
+                    "options": {
+                        "A": "Faqat inglizcha adabiyot",
+                        "B": "Milliy chegaralardan oshib, jahon miqyosida tan olingan adabiy asarlar va ularning o'zaro munosabatlari",
+                        "C": "Faqat klassik asarlar",
+                        "D": "Faqat tarjima asarlar"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_lit_q4",
+                    "question_uz": "\"Hermeneutikа\" nima?",
+                    "question_ru": "Что такое герменевтика?",
+                    "question_en": "What is hermeneutics?",
+                    "options": {
+                        "A": "Tabiat fani",
+                        "B": "Matnlarni talqin qilish va tushunish nazariyasi va amaliyoti",
+                        "C": "Grammatika fan",
+                        "D": "Matematik mantiq"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_lit_q5",
+                    "question_uz": "\"Consciousness raising\" adabiyotda nima?",
+                    "question_ru": "Что такое «повышение сознания» в литературе?",
+                    "question_en": "What is 'consciousness raising' in literature?",
+                    "options": {
+                        "A": "Shuurni kuchaytiradigan dori",
+                        "B": "Feminizm va ijtimoiy adabiyotda — yashirin tengsizliklarni ongga taqdim etish",
+                        "C": "Ruhiy yordamchi",
+                        "D": "She'r uslubi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_lit_q6",
+                    "question_uz": "Zamonaviy o'zbek adabiyotida kimlar diaspora adabiyoti yozayapti?",
+                    "question_ru": "Кто пишет литературу диаспоры в современной узбекской литературе?",
+                    "question_en": "Who represents diaspora literature in modern Uzbek literature?",
+                    "options": {
+                        "A": "Faqat O'zbekistonda yashovchilar",
+                        "B": "Chet elda yashayotgan, o'zbek identiteti va ildizlarini tasvirlovchi o'zbek mualliflari",
+                        "C": "Faqat rus tilida yozuvchilar",
+                        "D": "Faqat klassik shoirlar"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_lit_q7",
+                    "question_uz": "\"Trauma narrative\" adabiyotda nima?",
+                    "question_ru": "Что такое «нарратив травмы» в литературе?",
+                    "question_en": "What is 'trauma narrative' in literature?",
+                    "options": {
+                        "A": "Qo'rquv uyg'otuvchi asar",
+                        "B": "Individual yoki kollektiv og'riqli tajribani tasvirlaydigan asar — tuzalish va xotira haqida",
+                        "C": "Tarixiy roman",
+                        "D": "Sarguzasht hikoya"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_lit_q8",
+                    "question_uz": "\"Ekokritika\" (Ecocriticism) adabiyotda nima?",
+                    "question_ru": "Что такое «экокритика» в литературе?",
+                    "question_en": "What is 'ecocriticism' in literary studies?",
+                    "options": {
+                        "A": "Biologiya o'qitish usuli",
+                        "B": "Adabiyot va tabiiy muhit o'rtasidagi munosabatni tekshiruvchi adabiy tanqid yo'nalishi",
+                        "C": "Kimyoviy tahlil",
+                        "D": "Grammatik usul"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_lit_q9",
+                    "question_uz": "\"Postcolonial literature\" nima?",
+                    "question_ru": "Что такое «постколониальная литература»?",
+                    "question_en": "What is 'postcolonial literature'?",
+                    "questions_en": "What is postcolonial literature?",
+                    "options": {
+                        "A": "Faqat Afrika adabiyoti",
+                        "B": "Mustamlakadan keyingi xalqlar tomonidan yozilgan, istiqlol, identitet va madaniy ziddiyat mavzularini ko'taradigan adabiyot",
+                        "C": "Faqat qadimgi adabiyot",
+                        "D": "Zamonaviy Gʻarb adabiyoti"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_lit_q10",
+                    "question_uz": "\"Close reading\" texnikasi nima?",
+                    "question_ru": "Что такое техника «close reading»?",
+                    "question_en": "What is the 'close reading' technique?",
+                    "options": {
+                        "A": "Tezkor o'qish",
+                        "B": "Matnni batafsil, diqqat bilan o'qib, til, tuzilma va ma'no qatlamlarini tahlil qilish",
+                        "C": "Tanqid usuli",
+                        "D": "Tarjima usuli"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g11_lit_it1",
+                    "task_uz": "Postkolonial adabiyot nazariyasi nuqtai nazaridan O'zbekiston adabiyotini tahlil qiling: sovet davri, milliy o'zlik va mustamlaka merosini zamonaviy asarlarda qanday ko'rish mumkin?",
+                    "task_ru": "Проанализируйте узбекскую литературу с точки зрения постколониальной теории: как советский период, национальная идентичность и колониальное наследие проявляются в современных произведениях?",
+                    "task_en": "Analyse Uzbek literature through a postcolonial lens: how do the Soviet era, national identity, and colonial legacy appear in modern works?",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g11_lit_it2",
+                    "task_uz": "Siz adabiy manifest yozyapsiz: kelajak o'zbek yozuvchisi qanday bo'lishi kerak? U qanday g'oyalar, uslub va maqsadlarni ko'tarishi lozim? 200 so'zlik manifezt yozing.",
+                    "task_ru": "Вы пишете литературный манифест: каким должен быть будущий узбекский писатель? Какие идеи, стиль и цели он должен нести? Напишите манифест в 200 слов.",
+                    "task_en": "You are writing a literary manifesto: what should the future Uzbek writer be like? What ideas, style, and goals should they carry? Write a 200-word manifesto.",
+                    "skill": "creativity"
+                }
+            ]
+        },
+        {
+            "subject": "Physics",
+            "questions": [
+                {
+                    "id": "g11_phy_q1",
+                    "question_uz": "Kvant kriptografiyasi nima va nima uchun xavfsiz?",
+                    "question_ru": "Что такое квантовая криптография и почему она безопасна?",
+                    "question_en": "What is quantum cryptography and why is it secure?",
+                    "options": {
+                        "A": "Oddiy shifrlash usuli",
+                        "B": "Kvant mexanikasi prinsiplaridan foydalanib, nazariy jihatdan buzib bo'lmaydigan xavfsiz aloqa",
+                        "C": "Raqamli imzo",
+                        "D": "Blokchain texnologiyasi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_phy_q2",
+                    "question_uz": "\"Multiverse\" gipotezasi nima?",
+                    "question_ru": "Что такое гипотеза «мультивселенной»?",
+                    "question_en": "What is the multiverse hypothesis?",
+                    "options": {
+                        "A": "Koinotda faqat bitta olam bor",
+                        "B": "Bizdagi olam ko'p sonli parallel olamlarning biri bo'lishi mumkin",
+                        "C": "Qora tuynuk nazariyasi",
+                        "D": "Kvant dalga funksiyasi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_phy_q3",
+                    "question_uz": "Fermi paradoksi nima?",
+                    "question_ru": "Что такое парадокс Ферми?",
+                    "question_en": "What is the Fermi paradox?",
+                    "options": {
+                        "A": "Fizik formulasi",
+                        "B": "Koinotda ko'plab tsivilizatsiyalar bo'lishi kutilsa-da, hech qanday dalil yo'qligi haqidagi paradoks",
+                        "C": "Yadroviy fizika muammosi",
+                        "D": "Termodinamika qonuni"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_phy_q4",
+                    "question_uz": "Interferometr (LIGO) nima uchun ishlatiladi?",
+                    "question_ru": "Для чего используется интерферометр (LIGO)?",
+                    "question_en": "What is the LIGO interferometer used for?",
+                    "options": {
+                        "A": "Yorug'lik tezligini o'lchash",
+                        "B": "Gravitatsion to'lqinlarni aniqlash",
+                        "C": "Yadroviy reaktsiyalarni o'lchash",
+                        "D": "Harorat o'lchash"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_phy_q5",
+                    "question_uz": "\"Supersimmetriya\" (SUSY) nazariyasi nima?",
+                    "question_ru": "Что такое теория «суперсимметрии» (SUSY)?",
+                    "question_en": "What is supersymmetry (SUSY) theory?",
+                    "options": {
+                        "A": "Simmetrik geometriya",
+                        "B": "Har bir fermion uchun simmetrik bozon hamkoriga ega bo'lgan nazariy fizika modeli",
+                        "C": "Kimyoviy simmetria",
+                        "D": "Matematik aksiomat"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_phy_q6",
+                    "question_uz": "\"Kvant supremacy\" nima?",
+                    "question_ru": "Что такое «квантовое превосходство»?",
+                    "question_en": "What is 'quantum supremacy'?",
+                    "options": {
+                        "A": "Kvant fizikasining hukmronligi",
+                        "B": "Kvant kompyuterining klassik kompyuter bajarolmaydigan hisob-kitobni bajarishi",
+                        "C": "Kvant quroli",
+                        "D": "Kvant o'yin asbobchasi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_phy_q7",
+                    "question_uz": "\"Arximed printsipi\" suyuqlikda nima deydi?",
+                    "question_ru": "Что гласит «принцип Архимеда» в жидкостях?",
+                    "question_en": "What does Archimedes' principle state about fluids?",
+                    "options": {
+                        "A": "Suyuqlik dengizga oqadi",
+                        "B": "Suyuqliqa botirilgan jism o'z hajmidagi suyuqlikning og'irligiga teng ko'taruvchi kuch ta'sirini sezadi",
+                        "C": "Suyuqlik qaynash harorati",
+                        "D": "Gaz bosimi suyuqlikda"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_phy_q8",
+                    "question_uz": "Plazma nima?",
+                    "question_ru": "Что такое плазма?",
+                    "question_en": "What is plasma?",
+                    "options": {
+                        "A": "Qon plazma",
+                        "B": "Ionlashgan gaz – juda yuqori haroratda atomlar elektronlarini yo'qotadi va to'rtinchi holat hosil bo'ladi",
+                        "C": "Suyuqlik turi",
+                        "D": "Gaz turi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_phy_q9",
+                    "question_uz": "\"Ikkinchi termodinamika qonuni\" nima?",
+                    "question_ru": "Каков второй закон термодинамики?",
+                    "question_en": "What is the Second Law of Thermodynamics?",
+                    "options": {
+                        "A": "Energiya saqlanadi",
+                        "B": "Izolyatsiya qilingan tizimda entropiya kamayishi mumkin emas — vaqt o'tishi bilan ko'payadi",
+                        "C": "Issiqlik past haroratdan yuqoriga o'tadi",
+                        "D": "Termodinamik muvozanat"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_phy_q10",
+                    "question_uz": "\"Big Bang nucleosynthesis\" nima?",
+                    "question_ru": "Что такое нуклеосинтез Большого взрыва?",
+                    "question_en": "What is Big Bang nucleosynthesis?",
+                    "options": {
+                        "A": "Yulduzlar ichidagi sintez",
+                        "B": "Katta portlashdan so'ng dastlabki 3 daqiqada atom yadrolari (H, He, Li) hosil bo'lishi",
+                        "C": "Yadro bo'linishi",
+                        "D": "Kvant reaksiyasi"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g11_phy_it1",
+                    "task_uz": "Ilm-fan va falsafa kesishmasida: Antropik printsip nima va u Olam yaratilishi haqidagi munozaraga qanday ta'sir ko'rsatadi?",
+                    "task_ru": "На пересечении науки и философии: что такое «антропный принцип» и как он влияет на дискуссию о создании Вселенной?",
+                    "task_en": "At the intersection of science and philosophy: What is the Anthropic Principle and how does it influence debates about the creation of the Universe?",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g11_phy_it2",
+                    "task_uz": "Agar siz nazariy fizik bo'lsangiz va borliqning asosiy nazariyasini yaratayotgan bo'lsangiz — u qanday nazariya bo'lardi? Asosiy postulatlari va bashoratlarini yozing.",
+                    "task_ru": "Если бы вы были теоретическим физиком, создающим базовую теорию реальности, — какой была бы эта теория? Напишите её основные постулаты и предсказания.",
+                    "task_en": "If you were a theoretical physicist creating a fundamental theory of reality — what would that theory be? Write its main postulates and predictions.",
+                    "skill": "creativity"
+                }
+            ]
+        },
+        {
+            "subject": "Chemistry",
+            "questions": [
+                {
+                    "id": "g11_chem_q1",
+                    "question_uz": "\"Yuqori entropiya qotishmalar\" (High Entropy Alloys) nima?",
+                    "question_ru": "Что такое «высокоэнтропийные сплавы»?",
+                    "question_en": "What are High Entropy Alloys (HEA)?",
+                    "options": {
+                        "A": "Oddiy metallar qotishmasi",
+                        "B": "Besh va undan ortiq elementlarning deyarli teng nisbatda aralashtirilib hosil qilingan yangi xossali materiallar",
+                        "C": "Past zichlikli metallar",
+                        "D": "Plastmassa turi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_chem_q2",
+                    "question_uz": "\"Vodorod energetikasi\" nima?",
+                    "question_ru": "Что такое водородная энергетика?",
+                    "question_en": "What is hydrogen energy?",
+                    "options": {
+                        "A": "Vodorod bombasi",
+                        "B": "Vodorodning yangi avlod yoqilg'isi sifatida ishlatilishi — yonishda faqat suv hosil bo'ladi",
+                        "C": "Vodorod ishlab chiqarish",
+                        "D": "Yadroviy kombinatsiya"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_chem_q3",
+                    "question_uz": "Biomimetika nima?",
+                    "question_ru": "Что такое биомиметика?",
+                    "question_en": "What is biomimicry (biomimetics)?",
+                    "options": {
+                        "A": "Tirik organizm o'rganish",
+                        "B": "Tabiatdagi biologik tuzilmalar va jarayonlardan ilhomlanib yangi texnologiyalar yaratish",
+                        "C": "Biologik tajriba",
+                        "D": "Kimyoviy sintez"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_chem_q4",
+                    "question_uz": "\"Koordinatsiya birikmalari\" kimyosi nima?",
+                    "question_ru": "Что такое химия координационных соединений?",
+                    "question_en": "What is coordination chemistry?",
+                    "options": {
+                        "A": "Organik kimyo sohasi",
+                        "B": "Markaziy atom (ko'pincha metall) atrofida ligandlar bilan hosil bo'lgan kompleks birikmalar kimyosi",
+                        "C": "Yadroviy kimyo",
+                        "D": "Issiqlik kimyosi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_chem_q5",
+                    "question_uz": "\"Kimyoviy uyg'unlik» (Chemical harmony) — yashil kimyoda nima anglatadi?",
+                    "question_ru": "Что означает «химическая гармония» в зелёной химии?",
+                    "question_en": "What does 'chemical harmony' mean in green chemistry?",
+                    "options": {
+                        "A": "Rengi bir xil bo'lgan moddalar",
+                        "B": "Kimyoviy jarayon va tabiat o'rtasidagi muvofiqlik — zararli chiqindisiz dizayn",
+                        "C": "Moddalarni tasniflayrish",
+                        "D": "Laboratoriya qoidasi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_chem_q6",
+                    "question_uz": "Atom spektroskopiyasi nima uchun ishlatiladi?",
+                    "question_ru": "Для чего используется атомная спектроскопия?",
+                    "question_en": "What is atomic spectroscopy used for?",
+                    "options": {
+                        "A": "Fotosintez o'rganish",
+                        "B": "Elementlarni aniqlash va miqdorini o'lchash uchun — nurlanish spektrini tahlil qilish",
+                        "C": "Kimyoviy reaksiyani kuzatish",
+                        "D": "Harorat o'lchash"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_chem_q7",
+                    "question_uz": "\"Super-critical fluids\" nima?",
+                    "question_ru": "Что такое «сверхкритические флюиды»?",
+                    "question_en": "What are supercritical fluids?",
+                    "options": {
+                        "A": "Juda issiq gazlar",
+                        "B": "Kritik harorat va bosimdan oshganda suyuqlik va gaz xossalarini birga namoyon qiluvchi moddalar",
+                        "C": "Kimyoviy reaksiya mahsuli",
+                        "D": "Havoning maxsus holati"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_chem_q8",
+                    "question_uz": "\"Carbon nanotubes\" nima va ular qanday xossalarga ega?",
+                    "question_ru": "Что такое углеродные нанотрубки и каковы их свойства?",
+                    "question_en": "What are carbon nanotubes and what are their properties?",
+                    "options": {
+                        "A": "Oddiy uglerod",
+                        "B": "Grafen qatlamidan hosil bo'lgan siliндрik nanostrukturalar — g'oyatda mustahkam, elektr o'tkazuvchi",
+                        "C": "Plastmassa turi",
+                        "D": "Uglerod birikma"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_chem_q9",
+                    "question_uz": "\"Yashil sintez\" (green synthesis) nima?",
+                    "question_ru": "Что такое «зелёный синтез»?",
+                    "question_en": "What is 'green synthesis' in chemistry?",
+                    "options": {
+                        "A": "O'simliklarni sintez qilish",
+                        "B": "Atrof-muhitga zarar bermaydi degan usulda kimyoviy moddalarni sintez qilish",
+                        "C": "Laboratoriyani ko'kaytirish",
+                        "D": "O'simlik yog'laridan foydalanish"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_chem_q10",
+                    "question_uz": "\"Molekulyar mashina\" nima?",
+                    "question_ru": "Что такое «молекулярная машина»?",
+                    "question_en": "What is a 'molecular machine'?",
+                    "options": {
+                        "A": "Laboratoriya jihozi",
+                        "B": "Belgilangan molekulyar harakatlar orqali bajariladigan mexanik ishlarni amalga oshiradigan molekula tizimi",
+                        "C": "Kimyoviy reaktor",
+                        "D": "Nanobiosensor"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g11_chem_it1",
+                    "task_uz": "Samarqand shahrida katta kimyoviy ifloslanish sodir bo'ldi. Siz ekspert xavfsizlik kimyovchisisiz. Dastlabki 48 soat ichida nima qilasiz? Tizimli jarayon va usullarni tavsiflang.",
+                    "task_ru": "В Самарканде произошло крупное химическое загрязнение. Вы эксперт-химик по безопасности. Что вы делаете в первые 48 часов? Опишите системный процесс и методы.",
+                    "task_en": "A major chemical spill has occurred in Samarkand. You are an expert safety chemist. What do you do in the first 48 hours? Describe the systematic process and methods.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g11_chem_it2",
+                    "task_uz": "Kelajak kimyosini tasavvur qiling: 2070-yilgacha insoniyat uchun eng muhim 3 ta kimyoviy kashfiyot nima bo'lishi mumkin? Ularning ta'sirini tasvirlab bering.",
+                    "task_ru": "Представьте химию будущего: что может стать тремя важнейшими химическими открытиями для человечества к 2070 году? Опишите их последствия.",
+                    "task_en": "Imagine the chemistry of the future: what could be the 3 most important chemical discoveries for humanity by 2070? Describe their impact.",
+                    "skill": "creativity"
+                }
+            ]
+        }
+    ]
+}

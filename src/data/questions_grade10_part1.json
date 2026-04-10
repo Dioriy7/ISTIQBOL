@@ -1,0 +1,762 @@
+{
+    "grade": 10,
+    "part": 1,
+    "subjects": [
+        {
+            "subject": "Mathematics",
+            "questions": [
+                {
+                    "id": "g10_math_q1",
+                    "question_uz": "∫(2x + 3)dx = ?",
+                    "question_ru": "∫(2x + 3)dx = ?",
+                    "question_en": "∫(2x + 3)dx = ?",
+                    "options": {
+                        "A": "x² + 3x + C",
+                        "B": "2x² + 3x + C",
+                        "C": "x² + 3 + C",
+                        "D": "2 + C"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g10_math_q2",
+                    "question_uz": "Cheksiz qatorning yaqinlashish sharti nima?",
+                    "question_ru": "Каково условие сходимости бесконечного ряда?",
+                    "question_en": "What is the condition for an infinite series to converge?",
+                    "options": {
+                        "A": "Hadlar ko'payib boradi",
+                        "B": "Hadlar nolga yaqinlashadi va umumiy summa cheklangan qiymatga ega bo'ladi",
+                        "C": "Barcha hadlar musbat",
+                        "D": "Barcha hadlar bir xil"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_math_q3",
+                    "question_uz": "Matritsa ko'paytmasi kommutativmi?",
+                    "question_ru": "Является ли умножение матриц коммутативным?",
+                    "question_en": "Is matrix multiplication commutative?",
+                    "options": {
+                        "A": "Ha, doimo",
+                        "B": "Yo'q, AB ≠ BA umuman",
+                        "C": "Faqat kvadrat matritsalar uchun",
+                        "D": "Faqat birlik matritsalar uchun"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_math_q4",
+                    "question_uz": "Kompleks son z = 3 + 4i ning moduli qancha?",
+                    "question_ru": "Каков модуль комплексного числа z = 3 + 4i?",
+                    "question_en": "What is the modulus of the complex number z = 3 + 4i?",
+                    "options": {
+                        "A": "3",
+                        "B": "4",
+                        "C": "5",
+                        "D": "7"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g10_math_q5",
+                    "question_uz": "Chiziqli programlashtirishda \"ob'ektiv funksiya\" nima?",
+                    "question_ru": "Что такое «целевая функция» в линейном программировании?",
+                    "question_en": "In linear programming, what is the 'objective function'?",
+                    "options": {
+                        "A": "Cheklov shart",
+                        "B": "Maksimallash yoki minimallash kerak bo'lgan funksiya",
+                        "C": "Grafikda o'q",
+                        "D": "Koordinatalar"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_math_q6",
+                    "question_uz": "Bayes teoremasi qaysi sohada ishlatiladi?",
+                    "question_ru": "В какой области используется теорема Байеса?",
+                    "question_en": "Bayes' theorem is used in which field?",
+                    "options": {
+                        "A": "Faqat geometriyada",
+                        "B": "Ehtimollik nazariyasi va statistika",
+                        "C": "Faqat algebraik tenglamalar",
+                        "D": "Faqat integrallashda"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_math_q7",
+                    "question_uz": "d/dx(eˣ) = ?",
+                    "question_ru": "d/dx(eˣ) = ?",
+                    "question_en": "d/dx(eˣ) = ?",
+                    "options": {
+                        "A": "xeˣ⁻¹",
+                        "B": "eˣ",
+                        "C": "e",
+                        "D": "1"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_math_q8",
+                    "question_uz": "Koordinatalar tekisligida nuqtalararo masofa formulasi qaysi?",
+                    "question_ru": "Какова формула расстояния между двумя точками на координатной плоскости?",
+                    "question_en": "What is the distance formula between two points on a coordinate plane?",
+                    "options": {
+                        "A": "√((x₂-x₁) + (y₂-y₁))",
+                        "B": "√((x₂-x₁)² + (y₂-y₁)²)",
+                        "C": "(x₂-x₁)² + (y₂-y₁)²",
+                        "D": "(x₂+x₁)/2"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_math_q9",
+                    "question_uz": "Taylor qatori nima?",
+                    "question_ru": "Что такое ряд Тейлора?",
+                    "question_en": "What is the Taylor series?",
+                    "question_en": "What is a Taylor series?",
+                    "options": {
+                        "A": "Sonlar ketma-ketligi",
+                        "B": "Funksiyani ko'p hadli qatorga yoyish",
+                        "C": "Integral hisoblash usuli",
+                        "D": "Matritsa turi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_math_q10",
+                    "question_uz": "Euler formulasi: e^(iπ) + 1 = ?",
+                    "question_ru": "Формула Эйлера: e^(iπ) + 1 = ?",
+                    "question_en": "Euler's formula: e^(iπ) + 1 = ?",
+                    "options": {
+                        "A": "2",
+                        "B": "1",
+                        "C": "0",
+                        "D": "π"
+                    },
+                    "correct_answer": "C"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g10_math_it1",
+                    "task_uz": "Real hayotdagi optimallash masalasi: siz 1000 m² yer uchun minimal xarajat bilan to'rtburchak bog' yasayapsiz. Gaajra faqat uch tomoni bor (bir tomoni devor). O'lchamlarni toping.",
+                    "task_ru": "Задача оптимизации: для прямоугольного огорода площадью 1000 м² нужно минимальное ограждение при условии, что одна сторона — стена. Найдите размеры.",
+                    "task_en": "Optimisation task: A rectangular garden of area 1000 m² needs minimum fencing; one side is a wall. Find the optimal dimensions.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g10_math_it2",
+                    "task_uz": "Ma'lumotlar to'plami bo'yicha probabilistik tahlil: 200 kuzatuv natijasida x qiymatlarining normal taqsimlanishi aniqlangan. Bu holat uchun ehtimolliklarni hisoblash qoidalarini tushuntiring.",
+                    "task_ru": "Вероятностный анализ: по 200 наблюдениям установлено нормальное распределение значений x. Объясните правила вычисления вероятностей для этого случая.",
+                    "task_en": "Probabilistic analysis: 200 observations show a normal distribution of values x. Explain the rules for calculating probabilities in this case.",
+                    "skill": "logic"
+                }
+            ]
+        },
+        {
+            "subject": "English",
+            "questions": [
+                {
+                    "id": "g10_eng_q1",
+                    "question_uz": "\"Cohesion\" va \"coherence\" akademik yozishda nima anglatadi?",
+                    "question_ru": "Что означают «когезия» и «когерентность» в академическом письме?",
+                    "question_en": "What do 'cohesion' and 'coherence' mean in academic writing?",
+                    "options": {
+                        "A": "Ular bir xil",
+                        "B": "Cohesion — gap bog'lanish vositalari, coherence — matn mantiqiy birligi",
+                        "C": "Cohesion — matn uzunligi, coherence — imlo",
+                        "D": "Ikkalasi ham grammatika haqida"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_eng_q2",
+                    "question_uz": "'Exacerbate' so'zining ma'nosi?",
+                    "question_ru": "Что означает слово 'exacerbate'?",
+                    "question_en": "What does 'exacerbate' mean?",
+                    "options": {
+                        "A": "Yaxshilash",
+                        "B": "Muammoni yanada yomonlashtirishash",
+                        "C": "Muzokara qilish",
+                        "D": "Tahlil qilish"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_eng_q3",
+                    "question_uz": "Passive with reporting verbs: \"It ___ that the economy will improve.\" To'g'ri shaklni tanlang.",
+                    "question_ru": "Выберите правильную форму: \"It ___ that the economy will improve.\"",
+                    "question_en": "\"It ___ that the economy will improve.\" Choose the correct passive form.",
+                    "options": {
+                        "A": "says",
+                        "B": "is said",
+                        "C": "said",
+                        "D": "has said"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_eng_q4",
+                    "question_uz": "Kritik fikrlash ko'nikmalarini ingliz tilida qo'llash uchun nima kerak?",
+                    "question_ru": "Что необходимо для применения навыков критического мышления на английском языке?",
+                    "question_en": "To apply critical thinking skills in English, what is needed?",
+                    "options": {
+                        "A": "Faqat grammatik bilim",
+                        "B": "Tahlil, baholash va argumentatsiya ko'nikmalari",
+                        "C": "Faqat lug'at bilimi",
+                        "D": "Faqat talaffuz"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_eng_q5",
+                    "question_uz": "'Substantiate' so'zivning ma'nosi?",
+                    "question_ru": "Что означает слово 'substantiate'?",
+                    "question_en": "What does 'substantiate' mean?",
+                    "options": {
+                        "A": "Inkor qilish",
+                        "B": "Dalil yoki faktlar bilan qo'llab-quvvatlash",
+                        "C": "Batafsil ta'riflash",
+                        "D": "Inkor qilish"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_eng_q6",
+                    "question_uz": "IELTS yozish qismida \"band score\" nima?",
+                    "question_ru": "Что такое «band score» в письменной части IELTS?",
+                    "question_en": "What is a 'band score' in IELTS writing?",
+                    "options": {
+                        "A": "Vaqt cheklovi",
+                        "B": "1 dan 9 gacha bo'lgan baholash shkala",
+                        "C": "Kalimalar soni",
+                        "D": "Mavzu soni"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_eng_q7",
+                    "question_uz": "'Paradigm shift' iborasining ma'nosi?",
+                    "question_ru": "Что значит выражение 'paradigm shift'?",
+                    "question_en": "What does 'paradigm shift' mean?",
+                    "options": {
+                        "A": "Kichik o'zgarish",
+                        "B": "Asosiy tushuncha yoki yondashuvda tubdan o'zgarish",
+                        "C": "Vaqt o'zgarishi",
+                        "D": "Grammatik o'zgarish"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_eng_q8",
+                    "question_uz": "\"The report ___ (write) by a team of experts.\" Passivni to'ldiring.",
+                    "question_ru": "Заполните пассивом: \"The report ___ (write) by a team of experts.\"",
+                    "question_en": "Fill in the passive: \"The report ___ (write) by a team of experts.\"",
+                    "options": {
+                        "A": "wrote",
+                        "B": "was written",
+                        "C": "has written",
+                        "D": "is writing"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_eng_q9",
+                    "question_uz": "\"Discourse marker\" nima va qanday qo'llaniladi?",
+                    "question_ru": "Что такое «маркер дискурса» и как он используется?",
+                    "question_en": "What is a 'discourse marker' and how is it used?",
+                    "options": {
+                        "A": "Grammatik qoida",
+                        "B": "Matnni tashkil etuvchi va bog'lovchi so'z yoki ibora (masalan, however, furthermore)",
+                        "C": "She'r turi",
+                        "D": "Imlo belgisi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_eng_q10",
+                    "question_uz": "'Mitigate' so'zining ma'nosi?",
+                    "question_ru": "Что означает слово 'mitigate'?",
+                    "question_en": "What does 'mitigate' mean?",
+                    "options": {
+                        "A": "Kuchaytirish",
+                        "B": "Yengillashtirish, kamaytirish",
+                        "C": "Tuzatish",
+                        "D": "Izohlash"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g10_eng_it1",
+                    "task_uz": "\"Artificial Intelligence will replace human creativity\" mavzusida 250 so'zlik academic argumentative essay yozing.",
+                    "task_ru": "Напишите академическое аргументативное эссе на 250 слов на тему: «Искусственный интеллект заменит человеческое творчество».",
+                    "task_en": "Write a 250-word academic argumentative essay on 'Artificial Intelligence will replace human creativity'.",
+                    "skill": "creativity"
+                },
+                {
+                    "id": "g10_eng_it2",
+                    "task_uz": "Quyidagi research abstract (yozma qismi) ni o'qing va undagi asosiy gap tuzilmasi, fikr ketma-ketligi va argumentatsiya strategiyasini tahlil qiling.",
+                    "task_ru": "Прочитайте предоставленный академический аннотации и проанализируйте структуру предложений, последовательность мысли и аргументационную стратегию.",
+                    "task_en": "Read the provided research abstract and analyse its sentence structure, logical flow, and argumentation strategy.",
+                    "skill": "analysis"
+                }
+            ]
+        },
+        {
+            "subject": "Biology",
+            "questions": [
+                {
+                    "id": "g10_bio_q1",
+                    "question_uz": "Bioinformatika nima?",
+                    "question_ru": "Что такое биоинформатика?",
+                    "question_en": "What is bioinformatics?",
+                    "options": {
+                        "A": "Biologiya o'qitish usuli",
+                        "B": "Biologik ma'lumotlarni kompyuter usullari bilan tahlil qilish fani",
+                        "C": "Ilg'or biologiya laboratoriyasi",
+                        "D": "Tibbiy qurilma"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_bio_q2",
+                    "question_uz": "Epigenetik o'zgarishlar nima?",
+                    "question_ru": "Что такое эпигенетические изменения?",
+                    "question_en": "What are epigenetic changes?",
+                    "options": {
+                        "A": "DNK ketma-ketligidagi o'zgarishlar",
+                        "B": "DNK ketma-ketligi o'zgarmay, gen ifodasi o'zgaradigan modifikatsiyalar",
+                        "C": "Protein sintezi",
+                        "D": "Hujayra bo'linishi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_bio_q3",
+                    "question_uz": "Kalsiy ionlari muscul qisqarishida qanday rol o'ynaydi?",
+                    "question_ru": "Какую роль играют ионы кальция в мышечном сокращении?",
+                    "question_en": "What role do calcium ions play in muscle contraction?",
+                    "options": {
+                        "A": "Energiya beradi",
+                        "B": "Troponin-tropomiosin kompleksini aktivlashtiradi, aktin-miozin o'zaro ta'sirini imkonli qiladi",
+                        "C": "Qon ta'minotini oshiradi",
+                        "D": "Nerv signalini uzatadi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_bio_q4",
+                    "question_uz": "Odam genomida taxminan nechta gen bor?",
+                    "question_ru": "Сколько примерно генов в геноме человека?",
+                    "question_en": "Approximately how many genes are there in the human genome?",
+                    "options": {
+                        "A": "5 000",
+                        "B": "20 000–25 000",
+                        "C": "1 000 000",
+                        "D": "100 000"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_bio_q5",
+                    "question_uz": "Mitokondriya DNKsining ahamiyati nima?",
+                    "question_ru": "Каково значение митохондриальной ДНК?",
+                    "question_en": "What is the significance of mitochondrial DNA?",
+                    "options": {
+                        "A": "Protein sintezi uchun",
+                        "B": "Onadan meros olinadi va evolyutsion tadqiqotlarda ishlatiladi",
+                        "C": "Hujayra bo'linishini boshqaradi",
+                        "D": "Yadro genlari bilan ishlaydi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_bio_q6",
+                    "question_uz": "Organ transplantatsiyasida asosiy muammo nima?",
+                    "question_ru": "Каков основной вызов при трансплантации органов?",
+                    "question_en": "What is the main challenge in organ transplantation?",
+                    "options": {
+                        "A": "Jarrohlik murakkabaligi",
+                        "B": "Immunologik rad etish (rejection)",
+                        "C": "Anestetik ta'siri",
+                        "D": "Qon yo'qotishi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_bio_q7",
+                    "question_uz": "Bioetika nima va uning biologiyadagi ahamiyati?",
+                    "question_ru": "Что такое биоэтика и каково её значение в биологии?",
+                    "question_en": "What is bioethics and why is it important in biology?",
+                    "options": {
+                        "A": "Biologik tajribalar uchun maxsus usul",
+                        "B": "Biologik va tibbiy tadqiqotlardagi axloqiy tamoyillar va dilemmalarga oid fan",
+                        "C": "Biologiya o'qitish",
+                        "D": "Tabiatni muhofaza qilish"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_bio_q8",
+                    "question_uz": "PCR (Polimeraz zanjir reaktsiyasi) nima uchun ishlatiladi?",
+                    "question_ru": "Для чего используется ПЦР (полимеразная цепная реакция)?",
+                    "question_en": "What is PCR (Polymerase Chain Reaction) used for?",
+                    "options": {
+                        "A": "Qon tahlili",
+                        "B": "DNK fragmentlarini ko'paytirish va tasdiqlash uchun",
+                        "C": "Protein sintezi",
+                        "D": "Hujayralar saralash"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_bio_q9",
+                    "question_uz": "Ekologik iz (ecological footprint) nima?",
+                    "question_ru": "Что такое «экологический след»?",
+                    "question_en": "What is an 'ecological footprint'?",
+                    "options": {
+                        "A": "Maxsus geografik xarita",
+                        "B": "Inson faoliyatining tabiiy resurslarga ta'sir o'lchovi",
+                        "C": "Ko'z izi",
+                        "D": "Hayvonlar tomonidan qoldirilgan iz"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_bio_q10",
+                    "question_uz": "Tug'ma immunitetning moslashuvchan immunitetdan farqi nima?",
+                    "question_ru": "В чём разница между врождённым и адаптивным иммунитетом?",
+                    "question_en": "What is the difference between innate and adaptive immunity?",
+                    "options": {
+                        "A": "Ular bir xil",
+                        "B": "Tug'ma — umumiy va tezkor, moslashuvchan — maxsus antigen tanish va xotiraga ega",
+                        "C": "Tug'ma — kuchliroq",
+                        "D": "Moslashuvchan — tezroq"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g10_bio_it1",
+                    "task_uz": "CRISPR-Cas9 metodining tibbiy va qishloq xo'jaligidagi foydalari va xavf-xatarlarini muhokama qiling. Uchta etik dilemmani izohlang.",
+                    "task_ru": "Обсудите преимущества и риски метода CRISPR-Cas9 в медицине и сельском хозяйстве. Объясните три этические дилеммы.",
+                    "task_en": "Discuss the benefits and risks of CRISPR-Cas9 in medicine and agriculture. Explain three ethical dilemmas.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g10_bio_it2",
+                    "task_uz": "2050-yil uchun biologik texnologiyalarning kelajagini tasavvur qiling. Tibbiyot va qishloq xo'jaligida qanday inqilobiy o'zgarishlar bo'lishi mumkin?",
+                    "task_ru": "Представьте будущее биотехнологий к 2050 году. Какие революционные изменения возможны в медицине и сельском хозяйстве?",
+                    "task_en": "Imagine the future of biological technologies by 2050. What revolutionary changes might occur in medicine and agriculture?",
+                    "skill": "creativity"
+                }
+            ]
+        },
+        {
+            "subject": "History",
+            "questions": [
+                {
+                    "id": "g10_hist_q1",
+                    "question_uz": "O'zbekistonda 2016-yildan boshlab amalga oshirilayotgan islohotlarning asosiy yo'nalishlari?",
+                    "question_ru": "Каковы основные направления реформ в Узбекистане с 2016 года?",
+                    "question_en": "What are the main reform directions in Uzbekistan since 2016?",
+                    "options": {
+                        "A": "Faqat iqtisodiy islohotlar",
+                        "B": "Iqtisodiy modernizatsiya, demokratlashtirish, tashqi aloqalar rivojlantirish",
+                        "C": "Faqat ta'lim islohotlari",
+                        "D": "Faqat harbiy kuchayish"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_hist_q2",
+                    "question_uz": "\"Digital diplomacy\" nima?",
+                    "question_ru": "Что такое «цифровая дипломатия»?",
+                    "question_en": "What is 'digital diplomacy'?",
+                    "options": {
+                        "A": "Kompyuter o'yinlari",
+                        "B": "Ijtimoiy tarmoq va raqamli vositalar orqali diplomatik faoliyat",
+                        "C": "Harbiy strategiya",
+                        "D": "Iqtisodiy shartnoma"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_hist_q3",
+                    "question_uz": "Globallashuv va mahalliy identitet o'rtasidagi ziddiyat nima?",
+                    "question_ru": "Каков конфликт между глобализацией и местной идентичностью?",
+                    "question_en": "What is the tension between globalisation and local identity?",
+                    "options": {
+                        "A": "Hech qanday ziddiyat yo'q",
+                        "B": "Globallashuv mahalliy madaniyat, til va an'analarga tahdid solishi mumkin",
+                        "C": "Mahalliy identitet globallashuvning mahsuli",
+                        "D": "Ular bir-birini to'ldiradi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_hist_q4",
+                    "question_uz": "\"New Silk Road\" (Yangi Ipak Yo'li) tashabbuslari nima?",
+                    "question_ru": "Что такое инициативы «Нового Шёлкового пути»?",
+                    "question_en": "What are the 'New Silk Road' or BRI initiatives?",
+                    "options": {
+                        "A": "Tarixiy an'ana",
+                        "B": "Xitoy rahbarligidagi infratuzilma va savdo bog'lash loyihasi",
+                        "C": "AQSH tashabbusi",
+                        "D": "Markaziy Osiyo ichki dasturi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_hist_q5",
+                    "question_uz": "\"Geopolitika\" nima?",
+                    "question_ru": "Что такое геополитика?",
+                    "question_en": "What is geopolitics?",
+                    "options": {
+                        "A": "Mamlakatlar ichki siyosati",
+                        "B": "Geografiya, kuch va xalqaro munosabatlar o'rtasidagi bog'liqlikni o'rganuvchi fan",
+                        "C": "Iqtisodiy nazariya",
+                        "D": "Tarixiy metod"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_hist_q6",
+                    "question_uz": "\"Soft power\" tushunchasi kimning asari va nima anglatadi?",
+                    "question_ru": "Кто ввёл понятие «мягкая сила» и что оно означает?",
+                    "question_en": "Who coined 'soft power' and what does it mean?",
+                    "options": {
+                        "A": "Henry Kissinger — harbiy kuch",
+                        "B": "Joseph Nye — madaniyat, ta'lim va diplomatiya orqali ta'sir o'tkazish",
+                        "C": "Samuel Huntington — sivilizatsiyalar to'qnashuvi",
+                        "D": "Francis Fukuyama — tarix nihoyasi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_hist_q7",
+                    "question_uz": "Brexit nima va qachon sodir bo'ldi?",
+                    "question_ru": "Что такое Брексит и когда он произошёл?",
+                    "question_en": "What was Brexit and when did it occur?",
+                    "options": {
+                        "A": "Fransiyaning Evrozonadai chiqishi, 2015",
+                        "B": "Britaniyaning Evropa Ittifoqidan chiqishi, 2016-yil referendum, 2020 amaliy chiqish",
+                        "C": "Islandiyaning bank inqirozi, 2008",
+                        "D": "Gretsiyaning muammosi, 2012"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_hist_q8",
+                    "question_uz": "O'zbekistonning Markaziy Osiyo geopolitikasidagi roli qanday?",
+                    "question_ru": "Какова роль Узбекистана в геополитике Центральной Азии?",
+                    "question_en": "What is Uzbekistan's role in Central Asian geopolitics?",
+                    "options": {
+                        "A": "Kichik va ahamiyatsiz",
+                        "B": "Markaziy Osiyo mintaqasida ko'p aholiga ega va strategik joylashgan kalit davlat",
+                        "C": "Faqat iqtisodiy roli bor",
+                        "D": "Faqat ta'lim sohasida roli bor"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_hist_q9",
+                    "question_uz": "\"Cultural heritage\" ni saqlash nima uchun muhim?",
+                    "question_ru": "Почему важно сохранять культурное наследие?",
+                    "question_en": "Why is it important to preserve cultural heritage?",
+                    "options": {
+                        "A": "Faqat turizm uchun",
+                        "B": "Milliy identitet, tarix, ta'lim va insoniyat merosini saqlash uchun",
+                        "C": "Faqat iqtisodiy nafda",
+                        "D": "Hech qanday ahamiyati yo'q"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_hist_q10",
+                    "question_uz": "Tinchlikparvarlik (pacifism) harakat nima?",
+                    "question_ru": "Что такое пацифизм?",
+                    "question_en": "What is pacifism?",
+                    "options": {
+                        "A": "Jangovarlik",
+                        "B": "Urush va zo'ravonlikka qarshilik, nizolarni tinch yo'llar bilan hal qilish",
+                        "C": "Harbiy kuchni maqtash",
+                        "D": "Millatchilikning bir turi"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g10_hist_it1",
+                    "task_uz": "O'zbekistonning tashqi siyosatidagi so'nggi o'zgarishlarni (2016-yildan beri) tahlil qiling: qo'shni davlatlar bilan munosabatlar, xalqaro tashkilotlardagi faollik.",
+                    "task_ru": "Проанализируйте последние изменения во внешней политике Узбекистана (с 2016 года): отношения с соседними государствами, активность в международных организациях.",
+                    "task_en": "Analyse recent changes in Uzbekistan's foreign policy (since 2016): relations with neighbours, activities in international organisations.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g10_hist_it2",
+                    "task_uz": "2050-yilga qadar global siyosatda qanday o'zgarishlar bo'lishini bashorat qiling. Texnologiya, iqlim o'zgarishi va demografiya omillarini ko'rib chiqing.",
+                    "task_ru": "Спрогнозируйте изменения в мировой политике к 2050 году. Рассмотрите факторы технологий, изменения климата и демографии.",
+                    "task_en": "Forecast changes in global politics by 2050. Consider factors of technology, climate change, and demographics.",
+                    "skill": "creativity"
+                }
+            ]
+        },
+        {
+            "subject": "Informatics",
+            "questions": [
+                {
+                    "id": "g10_inf_q1",
+                    "question_uz": "DevOps metodologiyasi nima?",
+                    "question_ru": "Что такое методология DevOps?",
+                    "question_en": "What is the DevOps methodology?",
+                    "options": {
+                        "A": "Dasturlash tili",
+                        "B": "Dasturlash va IT operatsiyalarini birlashtirgan madaniyat va amaliyotlar to'plami",
+                        "C": "Ma'lumotlar bazasi turi",
+                        "D": "Tarmoq protokoli"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_inf_q2",
+                    "question_uz": "Kiberxavfsizlikda \"zero-day exploit\" nima?",
+                    "question_ru": "Что такое «zero-day exploit» в кибербезопасности?",
+                    "question_en": "What is a 'zero-day exploit' in cybersecurity?",
+                    "options": {
+                        "A": "Antivirus dastur yangilanishi",
+                        "B": "Ishlab chiqaruvchi hali bilmagan zaiflikni maqsadli ekspluatatsiya qilish",
+                        "C": "Tizim yuklovchi",
+                        "D": "Yangi oʻrnatilgan dastur"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_inf_q3",
+                    "question_uz": "\"Containerization\" (Docker) nima?",
+                    "question_ru": "Что такое «контейнеризация» (Docker)?",
+                    "question_en": "What is containerisation (e.g., Docker)?",
+                    "options": {
+                        "A": "Ma'lumotlarni arxivlash",
+                        "B": "Ilovalarni ularda kerakli muhit bilan birlikda izolyatsiya qilingan bloklarda yaratish va ishlatish",
+                        "C": "Server texnologiyasi",
+                        "D": "Tarmoq muammolarini hal qilish"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_inf_q4",
+                    "question_uz": "Natural Language Processing (NLP) nima?",
+                    "question_ru": "Что такое обработка естественного языка (NLP)?",
+                    "question_en": "What is Natural Language Processing (NLP)?",
+                    "options": {
+                        "A": "Tillarni o'rganish metodikasi",
+                        "B": "Kompyuterlarning insoniy tilni tushunish va generatsiya qilish qobiliyati",
+                        "C": "Tarjimon dastur",
+                        "D": "Grammatika tekshiruv dasturi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_inf_q5",
+                    "question_uz": "Microservices arxitekturasi nima?",
+                    "question_ru": "Что такое архитектура микросервисов?",
+                    "question_en": "What is microservices architecture?",
+                    "options": {
+                        "A": "Bir yaxlit dastur",
+                        "B": "Ilovani mustaqil joylashtirilishi mumkin bo'lgan kichik xizmatlarga bo'lish",
+                        "C": "Ma'lumotlar bazasi sxemasi",
+                        "D": "Tarmoq topologiyasi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_inf_q6",
+                    "question_uz": "\"Ethical hacking\" nima?",
+                    "question_ru": "Что такое «этичный хакинг»?",
+                    "question_en": "What is ethical hacking?",
+                    "options": {
+                        "A": "Kompyuter o'ynash",
+                        "B": "Ruxsatnoma asosida tizim zaifliklarini topish va xavfsizlikni yaxshilash",
+                        "C": "Viruslarni tarqatish",
+                        "D": "Dastur o'chirish"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_inf_q7",
+                    "question_uz": "\"GraphQL\" va \"REST\" o'rtasidagi farq?",
+                    "question_ru": "В чём разница между GraphQL и REST?",
+                    "question_en": "What is the difference between GraphQL and REST?",
+                    "options": {
+                        "A": "Ular bir xil",
+                        "B": "GraphQL mijozga aniq kerakli ma'lumotlarni so'rash imkonini beradi; REST belgilangan endpoint'lar bilan ishlaydi",
+                        "C": "REST — yangroq texnologiya",
+                        "D": "GraphQL faqat Facebook uchun"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_inf_q8",
+                    "question_uz": "\"Distributed systems\" nima?",
+                    "question_ru": "Что такое распределённые системы?",
+                    "question_en": "What are distributed systems?",
+                    "options": {
+                        "A": "Bitta kompyuter tizimi",
+                        "B": "Tarmoq orqali ulangan va birgalikda ishlaydigan kompyuterlar to'plami",
+                        "C": "Bir nechta operatsion tizim",
+                        "D": "Ko'p xotirali kompyuter"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_inf_q9",
+                    "question_uz": "\"CAP teoremasi\" nima?",
+                    "question_ru": "Что такое теорема CAP?",
+                    "question_en": "What is the CAP theorem?",
+                    "options": {
+                        "A": "Kimyoviy formula",
+                        "B": "Taqsimlangan tizimlar bir vaqtda Consistency, Availability va Partition tolerance kafolatlarini to'liq ta'minlay olmasligini bildiruvchi nazariya",
+                        "C": "Kompyuter arxitekturasi",
+                        "D": "Matematik teorema"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_inf_q10",
+                    "question_uz": "\"Adversarial attacks\" AI kontekstida nima?",
+                    "question_ru": "Что такое «состязательные атаки» в контексте ИИ?",
+                    "question_en": "What are 'adversarial attacks' in the context of AI?",
+                    "options": {
+                        "A": "Kompyuter o'yinlari",
+                        "B": "AI modellarini aldash uchun maxsus tuzilgan kirish (input) ma'lumotlari",
+                        "C": "Kiberhujum turi",
+                        "D": "Tarmoq muammosi"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g10_inf_it1",
+                    "task_uz": "Siz kompaniyani kiberhujumdan himoya qiluvchi siz. Qanday xavfsizlik qatlami (layers of security) qurasiz? Texnik va insoniy aspektlarni ko'rib chiqing.",
+                    "task_ru": "Вы специалист по защите компании от кибератак. Какие уровни безопасности вы выстраиваете? Рассмотрите технические и человеческие аспекты.",
+                    "task_en": "You are tasked to protect a company from cyberattacks. What security layers would you build? Consider both technical and human aspects.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g10_inf_it2",
+                    "task_uz": "Siz 10 yildan keyin raqamli dunyoyi tasavvur qiling. Texnologiyalar (AI, VR, blockchain, IoT) odamlar hayotini qanday o'zgartiradi?",
+                    "task_ru": "Представьте цифровой мир через 10 лет. Как технологии (ИИ, VR, блокчейн, IoT) изменят жизнь людей?",
+                    "task_en": "Imagine the digital world in 10 years. How will technologies (AI, VR, blockchain, IoT) change people's lives?",
+                    "skill": "creativity"
+                }
+            ]
+        }
+    ]
+}

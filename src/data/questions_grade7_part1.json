@@ -1,0 +1,761 @@
+{
+    "grade": 7,
+    "part": 1,
+    "subjects": [
+        {
+            "subject": "Mathematics",
+            "questions": [
+                {
+                    "id": "g7_math_q1",
+                    "question_uz": "2x − 5 = 11 tenglamani yeching.",
+                    "question_ru": "Решите уравнение: 2x − 5 = 11.",
+                    "question_en": "Solve the equation: 2x − 5 = 11.",
+                    "options": {
+                        "A": "6",
+                        "B": "7",
+                        "C": "8",
+                        "D": "9"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g7_math_q2",
+                    "question_uz": "Ikki paralel to'g'ri chiziq bir kesmani kesib o'tsa, mos burchaklar qanday bo'ladi?",
+                    "question_ru": "Если прямая пересекает две параллельные прямые, как соотносятся соответственные углы?",
+                    "question_en": "When a transversal crosses two parallel lines, corresponding angles are:",
+                    "options": {
+                        "A": "Qo'shimcha",
+                        "B": "Teng",
+                        "C": "To'ldiruvchi",
+                        "D": "Turli"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_math_q3",
+                    "question_uz": "√144 = ?",
+                    "question_ru": "√144 = ?",
+                    "question_en": "√144 = ?",
+                    "options": {
+                        "A": "11",
+                        "B": "12",
+                        "C": "13",
+                        "D": "14"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_math_q4",
+                    "question_uz": "Agar uchburchakning ikkita burchagi 45° va 75° bo'lsa, uchinchi burchak necha gradus?",
+                    "question_ru": "Если два угла треугольника равны 45° и 75°, чему равен третий угол?",
+                    "question_en": "If two angles of a triangle are 45° and 75°, what is the third angle?",
+                    "options": {
+                        "A": "50°",
+                        "B": "55°",
+                        "C": "60°",
+                        "D": "70°"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g7_math_q5",
+                    "question_uz": "3(x + 4) = 21 tenglamadagi x ni toping.",
+                    "question_ru": "Найдите x в уравнении 3(x + 4) = 21.",
+                    "question_en": "Find x: 3(x + 4) = 21.",
+                    "options": {
+                        "A": "1",
+                        "B": "3",
+                        "C": "5",
+                        "D": "7"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_math_q6",
+                    "question_uz": "Agar a:b = 2:3 va a = 10 bo'lsa, b = ?",
+                    "question_ru": "Если a:b = 2:3 и a = 10, найдите b.",
+                    "question_en": "If a:b = 2:3 and a = 10, find b.",
+                    "options": {
+                        "A": "12",
+                        "B": "15",
+                        "C": "18",
+                        "D": "20"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_math_q7",
+                    "question_uz": "Manfiy sonlar bilan qo'shish: (−7) + (−3) = ?",
+                    "question_ru": "(−7) + (−3) = ?",
+                    "question_en": "(−7) + (−3) = ?",
+                    "options": {
+                        "A": "4",
+                        "B": "−4",
+                        "C": "10",
+                        "D": "−10"
+                    },
+                    "correct_answer": "D"
+                },
+                {
+                    "id": "g7_math_q8",
+                    "question_uz": "To'g'ri to'rtburchak prizmaning hajmi formulasi qaysi?",
+                    "question_ru": "Какова формула объёма прямоугольного параллелепипеда?",
+                    "question_en": "What is the volume formula of a rectangular prism?",
+                    "options": {
+                        "A": "l + w + h",
+                        "B": "2(lw + lh + wh)",
+                        "C": "l × w × h",
+                        "D": "l × w"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g7_math_q9",
+                    "question_uz": "Oddiy kasrni o'nlik kasrga aylantiring: 7/8 = ?",
+                    "question_ru": "Переведите дробь в десятичную: 7/8 = ?",
+                    "question_en": "Convert to decimal: 7/8 = ?",
+                    "options": {
+                        "A": "0.75",
+                        "B": "0.875",
+                        "C": "0.78",
+                        "D": "0.87"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_math_q10",
+                    "question_uz": "Agar poyezdning tezligi soatiga 90 km bo'lsa va u 2.5 soat yursa, u qancha yo'l bosadi?",
+                    "question_ru": "Поезд едет со скоростью 90 км/ч в течение 2,5 часа. Какое расстояние он преодолеет?",
+                    "question_en": "A train travels at 90 km/h for 2.5 hours. What distance does it cover?",
+                    "options": {
+                        "A": "200 km",
+                        "B": "215 km",
+                        "C": "225 km",
+                        "D": "250 km"
+                    },
+                    "correct_answer": "C"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g7_math_it1",
+                    "task_uz": "Shahar xaritasida ikkita joy o'rtasidagi masofa 4 sm, masshtabi 1:50 000. Haqiqiy masofa qancha km? Hisoblab, masshtab tushunchasini tushuntiring.",
+                    "task_ru": "На карте расстояние между двумя городами 4 см, масштаб 1:50 000. Каково реальное расстояние в км? Объясните понятие масштаба.",
+                    "task_en": "On a map, the distance between two cities is 4 cm with a scale of 1:50,000. What is the real distance in km? Explain the concept of scale.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g7_math_it2",
+                    "task_uz": "Quyidagi algebraik ifodalarni soddalashtiring va natijani tushuntiring: (a) 3x + 2x − x, (b) 2(y + 3) − y.",
+                    "task_ru": "Упростите следующие алгебраические выражения и объясните результат: (a) 3x + 2x − x, (b) 2(y + 3) − y.",
+                    "task_en": "Simplify the following algebraic expressions and explain: (a) 3x + 2x − x, (b) 2(y + 3) − y.",
+                    "skill": "logic"
+                }
+            ]
+        },
+        {
+            "subject": "English",
+            "questions": [
+                {
+                    "id": "g7_eng_q1",
+                    "question_uz": "\"If it rains, we ___ stay home.\" To'g'ri javobni tanlang.",
+                    "question_ru": "Выберите правильный ответ: \"If it rains, we ___ stay home.\"",
+                    "question_en": "\"If it rains, we ___ stay home.\" Fill in the blank.",
+                    "options": {
+                        "A": "would",
+                        "B": "will",
+                        "C": "shall",
+                        "D": "should"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_eng_q2",
+                    "question_uz": "\"He suggested ___ to the cinema.\" To'g'ri shaklni tanlang.",
+                    "question_ru": "Выберите правильную форму: \"He suggested ___ to the cinema.\"",
+                    "question_en": "\"He suggested ___ to the cinema.\" Choose the correct form.",
+                    "options": {
+                        "A": "to go",
+                        "B": "going",
+                        "C": "go",
+                        "D": "gone"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_eng_q3",
+                    "question_uz": "'Diligent' so'zining tarjimasi qaysi?",
+                    "question_ru": "Каков перевод слова 'diligent'?",
+                    "question_en": "What does 'diligent' mean?",
+                    "options": {
+                        "A": "Dangasa",
+                        "B": "Axmoq",
+                        "C": "Mehnatkash",
+                        "D": "Qo'rqoq"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g7_eng_q4",
+                    "question_uz": "Qaysi jumla Present Perfect tense'da?",
+                    "question_ru": "Какое предложение в Present Perfect?",
+                    "question_en": "Which sentence is in the Present Perfect tense?",
+                    "options": {
+                        "A": "She goes to school.",
+                        "B": "She went to school.",
+                        "C": "She has gone to school.",
+                        "D": "She is going to school."
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g7_eng_q5",
+                    "question_uz": "'Enormous' so'zining sinonimi qaysi?",
+                    "question_ru": "Какой синоним слова 'enormous'?",
+                    "question_en": "What is a synonym for 'enormous'?",
+                    "options": {
+                        "A": "Tiny",
+                        "B": "Huge",
+                        "C": "Regular",
+                        "D": "Average"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_eng_q6",
+                    "question_uz": "\"The book ___ by Tolkien.\" To'g'ri passiv shaklni tanlang.",
+                    "question_ru": "Выберите правильную пассивную форму: \"The book ___ by Tolkien.\"",
+                    "question_en": "\"The book ___ by Tolkien.\" Choose the correct passive form.",
+                    "options": {
+                        "A": "write",
+                        "B": "wrote",
+                        "C": "was written",
+                        "D": "is writing"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g7_eng_q7",
+                    "question_uz": "Relative clause nima? To'g'ri misolni toping.",
+                    "question_ru": "Что такое придаточное определительное? Найдите правильный пример.",
+                    "question_en": "Which sentence contains a relative clause?",
+                    "options": {
+                        "A": "She is tall.",
+                        "B": "The girl who won the race is my friend.",
+                        "C": "He plays football.",
+                        "D": "They are happy."
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_eng_q8",
+                    "question_uz": "'Reluctant' so'zining to'g'ri ta'rifini tanlang.",
+                    "question_ru": "Выберите правильное определение слова 'reluctant'.",
+                    "question_en": "Choose the correct definition of 'reluctant'.",
+                    "options": {
+                        "A": "Ishtiyoqli",
+                        "B": "Ishonchli",
+                        "C": "Ikkilanuvchi, istamaydigan",
+                        "D": "Quvnoq"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g7_eng_q9",
+                    "question_uz": "\"Neither the students nor the teacher ___ ready.\" To'g'ri fe'lni tanlang.",
+                    "question_ru": "Выберите правильный глагол: \"Neither the students nor the teacher ___ ready.\"",
+                    "question_en": "\"Neither the students nor the teacher ___ ready.\" Choose the correct verb.",
+                    "options": {
+                        "A": "are",
+                        "B": "were",
+                        "C": "was",
+                        "D": "is"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g7_eng_q10",
+                    "question_uz": "Qaysi so'z ravish (adverb)?",
+                    "question_ru": "Какое слово является наречием?",
+                    "question_en": "Which word is an adverb?",
+                    "options": {
+                        "A": "Slowly",
+                        "B": "Slow",
+                        "C": "Slowness",
+                        "D": "Slower"
+                    },
+                    "correct_answer": "A"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g7_eng_it1",
+                    "task_uz": "Siz mashhur ixtirochi sifatida intervyu berayapsiz. Jurnalist savollariga ingliz tilida javob bering: Nima ixtiro qildingiz? Nima uchun? U dunyoni qanday o'zgartiradi?",
+                    "task_ru": "Вы известный изобретатель и даёте интервью. Ответьте по-английски на вопросы журналиста: Что вы изобрели? Почему? Как это изменит мир?",
+                    "task_en": "You are a famous inventor giving an interview. Answer in English: What did you invent? Why? How will it change the world?",
+                    "skill": "creativity"
+                },
+                {
+                    "id": "g7_eng_it2",
+                    "task_uz": "Quyidagi gaplarni aktiv ovozdan passiv ovozga o'zgartiring: (1) The chef cooked the meal. (2) Students write essays. (3) They built the bridge in 1990.",
+                    "task_ru": "Переведите следующие предложения из активного в пассивный залог: (1) The chef cooked the meal. (2) Students write essays. (3) They built the bridge in 1990.",
+                    "task_en": "Convert from active to passive voice: (1) The chef cooked the meal. (2) Students write essays. (3) They built the bridge in 1990.",
+                    "skill": "analysis"
+                }
+            ]
+        },
+        {
+            "subject": "Biology",
+            "questions": [
+                {
+                    "id": "g7_bio_q1",
+                    "question_uz": "DNK nima va qayerda joylashgan?",
+                    "question_ru": "Что такое ДНК и где она находится?",
+                    "question_en": "What is DNA and where is it found?",
+                    "options": {
+                        "A": "Protein, sitoplazmada",
+                        "B": "Genetik material, hujayra yadrosi va mitoxondriyada",
+                        "C": "Ferment, membranada",
+                        "D": "Lipid, hujayra devorida"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_bio_q2",
+                    "question_uz": "Irsiyat qonunlarini kim kashf etgan?",
+                    "question_ru": "Кто открыл законы наследственности?",
+                    "question_en": "Who discovered the laws of heredity?",
+                    "options": {
+                        "A": "Charles Darwin",
+                        "B": "Louis Pasteur",
+                        "C": "Gregor Mendel",
+                        "D": "Robert Hooke"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g7_bio_q3",
+                    "question_uz": "Ekosistema nima?",
+                    "question_ru": "Что такое экосистема?",
+                    "question_en": "What is an ecosystem?",
+                    "options": {
+                        "A": "Faqat hayvonlar",
+                        "B": "Tirik organizmlar va ularning abiotic muhiti",
+                        "C": "Faqat o'simliklar",
+                        "D": "Faqat yer yuzasi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_bio_q4",
+                    "question_uz": "Fotosintezda kislorod qayerdan chiqadi?",
+                    "question_ru": "Откуда поступает кислород при фотосинтезе?",
+                    "question_en": "Where does the oxygen released during photosynthesis come from?",
+                    "options": {
+                        "A": "CO₂",
+                        "B": "H₂O",
+                        "C": "Glyukoza",
+                        "D": "Xlorofil"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_bio_q5",
+                    "question_uz": "Nerv tizimida signal uzatilishida qaysi hujayra ishtirok etadi?",
+                    "question_ru": "Какая клетка участвует в передаче сигналов в нервной системе?",
+                    "question_en": "Which cell transmits signals in the nervous system?",
+                    "options": {
+                        "A": "Eritrotsit",
+                        "B": "Neyron",
+                        "C": "Osteoblast",
+                        "D": "Miozit"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_bio_q6",
+                    "question_uz": "Biolandshaft mutanosibligini saqlashda qaysi jarayon muhim?",
+                    "question_ru": "Какой процесс важен для сохранения биологического равновесия?",
+                    "question_en": "Which process is key to maintaining biological balance in ecosystems?",
+                    "options": {
+                        "A": "Evaporation",
+                        "B": "Dekompozitsiya",
+                        "C": "Fotosintez",
+                        "D": "Diffuziya"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_bio_q7",
+                    "question_uz": "Meioz va mitoz o'rtasidagi asosiy farq nima?",
+                    "question_ru": "В чём основное различие между мейозом и митозом?",
+                    "question_en": "What is the main difference between meiosis and mitosis?",
+                    "options": {
+                        "A": "Meioz faqat o'simliqlarda",
+                        "B": "Meioz jinsiy hujayralarni, mitoz esa oddiy hujayralarni hosil qiladi",
+                        "C": "Mitoz faqat hayvonlarda",
+                        "D": "Hech qanday farq yo'q"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_bio_q8",
+                    "question_uz": "Qon tomir tizimida yurakning vazifasi nima?",
+                    "question_ru": "Какова роль сердца в кровеносной системе?",
+                    "question_en": "What is the role of the heart in the circulatory system?",
+                    "options": {
+                        "A": "Qonni tozalash",
+                        "B": "Kislorod ishlab chiqarish",
+                        "C": "Qonni organlar bo'yicha haydash",
+                        "D": "Ferment ishlab chiqarish"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g7_bio_q9",
+                    "question_uz": "Ozon qatlami nima uchun muhim?",
+                    "question_ru": "Почему важен озоновый слой?",
+                    "question_en": "Why is the ozone layer important?",
+                    "options": {
+                        "A": "Yomg'ir yog'diradi",
+                        "B": "UV nurlaridan himoya qiladi",
+                        "C": "Kislorod ishlab chiqaradi",
+                        "D": "Ob-havoni issiqlashtiradi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_bio_q10",
+                    "question_uz": "Adaptatsiya biologiyada nimani anglatadi?",
+                    "question_ru": "Что означает «адаптация» в биологии?",
+                    "question_en": "What does 'adaptation' mean in biology?",
+                    "options": {
+                        "A": "Irsiyat o'zgarishi",
+                        "B": "Organizmning muhitga moslashishi",
+                        "C": "Ko'payish jarayoni",
+                        "D": "Ovqatlanish turi"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g7_bio_it1",
+                    "task_uz": "Iqlim o'zgarishi qo'ng'ir ayiqning yashash muhitiga qanday ta'sir qiladi? Adaptatsiya va migratsiya haqida o'z fikringizni yozing.",
+                    "task_ru": "Как изменение климата влияет на среду обитания бурого медведя? Напишите своё мнение об адаптации и миграции.",
+                    "task_en": "How does climate change affect the brown bear's habitat? Share your ideas about adaptation and migration.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g7_bio_it2",
+                    "task_uz": "Oddiy oziq-ovqat veb (web) tuzing: 5 ta organizmni tanlang va ular orasidagi ovqatlanish munosabatlarini ko'rsating.",
+                    "task_ru": "Составьте простую пищевую сеть: выберите 5 организмов и покажите отношения питания между ними.",
+                    "task_en": "Create a simple food web: choose 5 organisms and show the feeding relationships between them.",
+                    "skill": "logic"
+                }
+            ]
+        },
+        {
+            "subject": "History",
+            "questions": [
+                {
+                    "id": "g7_hist_q1",
+                    "question_uz": "Sanoat inqilobi qayerda va qachon boshlangan?",
+                    "question_ru": "Где и когда началась промышленная революция?",
+                    "question_en": "Where and when did the Industrial Revolution begin?",
+                    "options": {
+                        "A": "Fransiya, XVIII asr",
+                        "B": "Angliya, XVIII-XIX asr",
+                        "C": "Germaniya, XIX asr",
+                        "D": "Amerika, XIX asr"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_hist_q2",
+                    "question_uz": "O'rta Osiyo xonliklaridan qaysi biri Rossiya istilosi oldidan eng kuchli bo'lgan?",
+                    "question_ru": "Какое из ханств Средней Азии было самым сильным накануне российского завоевания?",
+                    "question_en": "Which Central Asian khanate was the most powerful before Russian conquest?",
+                    "options": {
+                        "A": "Xiva",
+                        "B": "Qo'qon",
+                        "C": "Buxoro",
+                        "D": "Toshkent"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g7_hist_q3",
+                    "question_uz": "Napoleon Bonaparte qaysi mamlakatning imperatori bo'lgan?",
+                    "question_ru": "Императором какой страны был Наполеон Бонапарт?",
+                    "question_en": "Napoleon Bonaparte was the emperor of which country?",
+                    "options": {
+                        "A": "Italiya",
+                        "B": "Ispaniya",
+                        "C": "Angliya",
+                        "D": "Fransiya"
+                    },
+                    "correct_answer": "D"
+                },
+                {
+                    "id": "g7_hist_q4",
+                    "question_uz": "Magna Carta qaysi yilda imzolangan?",
+                    "question_ru": "В каком году была подписана Magna Carta?",
+                    "question_en": "In which year was the Magna Carta signed?",
+                    "options": {
+                        "A": "1066",
+                        "B": "1215",
+                        "C": "1348",
+                        "D": "1453"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_hist_q5",
+                    "question_uz": "O'zbekistonda sovet hokimiyati qachon o'rnatilgan?",
+                    "question_ru": "Когда в Узбекистане была установлена советская власть?",
+                    "question_en": "When was Soviet power established in Uzbekistan?",
+                    "options": {
+                        "A": "1917",
+                        "B": "1918",
+                        "C": "1920",
+                        "D": "1924"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g7_hist_q6",
+                    "question_uz": "Birinchi Jahon urushining boshlanishiga sabab bo'lgan voqea qaysi?",
+                    "question_ru": "Какое событие послужило причиной начала Первой мировой войны?",
+                    "question_en": "Which event triggered the start of World War I?",
+                    "options": {
+                        "A": "Hitler Avstriyani bosib olishi",
+                        "B": "Sarajevoda Frantz Ferdinandning o'ldirilishi",
+                        "C": "Fransiyaning Germaniyaga hujumi",
+                        "D": "Rus inqilobi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_hist_q7",
+                    "question_uz": "\"Odamlar huquqlari to'g'risida deklaratsiya\" qaysi inqilob davomida qabul qilingan?",
+                    "question_ru": "Во время какой революции была принята «Декларация прав человека»?",
+                    "question_en": "During which revolution was the 'Declaration of the Rights of Man' adopted?",
+                    "options": {
+                        "A": "Amerika inqilobi",
+                        "B": "Fransuz inqilobi",
+                        "C": "Rus inqilobi",
+                        "D": "Ingliz inqilobi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_hist_q8",
+                    "question_uz": "\"Pax Mongolica\" nima edi?",
+                    "question_ru": "Что такое «Pax Mongolica»?",
+                    "question_en": "What was the 'Pax Mongolica'?",
+                    "options": {
+                        "A": "Mo'g'ul harbiy qonuni",
+                        "B": "Mo'g'ul imperiyasida tinchlik va savdo davri",
+                        "C": "Mo'g'ullarning dini",
+                        "D": "Mo'g'ul tili"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_hist_q9",
+                    "question_uz": "Nima uchun Rossiya imperiyasi O'rta Osiyoni bosib olgan?",
+                    "question_ru": "Почему Российская империя завоевала Среднюю Азию?",
+                    "question_en": "Why did the Russian Empire conquer Central Asia in the 19th century?",
+                    "options": {
+                        "A": "Diniy sabablar",
+                        "B": "Savdo yo'llari, xom ashyo va strategik manfaatlar",
+                        "C": "Iqlimiy sharoitlar",
+                        "D": "Aholini qutqarish"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_hist_q10",
+                    "question_uz": "Amerikanın mustaqillik deklaratsiyasi qachon qabul qilingan?",
+                    "question_ru": "Когда была принята Декларация независимости США?",
+                    "question_en": "When was the American Declaration of Independence adopted?",
+                    "options": {
+                        "A": "1774",
+                        "B": "1775",
+                        "C": "1776",
+                        "D": "1783"
+                    },
+                    "correct_answer": "C"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g7_hist_it1",
+                    "task_uz": "Sanoat inqilobi odamlarning hayotini qanday o'zgartirdi? Musbat va salbiy tomonlarini sanab, o'z fikringizni yozing.",
+                    "task_ru": "Как промышленная революция изменила жизнь людей? Перечислите положительные и отрицательные стороны и выразите своё мнение.",
+                    "task_en": "How did the Industrial Revolution change people's lives? List positive and negative effects and share your opinion.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g7_hist_it2",
+                    "task_uz": "Agar siz 1215-yilda ingliz baron bo'lsangiz va Magna Carta imzolanishini xohlasangiz, qirolga qanday argument keltirgan bo'lar edingiz?",
+                    "task_ru": "Если бы вы были английским бароном в 1215 году и хотели подписания Magna Carta, какие аргументы вы привели бы королю?",
+                    "task_en": "If you were an English baron in 1215 wanting Magna Carta signed, what arguments would you make to the king?",
+                    "skill": "creativity"
+                }
+            ]
+        },
+        {
+            "subject": "Informatics",
+            "questions": [
+                {
+                    "id": "g7_inf_q1",
+                    "question_uz": "Dasturlashda 'loop' (tsikl) nima?",
+                    "question_ru": "Что такое «цикл» (loop) в программировании?",
+                    "question_en": "What is a loop in programming?",
+                    "options": {
+                        "A": "O'zgaruvchi turi",
+                        "B": "Biror shartgacha takrorlanuvchi amallar ketma-ketligi",
+                        "C": "Ma'lumotlar to'plami",
+                        "D": "Funksiya nomi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_inf_q2",
+                    "question_uz": "CSS nimani boshqaradi?",
+                    "question_ru": "Чем управляет CSS?",
+                    "question_en": "What does CSS control?",
+                    "options": {
+                        "A": "Ma'lumotlar bazasi",
+                        "B": "Veb-sahifaning ko'rinishi va dizayn",
+                        "C": "Server-tomon mantiq",
+                        "D": "Tarmoq ulanishi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_inf_q3",
+                    "question_uz": "Python dasturlash tili nimaga ko'proq ishlatiladi?",
+                    "question_ru": "Для чего чаще всего используется язык программирования Python?",
+                    "question_en": "Python programming language is most commonly used for:",
+                    "options": {
+                        "A": "Faqat o'yin yaratish",
+                        "B": "Ma'lumot tahlili, veb, AI va avtomatlashtirish",
+                        "C": "Faqat veb-dizayn",
+                        "D": "Faqat mobil ilovalar"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_inf_q4",
+                    "question_uz": "Ma'lumotlar bazasida jadval (table) nima?",
+                    "question_ru": "Что такое таблица в базе данных?",
+                    "question_en": "What is a table in a database?",
+                    "options": {
+                        "A": "Rasmlar to'plami",
+                        "B": "Satr va ustunlarda tashkil etilgan ma'lumotlar to'plami",
+                        "C": "Kod bloki",
+                        "D": "Fayl tizimi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_inf_q5",
+                    "question_uz": "TCP/IP nima?",
+                    "question_ru": "Что такое TCP/IP?",
+                    "question_en": "What is TCP/IP?",
+                    "options": {
+                        "A": "Dasturlash tili",
+                        "B": "Internet orqali ma'lumot uzatish protokollari to'plami",
+                        "C": "Antivirus dastur",
+                        "D": "Klaviatura turlari"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_inf_q6",
+                    "question_uz": "Rekursiya dasturlashda nimani anglatadi?",
+                    "question_ru": "Что означает рекурсия в программировании?",
+                    "question_en": "What does recursion mean in programming?",
+                    "options": {
+                        "A": "Dasturni o'chirish",
+                        "B": "Funksiyaning o'zini o'zi chaqirishi",
+                        "C": "Xota xabar",
+                        "D": "Tsikl yaratish"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_inf_q7",
+                    "question_uz": "Kiberhavfsizlikda 'phishing' nima?",
+                    "question_ru": "Что такое «фишинг» в кибербезопасности?",
+                    "question_en": "What is 'phishing' in cybersecurity?",
+                    "options": {
+                        "A": "Baliq ovlash o'yini",
+                        "B": "Aldov orqali shaxsiy ma'lumotlarni o'g'irlash",
+                        "C": "Antivirus dastur turi",
+                        "D": "Dasturiy xato"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_inf_q8",
+                    "question_uz": "OOP (ob'ektga yo'naltirilgan dasturlash) ning asosiy tushunchalari qaysilar?",
+                    "question_ru": "Каковы основные понятия ООП (объектно-ориентированного программирования)?",
+                    "question_en": "What are the main concepts of OOP?",
+                    "options": {
+                        "A": "Tsikl, shart, o'zgaruvchi",
+                        "B": "Sinf, ob'ekt, meros, inkapsulatsiya",
+                        "C": "Ro'yxat, lug'at, to'plam",
+                        "D": "Funktsiya, argument, qaytish qiymati"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_inf_q9",
+                    "question_uz": "Qanday turdagi ma'lumotlar bazasi eng keng tarqalgan?",
+                    "question_ru": "Какой тип баз данных является наиболее распространённым?",
+                    "question_en": "What type of database is most widely used?",
+                    "options": {
+                        "A": "Ierarxik",
+                        "B": "Tarmoqsimon",
+                        "C": "Relyatsion",
+                        "D": "Ob'ektga yo'naltirilgan"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g7_inf_q10",
+                    "question_uz": "\"for i in range(5): print(i)\" Python kodi nima chiqaradi?",
+                    "question_ru": "Что выведет код Python: \"for i in range(5): print(i)\"?",
+                    "question_en": "What does the Python code \"for i in range(5): print(i)\" output?",
+                    "options": {
+                        "A": "1 2 3 4 5",
+                        "B": "0 1 2 3 4",
+                        "C": "0 1 2 3 4 5",
+                        "D": "1 2 3 4"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g7_inf_it1",
+                    "task_uz": "Raqamli dunyodagi «raqamli savodxonlik» nima? Siz bu sohadagi bilimlaringizni qanday rivojlantirasiz? O'z fikringizni 4-5 gapda yozing.",
+                    "task_ru": "Что такое «цифровая грамотность» в современном мире? Как вы развиваете свои знания в этой области? Напишите 4-5 предложений.",
+                    "task_en": "What is 'digital literacy' in the modern world? How do you develop your skills in this area? Write 4-5 sentences.",
+                    "skill": "creativity"
+                },
+                {
+                    "id": "g7_inf_it2",
+                    "task_uz": "Quyidagi pseudo-kodni baholang va nima uchun yaxshi yoki yomon ekanini tushuntiring: IF score > 90 THEN grade = 'A' ELSE IF score > 70 THEN grade = 'B' ELSE grade = 'C'.",
+                    "task_ru": "Оцените следующий псевдокод и объясните, почему он хорош или плох: IF score > 90 THEN grade = 'A' ELSE IF score > 70 THEN grade = 'B' ELSE grade = 'C'.",
+                    "task_en": "Evaluate the following pseudocode and explain whether it is good or bad: IF score > 90 THEN grade = 'A' ELSE IF score > 70 THEN grade = 'B' ELSE grade = 'C'.",
+                    "skill": "logic"
+                }
+            ]
+        }
+    ]
+}

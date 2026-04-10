@@ -1,0 +1,762 @@
+{
+    "grade": 10,
+    "part": 2,
+    "subjects": [
+        {
+            "subject": "Native Language (Uzbek)",
+            "questions": [
+                {
+                    "id": "g10_uzb_q1",
+                    "question_uz": "O'zbek tili tarixiy rivojlanishi qanday bosqichlardan o'tgan?",
+                    "question_ru": "Через какие этапы прошло историческое развитие узбекского языка?",
+                    "question_en": "What are the historical stages of development of the Uzbek language?",
+                    "options": {
+                        "A": "Faqat ikki bosqich",
+                        "B": "Qadimgi turkiy, o'rta turkiy, eski o'zbek va zamonaviy o'zbek tili bosqichlari",
+                        "C": "Arab tili ta'sirida shakllangan",
+                        "D": "Fors tili asosida yaratilgan"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_uzb_q2",
+                    "question_uz": "\"Publitsistik uslub\" qanday matnlarda qo'llaniladi?",
+                    "question_ru": "В каких текстах используется публицистический стиль?",
+                    "question_en": "In what types of texts is the publicistic style used?",
+                    "options": {
+                        "A": "Ilmiy maqolalar",
+                        "B": "Gazeta, jurnal, ommaviy nutq — ijtimoiy muammolarni o'rganuvchi matntlar",
+                        "C": "Rasmiy hujjatlar",
+                        "D": "Badiiy asarlar"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_uzb_q3",
+                    "question_uz": "\"Diskurs tahlili\" nima?",
+                    "question_ru": "Что такое дискурс-анализ?",
+                    "question_en": "What is discourse analysis?",
+                    "options": {
+                        "A": "So'z tahlili",
+                        "B": "Matn va nutqni ijtimoiy va madaniy kontekstda o'rganish",
+                        "C": "Grammatika qoidalari",
+                        "D": "She'r tuzilishi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_uzb_q4",
+                    "question_uz": "Zamonaviy o'zbek adabiyotida postmodernizm xususiyatlari qaysilar?",
+                    "question_ru": "Каковы черты постмодернизма в современной узбекской литературе?",
+                    "question_en": "What are the features of postmodernism in modern Uzbek literature?",
+                    "options": {
+                        "A": "An'anaviy milliy ruh",
+                        "B": "Intertekstuallik, ironia, an'analar bilan muloqot ko'rinishida ishlash",
+                        "C": "Romantizm",
+                        "D": "Klassik she'r shakllari"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_uzb_q5",
+                    "question_uz": "\"Manzum hikoya\" (balad) nima?",
+                    "question_ru": "Что такое стихотворная история (баллад)?",
+                    "question_en": "What is a ballad in Uzbek literature?",
+                    "options": {
+                        "A": "Faqat musiqiy asar",
+                        "B": "Qahramonlik yoki dramaviy voqeani tasvirlovchi she'riy asar",
+                        "C": "Hajviy she'r",
+                        "D": "Lirik she'r"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_uzb_q6",
+                    "question_uz": "O'zbek tilidagi \"kalkalar\" nima?",
+                    "question_ru": "Что такое «кальки» в узбекском языке?",
+                    "question_en": "What are 'calques' (loan translations) in Uzbek?",
+                    "options": {
+                        "A": "Rus tilidan olingan so'zlar",
+                        "B": "Chet tilidagi so'zning element-hujayra bilan tarjimasi yordamida yaratilgan so'z",
+                        "C": "Eskirgan so'zlar",
+                        "D": "Dialekt so'zlari"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_uzb_q7",
+                    "question_uz": "Abdulla Oripovning «O'zbegim» she'ridagi asosiy mavzu?",
+                    "question_ru": "Какова главная тема стихотворения Абдуллы Орипова «Ўзбегим»?",
+                    "question_en": "What is the main theme of Abdulla Oripov's poem 'O'zbegim'?",
+                    "options": {
+                        "A": "Tabiat va yillar fasli",
+                        "B": "Milliy vatanparvarlik, o'zbek xalqiga muhabbat",
+                        "C": "Ilmiy-texnik taraqqiyot",
+                        "D": "Siyosiy tanqid"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_uzb_q8",
+                    "question_uz": "O'zbek tilidagi \"istiloh\" nima?",
+                    "question_ru": "Что такое «термин» в узбекском языке?",
+                    "question_en": "What is a 'term' (istiloh) in Uzbek?",
+                    "options": {
+                        "A": "Umumiy so'z",
+                        "B": "Ma'lum fan yoki kasbga tegishli maxsus ma'noli so'z",
+                        "C": "Eskirgan so'z",
+                        "D": "Dialekt so'zi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_uzb_q9",
+                    "question_uz": "\"Ijodiy yozish\" darslarida nima o'rgatiladi?",
+                    "question_ru": "Чему учат на уроках «творческого письма»?",
+                    "question_en": "What is taught in 'creative writing' classes?",
+                    "options": {
+                        "A": "Grammatika qoidalari",
+                        "B": "Original fikrni badiiy va ta'sirchan tarzda ifodalash ko'nikmalari",
+                        "C": "Imlo qoidalari",
+                        "D": "Matn tarjima"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_uzb_q10",
+                    "question_uz": "\"Maqola\" janri nima va u kimlar uchun mo'ljallangan?",
+                    "question_ru": "Что такое жанр «статьи» и для кого он предназначен?",
+                    "question_en": "What is the 'article' genre and who is it for?",
+                    "options": {
+                        "A": "Faqat bolalar uchun",
+                        "B": "Muayyan mavzu bo'yicha ommaviy yoki ilmiy auditoriya uchun analitik matn",
+                        "C": "Faqat o'quvchilar uchun",
+                        "D": "Faqat mutaxassislar uchun"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g10_uzb_it1",
+                    "task_uz": "O'zbek tilining joriy rivojlanishiga texnologiya va ijtimoiy tarmoqlar qanday ta'sir ko'rsatmoqda? Yangi so'zlar, neologizmlar va tildagi o'zgarishlarni tahlil qiling.",
+                    "task_ru": "Как технологии и социальные сети влияют на современное развитие узбекского языка? Проанализируйте новые слова, неологизмы и изменения в языке.",
+                    "task_en": "How are technology and social media influencing the current development of the Uzbek language? Analyse new words, neologisms, and language changes.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g10_uzb_it2",
+                    "task_uz": "O'zbek adabiyotida milliy o'zlik konsepsiyasini ifodalovchi biror asarni tahlil qiling va uning bugungi kunday ahamiyatini 300 so'zda yozing.",
+                    "task_ru": "Проанализируйте произведение узбекской литературы, отражающее концепцию национальной идентичности, и напишите о его значении для сегодняшнего дня (300 слов).",
+                    "task_en": "Analyse a work of Uzbek literature that reflects the concept of national identity and write about its relevance today (300 words).",
+                    "skill": "creativity"
+                }
+            ]
+        },
+        {
+            "subject": "Russian",
+            "questions": [
+                {
+                    "id": "g10_rus_q1",
+                    "question_uz": "Rus modernizm adabiyotining vakillari kim?",
+                    "question_ru": "Кто являются представителями русского модернизма?",
+                    "question_en": "Who are the representatives of Russian modernist literature?",
+                    "options": {
+                        "A": "Tolstoy va Dostoevskiy",
+                        "B": "Blok, Akhmatova, Tsvetaeva, Pasternak",
+                        "C": "Pushkin va Lermontov",
+                        "D": "Chekhov va Turgenev"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_rus_q2",
+                    "question_uz": "'Серебряный век' nima?",
+                    "question_ru": "Что такое «Серебряный век» русской литературы?",
+                    "question_en": "What is the 'Silver Age' of Russian literature?",
+                    "question_en": "What was the 'Silver Age' of Russian literature?",
+                    "options": {
+                        "A": "XIX asr adabiyoti",
+                        "B": "XX asr boshi (1890-1925) — simvolizm, akmeizm, futurizm davri",
+                        "C": "Sovet yozuvchilari davri",
+                        "D": "XXI asr davri"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_rus_q3",
+                    "question_uz": "Rus tilida argumentativ matn yozishda qanday strategiyalar qo'llaniladi?",
+                    "question_ru": "Какие стратегии используются при написании аргументативного текста на русском языке?",
+                    "question_en": "What strategies are used when writing an argumentative text in Russian?",
+                    "options": {
+                        "A": "Faqat misollar keltirish",
+                        "B": "Tezis, argument, dalil, xulosa tuzilmasi; pozitsiyani asoslash",
+                        "C": "Faqat savol berish",
+                        "D": "Faqat tasviriy uslub"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_rus_q4",
+                    "question_uz": "Pasternakning 'Doktor Jivago' asaridagi asosiy mavzu?",
+                    "question_ru": "Какова главная тема романа Пастернака «Доктор Живаго»?",
+                    "question_en": "What is the main theme of Pasternak's 'Doctor Zhivago'?",
+                    "options": {
+                        "A": "Harbiy voqealar",
+                        "B": "Inqilob va tarix zarbasida inson, muhabbat va ijodkorlik erkinligi",
+                        "C": "Ilmiy kashfiyotlar",
+                        "D": "Tarixiy inqilob tasviriy qahramonliklar"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_rus_q5",
+                    "question_uz": "Rus tilida «перифраз» nima?",
+                    "question_ru": "Что такое перифраз в русском языке?",
+                    "question_en": "What is a periphrasis in Russian?",
+                    "options": {
+                        "A": "So'zning antonimi",
+                        "B": "So'z yoki tushunchani bevosita aytmay, tasviriy so'z birikmasi bilan ifodalash",
+                        "C": "Grammatik qoida",
+                        "D": "Janr nomi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_rus_q6",
+                    "question_uz": "Rus tiliga chet tilidan o'zlashgan so'zlar qanday nomlanadi?",
+                    "question_ru": "Как называются слова, заимствованные в русском языке из иностранных языков?",
+                    "question_en": "What are words borrowed from foreign languages in Russian called?",
+                    "options": {
+                        "A": "Antonimlар",
+                        "B": "Zaimstvovaniya (o'zlashma so'zlar)",
+                        "C": "Neologizmlar",
+                        "D": "Arxaizmlar"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_rus_q7",
+                    "question_uz": "Futurizmning rus adabiyotidagi roli?",
+                    "question_ru": "Какова роль футуризма в русской литературе?",
+                    "question_en": "What was the role of futurism in Russian literature?",
+                    "options": {
+                        "A": "Klassik an'analarga qaytish",
+                        "B": "Tilni yangilash, shakl bilan eksperiment, an'analarni inkor etish",
+                        "C": "Diniy mavzularga murojaat",
+                        "D": "Realistik tasvirlash"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_rus_q8",
+                    "question_uz": "Bulgakov hayot davomida 'Master i Margarita' qay tarzda yaratdi?",
+                    "question_ru": "Как Булгаков создавал роман «Мастер и Маргарита» при жизни?",
+                    "question_en": "How did Bulgakov work on 'The Master and Margarita' during his lifetime?",
+                    "options": {
+                        "A": "Tez yozdi va nashr etdi",
+                        "B": "Yillar davomida yozdi, chet-bichishlarni yasar edi, vafotidan keyin nashr etildi",
+                        "C": "Yordamchilar bilan yozdi",
+                        "D": "Sovet davlati buyurtmasida yozdi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_rus_q9",
+                    "question_uz": "Rus tilida «языковая норма» nima?",
+                    "question_ru": "Что такое «языковая норма» в русском языке?",
+                    "question_en": "What is a 'language norm' in Russian?",
+                    "options": {
+                        "A": "So'zlarning lug'atdagi tartibi",
+                        "B": "Til me'yorlari — talaffuz, yozuv, grammatika qoidalari to'plami",
+                        "C": "Tilning tarixiy rivojlanishi",
+                        "D": "Dialektlar to'plami"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_rus_q10",
+                    "question_uz": "Nabokovning «Lolita» asarida uslubiy xususiyat nima?",
+                    "question_ru": "Каков стилистический приём в романе Набокова «Лолита»?",
+                    "question_en": "What is a key stylistic feature of Nabokov's 'Lolita'?",
+                    "options": {
+                        "A": "Oddiy va lo'nda nasr",
+                        "B": "Ishonchsiz ravishchi, boyitilgan uslub, til bilan o'yinlar",
+                        "C": "Tarixiy hujjat uslubi",
+                        "D": "She'riy proza"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g10_rus_it1",
+                    "task_uz": "\"Doktor Jivago\" asari orqali inqilob davri insoni qiymatlarining siniqishini tahlil qiling. O'zingizning pozitsiyangizni rus tilida 200 so'z bilan ifodalang.",
+                    "task_ru": "Через роман «Доктор Живаго» проанализируйте разрушение ценностей человека времён революции. Выразите свою позицию на русском языке — 200 слов.",
+                    "task_en": "Through 'Doctor Zhivago', analyse the breakdown of individual values during the revolution era. Express your view in Russian — 200 words.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g10_rus_it2",
+                    "task_uz": "Rus tilida 'Silver Age' shoirlari uslubida kichik she'r yozing (8-12 misra). Simvolizm yoki akmeizmdan ilhomlaning.",
+                    "task_ru": "Напишите небольшое стихотворение в стиле поэтов «Серебряного века» на русском (8-12 строк). Вдохновитесь символизмом или акмеизмом.",
+                    "task_en": "Write a short poem in Russian (8-12 lines) in the style of Silver Age poets. Draw inspiration from symbolism or acmeism.",
+                    "skill": "creativity"
+                }
+            ]
+        },
+        {
+            "subject": "Literature",
+            "questions": [
+                {
+                    "id": "g10_lit_q1",
+                    "question_uz": "\"Kafkian\" iborasi nima anglatadi?",
+                    "question_ru": "Что означает выражение «кафкианский»?",
+                    "question_en": "What does 'Kafkaesque' mean?",
+                    "options": {
+                        "A": "Aniq va oddiy",
+                        "B": "Buyurokratik, mantiqsiz va dahshatli vaziyatlarni tasvirlash",
+                        "C": "Qahramonlik epizodlari",
+                        "D": "Romantik his-hayajon"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_lit_q2",
+                    "question_uz": "Modernizm adabiyotining asosiy xususiyatlari?",
+                    "question_ru": "Каковы основные черты модернизма в литературе?",
+                    "question_en": "What are the main characteristics of modernism in literature?",
+                    "options": {
+                        "A": "Tarixiy voqealarni tasvirlash",
+                        "B": "Eksperiment, shuʻur oqimi, ob'ektivlik inqirozi, ichki dunyo",
+                        "C": "Romantik ideal",
+                        "D": "Klassik shakl va qoida"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_lit_q3",
+                    "question_uz": "\"Dantening Ilohiy Komediyasi\" qanday tuzilgan?",
+                    "question_ru": "Как устроена «Божественная комедия» Данте?",
+                    "question_en": "How is Dante's 'Divine Comedy' structured?",
+                    "options": {
+                        "A": "Ikki qism: osmonu zamin",
+                        "B": "Uch qism: Jahannam, Purgatoriy, Jannat",
+                        "C": "To'rt qism: to'rt fasl",
+                        "D": "Bitta uzluksiz she'r"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_lit_q4",
+                    "question_uz": "'Magic realism' adabiy uslubi nima?",
+                    "question_ru": "Что такое литературный стиль «магического реализма»?",
+                    "question_en": "What is the literary style of 'magic realism'?",
+                    "options": {
+                        "A": "Fantastik fan-fiction",
+                        "B": "Haqiqiy voqealar bilan sehrliy elementlar uyg'un birlashgan tasviriylik",
+                        "C": "Tarixiy hujjat uslubi",
+                        "D": "Absurd teatr uslubi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_lit_q5",
+                    "question_uz": "Gabriel Garcia Marquez qaysi asari bilan mashhur?",
+                    "question_ru": "Чем известен Габриэль Гарсиа Маркес?",
+                    "question_en": "What is Gabriel García Márquez most famous for?",
+                    "options": {
+                        "A": "1984",
+                        "B": "Yuz yillik yolg'izlik (One Hundred Years of Solitude)",
+                        "C": "Don Kixot",
+                        "D": "Kichkina shahzoda"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_lit_q6",
+                    "question_uz": "O'zbek adabiyotida postsovet davri qanday xususiyatlarga ega?",
+                    "question_ru": "Каковы особенности постсоветской эпохи в узбекской литературе?",
+                    "question_en": "What characterises the post-Soviet era in Uzbek literature?",
+                    "options": {
+                        "A": "Sovet davri mafkurasining davomi",
+                        "B": "Milliy o'zlikni qayta anglash, janrlar xilma-xilligi, global ta'sirlar",
+                        "C": "Faqat klassik she'r shakllari",
+                        "D": "Tarixiy eposlarga qaytish"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_lit_q7",
+                    "question_uz": "Tragik qahramon (tragic hero) nimaning timsoli?",
+                    "question_ru": "Олицетворением чего является трагический герой?",
+                    "question_en": "What does a tragic hero embody?",
+                    "options": {
+                        "A": "Kamolot va g'alaba",
+                        "B": "Ulug'lik va zaiflik, aybli nuqson va fojiaviy qismat",
+                        "C": "Yovuz kuch",
+                        "D": "Kulgili xarakter"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_lit_q8",
+                    "question_uz": "Toni Morrisonning Seul (Beloved) asarida qanday mavzu ko'tarilgan?",
+                    "question_ru": "Какая тема поднята в романе Тони Моррисон «Возлюбленная»?",
+                    "question_en": "What theme is central to Toni Morrison's 'Beloved'?",
+                    "options": {
+                        "A": "Sevgi va romance",
+                        "B": "Quldorlik, travma, ozodlik va identitet",
+                        "C": "Ilmiy texnologiya",
+                        "D": "Qahramonlik va jang"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_lit_q9",
+                    "question_uz": "'Unreliable narrator' adabiyotda nima?",
+                    "question_ru": "Что такое «ненадёжный рассказчик» в литературе?",
+                    "question_en": "What is an 'unreliable narrator' in literature?",
+                    "options": {
+                        "A": "Professional yozuvchi",
+                        "B": "Hikoya etuvchi shaxs — uning bilim, qiziqish yoki niyati o'quvchiga shubha tug'diradi",
+                        "C": "Asarning asosiy qahramoni",
+                        "D": "Muallif alter ego"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_lit_q10",
+                    "question_uz": "Hamid Sulaymon qaysi asarning muallifi?",
+                    "question_ru": "Автором какого произведения является Хамид Сулаймон?",
+                    "question_en": "Which work was authored by Hamid Sulaymon?",
+                    "options": {
+                        "A": "Kecha va kunduz",
+                        "B": "Zarafshon to'lqinlari",
+                        "C": "Sarob",
+                        "D": "O'tkan kunlar"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g10_lit_it1",
+                    "task_uz": "'Yuz yillik yolg'izlik' asarida Buendia oilasining takroran takrorlanib boruvchi kasalliklari allegoriyasi nima anglatadi? Kolonial tarix, taqdirniing davriyligi va individual erkinlik nuqtai nazaridan tahlil qiling.",
+                    "task_ru": "Что означает аллегория повторяющихся пороков семьи Буэндиа в «Ста годах одиночества»? Проанализируйте с точки зрения колониальной истории, цикличности судьбы и индивидуальной свободы.",
+                    "task_en": "What does the recurring family curse in 'One Hundred Years of Solitude' allegorise? Analyse from the perspectives of colonial history, cyclical fate, and individual freedom.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g10_lit_it2",
+                    "task_uz": "O'z zamonaviy Tashkent hayotingizni magic realism uslubida qisqa hikoya orqali (200 so'z) tasvirlab bering.",
+                    "task_ru": "Опишите свою современную жизнь в Ташкенте в стиле магического реализма (короткий рассказ, 200 слов).",
+                    "task_en": "Describe your contemporary life in Tashkent using magic realism style (short story, 200 words).",
+                    "skill": "creativity"
+                }
+            ]
+        },
+        {
+            "subject": "Physics",
+            "questions": [
+                {
+                    "id": "g10_phy_q1",
+                    "question_uz": "\"String nazariyasi\" nima?",
+                    "question_ru": "Что такое «теория суперструн»?",
+                    "question_en": "What is string theory?",
+                    "options": {
+                        "A": "Musiqa nazariyasi",
+                        "B": "Barcha fundamental zarrachalar bir o'lchovli vibrating ipchalardan iborat deb faraz qiluvchi fizika nazariyasi",
+                        "C": "Elektrodinamika",
+                        "D": "Kvant nazariyasi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_phy_q2",
+                    "question_uz": "Plank konstantasi (h) nima uchun ishlatiladi?",
+                    "question_ru": "Для чего используется постоянная Планка (h)?",
+                    "question_en": "What is the Planck constant (h) used for?",
+                    "options": {
+                        "A": "Yorug'lik tezligini o'lchash",
+                        "B": "Kvant mexanikasida energiya va chastota orasidagi bog'liqlikni ifodalash",
+                        "C": "Tortishish kuchini hisoblash",
+                        "D": "Harorat o'lchash"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_phy_q3",
+                    "question_uz": "\"Siyoh moddasi\" (Dark Matter) nima?",
+                    "question_ru": "Что такое «тёмная материя» (Dark Matter)?",
+                    "question_en": "What is dark matter?",
+                    "options": {
+                        "A": "Qora rangli tosh",
+                        "B": "Kuzatiladigan bo'lmagan, lekin bo'shliq orqali tortishish kuchi bilan aniqlanuvchi massa",
+                        "C": "Yadro reaktsiyasi mahsuli",
+                        "D": "Yorug'lik to'sqinlovchi gaz"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_phy_q4",
+                    "question_uz": "Kvant entanglamenti (Quantum Entanglement) nima?",
+                    "question_ru": "Что такое квантовая запутанность?",
+                    "question_en": "What is quantum entanglement?",
+                    "options": {
+                        "A": "Elektronlar to'qnashuvi",
+                        "B": "Ikkita zarrachaning o'zaro bog'langan holati — birining o'zgarishi ikkinchisiga tezda ta'sir qiladi",
+                        "C": "Magnit maydon hodisasi",
+                        "D": "Yadro bo'linishi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_phy_q5",
+                    "question_uz": "Termoyadroviy qo'shilish reaktsiyasi (fusion) qachon tijorat miqyosida amalga oshirilishi kutilmoqda?",
+                    "question_ru": "Когда ожидается коммерческая реализация термоядерного синтеза?",
+                    "question_en": "When is commercial nuclear fusion expected to become viable?",
+                    "options": {
+                        "A": "Hozir allaqachon",
+                        "B": "2040-2070 yillarda, agar rejalar bajarilsa",
+                        "C": "XXI asr oxirida",
+                        "D": "Hech qachon"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_phy_q6",
+                    "question_uz": "Fizika va falsafaning kesishgan nuqtasi qaysi?",
+                    "question_ru": "В какой точке пересекаются физика и философия?",
+                    "question_en": "Where does physics intersect with philosophy?",
+                    "options": {
+                        "A": "Ixtisosliklar bir-biriga aloqasiz",
+                        "B": "Borliq, vaqt, sababiyat, kuzatuvchi roli kabi ontologik savollar",
+                        "C": "Faqat metafizika",
+                        "D": "Faqat etika"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_phy_q7",
+                    "question_uz": "Foton nima va u qanday harakat qiladi?",
+                    "question_ru": "Что такое фотон и как он движется?",
+                    "question_en": "What is a photon and how does it move?",
+                    "options": {
+                        "A": "To'lqin turi",
+                        "B": "Yorug'likning kvanti — massasiz zarracha bo'lib, vakuumda c=3×10⁸ m/s tezlikda harakat qiladi",
+                        "C": "Elektron turi",
+                        "D": "Magnit zarrachasi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_phy_q8",
+                    "question_uz": "\"Kvant kompyuteri\" klassik kompyuterdan nima bilan farq qiladi?",
+                    "question_ru": "Чем квантовый компьютер отличается от классического?",
+                    "question_en": "How does a quantum computer differ from a classical computer?",
+                    "options": {
+                        "A": "Tezroq ishlab chiqarishda",
+                        "B": "Qubitlar superpozitsiya va qo'shilishidan foydalanadi — muayyan hisob-kitoblarda eksponent ustunlik beradi",
+                        "C": "Kichikroq o'lchamda",
+                        "D": "Faqat raqamli ma'lumotlar uchun"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_phy_q9",
+                    "question_uz": "\"Olam kengayishi\" haqida birinchi kim taxmin qilgan?",
+                    "question_ru": "Кто первым предположил расширение Вселенной?",
+                    "question_en": "Who first proposed the expansion of the universe?",
+                    "options": {
+                        "A": "Albert Einstein",
+                        "B": "Edwin Hubble (kuzatish orqali) va Aleksandr Fridman (matematik modelling)",
+                        "C": "Stephen Hawking",
+                        "D": "Isaac Newton"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_phy_q10",
+                    "question_uz": "Neytron yulduzi nima?",
+                    "question_ru": "Что такое нейтронная звезда?",
+                    "question_en": "What is a neutron star?",
+                    "options": {
+                        "A": "G'ayritabiiy qorong'u jism",
+                        "B": "Portlagan massiv yulduz qoldig'i — neytronlardan iborat, g'oyatda zich",
+                        "C": "Qora tuynuk turi",
+                        "D": "Yangi yulduz"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g10_phy_it1",
+                    "task_uz": "Nazariy fizikada \"Grand Unified Theory\" (GUT) nima uchun zarur deb hisoblanadi? Zamonaviy fizikaning yechimsiz muammolarini tahlil qiling.",
+                    "task_ru": "Почему в теоретической физике важна «Великая объединённая теория» (GUT)? Проанализируйте нерешённые проблемы современной физики.",
+                    "task_en": "Why is a 'Grand Unified Theory' (GUT) considered necessary in theoretical physics? Analyse the unsolved problems of modern physics.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g10_phy_it2",
+                    "task_uz": "Agar siz yosh fizik olim bo'lsangiz va laboratoringizda kvant hodisasini kuzatsangiz, buni qanday tushuntirardingiz? Fantastik va ilmiy chegarada g'oya yarating.",
+                    "task_ru": "Если бы вы были молодым учёным-физиком и наблюдали квантовое явление в лаборатории, как бы вы его объяснили? Создайте идею на грани фантастики и науки.",
+                    "task_en": "If you were a young physicist who observed a quantum phenomenon in your lab, how would you explain it? Create an idea on the boundary of science and imagination.",
+                    "skill": "creativity"
+                }
+            ]
+        },
+        {
+            "subject": "Chemistry",
+            "questions": [
+                {
+                    "id": "g10_chem_q1",
+                    "question_uz": "Farmatsevtika kimyosi nima?",
+                    "question_ru": "Что такое фармацевтическая химия?",
+                    "question_en": "What is pharmaceutical chemistry?",
+                    "options": {
+                        "A": "Oziq-ovqat kimyosi",
+                        "B": "Dori moddalari kashf etilishi, sintezi va tahlili bilan shug'ullanuvchi kimyo sohasi",
+                        "C": "Yadroviy kimyo",
+                        "D": "Analitik kimyo"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_chem_q2",
+                    "question_uz": "Chirishi (decomposition) reaktsiyasida nima sodir bo'ladi?",
+                    "question_ru": "Что происходит в реакции разложения?",
+                    "question_en": "What happens in a decomposition reaction?",
+                    "options": {
+                        "A": "Ikki modda birlashadi",
+                        "B": "Bir murakkab modda ikki yoki undan ortiq oddiy moddalarga parchalanadi",
+                        "C": "Metallar almashinadi",
+                        "D": "Eritma hosil bo'ladi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_chem_q3",
+                    "question_uz": "\"Green chemistry\" nima?",
+                    "question_ru": "Что такое «зелёная химия»?",
+                    "question_en": "What is 'green chemistry'?",
+                    "options": {
+                        "A": "O'simlik kimyosi",
+                        "B": "Kimyoviy jarayon va mahsulotlarni ifloslantirmaydigan va zararini kamaytiruvchi yo'l bilan loyihalash",
+                        "C": "Ekologik park",
+                        "D": "Kimyo o'qitish usuli"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_chem_q4",
+                    "question_uz": "Ferment (enzyme) nima?",
+                    "question_ru": "Что такое фермент (enzyme)?",
+                    "question_en": "What is an enzyme?",
+                    "options": {
+                        "A": "Kislota turi",
+                        "B": "Biologik katalizator — kimyoviy reaktsiyani tezlatuvchi oqsil",
+                        "C": "Vitaminlar turi",
+                        "D": "Metall ioni"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_chem_q5",
+                    "question_uz": "\"Supramolecular chemistry\" nima?",
+                    "question_ru": "Что такое «супрамолекулярная химия»?",
+                    "question_en": "What is supramolecular chemistry?",
+                    "options": {
+                        "A": "Molekula ichidagi bog'lanishlar kimyosi",
+                        "B": "Molekulalar orasidagi kovalent bo'lmagan o'zaro ta'sir kimyosi",
+                        "C": "Makromolekular kimyo",
+                        "D": "Yadroviy kimyo"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_chem_q6",
+                    "question_uz": "\"Analitik kimyo\" nima?",
+                    "question_ru": "Что такое аналитическая химия?",
+                    "question_en": "What is analytical chemistry?",
+                    "options": {
+                        "A": "Yangi moddalar yaratish",
+                        "B": "Moddalarning tarkibi va miqdorini aniqlash usullari bilan shug'ullanuvchi kimyo sohasi",
+                        "C": "Biologik moddalar kimyosi",
+                        "D": "Organik kimyo"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_chem_q7",
+                    "question_uz": "Nanotexnologiyada nanomateriallar qanday xususiyatlarga ega?",
+                    "question_ru": "Какими свойствами обладают наноматериалы в нанотехнологии?",
+                    "question_en": "What properties do nanomaterials exhibit in nanotechnology?",
+                    "options": {
+                        "A": "Katta materiallar bilan bir xil xossalar",
+                        "B": "Kichik o'lchamlar tufayli o'ziga xos elektrik, optik va mexanik xossalar",
+                        "C": "Faqat kimyoviy xossalar",
+                        "D": "Faqat issiqlik xossalari"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_chem_q8",
+                    "question_uz": "\"Kimyoviy xavfsizlik\" nima?",
+                    "question_ru": "Что такое «химическая безопасность»?",
+                    "question_en": "What is 'chemical safety'?",
+                    "options": {
+                        "A": "Dorilar ishlab chiqarish",
+                        "B": "Kimyoviy moddalar bilan ishlashda inson va atrof-muhit sog'ligini himoya qilish amaliyoti",
+                        "C": "Xavfli kimyo o'qitish",
+                        "D": "Kimyoviy qurollar"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_chem_q9",
+                    "question_uz": "CO₂ ni kamaytirish uchun qanday kimyoviy usullar mavjud?",
+                    "question_ru": "Какие химические методы существуют для снижения CO₂?",
+                    "question_en": "What chemical methods exist to reduce CO₂ emissions?",
+                    "options": {
+                        "A": "Faqat o'rmon qoplash",
+                        "B": "Carbon capture, fotoelektrokimyoviy qaytarish, biologik fiksatsiya",
+                        "C": "Faqat shamol energiyasi",
+                        "D": "Faqat quyosh paneli"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g10_chem_q10",
+                    "question_uz": "\"VSEPR nazariyasi\" nima uchun ishlatiladi?",
+                    "question_ru": "Для чего используется теория VSEPR?",
+                    "question_en": "What is the VSEPR theory used for?",
+                    "options": {
+                        "A": "Kimyoviy reaktsiyalar tezligini hisoblash",
+                        "B": "Molekulaning geometrik shaklini elektron juftlari itarishishiga asoslanib bashorat qilish",
+                        "C": "Kristall tuzilishini aniqlash",
+                        "D": "Ion energiyasini hisoblash"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g10_chem_it1",
+                    "task_uz": "Dori-darmon ishlab chiqarishda kimyoning roli qanday? Aspirin sintezi misolida farmatsevtika kimyosining bosqichlarini tushuntiring.",
+                    "task_ru": "Какова роль химии в производстве лекарств? Объясните этапы фармацевтической химии на примере синтеза аспирина.",
+                    "task_en": "What is chemistry's role in drug production? Explain the stages of pharmaceutical chemistry using aspirin synthesis as an example.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g10_chem_it2",
+                    "task_uz": "Kelajakda plastmassani to'liq almashtiradigan bio-degradable material yarating. Uning kimyoviy formulasini, xossalarini va ishlab chiqarish jarayonini tasvirlab bering.",
+                    "task_ru": "Создайте биоразлагаемый материал, который в будущем полностью заменит пластик. Опишите его химическую формулу, свойства и процесс производства.",
+                    "task_en": "Create a biodegradable material that could fully replace plastic in the future. Describe its chemical formula, properties, and production process.",
+                    "skill": "creativity"
+                }
+            ]
+        }
+    ]
+}

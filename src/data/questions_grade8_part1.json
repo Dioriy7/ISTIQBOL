@@ -1,0 +1,761 @@
+{
+    "grade": 8,
+    "part": 1,
+    "subjects": [
+        {
+            "subject": "Mathematics",
+            "questions": [
+                {
+                    "id": "g8_math_q1",
+                    "question_uz": "Ikkinchi darajali tenglama ax²+bx+c=0 ning discriminantini toping (a=1, b=-5, c=6).",
+                    "question_ru": "Найдите дискриминант квадратного уравнения ax²+bx+c=0 при a=1, b=−5, c=6.",
+                    "question_en": "Find the discriminant of ax²+bx+c=0 where a=1, b=−5, c=6.",
+                    "options": {
+                        "A": "1",
+                        "B": "12",
+                        "C": "49",
+                        "D": "25"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g8_math_q2",
+                    "question_uz": "log₂(32) = ?",
+                    "question_ru": "log₂(32) = ?",
+                    "question_en": "log₂(32) = ?",
+                    "options": {
+                        "A": "4",
+                        "B": "5",
+                        "C": "6",
+                        "D": "3"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_math_q3",
+                    "question_uz": "Ikki to'g'ri chiziqning parallel bo'lish sharti qaysi?",
+                    "question_ru": "Каково условие параллельности двух прямых?",
+                    "question_en": "What is the condition for two lines to be parallel?",
+                    "options": {
+                        "A": "Ular kesishadi",
+                        "B": "Ularning qiyaliklari teng",
+                        "C": "Ularning qiyalik ko'paytmasi -1",
+                        "D": "Ular perpendikulyar"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_math_q4",
+                    "question_uz": "sin²(x) + cos²(x) = ?",
+                    "question_ru": "sin²(x) + cos²(x) = ?",
+                    "question_en": "sin²(x) + cos²(x) = ?",
+                    "options": {
+                        "A": "0",
+                        "B": "2",
+                        "C": "1",
+                        "D": "−1"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g8_math_q5",
+                    "question_uz": "Arifmetik progressiyaning 10-hadini toping: a₁=3, d=4.",
+                    "question_ru": "Найдите 10-й член арифметической прогрессии: a₁=3, d=4.",
+                    "question_en": "Find the 10th term of an arithmetic sequence: a₁=3, d=4.",
+                    "options": {
+                        "A": "38",
+                        "B": "39",
+                        "C": "40",
+                        "D": "39"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_math_q6",
+                    "question_uz": "Kesishmaydigan ikkita Chord aylanada qanday holatda bo'ladi?",
+                    "question_ru": "Каков признак двух непересекающихся хорд в окружности?",
+                    "question_en": "Two chords of a circle that do not intersect inside satisfy:",
+                    "options": {
+                        "A": "Tengdir",
+                        "B": "Markazdan uzoqligi katta chord kichikroq",
+                        "C": "Qisqa chord markazga yaqinroq",
+                        "D": "Markazga yaqinroq chord uzunroq"
+                    },
+                    "correct_answer": "D"
+                },
+                {
+                    "id": "g8_math_q7",
+                    "question_uz": "x² − 9 = 0 tenglamaning yechimlari qaysi?",
+                    "question_ru": "Каковы решения уравнения x² − 9 = 0?",
+                    "question_en": "What are the solutions of x² − 9 = 0?",
+                    "options": {
+                        "A": "x=3",
+                        "B": "x=±3",
+                        "C": "x=9",
+                        "D": "x=±9"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_math_q8",
+                    "question_uz": "Geometrik progressiyaning 5-hadi: b₁=2, q=3 bo'lsa?",
+                    "question_ru": "Найдите 5-й член геометрической прогрессии: b₁=2, q=3.",
+                    "question_en": "Find the 5th term of a geometric sequence: b₁=2, q=3.",
+                    "options": {
+                        "A": "162",
+                        "B": "180",
+                        "C": "54",
+                        "D": "486"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g8_math_q9",
+                    "question_uz": "Funksiyaning sohasini (ODZ) aniqlang: f(x) = 1/(x−2).",
+                    "question_ru": "Определите область допустимых значений: f(x) = 1/(x−2).",
+                    "question_en": "Determine the domain of f(x) = 1/(x−2).",
+                    "options": {
+                        "A": "x ≠ 0",
+                        "B": "x ≠ 2",
+                        "C": "x > 2",
+                        "D": "Barcha haqiqiy sonlar"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_math_q10",
+                    "question_uz": "Kombinatorikada P(n,r) = n!/(n-r)! nima hisoblaydi?",
+                    "question_ru": "Что вычисляет P(n,r) = n!/(n-r)! в комбинаторике?",
+                    "question_en": "In combinatorics, P(n,r) = n!/(n-r)! calculates:",
+                    "options": {
+                        "A": "Kombinatsiya",
+                        "B": "Permutatsiya",
+                        "C": "Faktorial",
+                        "D": "Ehtimol"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g8_math_it1",
+                    "task_uz": "Kvadrat tenglama yordamida amaliy masala: maydon 48 m², uzunlik eni 2 m ko'p bo'lsa, o'lchamlarini toping.",
+                    "task_ru": "Практическая задача: площадь прямоугольника 48 м², длина на 2 м больше ширины. Найдите размеры.",
+                    "task_en": "Practical problem: A rectangle has area 48 m² and its length is 2 m more than its width. Find the dimensions.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g8_math_it2",
+                    "task_uz": "Grafikni chizish: y = x² − 4x + 3 funksiyasining uchini, o'q kesmasin va simmetriya o'qini toping.",
+                    "task_ru": "Постройте график: найдите вершину, точки пересечения с осями и ось симметрии для y = x² − 4x + 3.",
+                    "task_en": "Sketch the graph of y = x² − 4x + 3: find its vertex, axis of symmetry, and intercepts.",
+                    "skill": "logic"
+                }
+            ]
+        },
+        {
+            "subject": "English",
+            "questions": [
+                {
+                    "id": "g8_eng_q1",
+                    "question_uz": "\"She wishes she ___ more time.\" To'g'ri javobni tanlang.",
+                    "question_ru": "Выберите правильный ответ: \"She wishes she ___ more time.\"",
+                    "question_en": "\"She wishes she ___ more time.\" Choose the correct form.",
+                    "options": {
+                        "A": "has",
+                        "B": "had",
+                        "C": "have",
+                        "D": "would have"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_eng_q2",
+                    "question_uz": "\"Ambiguous\" so'zining ma'nosi qaysi?",
+                    "question_ru": "Каково значение слова 'ambiguous'?",
+                    "question_en": "What does 'ambiguous' mean?",
+                    "options": {
+                        "A": "Aniq, ravshan",
+                        "B": "Bir nechta ma'no beradigan, noaniq",
+                        "C": "O'ta muhim",
+                        "D": "Ishonchli"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_eng_q3",
+                    "question_uz": "\"Despite ___ tired, she continued working.\" To'g'ri shaklni tanlang.",
+                    "question_ru": "Выберите правильную форму: \"Despite ___ tired, she continued working.\"",
+                    "question_en": "\"Despite ___ tired, she continued working.\" Choose the correct form.",
+                    "options": {
+                        "A": "be",
+                        "B": "been",
+                        "C": "being",
+                        "D": "was"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g8_eng_q4",
+                    "question_uz": "Qaysi jumla rasmiy uslubda yozilgan?",
+                    "question_ru": "Какое предложение написано в официальном стиле?",
+                    "question_en": "Which sentence is written in a formal style?",
+                    "options": {
+                        "A": "Hey, can u send me info?",
+                        "B": "I would like to request information.",
+                        "C": "Gimme the details, please.",
+                        "D": "Just send it over."
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_eng_q5",
+                    "question_uz": "'Inevitable' so'zining to'g'ri ta'rifini tanlang.",
+                    "question_ru": "Выберите правильное определение слова 'inevitable'.",
+                    "question_en": "Choose the correct definition of 'inevitable'.",
+                    "options": {
+                        "A": "Oldini olsa bo'ladigan",
+                        "B": "Oldini olib bo'lmaydigan, albatta sodir bo'ladigan",
+                        "C": "Kutilmagan",
+                        "D": "Sekin sodir bo'ladigan"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_eng_q6",
+                    "question_uz": "\"He ___ in London for ten years before moving to Paris.\" To'g'ri zamonni tanlang.",
+                    "question_ru": "Выберите правильное время: \"He ___ in London for ten years before moving to Paris.\"",
+                    "question_en": "\"He ___ in London for ten years before moving to Paris.\" Choose the correct tense.",
+                    "options": {
+                        "A": "lived",
+                        "B": "has lived",
+                        "C": "had lived",
+                        "D": "was living"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g8_eng_q7",
+                    "question_uz": "Qaysi so'z salbiy qo'shimcha bilan to'g'ri hosil qilingan?",
+                    "question_ru": "Какое слово правильно образовано с отрицательным суффиксом?",
+                    "question_en": "Which word is correctly formed with a negative prefix?",
+                    "options": {
+                        "A": "Inresponsible",
+                        "B": "Irresponsible",
+                        "C": "Unresponsible",
+                        "D": "Disresponsible"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_eng_q8",
+                    "question_uz": "Essay yozishda 'thesis statement' nima?",
+                    "question_ru": "Что такое 'thesis statement' в эссе?",
+                    "question_en": "What is a 'thesis statement' in an essay?",
+                    "options": {
+                        "A": "Yakuniy xulosa",
+                        "B": "Asosiy fikrni bildiruvchi gap",
+                        "C": "Kirish gapi",
+                        "D": "Misol keltirilgan qism"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_eng_q9",
+                    "question_uz": "'Procrastinate' so'zining ma'nosi qaysi?",
+                    "question_ru": "Каково значение слова 'procrastinate'?",
+                    "question_en": "What does 'procrastinate' mean?",
+                    "options": {
+                        "A": "Tez qaror qilmoq",
+                        "B": "Ishni keyinga qoldirmoq",
+                        "C": "Kuchli ishlash",
+                        "D": "Reja tuzmoq"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_eng_q10",
+                    "question_uz": "\"I ___ (just/finish) my homework.\" Present Perfect bilan to'ldiring.",
+                    "question_ru": "Заполните с Present Perfect: \"I ___ (just/finish) my homework.\"",
+                    "question_en": "Fill in using Present Perfect: \"I ___ (just/finish) my homework.\"",
+                    "options": {
+                        "A": "just finished",
+                        "B": "have just finished",
+                        "C": "just finish",
+                        "D": "had just finished"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g8_eng_it1",
+                    "task_uz": "Texnologiya va insonning kelajagi mavzusida 150-200 so'zlik fikr yozing. Muammolar va yechimlarni ko'rsating.",
+                    "task_ru": "Напишите текст на 150-200 слов на тему «Технологии и будущее человека». Укажите проблемы и решения.",
+                    "task_en": "Write a 150-200 word opinion piece about technology and the future of humanity. Include problems and solutions.",
+                    "skill": "creativity"
+                },
+                {
+                    "id": "g8_eng_it2",
+                    "task_uz": "Quyidagi matnni tahlil qiling: asosiy g'oyani, muallif uslubini va dalillarni toping: (qisqa passage beriladi sinov vaqtida).",
+                    "task_ru": "Проведите анализ текста: найдите главную идею, авторский стиль и аргументы (короткий отрывок будет предоставлен на тесте).",
+                    "task_en": "Analyse the given passage: identify the main idea, author's tone, and supporting arguments (a short passage will be provided).",
+                    "skill": "analysis"
+                }
+            ]
+        },
+        {
+            "subject": "Biology",
+            "questions": [
+                {
+                    "id": "g8_bio_q1",
+                    "question_uz": "Oqsillar qanday monomyorlardan tuzilgan?",
+                    "question_ru": "Из каких мономеров состоят белки?",
+                    "question_en": "Proteins are made from which monomers?",
+                    "options": {
+                        "A": "Yog' kislotalari",
+                        "B": "Aminokislotalar",
+                        "C": "Nukleotidlar",
+                        "D": "Glyukoza"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_bio_q2",
+                    "question_uz": "ATP nima uchun muhim?",
+                    "question_ru": "Почему АТФ важен?",
+                    "question_en": "Why is ATP important in cells?",
+                    "options": {
+                        "A": "DNK replikatsiyasi uchun",
+                        "B": "Hujayraning asosiy energiya manbai",
+                        "C": "Hujayra membranasini tuzish uchun",
+                        "D": "Suv balansini saqlash uchun"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_bio_q3",
+                    "question_uz": "Gen mutatsiyas nima?",
+                    "question_ru": "Что такое генная мутация?",
+                    "question_en": "What is a gene mutation?",
+                    "options": {
+                        "A": "Normal ko'payish",
+                        "B": "DNK ketma-ketligidagi o'zgarish",
+                        "C": "Protein sintezi",
+                        "D": "Hujayra bo'linishi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_bio_q4",
+                    "question_uz": "Antropogen ta'sir nima?",
+                    "question_ru": "Что такое антропогенное воздействие?",
+                    "question_en": "What is anthropogenic impact?",
+                    "options": {
+                        "A": "Tabiiy ofatlar natijasi",
+                        "B": "Inson faoliyati natijasida tabiatga ta'sir",
+                        "C": "Hayvonlarning ta'siri",
+                        "D": "Iqlim o'zgarishi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_bio_q5",
+                    "question_uz": "Gormonlar qaysi sistema orqali tanaga tarqaladi?",
+                    "question_ru": "Через какую систему гормоны распределяются по организму?",
+                    "question_en": "Hormones are distributed throughout the body via which system?",
+                    "options": {
+                        "A": "Nerv tizimi",
+                        "B": "Qon aylanish tizimi",
+                        "C": "Hazm tizimi",
+                        "D": "Nafas olish tizimi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_bio_q6",
+                    "question_uz": "CRISPR texnologiyasi nima uchun ishlatiladi?",
+                    "question_ru": "Для чего используется технология CRISPR?",
+                    "question_en": "What is CRISPR technology used for?",
+                    "options": {
+                        "A": "Bakteriyalarni yo'qotish",
+                        "B": "Genni tahrirlash",
+                        "C": "Viruslarni ko'paytirish",
+                        "D": "Hujayralarni hisoblash"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_bio_q7",
+                    "question_uz": "Fotosintezning yorug'lik fazasida nima hosil bo'ladi?",
+                    "question_ru": "Что образуется в световой фазе фотосинтеза?",
+                    "question_en": "What is produced during the light phase of photosynthesis?",
+                    "options": {
+                        "A": "CO₂ va N₂",
+                        "B": "ATP, NADPH va O₂",
+                        "C": "Glyukoza va suv",
+                        "D": "Kraxmal va spirt"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_bio_q8",
+                    "question_uz": "Qon bosimi qanday o'lchanadi?",
+                    "question_ru": "Как измеряется артериальное давление?",
+                    "question_en": "How is blood pressure measured?",
+                    "options": {
+                        "A": "Termometr bilan",
+                        "B": "Sfigmomanometr bilan",
+                        "C": "Glukometr bilan",
+                        "D": "Stetoskop bilan"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_bio_q9",
+                    "question_uz": "Virus va bakteriya o'rtasidagi asosiy farq nima?",
+                    "question_ru": "Каково основное различие между вирусом и бактерией?",
+                    "question_en": "What is the main difference between a virus and a bacterium?",
+                    "options": {
+                        "A": "Virus ko'zga ko'rinadi, bakteriya yo'q",
+                        "B": "Bakteriyada hujayra bor, virus esa hujayrasiz parazit",
+                        "C": "Virus zararsiz, bakteriya zararli",
+                        "D": "Ular bir xil"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_bio_q10",
+                    "question_uz": "Immunitet tizimi qanday ishlaydi?",
+                    "question_ru": "Как работает иммунная система?",
+                    "question_en": "How does the immune system work?",
+                    "options": {
+                        "A": "Faqat dori qabul qilish orqali",
+                        "B": "Tanaga kirgan yot moddalarga (antigen) qarshi antitel ishlab chiqarish",
+                        "C": "Faqat teriga to'siq qo'yish orqali",
+                        "D": "Nafas olish orqali"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g8_bio_it1",
+                    "task_uz": "Plastik ifloslanishi va uning okean ekotizimlarga ta'sirini tahlil qiling. Muammoni hal qilish uchun 3 ta konkret taklif bering.",
+                    "task_ru": "Проанализируйте загрязнение пластиком и его влияние на морские экосистемы. Предложите 3 конкретных решения.",
+                    "task_en": "Analyse plastic pollution and its effect on ocean ecosystems. Propose 3 specific solutions to the problem.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g8_bio_it2",
+                    "task_uz": "Agar siz genetik muhandis bo'lsangiz va iqlim o'zgarishiga chidamli ekin yaratish imkoniyatiga ega bo'lsangiz, qanday xususiyatlarni unga bersangiz bo'lardi? Tushuntiring.",
+                    "task_ru": "Если бы вы были генетиком и могли создать культуру, устойчивую к климатическим изменениям, какие свойства вы бы ей дали? Объясните.",
+                    "task_en": "If you were a genetic engineer creating a climate-resistant crop, what properties would you give it? Explain your reasoning.",
+                    "skill": "creativity"
+                }
+            ]
+        },
+        {
+            "subject": "History",
+            "questions": [
+                {
+                    "id": "g8_hist_q1",
+                    "question_uz": "Sovet Ittifoqi qachon parchalanib ketdi?",
+                    "question_ru": "Когда распался СССР?",
+                    "question_en": "When did the Soviet Union collapse?",
+                    "options": {
+                        "A": "1989",
+                        "B": "1990",
+                        "C": "1991",
+                        "D": "1992"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g8_hist_q2",
+                    "question_uz": "\"Sovuq urush\" nima edi?",
+                    "question_ru": "Что такое «Холодная война»?",
+                    "question_en": "What was the 'Cold War'?",
+                    "options": {
+                        "A": "Qutb hududlarida jang",
+                        "B": "AQSH va SSSR o'rtasidagi siyosiy va harbiy raqobat",
+                        "C": "Ikkinchi Jahon urushining bir qismi",
+                        "D": "Iqtisodiy inqiroz"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_hist_q3",
+                    "question_uz": "\"Marshall rejasi\" nima edi?",
+                    "question_ru": "Что такое «план Маршалла»?",
+                    "question_en": "What was the Marshall Plan?",
+                    "options": {
+                        "A": "Harbiy hujum rejasi",
+                        "B": "Ikkinchi Jahon urushidan keyin Yevropani tiklash uchun AQSH yordami",
+                        "C": "Sobiq Sovet davlatlariga yordam",
+                        "D": "BMTning iqtisodiy dasturi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_hist_q4",
+                    "question_uz": "O'zbekistonning birinchi Prezidenti kim?",
+                    "question_ru": "Кто был первым Президентом Узбекистана?",
+                    "question_en": "Who was the first President of Uzbekistan?",
+                    "options": {
+                        "A": "Shavkat Mirziyoyev",
+                        "B": "Islam Karimov",
+                        "C": "Abdulaziz Komilov",
+                        "D": "Shukrullo Mirsaidov"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_hist_q5",
+                    "question_uz": "Berlín devori qachon qurilgan va qachon qulatilgan?",
+                    "question_ru": "Когда была построена и когда снесена Берлинская стена?",
+                    "question_en": "When was the Berlin Wall built and when was it demolished?",
+                    "options": {
+                        "A": "1961 va 1989",
+                        "B": "1949 va 1991",
+                        "C": "1955 va 1985",
+                        "D": "1970 va 1995"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g8_hist_q6",
+                    "question_uz": "Globalizatsiya nima?",
+                    "question_ru": "Что такое глобализация?",
+                    "question_en": "What is globalisation?",
+                    "options": {
+                        "A": "Bir mamlakat ichida iqtisodiy o'sish",
+                        "B": "Butun dunyo bo'ylab iqtisodiy, madaniy va siyosiy integratsiya jarayoni",
+                        "C": "Harbiy kengayish",
+                        "D": "Savdo to'siqlari o'rnatish"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_hist_q7",
+                    "question_uz": "Yirik Jahon urushlariga sabab bo'lgan millatchilikning roli nima?",
+                    "question_ru": "Какова роль национализма в причинах Мировых войн?",
+                    "question_en": "What role did nationalism play in causing the World Wars?",
+                    "options": {
+                        "A": "Tinchlik vositasi bo'lgan",
+                        "B": "Davlatlar o'rtasidagi ziddiyatlarni kuchaytirgan",
+                        "C": "Iqtisodiy o'sishni ta'minlagan",
+                        "D": "Hech qanday roli bo'lmagan"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_hist_q8",
+                    "question_uz": "\"Apartheid\" nima edi?",
+                    "question_ru": "Что такое «апартеид»?",
+                    "question_en": "What was Apartheid?",
+                    "options": {
+                        "A": "Janubiy Afrikadagi irqiy ajratish tizimi",
+                        "B": "Hindistondagi kastalar tizimi",
+                        "C": "Natsistlar Germaniyasidagi diskriminatsiya",
+                        "D": "Kolonial boshqaruv tizimi"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g8_hist_q9",
+                    "question_uz": "BMT (Birlashgan Millatlar Tashkiloti) qachon tashkil etilgan?",
+                    "question_ru": "Когда была создана ООН?",
+                    "question_en": "When was the United Nations founded?",
+                    "options": {
+                        "A": "1939",
+                        "B": "1945",
+                        "C": "1948",
+                        "D": "1950"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_hist_q10",
+                    "question_uz": "\"Dekolonizatsiya\" nima?",
+                    "question_ru": "Что такое «деколонизация»?",
+                    "question_en": "What is decolonisation?",
+                    "options": {
+                        "A": "Koloniyalarni kengaytirish",
+                        "B": "Koloniyalarning mustaqillikka chiqish jarayoni",
+                        "C": "Savdo shartnomasi",
+                        "D": "Harbiy kengayish"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g8_hist_it1",
+                    "task_uz": "O'zbekistonning mustaqillik davrida qanday o'zgarishlar ro'y berdi? Iqtisod, ta'lim va madaniyat sohasidagi islohatlarga to'xtalib o'ting.",
+                    "task_ru": "Какие изменения произошли в Узбекистане в период независимости? Расскажите о реформах в экономике, образовании и культуре.",
+                    "task_en": "What changes occurred in Uzbekistan during the independence era? Discuss reforms in economy, education, and culture.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g8_hist_it2",
+                    "task_uz": "Agar siz 1945-yilda BMT tashkilotchilaridan biri bo'lsangiz, uning asosiy maqsadlari va tamoyillarini qanday aniqlar edingiz?",
+                    "task_ru": "Если бы вы были одним из организаторов ООН в 1945 году, как бы вы сформулировали её основные цели и принципы?",
+                    "task_en": "If you were one of the founders of the UN in 1945, how would you define its main goals and principles?",
+                    "skill": "creativity"
+                }
+            ]
+        },
+        {
+            "subject": "Informatics",
+            "questions": [
+                {
+                    "id": "g8_inf_q1",
+                    "question_uz": "SQL nima va nima uchun ishlatiladi?",
+                    "question_ru": "Что такое SQL и для чего используется?",
+                    "question_en": "What is SQL and what is it used for?",
+                    "options": {
+                        "A": "Grafik muharrir",
+                        "B": "Ma'lumotlar bazasini boshqarish uchun so'rovlar tili",
+                        "C": "Kompyuter tarmog'i",
+                        "D": "Video montaj dasturi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_inf_q2",
+                    "question_uz": "\"Bulut hisoblash\" (cloud computing) nima?",
+                    "question_ru": "Что такое «облачные вычисления» (cloud computing)?",
+                    "question_en": "What is cloud computing?",
+                    "options": {
+                        "A": "Ko'rinmas kompyuter",
+                        "B": "Internet orqali masofaviy serverlarda ma'lumot saqlash va qayta ishlash",
+                        "C": "Bulutlarni kuzatish dasturi",
+                        "D": "Maxsus apparat qurilma"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_inf_q3",
+                    "question_uz": "Stack va Queue ma'lumot strukturalari o'rtasidagi farq nima?",
+                    "question_ru": "В чём разница между структурами данных Stack (стек) и Queue (очередь)?",
+                    "question_en": "What is the difference between a Stack and a Queue data structure?",
+                    "options": {
+                        "A": "Stack — FIFO, Queue — LIFO",
+                        "B": "Stack — LIFO, Queue — FIFO",
+                        "C": "Ular bir xil",
+                        "D": "Stack faqat raqamlar uchun"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_inf_q4",
+                    "question_uz": "Wi-Fi va Ethernet o'rtasidagi farq nima?",
+                    "question_ru": "В чём разница между Wi-Fi и Ethernet?",
+                    "question_en": "What is the main difference between Wi-Fi and Ethernet?",
+                    "options": {
+                        "A": "Wi-Fi tezroq",
+                        "B": "Ethernet simsiz, Wi-Fi simli",
+                        "C": "Wi-Fi simsiz, Ethernet simli",
+                        "D": "Ular bir xil texnologiya"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g8_inf_q5",
+                    "question_uz": "\"Open source\" dastur nima?",
+                    "question_ru": "Что такое программа с открытым исходным кодом (open source)?",
+                    "question_en": "What is open source software?",
+                    "options": {
+                        "A": "Faqat internetda ishlaydi",
+                        "B": "Istalgan kishi ko'rishi, o'zgartirishi va tarqatishi mumkin bo'lgan dastur",
+                        "C": "Pulli dastur",
+                        "D": "Operatsion tizim"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_inf_q6",
+                    "question_uz": "Big Data nima?",
+                    "question_ru": "Что такое Big Data?",
+                    "question_en": "What is Big Data?",
+                    "options": {
+                        "A": "Katta hajmdagi fayl",
+                        "B": "An'anaviy usullar bilan qayta ishlash qiyin bo'lgan katta ma'lumot to'plamlari",
+                        "C": "Internet sahifalari",
+                        "D": "Maxsus kompyuter"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_inf_q7",
+                    "question_uz": "Qaysi protokol veb-sahifalarni xavfsiz yuklaydi?",
+                    "question_ru": "Какой протокол обеспечивает безопасную загрузку веб-страниц?",
+                    "question_en": "Which protocol loads web pages securely?",
+                    "options": {
+                        "A": "HTTP",
+                        "B": "FTP",
+                        "C": "HTTPS",
+                        "D": "SMTP"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g8_inf_q8",
+                    "question_uz": "Dasturlashda 'debugging' nima?",
+                    "question_ru": "Что такое «отладка» (debugging) в программировании?",
+                    "question_en": "What is 'debugging' in programming?",
+                    "options": {
+                        "A": "Yangi funksiya qo'shish",
+                        "B": "Koddagi xatolarni topish va tuzatish",
+                        "C": "Dasturni optimallashtirish",
+                        "D": "Dasturni o'chirish"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_inf_q9",
+                    "question_uz": "API nima?",
+                    "question_ru": "Что такое API?",
+                    "question_en": "What is an API?",
+                    "options": {
+                        "A": "Dasturiy interfeyslar orasidagi protokol, dasturlar bir-biri bilan muloqot qilishiga imkon beradi",
+                        "B": "Antivirus programma",
+                        "C": "Kompyuter xotirasi",
+                        "D": "Tarmoq qurilmasi"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g8_inf_q10",
+                    "question_uz": "Python'da list comprehension nima?",
+                    "question_ru": "Что такое list comprehension в Python?",
+                    "question_en": "What is list comprehension in Python?",
+                    "options": {
+                        "A": "Ro'yxatni o'chirish",
+                        "B": "Bir qatorda ro'yxat hosil qiluvchi qisqa sintaksis",
+                        "C": "Ro'yxatni saralash",
+                        "D": "Ro'yxatga element qo'shish"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g8_inf_it1",
+                    "task_uz": "Sun'iy intellekt (AI) tibbiyotda qanday qo'llaniladi? 3 ta haqiqiy misol keltiring va ularning afzallik hamda xavflarini izohlang.",
+                    "task_ru": "Как искусственный интеллект (ИИ) применяется в медицине? Приведите 3 реальных примера и объясните преимущества и риски.",
+                    "task_en": "How is Artificial Intelligence (AI) used in medicine? Give 3 real examples and explain their benefits and risks.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g8_inf_it2",
+                    "task_uz": "Siz 14 yoshli yoshlar uchun o'quv ilovasi yaratayapsiz. Uning asosiy xususiyatlarini, foydalanuvchi interfeysi va funksiyalarini loyihalang.",
+                    "task_ru": "Вы создаёте учебное приложение для детей 14 лет. Спроектируйте его основные функции, пользовательский интерфейс и возможности.",
+                    "task_en": "You are building a learning app for 14-year-olds. Design its main features, user interface, and key functionality.",
+                    "skill": "creativity"
+                }
+            ]
+        }
+    ]
+}

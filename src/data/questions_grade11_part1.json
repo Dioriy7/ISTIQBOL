@@ -1,0 +1,763 @@
+{
+    "grade": 11,
+    "part": 1,
+    "subjects": [
+        {
+            "subject": "Mathematics",
+            "questions": [
+                {
+                    "id": "g11_math_q1",
+                    "question_uz": "Differentsial tenglamalarning amaliy qo'llanilishi?",
+                    "question_ru": "Практическое применение дифференциальных уравнений?",
+                    "question_en": "What is a practical application of differential equations?",
+                    "options": {
+                        "A": "Qofiya yozish",
+                        "B": "Fizika, biologiya, iqtisodiyot va muhandislikdagi o'zgarish jarayonlarini modellashtirish",
+                        "C": "Rang berish",
+                        "D": "Adabiyot tahlili"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_math_q2",
+                    "question_uz": "Funksiya ekstremumlari qanday topiladi?",
+                    "question_ru": "Как находятся экстремумы функции?",
+                    "question_en": "How are the extrema of a function found?",
+                    "options": {
+                        "A": "Integral orqali",
+                        "B": "Birinchi hosilani nolga tenglab, ikkinchi hosila belgisini tekshirib",
+                        "C": "Limit orqali",
+                        "D": "Grafik chizib"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_math_q3",
+                    "question_uz": "Laplace transformatsiyasi nima uchun ishlatiladi?",
+                    "question_ru": "Для чего используется преобразование Лапласа?",
+                    "question_en": "What is the Laplace transform used for?",
+                    "options": {
+                        "A": "Geometrik shakllar uchun",
+                        "B": "Differentsial tenglamalarni yechish va signal tahlili uchun",
+                        "C": "Statistika uchun",
+                        "D": "Matritsa hisob-kitoblari uchun"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_math_q4",
+                    "question_uz": "Fourier qatori nima uchun muhim?",
+                    "question_ru": "Почему важен ряд Фурье?",
+                    "question_en": "Why is the Fourier series important?",
+                    "options": {
+                        "A": "Faqat matematika uchun",
+                        "B": "Davriy funksiyalarni sinusoid va kosinusoid bo'laklarga yoyish — signal qayta ishlash uchun",
+                        "C": "Algebra uchun",
+                        "D": "Statistika uchun"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_math_q5",
+                    "question_uz": "P(A va B) = P(A)·P(B) formulasi qaysi hodisalar uchun to'g'ri?",
+                    "question_ru": "Для каких событий верна формула P(A и B) = P(A)·P(B)?",
+                    "question_en": "For which events is P(A and B) = P(A)·P(B) valid?",
+                    "options": {
+                        "A": "Bog'liq hodisalar",
+                        "B": "Mustaqil hodisalar",
+                        "C": "Muqobil hodisalar",
+                        "D": "Bir xil hodisalar"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_math_q6",
+                    "question_uz": "Vektorlarning tashqi (cross) ko'paytmasi:  |a × b| = ?",
+                    "question_ru": "Что равно |a × b| (модуль векторного произведения)?",
+                    "question_en": "What is |a × b| (the magnitude of the cross product of two vectors)?",
+                    "options": {
+                        "A": "|a||b|",
+                        "B": "|a||b|sin(θ)",
+                        "C": "|a||b|cos(θ)",
+                        "D": "|a|+|b|"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_math_q7",
+                    "question_uz": "Xatolik (error) chegarasini hisoblashda asosiy formula?",
+                    "question_ru": "Основная формула для расчёта предела погрешности?",
+                    "question_en": "What is the main formula for calculating the margin of error in statistics?",
+                    "options": {
+                        "A": "z × σ/√n",
+                        "B": "σ/n",
+                        "C": "σ × n",
+                        "D": "z × n/σ"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g11_math_q8",
+                    "question_uz": "\"P va NP muammosi\" kompyuter fanligi va matematikada nima?",
+                    "question_ru": "Что такое «проблема P и NP» в информатике и математике?",
+                    "question_en": "What is the 'P vs NP problem' in computer science and mathematics?",
+                    "options": {
+                        "A": "Ehtimollik nazariyasi",
+                        "B": "Barcha tekshirish-oson masalalar yechish-osonmi? — hal qilinmagan milleniym muammo",
+                        "C": "Grafik algoritm",
+                        "D": "Tasodifiy sonlar generatsiyasi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_math_q9",
+                    "question_uz": "\"Matematik induktsiiya\" usuli nima?",
+                    "question_ru": "Что такое метод «математической индукции»?",
+                    "question_en": "What is the method of mathematical induction?",
+                    "options": {
+                        "A": "Koʻrib chiqish orqali isbotlash",
+                        "B": "Asosni isbotlab, keyin n uchun to'g'ri bo'lsa n+1 uchun ham to'g'riligini isbot qilish",
+                        "C": "Taxmin asosidagi hisob",
+                        "D": "Tajriba orqali isbotlash"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_math_q10",
+                    "question_uz": "\"Gödel to'liqsizlik teoremasi\" nimani aytadi?",
+                    "question_ru": "Что утверждает теорема Гёделя о неполноте?",
+                    "question_en": "What does Gödel's incompleteness theorem state?",
+                    "options": {
+                        "A": "Barcha sonlar hisoblash mumkin",
+                        "B": "Yetarli darajada kuchli har qanday formal tizimda isbotlab bo'lmaydigan to'g'ri ifodalar mavjud",
+                        "C": "Matematik aksiomalari to'liq",
+                        "D": "Her bir muammoning yechimi bor"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g11_math_it1",
+                    "task_uz": "Regressiya tahlili va korrelyatsiya koeffitsienti yordamida: o'quvchilarning o'qishga sarflagan vaqti va ballari o'rtasidagi bog'liqlikni topish uchun qanday matematik usul qo'llaniladi? Tushuntiring.",
+                    "task_ru": "С помощью регрессионного анализа и коэффициента корреляции объясните, как найти связь между временем учёбы и оценками студентов.",
+                    "task_en": "Using regression analysis and correlation coefficient, explain how to find the relationship between students' study time and their grades.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g11_math_it2",
+                    "task_uz": "Matematik modellashtirish orqali shahar trafikini optimallashtiring: muammo nima, qanday o'zgaruvchilar kerak va optimal yechim qanday topiladi?",
+                    "task_ru": "Оптимизируйте городской трафик с помощью математического моделирования: в чём проблема, какие переменные нужны и как найти оптимальное решение?",
+                    "task_en": "Optimise city traffic using mathematical modelling: what is the problem, what variables are needed, and how is the optimal solution found?",
+                    "skill": "logic"
+                }
+            ]
+        },
+        {
+            "subject": "English",
+            "questions": [
+                {
+                    "id": "g11_eng_q1",
+                    "question_uz": "'Nuance' so'zining ma'nosi va akademik yozishda ahamiyati?",
+                    "question_ru": "Что означает 'nuance' и каково его значение в академическом письме?",
+                    "question_en": "What does 'nuance' mean and why is it important in academic writing?",
+                    "options": {
+                        "A": "Asosiy g'oya",
+                        "B": "Nozik farq yoki murakkablik; akademik fikrni boyitadi",
+                        "C": "Yozish stili",
+                        "D": "Grammatik qoida"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_eng_q2",
+                    "question_uz": "\"The phenomenon ___ (observe) by scientists for decades.\" To'g'ri passivni tanlang.",
+                    "question_ru": "Выберите правильный пассив: \"The phenomenon ___ (observe) by scientists for decades.\"",
+                    "question_en": "\"The phenomenon ___ (observe) by scientists for decades.\" Choose the correct passive.",
+                    "options": {
+                        "A": "is observed",
+                        "B": "has been observed",
+                        "C": "was observing",
+                        "D": "were observing"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_eng_q3",
+                    "question_uz": "'Epistemology' nima?",
+                    "question_ru": "Что такое эпистемология?",
+                    "question_en": "What is epistemology?",
+                    "options": {
+                        "A": "Raqam nazariyasi",
+                        "B": "Bilim, uning kelib chiqishi va chegaralarini o'rganuvchi falsafa bo'limi",
+                        "C": "Til grammatikasi",
+                        "D": "Axloq falsafasi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_eng_q4",
+                    "question_uz": "Academic debate qilishda counter-argument keyin nima kerak?",
+                    "question_ru": "Что следует после контраргумента в академической дискуссии?",
+                    "question_en": "In an academic debate, what comes after presenting a counter-argument?",
+                    "options": {
+                        "A": "Xulosa",
+                        "B": "Refutation (rad etish va o'z pozitsiyangizni mustahkamlash)",
+                        "C": "Yangi mavzu",
+                        "D": "Savol"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_eng_q5",
+                    "question_uz": "'Corroborate' so'zining ma'nosi?",
+                    "question_ru": "Что означает слово 'corroborate'?",
+                    "question_en": "What does 'corroborate' mean?",
+                    "options": {
+                        "A": "Inkor qilish",
+                        "B": "Dalil yoki guvohlik bilan tasdiqlash",
+                        "C": "Tahlil qilish",
+                        "D": "Solishtirish"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_eng_q6",
+                    "question_uz": "SAT/IELTS/TOEFL tipidagi imtihonlarda critical reading nima sinovdan o'tkaziladi?",
+                    "question_ru": "Что проверяется при critical reading на экзаменах типа SAT/IELTS/TOEFL?",
+                    "question_en": "What does critical reading on SAT/IELTS/TOEFL type exams assess?",
+                    "options": {
+                        "A": "Faqat so'z boyligini",
+                        "B": "Matnning asosiy g'oyasi, muallif uslubi, xulosa chiqarish va dalillarni baholash",
+                        "C": "Faqat grammatikani",
+                        "D": "Faqat talaffuzni"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_eng_q7",
+                    "question_uz": "\"Serendipity\" so'zining ma'nosi?",
+                    "question_ru": "Что означает слово 'serendipity'?",
+                    "question_en": "What does 'serendipity' mean?",
+                    "options": {
+                        "A": "Xato qilish",
+                        "B": "Kutilmaganda yoqimli narsa kashf etish",
+                        "C": "Muvaffaqiyat",
+                        "D": "Og'ir mehnat"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_eng_q8",
+                    "question_uz": "Akademik inglizchada hedging language nima?",
+                    "question_ru": "Что такое 'hedging language' в академическом английском?",
+                    "question_en": "What is 'hedging language' in academic English?",
+                    "options": {
+                        "A": "Qo'pol til",
+                        "B": "Ehtimol, noaniqliq yoki cheklanish bildiruvchi iboralar (might, could, tend to)",
+                        "C": "Buyruqli gaplar",
+                        "D": "She'riy til"
+                    },
+                    "question_en": "What is 'hedging language' in academic English?",
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_eng_q9",
+                    "question_uz": "'Implicit' va 'explicit' ma'nolar farqi nima?",
+                    "question_ru": "В чём разница между явным и неявным значением?",
+                    "question_en": "What is the difference between 'implicit' and 'explicit' meaning?",
+                    "options": {
+                        "A": "Ular bir xil",
+                        "B": "Explicit — to'g'ridan-to'g'ri, implicit — kontekstdan anglashiluvchi yashirin ma'no",
+                        "C": "Implicit — aniq, explicit — yashirin",
+                        "D": "Ular grammatikaga tegishli"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_eng_q10",
+                    "question_uz": "Synthesising sources nima va nima uchun muhim?",
+                    "question_ru": "Что такое «синтез источников» и почему это важно?",
+                    "question_en": "What is synthesising sources and why is it important?",
+                    "options": {
+                        "A": "Manbalarni nusxalash",
+                        "B": "Bir nechta manbadan olingan g'oyalarni birlashtirish va yangi tushuncha shakllantirish",
+                        "C": "Manbalar ro'yxati yaratish",
+                        "D": "Iqtiboslarni keltirish"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g11_eng_it1",
+                    "task_uz": "\"The role of education in reducing social inequality\" mavzusida 300 so'zlik research-based argumentative essay yozing va kamida 3 ta dalil keltiring.",
+                    "task_ru": "Напишите академическое аргументированное эссе на 300 слов на тему «Роль образования в снижении социального неравенства» с минимум 3 аргументами.",
+                    "task_en": "Write a 300-word research-based argumentative essay on 'The role of education in reducing social inequality'. Include at least 3 arguments with evidence.",
+                    "skill": "creativity"
+                },
+                {
+                    "id": "g11_eng_it2",
+                    "task_uz": "Quyidagi iqtibosni tahlil qiling: \"Education is not the filling of a pail, but the lighting of a fire\" (W.B. Yeats). Bu metaforaning ma'nosini, kontekstini va bugungi ta'limdagi ahamiyatini 200 so'zda izohlang.",
+                    "task_ru": "Проанализируйте следующую цитату: «Образование — не наполнение ведра, а разжигание огня» (У.Б. Йейтс). Объясните метафору, её контекст и актуальность для современного образования (200 слов).",
+                    "task_en": "Analyse the quote: 'Education is not the filling of a pail, but the lighting of a fire' (W.B. Yeats). Explain the metaphor, its context, and relevance to modern education (200 words).",
+                    "skill": "analysis"
+                }
+            ]
+        },
+        {
+            "subject": "Biology",
+            "questions": [
+                {
+                    "id": "g11_bio_q1",
+                    "question_uz": "Sintez biologiyasi (Synthetic biology) nima?",
+                    "question_ru": "Что такое синтетическая биология?",
+                    "question_en": "What is synthetic biology?",
+                    "options": {
+                        "A": "Biologik modellash",
+                        "B": "Yangi biologik tizimlar va tirik organizmlarni muhandislik printsiplari asosida loyihalash",
+                        "C": "Tabiiy ekologiya",
+                        "D": "Klassik irsiyat"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_bio_q2",
+                    "question_uz": "Proteomika nima?",
+                    "question_ru": "Что такое протеомика?",
+                    "question_en": "What is proteomics?",
+                    "options": {
+                        "A": "Genlarni o'rganish",
+                        "B": "Organizmdagi barcha oqsillar to'plami (proteom) ni o'rganish",
+                        "C": "Hujayra biologiyasi",
+                        "D": "Ekologiya sohasi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_bio_q3",
+                    "question_uz": "Neyroplastiklik (Neuroplasticity) nima?",
+                    "question_ru": "Что такое нейропластичность?",
+                    "question_en": "What is neuroplasticity?",
+                    "options": {
+                        "A": "Miya kasalligi",
+                        "B": "Miyaning yangi tajribalarga javob sifatida o'z strukturasini o'zgartirish qobiliyati",
+                        "C": "Neyronlar sonining oshishi",
+                        "D": "Miya reaksiyasi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_bio_q4",
+                    "question_uz": "Stem hujayra terapiyasi nima?",
+                    "question_ru": "Что такое терапия стволовыми клетками?",
+                    "question_en": "What is stem cell therapy?",
+                    "options": {
+                        "A": "Kimyoviy dori usuli",
+                        "B": "Kasallangan yoki shikastlangan to'qimalarni tiklash uchun ko'p qirrali hujayralardan foydalanish",
+                        "C": "Immunizatsiya",
+                        "D": "Genetik o'zgarish"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_bio_q5",
+                    "question_uz": "\"One health\" kontseptsiyasi nima?",
+                    "question_ru": "Что такое концепция «Одно здоровье»?",
+                    "question_en": "What is the 'One Health' concept?",
+                    "options": {
+                        "A": "Faqat inson salomatligi",
+                        "B": "Inson, hayvon va atrof-muhit salomatligi o'zaro bog'liq deb tan oluvchi yondashuv",
+                        "C": "Faqat hayvon salomatligi",
+                        "D": "Ijtimoiy sog'ligʻ ta'lim"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_bio_q6",
+                    "question_uz": "Evolyutsiyaning molekulyar dalillari qanday?",
+                    "question_ru": "Каковы молекулярные доказательства эволюции?",
+                    "question_en": "What are the molecular evidence for evolution?",
+                    "options": {
+                        "A": "Faqat fossillar",
+                        "B": "DNK ketma-ketligi o'xshashliklari, homologous proteinlar va mitoxondrial DNK",
+                        "C": "Faqat anatomik belgilar",
+                        "D": "Faqat kuzatishlar"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_bio_q7",
+                    "question_uz": "\"Microbiome\" nima va inson salomatligi uchun qanday ahamiyatga ega?",
+                    "question_ru": "Что такое «микробиом» и каково его значение для здоровья человека?",
+                    "question_en": "What is the 'microbiome' and why is it important for human health?",
+                    "options": {
+                        "A": "Faqat zararli bakteriyalar",
+                        "B": "Ichakdagi va boshqa organlardagi mikroorganizmlar, immunitеt va metabolizmga ta'sir qiluvchi",
+                        "C": "Faqat viruslar",
+                        "D": "Sun'iy biologik tizim"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_bio_q8",
+                    "question_uz": "Ekologik plastiklik (Ecological plasticity) nima?",
+                    "question_ru": "Что такое экологическая пластичность?",
+                    "question_en": "What is ecological plasticity?",
+                    "options": {
+                        "A": "O'simlik turlari",
+                        "B": "Organizmning turli muhit sharoitlariga moslashish qobiliyati",
+                        "C": "Ekologik muvozanat",
+                        "D": "Plastmassa ifloslanishi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_bio_q9",
+                    "question_uz": "Biohacking nima?",
+                    "question_ru": "Что такое биохакинг?",
+                    "question_en": "What is biohacking?",
+                    "options": {
+                        "A": "Kompyuter buzish",
+                        "B": "O'z tana va biologiyasini texnologiya, diet va tajriba orqali optimallashtirish",
+                        "C": "Biologik qurollar yaratish",
+                        "D": "Gen modifikatsiyasi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_bio_q10",
+                    "question_uz": "\"Pandemiya preparedness\" nima?",
+                    "question_ru": "Что такое «готовность к пандемии»?",
+                    "question_en": "What is 'pandemic preparedness'?",
+                    "options": {
+                        "A": "Kasalxona qurilishi",
+                        "B": "Global epidemiyalarga qarshi oldindan tayyorgarlik ko'rish tizimlari va strategiyalari",
+                        "C": "Vaksinatsiya qoidalari",
+                        "D": "Tibbiy jihozlar"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g11_bio_it1",
+                    "task_uz": "Antimikrob qarshilik (Antimicrobial Resistance) muammosini tahlil qiling. Uning kelib chiqishi, oqibatlari va xalqaro miqyosdagi yechim yo'llarini ko'rib chiqing.",
+                    "task_ru": "Проанализируйте проблему антимикробной резистентности. Рассмотрите её происхождение, последствия и пути решения на международном уровне.",
+                    "task_en": "Analyse the problem of Antimicrobial Resistance (AMR). Examine its origins, consequences, and international solutions.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g11_bio_it2",
+                    "task_uz": "Siz biotibbiyot kompaniyasi asoschisisiz. Qanday muammoni hal qilamiz, qanday texnologiyadan foydalanamiz va mahsulotingizning inson hayotiga ta'sirini tasvirlab bering.",
+                    "task_ru": "Вы основатель биомедицинской компании. Какую проблему вы решаете, какую технологию используете и как ваш продукт влияет на жизнь людей?",
+                    "task_en": "You are founding a biomedical company. What problem are you solving, what technology do you use, and how will your product impact human lives?",
+                    "skill": "creativity"
+                }
+            ]
+        },
+        {
+            "subject": "History",
+            "questions": [
+                {
+                    "id": "g11_hist_q1",
+                    "question_uz": "\"Transhumanizm\" nima va u tarix falsafasiga qanday aloqador?",
+                    "question_ru": "Что такое трансгуманизм и как он связан с философией истории?",
+                    "question_en": "What is transhumanism and how does it relate to the philosophy of history?",
+                    "options": {
+                        "A": "Insoniyat yo'q bo'lib ketadi",
+                        "B": "Texnologiya orqali inson imkoniyatlarini kengaytirish va biologik chegaralarni bartaraf etish g'oyasi",
+                        "C": "Tarixi qaytarish",
+                        "D": "Geosiyosiy kengayish"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_hist_q2",
+                    "question_uz": "Post-truth davri nima?",
+                    "question_ru": "Что такое «эпоха постправды»?",
+                    "question_en": "What is the 'post-truth era'?",
+                    "question_en": "What characterises the 'post-truth era'?",
+                    "options": {
+                        "A": "Haqiqat yo'q davr",
+                        "B": "Ob'ektiv faktlardan ko'ra hissiyot va shaxsiy e'tiqodlar jamoatchilik fikrini shakllantirishda ko'proq ta'sirli bo'ladigan davr",
+                        "C": "Tarixiy hujjatlar davri",
+                        "D": "Ilmiy inqilob davri"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_hist_q3",
+                    "question_uz": "O'zbekistondagi madaniy meros saytlari UNESCO tomonidan tan olinganmi?",
+                    "question_ru": "Признаны ли объекты культурного наследия Узбекистана ЮНЕСКО?",
+                    "question_en": "Are cultural heritage sites in Uzbekistan recognised by UNESCO?",
+                    "options": {
+                        "A": "Yo'q",
+                        "B": "Ha, Samarqanddagi Shahrisabz va boshqa joylar UNESCO ro'yxatida",
+                        "C": "Faqat Toshkent",
+                        "D": "Faqat Xiva"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_hist_q4",
+                    "question_uz": "\"Yumshoq kuch\" (soft power) O'zbekiston tashqi siyosatida qanday ko'rinadi?",
+                    "question_ru": "Как «мягкая сила» проявляется во внешней политике Узбекистана?",
+                    "question_en": "How does 'soft power' manifest in Uzbekistan's foreign policy?",
+                    "options": {
+                        "A": "Harbiy kengayish",
+                        "B": "Madaniy diplomariya, ta'lim, turizm va diasporas orqali ta'sir",
+                        "C": "Iqtisodiy sanksiyalar",
+                        "D": "Harbiy ittifoqlar"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_hist_q5",
+                    "question_uz": "\"Civilization\" (Huntington) kontseptsiyasi nima?",
+                    "question_ru": "В чём суть концепции «цивилизаций» Хантингтона?",
+                    "question_en": "What is Huntington's concept of civilisations?",
+                    "options": {
+                        "A": "Barcha sivilizatsiyalar birlashadi",
+                        "B": "Sovuq urushdan keyin asosiy nizolar sivilizatsiyalar o'rtasida bo'ladi",
+                        "C": "G'arbiy sivilizatsiya ustun",
+                        "D": "Iqtisodiy raqobat asosiy ziddiyat"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_hist_q6",
+                    "question_uz": "XXI asrda xalqaro munosabatlarda multilateralizm nima?",
+                    "question_ru": "Что такое многосторонность (мультилатерализм) в международных отношениях XXI века?",
+                    "question_en": "What is multilateralism in 21st century international relations?",
+                    "options": {
+                        "A": "Bir davlatning boshqarishi",
+                        "B": "Ko'p tomonlama xalqaro munosabatlar va hamkorlik tizimlari",
+                        "C": "Ikki davlat o'rtasidagi munosabatlar",
+                        "D": "Harbiy ittifoq"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_hist_q7",
+                    "question_uz": "Raqamli arxivlash tarix faniga qanday ta'sir ko'rsatmoqda?",
+                    "question_ru": "Как цифровое архивирование влияет на историческую науку?",
+                    "question_en": "How does digital archiving influence the study of history?",
+                    "options": {
+                        "A": "Tarihga qiziqishni kamaytiradi",
+                        "B": "Manbalarga keng kirish imkonini beradi, yangi tahlil usullarini ochadi",
+                        "C": "Tarihni faqat mutaxassislar uchun qiladi",
+                        "D": "O'tmish hujjatlarini yo'q qiladi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_hist_q8",
+                    "question_uz": "\"Deglobalization\" nima va qanday sabablarga ko'ra paydo bo'lmoqda?",
+                    "question_ru": "Что такое «деглобализация» и каковы её причины?",
+                    "question_en": "What is 'deglobalisation' and what are its causes?",
+                    "options": {
+                        "A": "Globallashuvning tezlashishi",
+                        "B": "Millatchilikning o'sishi, proteksionizm va pandemiya ta'sirida jahon iqtisodiy integratsiyasining sekinlashishi",
+                        "C": "Iqtisodiy o'sish",
+                        "D": "Diplomatik faollik"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_hist_q9",
+                    "question_uz": "\"Pekstopiyasi\" — Xitoyning Belt and Road Initiative (BRI) global xaritasida O'rta Osiyo qanday rol o'ynaydi?",
+                    "question_ru": "Какова роль Центральной Азии в китайской инициативе «Пояс и путь»?",
+                    "question_en": "What role does Central Asia play in China's Belt and Road Initiative (BRI)?",
+                    "options": {
+                        "A": "Ahamiyatsiz rol",
+                        "B": "Tranzit yo'l va investitsiya hududi sifatida strategik rol",
+                        "C": "Faqat iqtisodiy raqib",
+                        "D": "Geosiyosiy raqib"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_hist_q10",
+                    "question_uz": "\"Raqamli totalitarizm\" nima?",
+                    "question_ru": "Что такое «цифровой тоталитаризм»?",
+                    "question_en": "What is 'digital totalitarianism'?",
+                    "options": {
+                        "A": "Internet muammolari",
+                        "B": "Raqamli texnologiyalar orqali aholini nazorat qilish va erkinliklarni cheklash",
+                        "C": "Onlayn do'konlar",
+                        "D": "Kiberjinoyatchilik"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g11_hist_it1",
+                    "task_uz": "Xitoyning BRI va AQSHning Indo-Pasifik strategiyasi o'rtasidagi geosiyosiy raqobatni tahlil qiling. O'rta Osiyo va O'zbekiston uchun bu qanday imkoniyat va xavf-xatarlar tug'diradi?",
+                    "task_ru": "Проанализируйте геополитическое соперничество между BRI Китая и Индо-Тихоокеанской стратегией США. Какие возможности и риски это создаёт для Центральной Азии и Узбекистана?",
+                    "task_en": "Analyse the geopolitical competition between China's BRI and the US Indo-Pacific strategy. What opportunities and risks does this create for Central Asia and Uzbekistan?",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g11_hist_it2",
+                    "task_uz": "Siz 2050-yilda xalqaro tashkilot rahbari sifatida faoliyat yuritmoqdasiz. Dunyoning eng muhim muammolaridan birini hal qilish uchun qanday yondashuv tanlaysiz?",
+                    "task_ru": "В 2050 году вы руководите международной организацией. Какой подход вы выберете для решения одной из самых важных мировых проблем?",
+                    "task_en": "In 2050, you lead an international organisation. Which approach would you choose to solve one of the world's most critical problems?",
+                    "skill": "creativity"
+                }
+            ]
+        },
+        {
+            "subject": "Informatics",
+            "questions": [
+                {
+                    "id": "g11_inf_q1",
+                    "question_uz": "\"Artificial General Intelligence\" (AGI) nima?",
+                    "question_ru": "Что такое «искусственный общий интеллект» (AGI)?",
+                    "question_en": "What is Artificial General Intelligence (AGI)?",
+                    "options": {
+                        "A": "Maxsus vazifalar uchun AI",
+                        "B": "Inson darajasida har qanday aqliy vazifani bajarishga qodir AI",
+                        "C": "Robot",
+                        "D": "Ma'lumotlar bazasi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_inf_q2",
+                    "question_uz": "\"Transformer\" modeli (GPT, BERT) nima?",
+                    "question_ru": "Что такое модель «Transformer» (GPT, BERT)?",
+                    "question_en": "What is the Transformer model (GPT, BERT) in AI?",
+                    "options": {
+                        "A": "Elektr qurilmasi",
+                        "B": "Attention mexanizmi asosida ishlaydigan chuqur o'qitish arxitektura — NLP va AI'da inqilob qildi",
+                        "C": "Klassik neyron tarmoq",
+                        "D": "Ma'lumotlar uzatish protokoli"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_inf_q3",
+                    "question_uz": "\"Responsible AI\" nima?",
+                    "question_ru": "Что такое «ответственный ИИ»?",
+                    "question_en": "What is 'Responsible AI'?",
+                    "options": {
+                        "A": "Faqat korporativ loyiha",
+                        "B": "AI tizimlarini xavfsizlik, adolat, shaffoflik va axloqiy tamoyillarga mos tarzda loyihalash",
+                        "C": "Kirish kodini ochiq qilish",
+                        "D": "AI o'qitish jarayoni"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_inf_q4",
+                    "question_uz": "\"Web3\" va \"Web2\" o'rtasidagi farq?",
+                    "question_ru": "В чём разница между Web3 и Web2?",
+                    "question_en": "What is the difference between Web3 and Web2?",
+                    "options": {
+                        "A": "Ular bir xil",
+                        "B": "Web3 — dеsentralizatsiya, blockchain va token iqtisodiyoti asosga qurilgan; Web2 — markazlashgan platforma modeli",
+                        "C": "Web3 — eskirgan",
+                        "D": "Web2 — yangi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_inf_q5",
+                    "question_uz": "\"Digital Twin\" texnologiyasi nima?",
+                    "question_ru": "Что такое технология «цифрового двойника»?",
+                    "question_en": "What is 'Digital Twin' technology?",
+                    "options": {
+                        "A": "Ikki kompyuter birlikda ishlashi",
+                        "B": "Jismoniy ob'yekt yoki tizimning virtual (raqamli) nusxasi — real vaqtda simulyatsiya qilish mumkin",
+                        "C": "Raqamli identifikatsiya",
+                        "D": "Virtual ishchilar"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_inf_q6",
+                    "question_uz": "\"5G\" texnologiyasi qanday imkoniyatlar ochadi?",
+                    "question_ru": "Какие возможности открывает технология 5G?",
+                    "question_en": "What opportunities does 5G technology open up?",
+                    "options": {
+                        "A": "Faqat tezroq internet",
+                        "B": "Ultra-tezkor, past kechikishli tarmoq — IoT, avtomobil va masofaviy tibbiyotni kafolatlaydi",
+                        "C": "Faqat mobil aloqa",
+                        "D": "Faqat streaming uchun"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_inf_q7",
+                    "question_uz": "\"Prompt engineering\" nima?",
+                    "question_ru": "Что такое «инженерия промптов»?",
+                    "question_en": "What is 'prompt engineering'?",
+                    "options": {
+                        "A": "Dasturlash tili",
+                        "B": "AI modellaridan maksimal natija olish uchun savollar va vazifalarni optimal tarzda yozish san'ati",
+                        "C": "Ma'lumotlar tahlili",
+                        "D": "Server boshqaruvi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_inf_q8",
+                    "question_uz": "\"Federated Learning\" nima?",
+                    "question_ru": "Что такое федеративное обучение (Federated Learning)?",
+                    "question_en": "What is Federated Learning?",
+                    "options": {
+                        "A": "AI markazida o'qitish",
+                        "B": "Ma'lumotlarni markaziy serverga yubormasdan, qurilmalarda lokal o'qitiladigan mashinada o'qitish usuli",
+                        "C": "Ko'p serverli aloqa",
+                        "D": "Tarmoq protokoli"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_inf_q9",
+                    "question_uz": "\"Explainable AI\" (XAI) nima uchun muhim?",
+                    "question_ru": "Почему важен «объяснимый ИИ» (XAI)?",
+                    "question_en": "Why is 'Explainable AI' (XAI) important?",
+                    "options": {
+                        "A": "AI tezligini oshirish uchun",
+                        "B": "AI qarorlarini insonga tushunarli tarzda tushuntirish — ishonch va nazorat uchun",
+                        "C": "AI qimmatini oshirish uchun",
+                        "D": "AI xotira qayta ishlashi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g11_inf_q10",
+                    "question_uz": "Raqamli iqtisodiyot nima?",
+                    "question_ru": "Что такое цифровая экономика?",
+                    "question_en": "What is the digital economy?",
+                    "options": {
+                        "A": "Faqat e-commerce",
+                        "B": "Raqamli texnologiyalar asosida tashkil etilgan iqtisodiy faoliyat — ma'lumotlar, platforma va internet iqtisodiyoti",
+                        "C": "Bank xizmatlar",
+                        "D": "Dasturlash sanoati"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g11_inf_it1",
+                    "task_uz": "AI etikasi bo'yicha davlat siyosatini loyihalang: AI'ni tartibga solishda asosiy tamoyillar, xavflar va xalqaro hamkorlik masalalarini ko'rib chiqing.",
+                    "task_ru": "Разработайте государственную политику в области этики ИИ: рассмотрите основные принципы регулирования ИИ, риски и вопросы международного сотрудничества.",
+                    "task_en": "Design a national AI ethics policy: examine the key principles for regulating AI, risks involved, and international cooperation issues.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g11_inf_it2",
+                    "task_uz": "2030-yilda ta'lim tizimini to'liq raqamlashtirish tasavvur qiling. Qanday texnologiyalar ishlatiladi, o'qituvchilar roli qanday o'zgaradi va tengsizlik muammosi qanday hal qilinadi?",
+                    "task_ru": "Представьте полную цифровизацию системы образования к 2030 году. Какие технологии используются, как изменится роль учителей и как будет решена проблема неравенства?",
+                    "task_en": "Imagine fully digitalising the education system by 2030. What technologies are used, how will teachers' roles change, and how will inequality be addressed?",
+                    "skill": "creativity"
+                }
+            ]
+        }
+    ]
+}

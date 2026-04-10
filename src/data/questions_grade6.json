@@ -1,0 +1,1364 @@
+{
+    "grade": 6,
+    "subjects": [
+        {
+            "subject": "Mathematics",
+            "questions": [
+                {
+                    "id": "g6_math_q1",
+                    "question_uz": "Agar x + 7 = 15 bo'lsa, x = ?",
+                    "question_ru": "Если x + 7 = 15, то x = ?",
+                    "question_en": "If x + 7 = 15, what is x?",
+                    "options": {
+                        "A": "6",
+                        "B": "7",
+                        "C": "8",
+                        "D": "9"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_math_q2",
+                    "question_uz": "72 sonining 25% i nechaga teng?",
+                    "question_ru": "Чему равно 25% от числа 72?",
+                    "question_en": "What is 25% of 72?",
+                    "options": {
+                        "A": "16",
+                        "B": "18",
+                        "C": "20",
+                        "D": "24"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_math_q3",
+                    "question_uz": "Doiraning yuzasi formulasi qaysi?",
+                    "question_ru": "Какова формула площади круга?",
+                    "question_en": "What is the formula for the area of a circle?",
+                    "options": {
+                        "A": "2πr",
+                        "B": "πr²",
+                        "C": "πd",
+                        "D": "2πr²"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_math_q4",
+                    "question_uz": "2³ × 2² = ?",
+                    "question_ru": "2³ × 2² = ?",
+                    "question_en": "2³ × 2² = ?",
+                    "options": {
+                        "A": "2⁴",
+                        "B": "2⁵",
+                        "C": "2⁶",
+                        "D": "4⁵"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_math_q5",
+                    "question_uz": "−3 + (−5) = ?",
+                    "question_ru": "−3 + (−5) = ?",
+                    "question_en": "−3 + (−5) = ?",
+                    "options": {
+                        "A": "−8",
+                        "B": "−2",
+                        "C": "8",
+                        "D": "2"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g6_math_q6",
+                    "question_uz": "Uchburchakning perimetri 24 sm, agar 3 ta tomoni teng bo'lsa, har bir tomon necha sm?",
+                    "question_ru": "Периметр равностороннего треугольника 24 см. Какова длина одной стороны?",
+                    "question_en": "An equilateral triangle has a perimeter of 24 cm. What is the length of one side?",
+                    "options": {
+                        "A": "6 sm",
+                        "B": "8 sm",
+                        "C": "10 sm",
+                        "D": "12 sm"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_math_q7",
+                    "question_uz": "3/5 kasrni foizga aylantiring.",
+                    "question_ru": "Переведите дробь 3/5 в проценты.",
+                    "question_en": "Convert the fraction 3/5 into a percentage.",
+                    "options": {
+                        "A": "35%",
+                        "B": "50%",
+                        "C": "60%",
+                        "D": "65%"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_math_q8",
+                    "question_uz": "Agar kvadratning tomoni 9 sm bo'lsa, uning yuzasi necha sm²?",
+                    "question_ru": "Если сторона квадрата 9 см, какова его площадь?",
+                    "question_en": "If the side of a square is 9 cm, what is its area?",
+                    "options": {
+                        "A": "36 sm²",
+                        "B": "72 sm²",
+                        "C": "81 sm²",
+                        "D": "90 sm²"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_math_q9",
+                    "question_uz": "720 sonining 1/6 qismi nechaga teng?",
+                    "question_ru": "Чему равна 1/6 от числа 720?",
+                    "question_en": "What is 1/6 of 720?",
+                    "options": {
+                        "A": "100",
+                        "B": "112",
+                        "C": "120",
+                        "D": "130"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_math_q10",
+                    "question_uz": "Ikkita son nisbati 3:5 ga teng va ularning yig'indisi 80. Bu sonlar qanday?",
+                    "question_ru": "Два числа относятся как 3:5, их сумма равна 80. Каковы эти числа?",
+                    "question_en": "Two numbers are in ratio 3:5 and their sum is 80. What are the numbers?",
+                    "options": {
+                        "A": "30 va 50",
+                        "B": "24 va 56",
+                        "C": "35 va 45",
+                        "D": "32 va 48"
+                    },
+                    "correct_answer": "A"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g6_math_it1",
+                    "task_uz": "Sinf xonasida 8 ta qator va 6 ta ustun bo'lib o'rindiqlari joylashgan. Barcha o'rindiqlar soni nechta? Agar 5 ta o'rindiq bo'sh bo'lsa, nechtasida o'quvchi o'tirgan? Hisoblab, javobingizni tushuntiring.",
+                    "task_ru": "В классе 8 рядов и 6 столбцов стульев. Сколько всего стульев? Если 5 стульев пустые, сколько занято? Посчитайте и объясните.",
+                    "task_en": "A classroom has 8 rows and 6 columns of chairs. How many chairs are there total? If 5 chairs are empty, how many students are seated? Calculate and explain.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g6_math_it2",
+                    "task_uz": "Quyidagi ketma-ketlikni davom ettiring va qoidasini tushuntiring: 1, 4, 9, 16, 25, __, __, __",
+                    "task_ru": "Продолжите последовательность и объясните правило: 1, 4, 9, 16, 25, __, __, __",
+                    "task_en": "Continue the sequence and explain the rule: 1, 4, 9, 16, 25, __, __, __",
+                    "skill": "logic"
+                }
+            ]
+        },
+        {
+            "subject": "English",
+            "questions": [
+                {
+                    "id": "g6_eng_q1",
+                    "question_uz": "\"By the time she arrived, the movie ___ already ___.\" To'g'ri javobni tanlang.",
+                    "question_ru": "Выберите правильный ответ: \"By the time she arrived, the movie ___ already ___.\"",
+                    "question_en": "Choose the correct: \"By the time she arrived, the movie ___ already ___.\"",
+                    "options": {
+                        "A": "has / started",
+                        "B": "had / started",
+                        "C": "was / started",
+                        "D": "did / start"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_eng_q2",
+                    "question_uz": "Qaysi jumlada Present Continuous ishlatilgan?",
+                    "question_ru": "В каком предложении используется Present Continuous?",
+                    "question_en": "Which sentence uses the Present Continuous tense?",
+                    "options": {
+                        "A": "She reads books.",
+                        "B": "She is reading a book.",
+                        "C": "She read a book.",
+                        "D": "She has read a book."
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_eng_q3",
+                    "question_uz": "\"Curious\" so'zining tarjimasi qaysi?",
+                    "question_ru": "Какой перевод слова 'curious'?",
+                    "question_en": "What does 'curious' mean?",
+                    "options": {
+                        "A": "Qo'rqoq",
+                        "B": "Dangasa",
+                        "C": "Qiziquvchan",
+                        "D": "Jahldor"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_eng_q4",
+                    "question_uz": "\"Neither he nor she ___ coming.\" To'g'ri fe'lni tanlang.",
+                    "question_ru": "Выберите правильный глагол: \"Neither he nor she ___ coming.\"",
+                    "question_en": "\"Neither he nor she ___ coming.\" Choose the correct verb.",
+                    "options": {
+                        "A": "are",
+                        "B": "were",
+                        "C": "is",
+                        "D": "be"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_eng_q5",
+                    "question_uz": "Passiv nima? Misol keltiring.",
+                    "question_ru": "Что такое пассивный залог? Выберите правильное предложение.",
+                    "question_en": "Which sentence is in the passive voice?",
+                    "options": {
+                        "A": "The dog bit the man.",
+                        "B": "The man bit the dog.",
+                        "C": "The man was bitten by the dog.",
+                        "D": "The man bites the dog."
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_eng_q6",
+                    "question_uz": "\"Achieve\" so'zining sinonimi qaysi?",
+                    "question_ru": "Какой синоним слова 'achieve'?",
+                    "question_en": "What is a synonym of 'achieve'?",
+                    "options": {
+                        "A": "Fail",
+                        "B": "Avoid",
+                        "C": "Accomplish",
+                        "D": "Ignore"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_eng_q7",
+                    "question_uz": "\"They ___ to Paris next week.\" Future Simple uchun to'g'ri variantni tanlang.",
+                    "question_ru": "Выберите правильный вариант Future Simple: \"They ___ to Paris next week.\"",
+                    "question_en": "\"They ___ to Paris next week.\" Choose the correct Future Simple form.",
+                    "options": {
+                        "A": "go",
+                        "B": "went",
+                        "C": "will go",
+                        "D": "are go"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_eng_q8",
+                    "question_uz": "'Environment' so'zining to'g'ri ta'rifini tanlang.",
+                    "question_ru": "Выберите правильное определение слова 'environment'.",
+                    "question_en": "Choose the correct definition of 'environment'.",
+                    "options": {
+                        "A": "A type of food",
+                        "B": "The natural world around us",
+                        "C": "A school subject",
+                        "D": "A type of building"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_eng_q9",
+                    "question_uz": "Qaysi so'z olmoshga kiradi?",
+                    "question_ru": "Какое слово является местоимением?",
+                    "question_en": "Which word is a pronoun?",
+                    "options": {
+                        "A": "Quickly",
+                        "B": "Happiness",
+                        "C": "They",
+                        "D": "Beautiful"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_eng_q10",
+                    "question_uz": "\"She is ___ honest girl.\" Bo'sh joyga to'g'ri artiklni qo'ying.",
+                    "question_ru": "Вставьте правильный артикль: \"She is ___ honest girl.\"",
+                    "question_en": "Fill in the blank: \"She is ___ honest girl.\"",
+                    "options": {
+                        "A": "a",
+                        "B": "an",
+                        "C": "the",
+                        "D": "—"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g6_eng_it1",
+                    "task_uz": "Siz yangi shahar tashkil qilmoqdasiz. Shaharning nomini, u erda nima bo'lishini va nima uchun odamlar u yerga kelishini ingliz tilida 4-5 gapda tasvirlab bering.",
+                    "task_ru": "Вы основываете новый город. Опишите его название, что в нём будет и почему люди захотят туда приехать (4-5 предложений на английском).",
+                    "task_en": "You are founding a new city. Describe its name, what it will have, and why people would want to come there in 4-5 English sentences.",
+                    "skill": "creativity"
+                },
+                {
+                    "id": "g6_eng_it2",
+                    "task_uz": "Quyidagi so'zlarni tegishli grammatik toifaga ajrating: quickly, happiness, they, run, beautiful, us, slowly, freedom.",
+                    "task_ru": "Распределите следующие слова по грамматическим категориям: quickly, happiness, they, run, beautiful, us, slowly, freedom.",
+                    "task_en": "Sort the following words into grammatical categories (noun, verb, adjective, adverb, pronoun): quickly, happiness, they, run, beautiful, us, slowly, freedom.",
+                    "skill": "analysis"
+                }
+            ]
+        },
+        {
+            "subject": "Biology",
+            "questions": [
+                {
+                    "id": "g6_bio_q1",
+                    "question_uz": "Hujayraning boshqaruv markazi qaysi organell?",
+                    "question_ru": "Какая органелла является управляющим центром клетки?",
+                    "question_en": "Which organelle is the control center of the cell?",
+                    "options": {
+                        "A": "Mitoxondriya",
+                        "B": "Yadrosi",
+                        "C": "Ribosoma",
+                        "D": "Membrana"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_bio_q2",
+                    "question_uz": "O'simliklar ozuqa sifatida qaysi moddani ishlab chiqaradi?",
+                    "question_ru": "Какое вещество вырабатывают растения в качестве пищи?",
+                    "question_en": "What substance do plants produce as food through photosynthesis?",
+                    "options": {
+                        "A": "Oqsil",
+                        "B": "Kletchatka",
+                        "C": "Glyukoza",
+                        "D": "Yog'"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_bio_q3",
+                    "question_uz": "Inson organizmida qon necha turga ajratiladi?",
+                    "question_ru": "На сколько групп делится кровь человека?",
+                    "question_en": "How many blood types does the human ABO system have?",
+                    "options": {
+                        "A": "2",
+                        "B": "3",
+                        "C": "4",
+                        "D": "6"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_bio_q4",
+                    "question_uz": "Hayvonlar tirik organizmlarga qanday ta'sir ko'rsatadi?",
+                    "question_ru": "Как животные влияют на живые организмы?",
+                    "question_en": "Which term describes organisms that eat both plants and animals?",
+                    "options": {
+                        "A": "Herbivor",
+                        "B": "Omnivor",
+                        "C": "Karnivor",
+                        "D": "Dekompozitor"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_bio_q5",
+                    "question_uz": "Qaysi a'zo nafas olishni boshqaradi?",
+                    "question_ru": "Какой орган отвечает за дыхание?",
+                    "question_en": "Which organ is primarily responsible for breathing?",
+                    "options": {
+                        "A": "Yurak",
+                        "B": "Jigar",
+                        "C": "O'pka",
+                        "D": "Buyrak"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_bio_q6",
+                    "question_uz": "Ko'payishning asosiy ikki turi qaysilar?",
+                    "question_ru": "Каковы два основных типа размножения?",
+                    "question_en": "What are the two main types of reproduction?",
+                    "options": {
+                        "A": "Jinsiy va jinsiy emas",
+                        "B": "Tez va sekin",
+                        "C": "Hujayraviy va to'qimaviy",
+                        "D": "Sutemizuvchi va tuxum qo'yuvchi"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g6_bio_q7",
+                    "question_uz": "Yashil o'simliklarning rangi qaysi pigmentdan kelib chiqadi?",
+                    "question_ru": "Какой пигмент придаёт зелёный цвет растениям?",
+                    "question_en": "Which pigment gives plants their green colour?",
+                    "options": {
+                        "A": "Melanin",
+                        "B": "Karotinoid",
+                        "C": "Xlorofil",
+                        "D": "Antotsiyan"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_bio_q8",
+                    "question_uz": "Qaysi hujayra organelli oqsil sintez qiladi?",
+                    "question_ru": "Какая органелла синтезирует белки?",
+                    "question_en": "Which cell organelle synthesises proteins?",
+                    "options": {
+                        "A": "Vakuola",
+                        "B": "Mitoxondriya",
+                        "C": "Ribosoma",
+                        "D": "Golji apparati"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_bio_q9",
+                    "question_uz": "Hayvon yurak necha kameradan iborat bo'lishi mumkin?",
+                    "question_ru": "Из скольких камер может состоять сердце животного?",
+                    "question_en": "A human heart has how many chambers?",
+                    "options": {
+                        "A": "2",
+                        "B": "3",
+                        "C": "4",
+                        "D": "5"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_bio_q10",
+                    "question_uz": "Tabiiy tanlanish nazariyasini kim asoslagan?",
+                    "question_ru": "Кто обосновал теорию естественного отбора?",
+                    "question_en": "Who developed the theory of natural selection?",
+                    "options": {
+                        "A": "Gregor Mendel",
+                        "B": "Louis Pasteur",
+                        "C": "Charles Darwin",
+                        "D": "Nikola Tesla"
+                    },
+                    "correct_answer": "C"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g6_bio_it1",
+                    "task_uz": "Siz biologsiz. Yangi kashf etilgan hayvon haqida qisqa hisobot tayyorlang: uni tasvirlab bering, qaysi sinflarga kirishi mumkin va u qanday muhitda yashaydi.",
+                    "task_ru": "Вы биолог. Подготовьте краткий отчёт о вновь открытом животном: опишите его, к какому классу оно может относиться и в какой среде обитает.",
+                    "task_en": "You are a biologist. Prepare a short report on a newly discovered animal: describe it, which class it might belong to, and what environment it lives in.",
+                    "skill": "creativity"
+                },
+                {
+                    "id": "g6_bio_it2",
+                    "task_uz": "Quyidagi organizmlarni ularning oziqlanish turiga ko'ra tasniflang: sher, sigir, odam, qarg'a, g'unajin, burgut.",
+                    "task_ru": "Классифицируйте следующих организмов по типу питания: лев, корова, человек, ворона, кролик, орёл.",
+                    "task_en": "Classify the following organisms by their feeding type (herbivore, carnivore, omnivore): lion, cow, human, crow, rabbit, eagle.",
+                    "skill": "logic"
+                }
+            ]
+        },
+        {
+            "subject": "History",
+            "questions": [
+                {
+                    "id": "g6_hist_q1",
+                    "question_uz": "Qadimgi Mesopotamiya qaysi daryolar oralig'ida joylashgan?",
+                    "question_ru": "Между какими реками располагалась Древняя Месопотамия?",
+                    "question_en": "Between which rivers was Ancient Mesopotamia located?",
+                    "options": {
+                        "A": "Nil va Kongo",
+                        "B": "Dajla va Frot",
+                        "C": "Indus va Gang",
+                        "D": "Amazon va Orinoko"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_hist_q2",
+                    "question_uz": "Birinchi bosma kitobni kim ixtiro qilgan?",
+                    "question_ru": "Кто изобрёл первый печатный станок?",
+                    "question_en": "Who invented the first printing press?",
+                    "options": {
+                        "A": "Leonardo da Vinci",
+                        "B": "Johannes Gutenberg",
+                        "C": "Galileo Galilei",
+                        "D": "Isaac Newton"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_hist_q3",
+                    "question_uz": "O'rta asrlar davri qaysi yillarni qamrab oladi?",
+                    "question_ru": "Какой период охватывает Средневековье?",
+                    "question_en": "Which period does the Middle Ages cover?",
+                    "options": {
+                        "A": "500-1500-yillar",
+                        "B": "1000-2000-yillar",
+                        "C": "100-500-yillar",
+                        "D": "1500-1800-yillar"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g6_hist_q4",
+                    "question_uz": "Kolumb Amerikani qaysi yili kashf etgan?",
+                    "question_ru": "В каком году Колумб открыл Америку?",
+                    "question_en": "In which year did Columbus discover America?",
+                    "options": {
+                        "A": "1490",
+                        "B": "1492",
+                        "C": "1498",
+                        "D": "1500"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_hist_q5",
+                    "question_uz": "Buyuk Britaniya imperiyasi eng katta bo'lgan davr qaysi?",
+                    "question_ru": "В какой период Британская империя была наибольшей?",
+                    "question_en": "When was the British Empire at its largest?",
+                    "options": {
+                        "A": "XVII asr",
+                        "B": "XVIII asr",
+                        "C": "XIX-XX asr boshi",
+                        "D": "XV asr"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_hist_q6",
+                    "question_uz": "\"Renessans\" so'zi qaysi tildan va nima ma'noni anglatadi?",
+                    "question_ru": "Из какого языка слово «Ренессанс» и что оно означает?",
+                    "question_en": "From which language does 'Renaissance' come, and what does it mean?",
+                    "options": {
+                        "A": "Italyancha, qayta tug'ilish",
+                        "B": "Fransuzcha, inqilob",
+                        "C": "Lotincha, yangilanish",
+                        "D": "Yunoncha, uyg'onish"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g6_hist_q7",
+                    "question_uz": "Fransuz inqilobi qaysi yili sodir bo'lgan?",
+                    "question_ru": "В каком году произошла Французская революция?",
+                    "question_en": "In which year did the French Revolution occur?",
+                    "options": {
+                        "A": "1776",
+                        "B": "1789",
+                        "C": "1804",
+                        "D": "1815"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_hist_q8",
+                    "question_uz": "Sohibqiron Amir Temur qaysi yillarda yashagan?",
+                    "question_ru": "В каком году жил Амир Тимур?",
+                    "question_en": "When did Amir Temur live?",
+                    "options": {
+                        "A": "1100-1165",
+                        "B": "1336-1405",
+                        "C": "1200-1260",
+                        "D": "1450-1510"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_hist_q9",
+                    "question_uz": "Ikkinchi jahon urushi qachon tugagan?",
+                    "question_ru": "Когда закончилась Вторая мировая война?",
+                    "question_en": "When did the Second World War end?",
+                    "options": {
+                        "A": "1943",
+                        "B": "1944",
+                        "C": "1945",
+                        "D": "1946"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_hist_q10",
+                    "question_uz": "Ulug'bek kim bo'lgan?",
+                    "question_ru": "Кем был Улугбек?",
+                    "question_en": "Who was Ulugbek?",
+                    "options": {
+                        "A": "Shoir va musiqachi",
+                        "B": "Astronom va matematik",
+                        "C": "Sarkarda va temuriy hukmdor",
+                        "D": "Tabib va kimyogar"
+                    },
+                    "correct_answer": "C"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g6_hist_it1",
+                    "task_uz": "O'rta asrlarda Yevropadagi qal'a hayotini tasvirlab bering: kimlar yashagan, qanday himoya bo'lgan, qanday kundalik hayot kechgan.",
+                    "task_ru": "Опишите жизнь в средневековом европейском замке: кто там жил, как была организована защита, каким был повседневный быт.",
+                    "task_en": "Describe life in a medieval European castle: who lived there, how it was defended, and what daily life was like.",
+                    "skill": "creativity"
+                },
+                {
+                    "id": "g6_hist_it2",
+                    "task_uz": "Quyidagi ixtirolarni ularning muallifi bilan moslashtiring: bosma stanok, telefon, elektr chirog'i, bug' mashinasi. Muallif: Gutenberg, Bell, Edison, Watt.",
+                    "task_ru": "Сопоставьте изобретения с их авторами: печатный станок, телефон, лампочка, паровая машина. Авторы: Гутенберг, Белл, Эдисон, Уатт.",
+                    "task_en": "Match the inventions to their inventors: printing press, telephone, light bulb, steam engine. Inventors: Gutenberg, Bell, Edison, Watt.",
+                    "skill": "analysis"
+                }
+            ]
+        },
+        {
+            "subject": "Informatics",
+            "questions": [
+                {
+                    "id": "g6_inf_q1",
+                    "question_uz": "Algoritm nima?",
+                    "question_ru": "Что такое алгоритм?",
+                    "question_en": "What is an algorithm?",
+                    "options": {
+                        "A": "Kompyuter xotirasi",
+                        "B": "Muammoni hal qilish uchun bosqichlar ketma-ketligi",
+                        "C": "Internet tarmog'i",
+                        "D": "Dasturlash tili"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_inf_q2",
+                    "question_uz": "Binary (ikkilik) son sistemasida qanday raqamlar ishlatiladi?",
+                    "question_ru": "Какие цифры используются в двоичной системе счисления?",
+                    "question_en": "Which digits are used in the binary number system?",
+                    "options": {
+                        "A": "0, 1, 2",
+                        "B": "0 va 1",
+                        "C": "1 dan 9 gacha",
+                        "D": "Faqat 0"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_inf_q3",
+                    "question_uz": "HTML nimani anglatadi?",
+                    "question_ru": "Что означает аббревиатура HTML?",
+                    "question_en": "What does HTML stand for?",
+                    "options": {
+                        "A": "High Transfer Markup Language",
+                        "B": "HyperText Markup Language",
+                        "C": "HyperText Machine Language",
+                        "D": "Hyper Transfer Markup Logic"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_inf_q4",
+                    "question_uz": "RAM nimani anglatadi?",
+                    "question_ru": "Что означает аббревиатура RAM?",
+                    "question_en": "What does RAM stand for?",
+                    "options": {
+                        "A": "Random Access Memory",
+                        "B": "Read And Memory",
+                        "C": "Rapid Access Mechanism",
+                        "D": "Real Application Memory"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g6_inf_q5",
+                    "question_uz": "Elektron pochta manzili qanday ko'rinishda bo'ladi?",
+                    "question_ru": "Как выглядит адрес электронной почты?",
+                    "question_en": "What does an email address look like?",
+                    "options": {
+                        "A": "www.example.com",
+                        "B": "name@domain.com",
+                        "C": "//email/name",
+                        "D": "email:name.domain"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_inf_q6",
+                    "question_uz": "Qaysi qurilma ma'lumotlarni chop etadi?",
+                    "question_ru": "Какое устройство печатает данные?",
+                    "question_en": "Which device prints data?",
+                    "options": {
+                        "A": "Skaner",
+                        "B": "Monitor",
+                        "C": "Printer",
+                        "D": "Proyektor"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_inf_q7",
+                    "question_uz": "Oʻyin-kulgi dasturlash tili Scratch kimlar uchun yaratilgan?",
+                    "question_ru": "Для кого создан язык программирования Scratch?",
+                    "question_en": "For whom was the programming language Scratch designed?",
+                    "options": {
+                        "A": "Professional dasturchilar uchun",
+                        "B": "Bolalar va boshlang'ich dasturchilar uchun",
+                        "C": "Olimlar uchun",
+                        "D": "O'yinchilar uchun"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_inf_q8",
+                    "question_uz": "Qaysi dastur jadval bilan ishlash uchun ishlatiladi?",
+                    "question_ru": "Какая программа используется для работы с таблицами?",
+                    "question_en": "Which program is used for working with spreadsheets?",
+                    "options": {
+                        "A": "Word",
+                        "B": "PowerPoint",
+                        "C": "Excel",
+                        "D": "Paint"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_inf_q9",
+                    "question_uz": "Blokirovka algoritmida ('if-else') nima tekshiriladi?",
+                    "question_ru": "Что проверяется в блоке алгоритма ('if-else')?",
+                    "question_en": "What does an 'if-else' block check in an algorithm?",
+                    "options": {
+                        "A": "Sana va vaqt",
+                        "B": "Shart",
+                        "C": "Foydalanuvchi nomi",
+                        "D": "Xotira hajmi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_inf_q10",
+                    "question_uz": "Kiberjinoyat nima?",
+                    "question_ru": "Что такое киберпреступность?",
+                    "question_en": "What is cybercrime?",
+                    "options": {
+                        "A": "Kompyuter sotib olish",
+                        "B": "Internet orqali amalga oshirilgan noqonuniy harakatlar",
+                        "C": "Dastur o'rnatish",
+                        "D": "Fayllarni nusxalash"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g6_inf_it1",
+                    "task_uz": "Uy haroratini boshqaradigan aqlli qurilma uchun algoritm tuzing. Uning bosqichlarini oddiy til bilan tushuntiring.",
+                    "task_ru": "Составьте алгоритм для умного устройства, управляющего температурой дома. Объясните его шаги простым языком.",
+                    "task_en": "Create an algorithm for a smart device that controls home temperature. Explain its steps in simple language.",
+                    "skill": "logic"
+                },
+                {
+                    "id": "g6_inf_it2",
+                    "task_uz": "Siz maktab uchun veb-sayt yaratmoqchisiz. Saytda qanday bo'limlar bo'lishi kerak? Kamida 5 ta bo'limni sanab, har birining vazifasini tushuntiring.",
+                    "task_ru": "Вы хотите создать сайт для школы. Какие разделы на нём должны быть? Перечислите минимум 5 разделов и объясните назначение каждого.",
+                    "task_en": "You want to create a website for your school. What sections should it have? List at least 5 sections and explain the purpose of each.",
+                    "skill": "creativity"
+                }
+            ]
+        },
+        {
+            "subject": "Native Language (Uzbek)",
+            "questions": [
+                {
+                    "id": "g6_uzb_q1",
+                    "question_uz": "\"Ishtirok etmoq\" fe'lining sinonimi qaysi?",
+                    "question_ru": "Какой синоним у глагола «иштирок этмоқ» (участвовать)?",
+                    "question_en": "Which is a synonym of 'ishtirok etmoq' (to participate)?",
+                    "options": {
+                        "A": "Qatnashmoq",
+                        "B": "Kutmoq",
+                        "C": "Yotmoq",
+                        "D": "O'qimoq"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g6_uzb_q2",
+                    "question_uz": "Quyidagi gapda ega qaysi so'z? \"Bolalar bog'da o'ynaydi.\"",
+                    "question_ru": "Какое слово является подлежащим в предложении «Болалар боғда ўйнайди»?",
+                    "question_en": "Which word is the subject in 'Bolalar bog'da o'ynaydi'?",
+                    "options": {
+                        "A": "Bog'da",
+                        "B": "O'ynaydi",
+                        "C": "Bolalar",
+                        "D": "Va"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_uzb_q3",
+                    "question_uz": "\"Kitoblar\" so'zida qo'shimcha qaysi?",
+                    "question_ru": "Какой суффикс в слове «китоблар»?",
+                    "question_en": "What is the suffix in the word 'kitoblar'?",
+                    "options": {
+                        "A": "-lar",
+                        "B": "-kit",
+                        "C": "-ob",
+                        "D": "-kitob"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g6_uzb_q4",
+                    "question_uz": "Quyidagi gap qaysi turga kiradi? \"Siz qayerga ketasiz?\"",
+                    "question_ru": "К какому типу относится предложение «Сиз қаерга кетасиз?»?",
+                    "question_en": "What type of sentence is 'Siz qayerga ketasiz?'?",
+                    "options": {
+                        "A": "Darak gap",
+                        "B": "So'roq gap",
+                        "C": "Buyruq gap",
+                        "D": "His-hayajon gap"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_uzb_q5",
+                    "question_uz": "Cho'lpon qaysi asarning muallifi?",
+                    "question_ru": "Автором какого произведения является Чўлпон?",
+                    "question_en": "Which work was authored by Cho'lpon?",
+                    "options": {
+                        "A": "O'tkan kunlar",
+                        "B": "Kecha va kunduz",
+                        "C": "Sarob",
+                        "D": "Ulmas qo'shiq"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_uzb_q6",
+                    "question_uz": "Fe'lning nishonasi qaysi savol bilan aniqlanadi?",
+                    "question_ru": "На какой вопрос отвечает глагол?",
+                    "question_en": "Which question word identifies a verb in Uzbek?",
+                    "options": {
+                        "A": "Kim? Nima?",
+                        "B": "Qaysi? Qanday?",
+                        "C": "Nima qildi? Nima qiladi?",
+                        "D": "Qayerda? Qachon?"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_uzb_q7",
+                    "question_uz": "\"Osmon\" so'zining ko'chma ma'nosi qaysi jumlada ishlatilgan?",
+                    "question_ru": "В каком предложении слово «осмон» употреблено в переносном значении?",
+                    "question_en": "In which sentence is 'osmon' (sky) used figuratively?",
+                    "options": {
+                        "A": "Osmon bulutli edi.",
+                        "B": "U osmonga qarab yurdi.",
+                        "C": "Uning orzulari osmonday ulkan.",
+                        "D": "Osmon moviy rang."
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_uzb_q8",
+                    "question_uz": "O'zbek tilida sozlar nechanchi shaxs bo'yicha o'zgaradi?",
+                    "question_ru": "По скольким лицам изменяются слова в узбекском языке?",
+                    "question_en": "How many persons do verbs conjugate by in Uzbek?",
+                    "options": {
+                        "A": "2",
+                        "B": "3",
+                        "C": "4",
+                        "D": "6"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_uzb_q9",
+                    "question_uz": "Quyidagi jumlada qo'shma gap aniqlansin: 'Quyosh chiqdi va qushlar sayray boshladi.'",
+                    "question_ru": "Определите тип предложения: «Қуёш чиқди ва қушлар сайрай бошлади».",
+                    "question_en": "What type of sentence is 'Quyosh chiqdi va qushlar sayray boshladi'?",
+                    "options": {
+                        "A": "Sodda gap",
+                        "B": "Qo'shma gap",
+                        "C": "So'roq gap",
+                        "D": "Buyruq gap"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_uzb_q10",
+                    "question_uz": "Olmosh nima?",
+                    "question_ru": "Что такое местоимение?",
+                    "question_en": "What is a pronoun in Uzbek grammar?",
+                    "options": {
+                        "A": "Ot o'rnida keluvchi so'z turkumi",
+                        "B": "Fe'lning bir turi",
+                        "C": "Harakat bildiruvchi so'z",
+                        "D": "Belgi bildiruvchi so'z"
+                    },
+                    "correct_answer": "A"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g6_uzb_it1",
+                    "task_uz": "Bahor fasli haqida 5-6 jumlali kichik inshо yozing. Tasviriy so'zlar va epitetlardan foydalaning.",
+                    "task_ru": "Напишите небольшое эссе из 5-6 предложений о весне. Используйте образные слова и эпитеты.",
+                    "task_en": "Write a short 5-6 sentence essay about spring in Uzbek. Use descriptive words and epithets.",
+                    "skill": "creativity"
+                },
+                {
+                    "id": "g6_uzb_it2",
+                    "task_uz": "Quyidagi gaplardan ot, fe'l va sifatlarni ajrating: 'Chiroyli bola tez yugirdi, kuchli shamol daraxtlarni silkitdi.'",
+                    "task_ru": "Выделите существительные, глаголы и прилагательные из предложений: «Чиройли бола тез югирди, кучли шамол дарахтларни силкитди».",
+                    "task_en": "Identify nouns, verbs, and adjectives in: 'Chiroyli bola tez yugirdi, kuchli shamol daraxtlarni silkitdi.'",
+                    "skill": "analysis"
+                }
+            ]
+        },
+        {
+            "subject": "Russian",
+            "questions": [
+                {
+                    "id": "g6_rus_q1",
+                    "question_uz": "Rus tilida ot necha jinsga bo'linadi?",
+                    "question_ru": "На сколько родов делятся существительные в русском языке?",
+                    "question_en": "How many genders do Russian nouns have?",
+                    "options": {
+                        "A": "2",
+                        "B": "3",
+                        "C": "4",
+                        "D": "5"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_rus_q2",
+                    "question_uz": "\"Школа\" so'zi qaysi jinsga kiradi?",
+                    "question_ru": "Какого рода слово «школа»?",
+                    "question_en": "What gender is the Russian word 'школа'?",
+                    "options": {
+                        "A": "Erkak jins",
+                        "B": "Ayol jins",
+                        "C": "O'rta jins",
+                        "D": "Jinsiz"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_rus_q3",
+                    "question_uz": "Rus tilida nechta kelishik bor?",
+                    "question_ru": "Сколько падежей в русском языке?",
+                    "question_en": "How many cases does the Russian language have?",
+                    "options": {
+                        "A": "4",
+                        "B": "5",
+                        "C": "6",
+                        "D": "7"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_rus_q4",
+                    "question_uz": "\"Я люблю читать книги\" gapida kesim qaysi so'z?",
+                    "question_ru": "Какое слово является сказуемым в предложении «Я люблю читать книги»?",
+                    "question_en": "What is the predicate in 'Я люблю читать книги'?",
+                    "options": {
+                        "A": "Я",
+                        "B": "Люблю",
+                        "C": "Читать",
+                        "D": "Книги"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_rus_q5",
+                    "question_uz": "'Солнце' so'zining ko'pligi qanday?",
+                    "question_ru": "Каково множественное число слова «солнце»?",
+                    "question_en": "What is the plural of 'солнце' (sun)?",
+                    "options": {
+                        "A": "Солнци",
+                        "B": "Солнцев",
+                        "C": "Солнца",
+                        "D": "Солнцы"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_rus_q6",
+                    "question_uz": "\"Красивее\" so'zi qaysi so'zning qiyosiy darajasi?",
+                    "question_ru": "Сравнительной степенью какого прилагательного является «красивее»?",
+                    "question_en": "The comparative form 'красивее' corresponds to which adjective?",
+                    "options": {
+                        "A": "Красивый",
+                        "B": "Красота",
+                        "C": "Красить",
+                        "D": "Краса"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g6_rus_q7",
+                    "question_uz": "Quyidagi gapda to'ldiruvchi qaysi so'z? \"Я читаю книгу.\"",
+                    "question_ru": "Какое слово является дополнением в предложении «Я читаю книгу»?",
+                    "question_en": "What is the object in 'Я читаю книгу'?",
+                    "options": {
+                        "A": "Я",
+                        "B": "Читаю",
+                        "C": "Книгу",
+                        "D": "Читать"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_rus_q8",
+                    "question_uz": "Rus tilida so'z bo'g'inlarga qanday bo'linadi?",
+                    "question_ru": "Как делятся слова на слоги в русском языке?",
+                    "question_en": "How are Russian words divided into syllables?",
+                    "options": {
+                        "A": "Har bir tovush alohida bo'g'in",
+                        "B": "Har bir unli tovush alohida bo'g'in yaratadi",
+                        "C": "Faqat undosh tovushlar bo'g'in yaratadi",
+                        "D": "Belgilangan qoidaga ko'ra"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_rus_q9",
+                    "question_uz": "\"Идти\" va \"ходить\" fe'llari orasidagi farq nima?",
+                    "question_ru": "В чём разница между глаголами «идти» и «ходить»?",
+                    "question_en": "What is the difference between 'идти' and 'ходить'?",
+                    "options": {
+                        "A": "Ma'no bir xil",
+                        "B": "Idti — bir yo'nalish, xodit' — turli yo'nalishlar",
+                        "C": "Xodit' — o'tash, idti — kelish",
+                        "D": "Ular sinonim"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_rus_q10",
+                    "question_uz": "\"Пожалуйста\" so'zi qanday vaziyatda ishlatiladi?",
+                    "question_ru": "В каком случае употребляется слово «пожалуйста»?",
+                    "question_en": "When is the word 'пожалуйста' used?",
+                    "options": {
+                        "A": "Xayrlashganda",
+                        "B": "Iltimos qilganda yoki minnatdorchilikka javob berganda",
+                        "C": "Salomlashganda",
+                        "D": "Hayron bo'lganda"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g6_rus_it1",
+                    "task_uz": "Rus tilida o'z shaharingiz haqida 4-5 gap yozing: shaharning nomi, u erda nima bor, siz u erda nima qilishni yoqtirasiz.",
+                    "task_ru": "Напишите на русском языке 4-5 предложений о своём городе: название, что в нём есть, что вам там нравится делать.",
+                    "task_en": "Write 4-5 sentences in Russian about your city: its name, what it has, and what you enjoy doing there.",
+                    "skill": "creativity"
+                },
+                {
+                    "id": "g6_rus_it2",
+                    "task_uz": "Quyidagi gaplardan ot, sifat va fe'llarni ajrating: «В большом городе живут умные люди и строят красивые здания.»",
+                    "task_ru": "Выделите существительные, прилагательные и глаголы из предложения: «В большом городе живут умные люди и строят красивые здания.»",
+                    "task_en": "Identify nouns, adjectives, and verbs in: 'В большом городе живут умные люди и строят красивые здания.'",
+                    "skill": "analysis"
+                }
+            ]
+        },
+        {
+            "subject": "Literature",
+            "questions": [
+                {
+                    "id": "g6_lit_q1",
+                    "question_uz": "\"Tom Soyyerning sarguzashtlari\" kimning asari?",
+                    "question_ru": "Кто написал «Приключения Тома Сойера»?",
+                    "question_en": "Who wrote 'The Adventures of Tom Sawyer'?",
+                    "options": {
+                        "A": "Jack London",
+                        "B": "Mark Twain",
+                        "C": "Charles Dickens",
+                        "D": "Ernest Hemingway"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_lit_q2",
+                    "question_uz": "Metafora nima?",
+                    "question_ru": "Что такое метафора?",
+                    "question_en": "What is a metaphor?",
+                    "options": {
+                        "A": "So'zning bevosita ma'nosi",
+                        "B": "Ko'chma ma'noda ishlatilgan ibora",
+                        "C": "Qofiyaviy ifoda",
+                        "D": "She'r turi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_lit_q3",
+                    "question_uz": "\"Kichkina Shahzoda\" kimning asari?",
+                    "question_ru": "Кто написал «Маленького принца»?",
+                    "question_en": "Who wrote 'The Little Prince'?",
+                    "options": {
+                        "A": "Jules Verne",
+                        "B": "Antoine de Saint-Exupéry",
+                        "C": "Victor Hugo",
+                        "D": "Alexandre Dumas"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_lit_q4",
+                    "question_uz": "Dramatik asar sahnada qanday namoyish etiladi?",
+                    "question_ru": "Как демонстрируется драматическое произведение на сцене?",
+                    "question_en": "How is a dramatic work presented on stage?",
+                    "options": {
+                        "A": "Kino sifatida",
+                        "B": "Spektakl yoki teatr o'yini sifatida",
+                        "C": "Radio eshittirish sifatida",
+                        "D": "Kitob o'qish sifatida"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_lit_q5",
+                    "question_uz": "Hamid Olimjonning mashhur asari qaysi?",
+                    "question_ru": "Какое известное произведение Хамида Алимджана?",
+                    "question_en": "Which is a famous work by Hamid Olimjon?",
+                    "options": {
+                        "A": "O'tkan kunlar",
+                        "B": "Oydin kechalar",
+                        "C": "Kecha va kunduz",
+                        "D": "Sarob"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_lit_q6",
+                    "question_uz": "Sonet qanday she'riy shakldir?",
+                    "question_ru": "Что такое сонет?",
+                    "question_en": "What is a sonnet?",
+                    "options": {
+                        "A": "14 misrali she'r",
+                        "B": "10 misrali she'r",
+                        "C": "Serbsatirli erkin she'r",
+                        "D": "Masnaviy"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g6_lit_q7",
+                    "question_uz": "\"Sherlok Xolms\" hikoyalarini kim yozgan?",
+                    "question_ru": "Кто написал рассказы о Шерлоке Холмсе?",
+                    "question_en": "Who wrote the Sherlock Holmes stories?",
+                    "options": {
+                        "A": "Agatha Christie",
+                        "B": "Arthur Conan Doyle",
+                        "C": "Edgar Allan Poe",
+                        "D": "Robert Louis Stevenson"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_lit_q8",
+                    "question_uz": "Personaj nima?",
+                    "question_ru": "Кто такой персонаж?",
+                    "question_en": "What is a character (personaj) in literature?",
+                    "options": {
+                        "A": "Asarning muallifi",
+                        "B": "Asardagi badiiy obraz",
+                        "C": "Asarning mavzusi",
+                        "D": "Asarning turi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_lit_q9",
+                    "question_uz": "\"Lolazor\" she'rining muallifi kim?",
+                    "question_ru": "Кто автор стихотворения «Лолазор»?",
+                    "question_en": "Who is the author of the poem 'Lolazor'?",
+                    "options": {
+                        "A": "Abdulla Oripov",
+                        "B": "Muhammad Yusuf",
+                        "C": "Erkin Vohidov",
+                        "D": "Shukrullo"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g6_lit_q10",
+                    "question_uz": "\"Harry Potter\" kitoblari seriyasini kim yozgan?",
+                    "question_ru": "Кто написал серию книг о Гарри Поттере?",
+                    "question_en": "Who wrote the Harry Potter book series?",
+                    "options": {
+                        "A": "Stephenie Meyer",
+                        "B": "J.R.R. Tolkien",
+                        "C": "J.K. Rowling",
+                        "D": "C.S. Lewis"
+                    },
+                    "correct_answer": "C"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g6_lit_it1",
+                    "task_uz": "\"Kichkina Shahzoda\" asaridan biror sahnani o'zlashtirib, uni zamonaviy sharoitga moslashtirib qayta yozing. Shahzoda bugun kimga duch kelishi mumkin?",
+                    "task_ru": "Адаптируйте сцену из «Маленького принца» к современности. Кого мог бы встретить Принц сегодня?",
+                    "task_en": "Adapt a scene from 'The Little Prince' to modern times. Who might the Prince encounter today?",
+                    "skill": "creativity"
+                },
+                {
+                    "id": "g6_lit_it2",
+                    "task_uz": "Quyidagi tasvir vositalarini misollar bilan tasniflang: metafora, epitet, mubolag'a, o'xshatish. Har biriga o'z misolingizni keltiring.",
+                    "task_ru": "Классифицируйте следующие художественные приёмы с примерами: метафора, эпитет, гипербола, сравнение.",
+                    "task_en": "Classify the following literary devices with examples: metaphor, epithet, hyperbole, simile. Provide your own example for each.",
+                    "skill": "analysis"
+                }
+            ]
+        },
+        {
+            "subject": "Physics",
+            "questions": [
+                {
+                    "id": "g6_phy_q1",
+                    "question_uz": "Fizika qaysi fanlar guruhiga kiradi?",
+                    "question_ru": "К какой группе наук относится физика?",
+                    "question_en": "Physics belongs to which group of sciences?",
+                    "options": {
+                        "A": "Gumanitar fanlar",
+                        "B": "Tabiiy fanlar",
+                        "C": "Ijtimoiy fanlar",
+                        "D": "San'at fanlari"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_phy_q2",
+                    "question_uz": "Jism harakati qanday o'lchanadi?",
+                    "question_ru": "Как измеряется движение тела?",
+                    "question_en": "How is the motion of an object measured?",
+                    "options": {
+                        "A": "Og'irlik",
+                        "B": "Tezlik va yo'nalish",
+                        "C": "Rangi va o'lchami",
+                        "D": "Harorat"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_phy_q3",
+                    "question_uz": "Issiqlik o'lchov birligi qaysi?",
+                    "question_ru": "Какова единица измерения тепла?",
+                    "question_en": "What is the unit of measurement for heat energy?",
+                    "options": {
+                        "A": "Metr",
+                        "B": "Joule",
+                        "C": "Newton",
+                        "D": "Watt"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_phy_q4",
+                    "question_uz": "Nur to'g'ri chiziq bo'yicha harakat qiladimi?",
+                    "question_ru": "Свет движется по прямой линии?",
+                    "question_en": "Does light travel in a straight line?",
+                    "options": {
+                        "A": "Yo'q, doira shaklida",
+                        "B": "Ha, vakuumda to'g'ri chiziqda",
+                        "C": "Yo'q, egri chiziq bo'ylab",
+                        "D": "Faqat suvda"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_phy_q5",
+                    "question_uz": "Magnit kompas qaysi tomoni ko'rsatadi?",
+                    "question_ru": "Какую сторону показывает магнитный компас?",
+                    "question_en": "Which direction does a magnetic compass needle point to?",
+                    "options": {
+                        "A": "Janub",
+                        "B": "Sharq",
+                        "C": "Shimol",
+                        "D": "G'arb"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_phy_q6",
+                    "question_uz": "Inertsiya nima?",
+                    "question_ru": "Что такое инерция?",
+                    "question_en": "What is inertia?",
+                    "options": {
+                        "A": "Kuch",
+                        "B": "Jismning harakatini o'zgartirmaslik xususiyati",
+                        "C": "Tezlashtirish",
+                        "D": "Og'irlik"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_phy_q7",
+                    "question_uz": "Massa va og'irlik o'rtasidagi farq nima?",
+                    "question_ru": "В чём разница между массой и весом?",
+                    "question_en": "What is the difference between mass and weight?",
+                    "options": {
+                        "A": "Hech qanday farq yo'q",
+                        "B": "Massa materiya miqdori, og'irlik gravitatsiya kuchi",
+                        "C": "Massa kuch, og'irlik massa",
+                        "D": "Ikkalasi ham kuch birliklari"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g6_phy_q8",
+                    "question_uz": "Tovush to'lqinlari qaysi muhitda tarqaladi?",
+                    "question_ru": "В какой среде распространяются звуковые волны?",
+                    "question_en": "In which mediums do sound waves travel?",
+                    "options": {
+                        "A": "Faqat havoda",
+                        "B": "Faqat suvda",
+                        "C": "Qattiq, suyuq va gazsimon muhitlarda",
+                        "D": "Faqat vakuumda"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_phy_q9",
+                    "question_uz": "Yorug'lik sekundigiga qancha km bosadi?",
+                    "question_ru": "Сколько км в секунду движется свет?",
+                    "question_en": "How far does light travel per second?",
+                    "options": {
+                        "A": "300 km",
+                        "B": "3000 km",
+                        "C": "300 000 km",
+                        "D": "30 000 km"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g6_phy_q10",
+                    "question_uz": "Simob termometr qanday ishlaydi?",
+                    "question_ru": "Как работает ртутный термометр?",
+                    "question_en": "How does a mercury thermometer work?",
+                    "options": {
+                        "A": "Elektr orqali",
+                        "B": "Issiqlik ta'sirida simobning kengayishi yoki qisqarishi bilan",
+                        "C": "Magnit orqali",
+                        "D": "Bosim o'lchoviga ko'ra"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g6_phy_it1",
+                    "task_uz": "Tasavvur qiling: siz o'yin maydonchasida arqon tortishiz. Ikkala tomon teng kuch bilan tortsa nima bo'ladi? Bir tomon ko'proq kuch ishlatsa-chi? Kuch va inertsiya tushunchalarini qo'llab tushuntiring.",
+                    "task_ru": "Представьте: вы на детской площадке тянете верёвку. Что произойдёт, если обе стороны тянут с одинаковой силой? А если одна сторона сильнее? Объясните с помощью понятий силы и инерции.",
+                    "task_en": "Imagine you are playing tug-of-war. What happens if both sides pull with equal force? What if one side pulls harder? Explain using the concepts of force and inertia.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g6_phy_it2",
+                    "task_uz": "Uy-ro'zg'ordan 3 ta predmet tanlang va ularning fizik xossalarini tavsiflang: holati (qattiq/suyuq/gaz), og'irligi, issiqlik o'tkazuvchanligi.",
+                    "task_ru": "Выберите 3 предмета из дома и опишите их физические свойства: состояние (твёрдое/жидкое/газообразное), вес, теплопроводность.",
+                    "task_en": "Choose 3 household objects and describe their physical properties: state (solid/liquid/gas), weight, and thermal conductivity.",
+                    "skill": "logic"
+                }
+            ]
+        }
+    ]
+}

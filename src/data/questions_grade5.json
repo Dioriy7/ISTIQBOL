@@ -1,0 +1,813 @@
+{
+  "grade": 5,
+  "subjects": [
+    {
+      "subject": "Mathematics",
+      "questions": [
+        {
+          "id": "g5_math_q1",
+          "question_uz": "12 × 15 = ?",
+          "question_ru": "12 × 15 = ?",
+          "question_en": "12 × 15 = ?",
+          "options": { "A": "170", "B": "180", "C": "175", "D": "185" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_math_q2",
+          "question_uz": "250 ni 5 ga bo'lsak nechaga teng?",
+          "question_ru": "Чему равно 250 делённое на 5?",
+          "question_en": "What is 250 divided by 5?",
+          "options": { "A": "40", "B": "45", "C": "50", "D": "55" },
+          "correct_answer": "C"
+        },
+        {
+          "id": "g5_math_q3",
+          "question_uz": "Agar to'g'ri to'rtburchakning uzunligi 8 sm va eni 5 sm bo'lsa, uning yuzasi qancha?",
+          "question_ru": "Если длина прямоугольника 8 см, а ширина 5 см, какова его площадь?",
+          "question_en": "If a rectangle has a length of 8 cm and width of 5 cm, what is its area?",
+          "options": { "A": "30 sm²", "B": "40 sm²", "C": "45 sm²", "D": "13 sm²" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_math_q4",
+          "question_uz": "3/4 + 1/4 = ?",
+          "question_ru": "3/4 + 1/4 = ?",
+          "question_en": "3/4 + 1/4 = ?",
+          "options": { "A": "4/8", "B": "1", "C": "3/8", "D": "1/2" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_math_q5",
+          "question_uz": "Qaysi son eng katta: 0.75, 0.8, 0.65, 0.7?",
+          "question_ru": "Какое из чисел наибольшее: 0.75, 0.8, 0.65, 0.7?",
+          "question_en": "Which number is the largest: 0.75, 0.8, 0.65, 0.7?",
+          "options": { "A": "0.75", "B": "0.65", "C": "0.8", "D": "0.7" },
+          "correct_answer": "C"
+        },
+        {
+          "id": "g5_math_q6",
+          "question_uz": "1 km necha metr?",
+          "question_ru": "Сколько метров в 1 км?",
+          "question_en": "How many meters are in 1 km?",
+          "options": { "A": "100", "B": "10", "C": "10000", "D": "1000" },
+          "correct_answer": "D"
+        },
+        {
+          "id": "g5_math_q7",
+          "question_uz": "Agar a = 6 va b = 4 bo'lsa, a² − b² = ?",
+          "question_ru": "Если a = 6 и b = 4, то a² − b² = ?",
+          "question_en": "If a = 6 and b = 4, what is a² − b²?",
+          "options": { "A": "10", "B": "16", "C": "20", "D": "12" },
+          "correct_answer": "C"
+        },
+        {
+          "id": "g5_math_q8",
+          "question_uz": "5 ta olma 3000 so'm tursa, 8 ta olma necha so'm turadi?",
+          "question_ru": "Если 5 яблок стоят 3000 сум, сколько стоят 8 яблок?",
+          "question_en": "If 5 apples cost 3000 sum, how much do 8 apples cost?",
+          "options": { "A": "4800 so'm", "B": "5000 so'm", "C": "4200 so'm", "D": "6000 so'm" },
+          "correct_answer": "A"
+        },
+        {
+          "id": "g5_math_q9",
+          "question_uz": "Uchburchakning uchta burchagi yig'indisi necha gradus?",
+          "question_ru": "Чему равна сумма трёх углов треугольника?",
+          "question_en": "What is the sum of the three angles of a triangle?",
+          "options": { "A": "90°", "B": "180°", "C": "270°", "D": "360°" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_math_q10",
+          "question_uz": "Bir soatda 60 km bosadigan avtomobil 3 soatda necha km bosadi?",
+          "question_ru": "Автомобиль едет со скоростью 60 км/ч. Сколько километров он проедет за 3 часа?",
+          "question_en": "A car travels at 60 km/h. How many km does it travel in 3 hours?",
+          "options": { "A": "120 km", "B": "180 km", "C": "200 km", "D": "160 km" },
+          "correct_answer": "B"
+        }
+      ],
+      "interactive_tasks": [
+        {
+          "id": "g5_math_it1",
+          "task_uz": "Siz bozorga bordingiz va 5 ta kitob sotib oldingiz, har biri 12 000 so'mdan. Kassirga 100 000 so'm berdingiz. Sizga qancha qaytim beriladi? Hisoblang va javobingizni tushuntiring.",
+          "task_ru": "Вы пришли на рынок и купили 5 книг по 12 000 сум каждая. Вы дали кассиру 100 000 сум. Сколько сдачи вам вернут? Посчитайте и объясните.",
+          "task_en": "You went to the market and bought 5 books at 12,000 sum each. You gave the cashier 100,000 sum. How much change will you receive? Calculate and explain your answer.",
+          "skill": "analysis"
+        },
+        {
+          "id": "g5_math_it2",
+          "task_uz": "Quyidagi sonlar ketma-ketligi qoidasini toping va keyingi ikkita sonni aniqlang: 2, 5, 10, 17, 26, __, __",
+          "task_ru": "Найдите правило следующей числовой последовательности и определите два следующих числа: 2, 5, 10, 17, 26, __, __",
+          "task_en": "Find the pattern in the following number sequence and determine the next two numbers: 2, 5, 10, 17, 26, __, __",
+          "skill": "logic"
+        }
+      ]
+    },
+    {
+      "subject": "English",
+      "questions": [
+        {
+          "id": "g5_eng_q1",
+          "question_uz": "\"She ___ to school every day.\" Bo'sh joyga to'g'ri fe'lni qo'ying.",
+          "question_ru": "\"She ___ to school every day.\" Вставьте правильный глагол.",
+          "question_en": "\"She ___ to school every day.\" Choose the correct verb.",
+          "options": { "A": "go", "B": "goes", "C": "going", "D": "gone" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_eng_q2",
+          "question_uz": "\"Happy\" so'zining antonimi qaysi?",
+          "question_ru": "Какой антоним слова \"happy\"?",
+          "question_en": "What is the antonym of \"happy\"?",
+          "options": { "A": "Glad", "B": "Joyful", "C": "Sad", "D": "Excited" },
+          "correct_answer": "C"
+        },
+        {
+          "id": "g5_eng_q3",
+          "question_uz": "\"There are ___ apples on the table.\" Bo'sh joyga to'g'ri so'zni qo'ying.",
+          "question_ru": "\"There are ___ apples on the table.\" Вставьте правильное слово.",
+          "question_en": "\"There are ___ apples on the table.\" Fill in the blank.",
+          "options": { "A": "much", "B": "a little", "C": "many", "D": "less" },
+          "correct_answer": "C"
+        },
+        {
+          "id": "g5_eng_q4",
+          "question_uz": "\"I ___ my homework yesterday.\" To'g'ri javobni tanlang.",
+          "question_ru": "\"I ___ my homework yesterday.\" Выберите правильный ответ.",
+          "question_en": "\"I ___ my homework yesterday.\" Choose the correct answer.",
+          "options": { "A": "do", "B": "does", "C": "did", "D": "done" },
+          "correct_answer": "C"
+        },
+        {
+          "id": "g5_eng_q5",
+          "question_uz": "Qaysi so'z hayvon emasligini bildiradi?",
+          "question_ru": "Какое слово не является животным?",
+          "question_en": "Which word is NOT an animal?",
+          "options": { "A": "Lion", "B": "Eagle", "C": "Rose", "D": "Dolphin" },
+          "correct_answer": "C"
+        },
+        {
+          "id": "g5_eng_q6",
+          "question_uz": "\"Bigger\" so'zi qaysi so'zning qiyosiy darajasi?",
+          "question_ru": "Сравнительной степенью какого слова является \"bigger\"?",
+          "question_en": "\"Bigger\" is the comparative form of which word?",
+          "options": { "A": "Biggest", "B": "Big", "C": "Bigly", "D": "Bigest" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_eng_q7",
+          "question_uz": "\"My favourite colour is blue.\" Bu gapda \"favourite\" so'zi nima?",
+          "question_ru": "В предложении \"My favourite colour is blue\" — какой частью речи является \"favourite\"?",
+          "question_en": "In \"My favourite colour is blue\", what part of speech is \"favourite\"?",
+          "options": { "A": "Noun", "B": "Adverb", "C": "Adjective", "D": "Verb" },
+          "correct_answer": "C"
+        },
+        {
+          "id": "g5_eng_q8",
+          "question_uz": "To'g'ri imloni tanlang.",
+          "question_ru": "Выберите правильное написание.",
+          "question_en": "Choose the correct spelling.",
+          "options": { "A": "Beautifull", "B": "Beautyful", "C": "Beautiful", "D": "Beautifal" },
+          "correct_answer": "C"
+        },
+        {
+          "id": "g5_eng_q9",
+          "question_uz": "\"The cat is ___ the table.\" To'g'ri predlogni tanlang.",
+          "question_ru": "\"The cat is ___ the table.\" Выберите правильный предлог.",
+          "question_en": "\"The cat is ___ the table.\" Choose the correct preposition.",
+          "options": { "A": "in", "B": "under", "C": "between", "D": "behind" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_eng_q10",
+          "question_uz": "Qaysi gap to'g'ri tuzilgan?",
+          "question_ru": "Какое предложение составлено правильно?",
+          "question_en": "Which sentence is grammatically correct?",
+          "options": { "A": "She don't like pizza.", "B": "He like to play.", "C": "They plays football.", "D": "We are going to the park." },
+          "correct_answer": "D"
+        }
+      ],
+      "interactive_tasks": [
+        {
+          "id": "g5_eng_it1",
+          "task_uz": "Quyidagi so'zlardan foydalanib, o'zingizning sevimli kungilochar mashg'ulotingiz haqida 3-4 gaplik kichik matn yozing: 'enjoy', 'always', 'favourite', 'because'.",
+          "task_ru": "Используя следующие слова, напишите небольшой текст из 3-4 предложений о вашем любимом занятии: 'enjoy', 'always', 'favourite', 'because'.",
+          "task_en": "Using the following words, write a short 3-4 sentence text about your favourite hobby: 'enjoy', 'always', 'favourite', 'because'.",
+          "skill": "creativity"
+        },
+        {
+          "id": "g5_eng_it2",
+          "task_uz": "Quyidagi tasvirlangan vaziyatni o'qing va ingliz tilida javob bering: Ali maktabga kech qoldi. U nimani aytishi kerak? Uning uzrini ham yozing.",
+          "task_ru": "Прочитайте ситуацию и ответьте по-английски: Али опоздал в школу. Что он должен сказать? Напишите его извинение.",
+          "task_en": "Read the scenario and respond in English: Ali was late for school. What should he say? Write his apology and excuse.",
+          "skill": "analysis"
+        }
+      ]
+    },
+    {
+      "subject": "Biology",
+      "questions": [
+        {
+          "id": "g5_bio_q1",
+          "question_uz": "O'simliklar qaysi jarayon orqali quyosh energiyasini oziq-ovqatga aylantiradi?",
+          "question_ru": "Через какой процесс растения превращают солнечную энергию в пищу?",
+          "question_en": "Through which process do plants convert sunlight into food?",
+          "options": { "A": "Nafas olish", "B": "Fotosintez", "C": "Hazm qilish", "D": "Transpiratsiya" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_bio_q2",
+          "question_uz": "Inson tanasida nechta organ tizimi mavjud?",
+          "question_ru": "Сколько систем органов есть в теле человека?",
+          "question_en": "How many organ systems does the human body have?",
+          "options": { "A": "8", "B": "10", "C": "11", "D": "15" },
+          "correct_answer": "C"
+        },
+        {
+          "id": "g5_bio_q3",
+          "question_uz": "Qaysi hujayra organelli hujayra elektr stansiyasi deb ataladi?",
+          "question_ru": "Какую органеллу клетки называют «электростанцией клетки»?",
+          "question_en": "Which cell organelle is called the 'powerhouse of the cell'?",
+          "options": { "A": "Yadrosi", "B": "Mitoxondriya", "C": "Ribosoma", "D": "Vakuola" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_bio_q4",
+          "question_uz": "Qaysi hayvon sutemizuvchi hisoblanmaydi?",
+          "question_ru": "Какое из животных не является млекопитающим?",
+          "question_en": "Which of the following is NOT a mammal?",
+          "options": { "A": "Ko'rshapalak", "B": "Kit", "C": "Toshbaqa", "D": "Fil" },
+          "correct_answer": "C"
+        },
+        {
+          "id": "g5_bio_q5",
+          "question_uz": "Fotosintez uchun qaysi gaz kerak?",
+          "question_ru": "Какой газ необходим для фотосинтеза?",
+          "question_en": "Which gas is required for photosynthesis?",
+          "options": { "A": "Kislorod", "B": "Azot", "C": "Karbonat angidrid", "D": "Vodorod" },
+          "correct_answer": "C"
+        },
+        {
+          "id": "g5_bio_q6",
+          "question_uz": "O'simlik hujayrasi hayvon hujayrasi bilan nimasi bilan farq qiladi?",
+          "question_ru": "Чем клетка растения отличается от клетки животного?",
+          "question_en": "What is unique to plant cells compared to animal cells?",
+          "options": { "A": "Mitoxondriya", "B": "Hujayra devori", "C": "Ribosoma", "D": "Membrana" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_bio_q7",
+          "question_uz": "Qaysi a'zo qonni tozalaydi?",
+          "question_ru": "Какой орган очищает кровь?",
+          "question_en": "Which organ filters the blood?",
+          "options": { "A": "O'pka", "B": "Oshqozon", "C": "Buyrak", "D": "Jigar" },
+          "correct_answer": "C"
+        },
+        {
+          "id": "g5_bio_q8",
+          "question_uz": "Hayvonlar qanday guruhlarga bo'linadi?",
+          "question_ru": "На какие группы делятся животные?",
+          "question_en": "Animals are classified into which major groups?",
+          "options": { "A": "Umurtqalilar va umurtqasizlar", "B": "Qushlar va baliqlar", "C": "Sudralib yuruvchilar va hasharotlar", "D": "Sutemizuvchilar va o'simliklar" },
+          "correct_answer": "A"
+        },
+        {
+          "id": "g5_bio_q9",
+          "question_uz": "Inson tanasida eng katta a'zo qaysi?",
+          "question_ru": "Какой орган является самым большим в теле человека?",
+          "question_en": "What is the largest organ in the human body?",
+          "options": { "A": "Jigar", "B": "Teri", "C": "Oshqozon", "D": "Miya" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_bio_q10",
+          "question_uz": "Qaysi vitamin quyosh nuri bilan ishlab chiqariladi?",
+          "question_ru": "Какой витамин вырабатывается под воздействием солнечного света?",
+          "question_en": "Which vitamin is produced with the help of sunlight?",
+          "options": { "A": "Vitamin A", "B": "Vitamin C", "C": "Vitamin D", "D": "Vitamin B12" },
+          "correct_answer": "C"
+        }
+      ],
+      "interactive_tasks": [
+        {
+          "id": "g5_bio_it1",
+          "task_uz": "Tasavvur qiling: siz botanikasiz va yangi bir o'simlik topdingiz. Ushbu o'simlikni tasvirlab bering: u qanday ko'rinadi, u qanday muhitda yashaydi va uning odamlar uchun foydasi nima bo'lishi mumkin?",
+          "task_ru": "Представьте: вы ботаник и открыли новое растение. Опишите его: как оно выглядит, в какой среде обитает и какую пользу оно может принести людям?",
+          "task_en": "Imagine you are a botanist and you discovered a new plant. Describe it: what does it look like, what environment does it live in, and what potential benefits might it have for humans?",
+          "skill": "creativity"
+        },
+        {
+          "id": "g5_bio_it2",
+          "task_uz": "Oziq-ovqat zanjirini tuzing: O't → __ → Ilon → __. Bo'sh joylarni to'ldiring va nima uchun bunday ketma-ketlikda ekanini tushuntiring.",
+          "task_ru": "Составьте пищевую цепочку: Трава → __ → Змея → __. Заполните пропуски и объясните, почему именно в таком порядке.",
+          "task_en": "Complete the food chain: Grass → __ → Snake → __. Fill in the blanks and explain why this order makes sense.",
+          "skill": "logic"
+        }
+      ]
+    },
+    {
+      "subject": "History",
+      "questions": [
+        {
+          "id": "g5_hist_q1",
+          "question_uz": "O'zbekiston mustaqilligini qaysi yilda e'lon qildi?",
+          "question_ru": "В каком году Узбекистан объявил независимость?",
+          "question_en": "In which year did Uzbekistan declare independence?",
+          "options": { "A": "1990", "B": "1991", "C": "1992", "D": "1989" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_hist_q2",
+          "question_uz": "Qadimgi Misr podshohlari qanday nom bilan atalgan?",
+          "question_ru": "Как назывались правители Древнего Египта?",
+          "question_en": "What were the rulers of Ancient Egypt called?",
+          "options": { "A": "Qirol", "B": "Fir'avn", "C": "Imperator", "D": "Xon" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_hist_q3",
+          "question_uz": "Ipak yo'li qaysi shaharlar orqali o'tgan?",
+          "question_ru": "Через какие города проходил Шёлковый путь?",
+          "question_en": "Which cities did the Silk Road pass through?",
+          "options": { "A": "London va Parij", "B": "Samarqand va Buxoro", "C": "Rim va Yunoniston", "D": "Hindiston va Xitoy" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_hist_q4",
+          "question_uz": "Amir Temur qaysi shaharni poytaxt qilgan?",
+          "question_ru": "Какой город Амир Тимур сделал своей столицей?",
+          "question_en": "Which city did Amir Temur make his capital?",
+          "options": { "A": "Buxoro", "B": "Xiva", "C": "Samarqand", "D": "Toshkent" },
+          "correct_answer": "C"
+        },
+        {
+          "id": "g5_hist_q5",
+          "question_uz": "Qadimgi Rim qaysi qit'ada joylashgan?",
+          "question_ru": "На каком материке находился Древний Рим?",
+          "question_en": "On which continent was Ancient Rome located?",
+          "options": { "A": "Osiyo", "B": "Yevropa", "C": "Afrika", "D": "Amerika" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_hist_q6",
+          "question_uz": "Al-Xorazmiy qaysi soha olimi bo'lgan?",
+          "question_ru": "В какой области был учёным Аль-Хорезми?",
+          "question_en": "In which field was Al-Khwarizmi a scholar?",
+          "options": { "A": "Tibbiyot", "B": "Matematika va astronomiya", "C": "Musiqa", "D": "Arxitektura" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_hist_q7",
+          "question_uz": "Birinchi jahon urushi qachon boshlangan?",
+          "question_ru": "Когда началась Первая мировая война?",
+          "question_en": "When did the First World War begin?",
+          "options": { "A": "1905", "B": "1914", "C": "1918", "D": "1939" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_hist_q8",
+          "question_uz": "Qadimgi Yunonistonda demokratiya birinchi marta qayerda paydo bo'lgan?",
+          "question_ru": "Где впервые появилась демократия в Древней Греции?",
+          "question_en": "Where did democracy first appear in Ancient Greece?",
+          "options": { "A": "Sparta", "B": "Afina", "C": "Krit", "D": "Rodos" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_hist_q9",
+          "question_uz": "Ibn Sino kim bo'lgan?",
+          "question_ru": "Кем был Ибн Сина?",
+          "question_en": "Who was Ibn Sina?",
+          "options": { "A": "Sarkarda", "B": "Shoir", "C": "Tabib va faylasuf", "D": "Meʼmor" },
+          "correct_answer": "C"
+        },
+        {
+          "id": "g5_hist_q10",
+          "question_uz": "O'zbekiston poytaxti qaysi shahar?",
+          "question_ru": "Какой город является столицей Узбекистана?",
+          "question_en": "What is the capital city of Uzbekistan?",
+          "options": { "A": "Samarqand", "B": "Namangan", "C": "Buxoro", "D": "Toshkent" },
+          "correct_answer": "D"
+        }
+      ],
+      "interactive_tasks": [
+        {
+          "id": "g5_hist_it1",
+          "task_uz": "Tasavvur qiling siz Ipak Yo'lida savdogar sifatida sayohat qilyapsiz. Samarqanddan Xitoyga borishda yo'l davomida uchraydigan shaharlari, narsalari va odamlarni tasvirlab bering.",
+          "task_ru": "Представьте, что вы путешествуете по Шёлковому пути как торговец. Опишите города, вещи и людей, которых вы встретите на пути из Самарканда в Китай.",
+          "task_en": "Imagine you are a trader travelling along the Silk Road. Describe the cities, goods, and people you might encounter on the journey from Samarkand to China.",
+          "skill": "creativity"
+        },
+        {
+          "id": "g5_hist_it2",
+          "task_uz": "Quyidagi tarixiy shaxslarni ularning sohasi bilan to'g'ri mos keltiring: Amir Temur, Ibn Sino, Al-Xorazmiy, Ulug'bek. Sohalar: tibbiyot, matematika, astronomiya, harbiy san'at.",
+          "task_ru": "Сопоставьте следующих исторических деятелей с их областью: Амир Тимур, Ибн Сина, Аль-Хорезми, Улугбек. Области: медицина, математика, астрономия, военное искусство.",
+          "task_en": "Match the following historical figures with their field: Amir Temur, Ibn Sina, Al-Khwarizmi, Ulugbek. Fields: medicine, mathematics, astronomy, military leadership.",
+          "skill": "analysis"
+        }
+      ]
+    },
+    {
+      "subject": "Informatics",
+      "questions": [
+        {
+          "id": "g5_inf_q1",
+          "question_uz": "Kompyuterning asosiy qismlari qaysilar?",
+          "question_ru": "Какие основные части компьютера?",
+          "question_en": "What are the main parts of a computer?",
+          "options": { "A": "Printer va skaner", "B": "Protsessor, xotira, kiritish/chiqarish qurilmalari", "C": "Klaviatura va sichqoncha", "D": "Monitor va kolonka" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_inf_q2",
+          "question_uz": "\"Internet\" so'zi nimani anglatadi?",
+          "question_ru": "Что означает слово «Интернет»?",
+          "question_en": "What does the word 'Internet' stand for?",
+          "options": { "A": "Ichki tarmoq", "B": "Xalqaro tarmoqlar tarmog'i", "C": "Kompyuter tizimi", "D": "Dastur to'plami" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_inf_q3",
+          "question_uz": "Qaysi dastur matn yozish uchun ishlatiladi?",
+          "question_ru": "Какая программа используется для набора текста?",
+          "question_en": "Which program is used for typing text?",
+          "options": { "A": "Excel", "B": "PowerPoint", "C": "Word", "D": "Paint" },
+          "correct_answer": "C"
+        },
+        {
+          "id": "g5_inf_q4",
+          "question_uz": "Fayl kengaytmasi '.jpg' nima uchun ishlatiladi?",
+          "question_ru": "Для чего используется расширение файла '.jpg'?",
+          "question_en": "What is the file extension '.jpg' used for?",
+          "options": { "A": "Musiqa", "B": "Video", "C": "Rasm", "D": "Matn" },
+          "correct_answer": "C"
+        },
+        {
+          "id": "g5_inf_q5",
+          "question_uz": "Klaviaturada qancha harf tugmasi bor (inglizcha)?",
+          "question_ru": "Сколько буквенных клавиш на клавиатуре (английской)?",
+          "question_en": "How many letter keys are on a standard English keyboard?",
+          "options": { "A": "24", "B": "26", "C": "28", "D": "30" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_inf_q6",
+          "question_uz": "CPU nimani anglatadi?",
+          "question_ru": "Что означает аббревиатура CPU?",
+          "question_en": "What does CPU stand for?",
+          "options": { "A": "Central Program Unit", "B": "Computer Processing Unit", "C": "Central Processing Unit", "D": "Core Power Unit" },
+          "correct_answer": "C"
+        },
+        {
+          "id": "g5_inf_q7",
+          "question_uz": "Kompyuterda ma'lumotlarni saqlash uchun qaysi qurilma ishlatiladi?",
+          "question_ru": "Какое устройство используется для хранения данных на компьютере?",
+          "question_en": "Which device is used to store data on a computer?",
+          "options": { "A": "Monitor", "B": "Printer", "C": "Hard disk", "D": "Klaviatura" },
+          "correct_answer": "C"
+        },
+        {
+          "id": "g5_inf_q8",
+          "question_uz": "Qaysi amal faylni nusxalaydi?",
+          "question_ru": "Какая операция копирует файл?",
+          "question_en": "Which operation copies a file?",
+          "options": { "A": "Cut", "B": "Paste", "C": "Delete", "D": "Copy" },
+          "correct_answer": "D"
+        },
+        {
+          "id": "g5_inf_q9",
+          "question_uz": "Kompyuter virusi nima?",
+          "question_ru": "Что такое компьютерный вирус?",
+          "question_en": "What is a computer virus?",
+          "options": { "A": "Kompyuter detali", "B": "Zararli dastur", "C": "Internet tarmog'i", "D": "Antivirus dasturi" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_inf_q10",
+          "question_uz": "Qaysi tugma kombinatsiyasi faylni saqlaydi?",
+          "question_ru": "Какая комбинация клавиш сохраняет файл?",
+          "question_en": "Which keyboard shortcut saves a file?",
+          "options": { "A": "Ctrl+C", "B": "Ctrl+V", "C": "Ctrl+S", "D": "Ctrl+Z" },
+          "correct_answer": "C"
+        }
+      ],
+      "interactive_tasks": [
+        {
+          "id": "g5_inf_it1",
+          "task_uz": "Siz o'zingizning ideal kompyuteringizni loyihalayapsiz. Uning qismlari, xususiyatlari va nima uchun ushbu xususiyatlarni tanlaganingizni tushuntiring.",
+          "task_ru": "Вы проектируете свой идеальный компьютер. Опишите его компоненты, характеристики и объясните, почему вы выбрали именно их.",
+          "task_en": "You are designing your ideal computer. Describe its components, features, and explain why you chose each one.",
+          "skill": "analysis"
+        },
+        {
+          "id": "g5_inf_it2",
+          "task_uz": "Quyidagi amallarni to'g'ri tartibda joylashtiring: Kompyuterni yoqing → Faylni oching → Matn kiriting → Faylni saqlang → Faylni yoping → Kompyuterni o'chiring.",
+          "task_ru": "Расположите следующие действия в правильном порядке: Включите компьютер → Откройте файл → Введите текст → Сохраните файл → Закройте файл → Выключите компьютер.",
+          "task_en": "Arrange the following steps in the correct order: Turn on computer → Open file → Enter text → Save file → Close file → Turn off computer.",
+          "skill": "logic"
+        }
+      ]
+    },
+    {
+      "subject": "Native Language (Uzbek)",
+      "questions": [
+        {
+          "id": "g5_uzb_q1",
+          "question_uz": "O'zbek tilida nechta unli tovush bor?",
+          "question_ru": "Сколько гласных звуков в узбекском языке?",
+          "question_en": "How many vowel sounds are there in the Uzbek language?",
+          "options": { "A": "5", "B": "6", "C": "7", "D": "8" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_uzb_q2",
+          "question_uz": "Quyidagi so'zlardan qaysi biri ot turkumiga kiradi?",
+          "question_ru": "Какое из следующих слов является существительным?",
+          "question_en": "Which of the following words is a noun?",
+          "options": { "A": "Yugurib", "B": "Chiroyli", "C": "Kitob", "D": "Tez" },
+          "correct_answer": "C"
+        },
+        {
+          "id": "g5_uzb_q3",
+          "question_uz": "\"Daraxt\" so'zining ko'pligi qanday hosil bo'ladi?",
+          "question_ru": "Как образуется множественное число слова «дарахт» (дерево)?",
+          "question_en": "How is the plural of the word 'daraxt' (tree) formed in Uzbek?",
+          "options": { "A": "Daraxtlar", "B": "Daraxtning", "C": "Daraxtga", "D": "Daraxtda" },
+          "correct_answer": "A"
+        },
+        {
+          "id": "g5_uzb_q4",
+          "question_uz": "Quyidagi gapda kesim qaysi so'z? \"Bola maktabga bordi.\"",
+          "question_ru": "Какое слово является сказуемым в предложении «Бола мактабга борди»?",
+          "question_en": "Which word is the predicate in the sentence 'Bola maktabga bordi'?",
+          "options": { "A": "Bola", "B": "Maktabga", "C": "Bordi", "D": "Va" },
+          "correct_answer": "C"
+        },
+        {
+          "id": "g5_uzb_q5",
+          "question_uz": "\"Baxt\" so'zining sinonimi qaysi?",
+          "question_ru": "Какое слово является синонимом слова «бахт» (счастье)?",
+          "question_en": "Which word is a synonym of 'baxt' (happiness)?",
+          "options": { "A": "Quvonch", "B": "G'am", "C": "Qo'rquv", "D": "Achinish" },
+          "correct_answer": "A"
+        },
+        {
+          "id": "g5_uzb_q6",
+          "question_uz": "O'zbek alifbosi qancha harfdan iborat?",
+          "question_ru": "Из скольких букв состоит узбекский алфавит?",
+          "question_en": "How many letters does the Uzbek alphabet have?",
+          "options": { "A": "26", "B": "29", "C": "32", "D": "35" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_uzb_q7",
+          "question_uz": "Maqolni to'ldiring: \"Mehnat — ..., dangasalik — ..\"",
+          "question_ru": "Закончите пословицу: «Мехнат — ..., дангасалик — ..»",
+          "question_en": "Complete the proverb: 'Mehnat — ..., dangasalik — ..'",
+          "options": { "A": "boylik, qashshoqlik", "B": "yaxshilik, yomonlik", "C": "quvonch, g'am", "D": "baxt, baxtsizlik" },
+          "correct_answer": "A"
+        },
+        {
+          "id": "g5_uzb_q8",
+          "question_uz": "\"Sehrli ko'za\" asarining muallifi kim?",
+          "question_ru": "Кто является автором произведения «Сехрли куза»?",
+          "question_en": "Who is the author of 'Sehrli ko'za'?",
+          "options": { "A": "Abdulla Qodiriy", "B": "G'afur G'ulom", "C": "Abdulla Oripov", "D": "Hamid Olimjon" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_uzb_q9",
+          "question_uz": "Quyidagi gapni to'g'ri tinish belgilari bilan yozing: 'Ali kitob o'qiydi'",
+          "question_ru": "Напишите следующее предложение с правильной пунктуацией: 'Али китоб ўқийди'",
+          "question_en": "Which correct punctuation mark ends the sentence 'Ali kitob o'qiydi'?",
+          "options": { "A": "!", "B": "?", "C": ".", "D": ";" },
+          "correct_answer": "C"
+        },
+        {
+          "id": "g5_uzb_q10",
+          "question_uz": "Quyidagi so'zlardan qaysi biri fe'l?",
+          "question_ru": "Какое из следующих слов является глаголом?",
+          "question_en": "Which of the following words is a verb?",
+          "options": { "A": "Chiroyli", "B": "Uyda", "C": "O'qimoq", "D": "Kitob" },
+          "correct_answer": "C"
+        }
+      ],
+      "interactive_tasks": [
+        {
+          "id": "g5_uzb_it1",
+          "task_uz": "O'zingiz sevgan biror maqol yoki hikmatli so'zni yozing va nima sababdan uni sevishingizni 3-4 jumlada tushuntiring.",
+          "task_ru": "Запишите любимую пословицу или мудрое высказывание и объясните в 3-4 предложениях, почему вы её любите.",
+          "task_en": "Write one of your favourite proverbs or wise sayings in Uzbek and explain in 3-4 sentences why you like it.",
+          "skill": "creativity"
+        },
+        {
+          "id": "g5_uzb_it2",
+          "task_uz": "Quyidagi so'zlarni grammatik turkumlarga ajrating: yugurmoq, baxt, qizil, tez, uy, o'qimoq, katta, ko'cha.",
+          "task_ru": "Распределите следующие слова по грамматическим категориям: югурмоқ, бахт, қизил, тез, уй, ўқимоқ, катта, кўча.",
+          "task_en": "Classify the following Uzbek words by grammatical category (noun, verb, adjective, adverb): yugurmoq, baxt, qizil, tez, uy, o'qimoq, katta, ko'cha.",
+          "skill": "analysis"
+        }
+      ]
+    },
+    {
+      "subject": "Russian",
+      "questions": [
+        {
+          "id": "g5_rus_q1",
+          "question_uz": "Rus tilida nechta harf bor?",
+          "question_ru": "Сколько букв в русском алфавите?",
+          "question_en": "How many letters are in the Russian alphabet?",
+          "options": { "A": "30", "B": "32", "C": "33", "D": "35" },
+          "correct_answer": "C"
+        },
+        {
+          "id": "g5_rus_q2",
+          "question_uz": "\"Машина идёт\" gapida qaysi so'z fe'l?",
+          "question_ru": "Какое слово в предложении «Машина идёт» является глаголом?",
+          "question_en": "In the sentence 'Машина идёт', which word is the verb?",
+          "options": { "A": "Машина", "B": "Идёт", "C": "Оба слова", "D": "Нет глагола" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_rus_q3",
+          "question_uz": "Rus tilida \"kitob\" so'zi qanday aytiladi?",
+          "question_ru": "Как по-русски «kitob»?",
+          "question_en": "How do you say 'kitob' (book) in Russian?",
+          "options": { "A": "Тетрадь", "B": "Ручка", "C": "Книга", "D": "Стол" },
+          "correct_answer": "C"
+        },
+        {
+          "id": "g5_rus_q4",
+          "question_uz": "\"Красивый\" so'zining o'zbek tilidagi tarjimasi qaysi?",
+          "question_ru": "Какой перевод слова «красивый» на узбекский язык?",
+          "question_en": "What is the Uzbek translation of 'красивый'?",
+          "options": { "A": "Katta", "B": "Chiroyli", "C": "Eski", "D": "Tez" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_rus_q5",
+          "question_uz": "Qaysi so'z ot turkumiga kirmaydi?",
+          "question_ru": "Какое слово не является существительным?",
+          "question_en": "Which word is NOT a noun in Russian?",
+          "options": { "A": "Дом", "B": "Бежать", "C": "Школа", "D": "Книга" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_rus_q6",
+          "question_uz": "Rus tilida \"Salom\" qanday aytiladi?",
+          "question_ru": "Как по-русски «Salom»?",
+          "question_en": "How do you say 'Salom' (Hello) in Russian?",
+          "options": { "A": "Пока", "B": "Спасибо", "C": "Привет", "D": "Пожалуйста" },
+          "correct_answer": "C"
+        },
+        {
+          "id": "g5_rus_q7",
+          "question_uz": "Quyidagi gap to'g'ri yozilganmi? \"Я иду в школу.\"",
+          "question_ru": "Правильно ли написано предложение: «Я иду в школу.»?",
+          "question_en": "Is the following sentence correctly written: 'Я иду в школу'?",
+          "options": { "A": "Ha, to'g'ri", "B": "Yo'q, \"школа\" noto'g'ri", "C": "Yo'q, \"иду\" noto'g'ri", "D": "Yo'q, \"Я\" noto'g'ri" },
+          "correct_answer": "A"
+        },
+        {
+          "id": "g5_rus_q8",
+          "question_uz": "\"Большой\" so'zining antonimi qaysi?",
+          "question_ru": "Какой антоним слова «большой»?",
+          "question_en": "What is the antonym of 'большой' (big)?",
+          "options": { "A": "Огромный", "B": "Маленький", "C": "Средний", "D": "Высокий" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_rus_q9",
+          "question_uz": "\"Мама\" so'zida nechta bo'g'in bor?",
+          "question_ru": "Сколько слогов в слове «мама»?",
+          "question_en": "How many syllables are in the word 'мама'?",
+          "options": { "A": "1", "B": "2", "C": "3", "D": "4" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_rus_q10",
+          "question_uz": "Qaysi harfdan keyin yumshatuvchi belgi qo'yiladi? \"Ден_ рождения\"",
+          "question_ru": "После какой буквы ставится мягкий знак? «Ден_ рождения»",
+          "question_en": "In 'Ден_ рождения', which letter needs a soft sign?",
+          "options": { "A": "Д", "B": "Е", "C": "Н", "D": "Р" },
+          "correct_answer": "C"
+        }
+      ],
+      "interactive_tasks": [
+        {
+          "id": "g5_rus_it1",
+          "task_uz": "Rus tilida o'zingiz haqingizda 3-4 gap yozing: ismingiz, yoshingiz, sevimli mashg'ulotingiz va orzuingiz haqida.",
+          "task_ru": "Напишите на русском языке 3-4 предложения о себе: своё имя, возраст, любимое занятие и мечту.",
+          "task_en": "Write 3-4 sentences in Russian about yourself: your name, age, favourite hobby, and dream.",
+          "skill": "creativity"
+        },
+        {
+          "id": "g5_rus_it2",
+          "task_uz": "Quyidagi rus so'zlarini o'zbek tiliga tarjima qiling: школа, книга, друг, учитель, дом.",
+          "task_ru": "Переведите следующие русские слова на узбекский язык: школа, книга, друг, учитель, дом.",
+          "task_en": "Translate the following Russian words into Uzbek: школа, книга, друг, учитель, дом.",
+          "skill": "analysis"
+        }
+      ]
+    },
+    {
+      "subject": "Literature",
+      "questions": [
+        {
+          "id": "g5_lit_q1",
+          "question_uz": "\"Alpomish\" dostoni qaysi xalqning eposi hisoblanadi?",
+          "question_ru": "Эпосом какого народа является «Алпамыш»?",
+          "question_en": "Which people's epic is 'Alpomish'?",
+          "options": { "A": "Qozoq", "B": "O'zbek", "C": "Turkman", "D": "Tojik" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_lit_q2",
+          "question_uz": "Abdulla Qodiriy qaysi asarning muallifi?",
+          "question_ru": "Автором какого произведения является Абдулла Кодири?",
+          "question_en": "Which work was written by Abdulla Qodiriy?",
+          "options": { "A": "O'tkan kunlar", "B": "Navoiy", "C": "Sarob", "D": "Ulmas qo'shiq" },
+          "correct_answer": "A"
+        },
+        {
+          "id": "g5_lit_q3",
+          "question_uz": "She'rda qofiya nima?",
+          "question_ru": "Что такое рифма в стихотворении?",
+          "question_en": "What is rhyme in poetry?",
+          "options": { "A": "She'rning mavzusi", "B": "She'r satrlari oxirida tovushlarning mos kelishi", "C": "She'rning uzunligi", "D": "She'rning badiiy uslubi" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_lit_q4",
+          "question_uz": "Alisher Navoiy qaysi yillarda yashagan?",
+          "question_ru": "В каком году жил Алишер Навои?",
+          "question_en": "When did Alisher Navoi live?",
+          "options": { "A": "1300-1380", "B": "1441-1501", "C": "1500-1560", "D": "1200-1270" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_lit_q5",
+          "question_uz": "\"Navoiy\" romanining muallifi kim?",
+          "question_ru": "Кто является автором романа «Навои»?",
+          "question_en": "Who is the author of the novel 'Navoiy'?",
+          "options": { "A": "Abdulla Qodiriy", "B": "Oybek", "C": "G'afur G'ulom", "D": "Hamid Olimjon" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_lit_q6",
+          "question_uz": "Gulliver sayohatlari kimning asari?",
+          "question_ru": "Чьё произведение «Путешествия Гулливера»?",
+          "question_en": "Who wrote 'Gulliver's Travels'?",
+          "options": { "A": "Charles Dickens", "B": "Jonathan Swift", "C": "William Shakespeare", "D": "Mark Twain" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_lit_q7",
+          "question_uz": "Ertak janrining asosiy xususiyati qaysi?",
+          "question_ru": "Каков главный признак жанра сказки?",
+          "question_en": "What is the main characteristic of the fairy tale genre?",
+          "options": { "A": "Haqiqiy voqealar", "B": "Fantastik voqealar va xarakter", "C": "Ilmiy bilimlar", "D": "Tarixiy ma'lumotlar" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_lit_q8",
+          "question_uz": "\"Robinzon Kruzo\" romanini kim yozgan?",
+          "question_ru": "Кто написал роман «Робинзон Крузо»?",
+          "question_en": "Who wrote the novel 'Robinson Crusoe'?",
+          "options": { "A": "Jules Verne", "B": "Daniel Defoe", "C": "Alexandre Dumas", "D": "Jonathan Swift" },
+          "correct_answer": "B"
+        },
+        {
+          "id": "g5_lit_q9",
+          "question_uz": "Prozaik asar nima?",
+          "question_ru": "Что такое прозаическое произведение?",
+          "question_en": "What is a prose work?",
+          "options": { "A": "She'r ko'rinishidagi asar", "B": "Qofiyaviy matn", "C": "Oddiy nutq ko'rinishidagi asar", "D": "Qo'shiq ko'rinishidagi asar" },
+          "correct_answer": "C"
+        },
+        {
+          "id": "g5_lit_q10",
+          "question_uz": "G'afur G'ulom qaysi janrda asarlar yaratgan?",
+          "question_ru": "В каком жанре творил Гафур Гулям?",
+          "question_en": "In which genre did G'afur G'ulom create his works?",
+          "options": { "A": "Faqat she'r", "B": "Faqat roman", "C": "She'r va nasr", "D": "Faqat hikoya" },
+          "correct_answer": "C"
+        }
+      ],
+      "interactive_tasks": [
+        {
+          "id": "g5_lit_it1",
+          "task_uz": "Sevimli ertakingizni tanlang va undagi asosiy qahramonni tasvirlab bering: u qanday odam, uning kuchliligi va zaif tomonlari nima?",
+          "task_ru": "Выберите любимую сказку и опишите главного героя: каков он, каковы его сильные и слабые стороны?",
+          "task_en": "Choose your favourite fairy tale and describe the main character: what are they like, and what are their strengths and weaknesses?",
+          "skill": "creativity"
+        },
+        {
+          "id": "g5_lit_it2",
+          "task_uz": "Quyidagi adabiy janrlarni ta'rifiga mos keltiring: ertak, hikoya, she'r, roman. Ta'riflar: qisqa nasriy asar, uzoq hajmli asarlar, qofiyaviy asar, fantastik xarakter.",
+          "task_ru": "Сопоставьте литературные жанры с их определениями: сказка, рассказ, стихотворение, роман.",
+          "task_en": "Match the literary genres to their definitions: fairy tale, story, poem, novel. Definitions: short prose, long fiction, rhyming text, fantastical characters.",
+          "skill": "analysis"
+        }
+      ]
+    }
+  ]
+}

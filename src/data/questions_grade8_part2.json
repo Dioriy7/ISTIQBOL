@@ -1,0 +1,761 @@
+{
+    "grade": 8,
+    "part": 2,
+    "subjects": [
+        {
+            "subject": "Native Language (Uzbek)",
+            "questions": [
+                {
+                    "id": "g8_uzb_q1",
+                    "question_uz": "\"Sintetik til\" nima?",
+                    "question_ru": "Что такое «синтетический язык»?",
+                    "question_en": "What is a 'synthetic language'?",
+                    "options": {
+                        "A": "Sun'iy yaratilgan til",
+                        "B": "Qo'shimchalar orqali grammatik munosabatlarni ifodalovchi til",
+                        "C": "Ikki tilni birlashtirib yaratilgan til",
+                        "D": "Tarjima tili"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_uzb_q2",
+                    "question_uz": "Bosh gap va ergash gap o'rtasidagi munosabat qanday?",
+                    "question_ru": "Каково соотношение главного и придаточного предложений?",
+                    "question_en": "What is the relationship between a main clause and a subordinate clause?",
+                    "options": {
+                        "A": "Ular teng huquqli",
+                        "B": "Ergash gap bosh gapga grammatik jihatdan bog'liq va uni izohlaydi",
+                        "C": "Bosh gap ergash gapga bog'liq",
+                        "D": "Ular mustaqil gaplar"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_uzb_q3",
+                    "question_uz": "Ko'chirma gap nima?",
+                    "question_ru": "Что такое прямая речь?",
+                    "question_en": "What is direct speech (ko'chirma gap) in Uzbek?",
+                    "options": {
+                        "A": "Boshqaning nutqini o'z so'zlaringiz bilan ifodalash",
+                        "B": "Asl so'zlarni aynan keltirish",
+                        "C": "She'riy iqtibos",
+                        "D": "Yozma nutq"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_uzb_q4",
+                    "question_uz": "\"Mehribon\" so'zida qanday yasalish usuli ishlatilgan?",
+                    "question_ru": "Каким способом образовано слово «меҳрибон»?",
+                    "question_en": "How is the word 'mehribon' (kind) formed in Uzbek?",
+                    "options": {
+                        "A": "Qo'shimcha qo'shish bilan",
+                        "B": "Qo'shma so'z sifatida (mehr + bon)",
+                        "C": "So'z qisqartirish bilan",
+                        "D": "Chet tildan o'zlashtirilgan"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_uzb_q5",
+                    "question_uz": "A. Qodiriy asarlarining bosh mavzusi qaysi?",
+                    "question_ru": "Какова главная тема произведений А. Кодири?",
+                    "question_en": "What is the main theme of A. Qodiriy's works?",
+                    "options": {
+                        "A": "Ilm-fan",
+                        "B": "Milliy ozodlik, tarix va milliy o'zlik",
+                        "C": "Tabiat",
+                        "D": "Bolalar adabiyoti"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_uzb_q6",
+                    "question_uz": "Matn koheziyasi va koherentsiyasi nima?",
+                    "question_ru": "Что такое когезия и когерентность текста?",
+                    "question_en": "What are text cohesion and coherence?",
+                    "options": {
+                        "A": "Matn uzunligi va qisqaligi",
+                        "B": "Matn mantiqiy birlik va grammatik bog'lanishi",
+                        "C": "Matn mavzusi va g'oyasi",
+                        "D": "Matn uslubi va janri"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_uzb_q7",
+                    "question_uz": "Sifat darajalari nechta?",
+                    "question_ru": "Сколько степеней сравнения прилагательных?",
+                    "question_en": "How many degrees of comparison do Uzbek adjectives have?",
+                    "options": {
+                        "A": "2",
+                        "B": "3",
+                        "C": "4",
+                        "D": "5"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_uzb_q8",
+                    "question_uz": "\"O'tkan kunlar\" romanida Otabek obrazi qanday xarakter?",
+                    "question_ru": "Каков образ Отабека в романе «Прошедшие дни»?",
+                    "question_en": "What type of character is Otabek in the novel 'O'tkan Kunlar'?",
+                    "options": {
+                        "A": "Salbiy qahramon",
+                        "B": "Ikkilanuvchi va zaif",
+                        "C": "Milliy ruhli, ma'rifatparvar yigit",
+                        "D": "Harbiy qo'mondon"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g8_uzb_q9",
+                    "question_uz": "\"Yoshlar» so'zi qaysi qo'shimcha orqali ot turkumidan yasalgan?",
+                    "question_ru": "С помощью какого суффикса образовано слово «ёшлар»?",
+                    "question_en": "The word 'yoshlar' (youth) is formed by adding which suffix?",
+                    "options": {
+                        "A": "-li",
+                        "B": "-lar",
+                        "C": "-chi",
+                        "D": "-lik"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_uzb_q10",
+                    "question_uz": "Inshoda kirish, asosiy qism va xulosa qanday rol o'ynaydi?",
+                    "question_ru": "Какую роль играют введение, основная часть и заключение в сочинении?",
+                    "question_en": "What role do the introduction, body, and conclusion play in an essay?",
+                    "options": {
+                        "A": "Uchala qism bir xil ahamiyatga ega",
+                        "B": "Muammoni taqdim etish, sharhlab rivojlantirish va yakunlash",
+                        "C": "Faqat xulosa muhim",
+                        "D": "Faqat asosiy qism muhim"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g8_uzb_it1",
+                    "task_uz": "\"Mustaqillik — bu mas'uliyat\" mavzusida 200-250 so'zlik inshо yozing. Kirish, asosiy qism va xulosa bo'lsin.",
+                    "task_ru": "Напишите сочинение на 200-250 слов на тему «Независимость — это ответственность». Включите введение, основную часть и заключение.",
+                    "task_en": "Write a 200-250 word essay in Uzbek on the topic 'Independence is Responsibility'. Include an introduction, body, and conclusion.",
+                    "skill": "creativity"
+                },
+                {
+                    "id": "g8_uzb_it2",
+                    "task_uz": "Quyidagi matnni tahlil qiling: bosh g'oya, muallif uslubi, ishlatiladigan badiiy vositalar va asarning ta'siri haqida 5-6 gap yozing (matn sinov vaqtida beriladi).",
+                    "task_ru": "Проанализируйте текст: напишите 5-6 предложений о главной идее, стиле автора, художественных средствах (текст будет предоставлен на тесте).",
+                    "task_en": "Analyse a given text: write 5-6 sentences about its main idea, author's style, literary devices used (text provided during test).",
+                    "skill": "analysis"
+                }
+            ]
+        },
+        {
+            "subject": "Russian",
+            "questions": [
+                {
+                    "id": "g8_rus_q1",
+                    "question_uz": "Rus tilida qaysi suffiks ot yasaydi?",
+                    "question_ru": "Какой суффикс образует существительные в русском языке?",
+                    "question_en": "Which suffix in Russian typically forms nouns?",
+                    "options": {
+                        "A": "-ать",
+                        "B": "-ость",
+                        "C": "-ый",
+                        "D": "-ло"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_rus_q2",
+                    "question_uz": "«Обособленное обстоятельство» nima?",
+                    "question_ru": "Что такое обособленное обстоятельство?",
+                    "question_en": "What is a separated (detached) adverbial in Russian?",
+                    "options": {
+                        "A": "Vergul bilan ajratilgan harakat holi",
+                        "B": "Gapning bosh bo'lagi",
+                        "C": "To'ldiruvchi",
+                        "D": "Ot birikmasi"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g8_rus_q3",
+                    "question_uz": "Tolstoyning asosiy asarlari qaysilar?",
+                    "question_ru": "Каковы основные произведения Толстого?",
+                    "question_en": "Which are main works by Leo Tolstoy?",
+                    "options": {
+                        "A": "Prestupleniye i nakazaniye, Idiot",
+                        "B": "Voyna i mir, Anna Karenina",
+                        "C": "Master i Margarita, Sobache serdse",
+                        "D": "Myortvye dushi, Revizor"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_rus_q4",
+                    "question_uz": "«Бессоюзное сложное предложение» nima?",
+                    "question_ru": "Что такое бессоюзное сложное предложение?",
+                    "question_en": "What is a 'бессоюзное сложное предложение' (asyndeton complex sentence)?",
+                    "options": {
+                        "A": "Birlashuvchi bog'lovchisiz qo'shma gap",
+                        "B": "Birlashuvchi bog'lovchili qo'shma gap",
+                        "C": "Sodda gap",
+                        "D": "So'roq gap"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g8_rus_q5",
+                    "question_uz": "Qaysi so'z «не» bilan alohida yoziladi?",
+                    "question_ru": "Какое слово пишется с «не» раздельно?",
+                    "question_en": "Which word is written separately with 'не'?",
+                    "options": {
+                        "A": "Нехороший",
+                        "B": "Небольшой",
+                        "C": "Не пришёл",
+                        "D": "Неправда"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g8_rus_q6",
+                    "question_uz": "Chexovning asarlarida qanday mavzu yetakchi?",
+                    "question_ru": "Какая тема является ведущей в произведениях Чехова?",
+                    "question_en": "What is the dominant theme in Chekhov's works?",
+                    "options": {
+                        "A": "Harbiy qahramonlik",
+                        "B": "Odatdagi hayot va kichik insonshunoslik",
+                        "C": "Tarixiy voqealar",
+                        "D": "Sarguzashtlar"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_rus_q7",
+                    "question_uz": "«Придаточное предложение» nima?",
+                    "question_ru": "Что такое придаточное предложение?",
+                    "question_en": "What is a subordinate clause in Russian?",
+                    "options": {
+                        "A": "Bosh gapga bog'liq bo'lgan va uni izohlashshun ergash gap",
+                        "B": "Alohida sodda gap",
+                        "C": "So'roq gap",
+                        "D": "Birinchi gap"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g8_rus_q8",
+                    "question_uz": "Dostoevskiyning «Jinoyat va jazo» asarida qaysi falsafiy muammo ko'tarilgan?",
+                    "question_ru": "Какая философская проблема поднята в «Преступлении и наказании» Достоевского?",
+                    "question_en": "What philosophical issue is raised in Dostoevsky's 'Crime and Punishment'?",
+                    "options": {
+                        "A": "Sevgi va sadoqat",
+                        "B": "Jinoyat, vijdon va gunohkorlik",
+                        "C": "Siyosiy inqilob",
+                        "D": "Tabiat va inson"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_rus_q9",
+                    "question_uz": "Qaysi usul bilan so'z yasaladi: neft + yangi → neftyanoy?",
+                    "question_ru": "Каким способом образовано слово «нефтяной» от «нефть»?",
+                    "question_en": "How is 'нефтяной' formed from 'нефть' in Russian?",
+                    "options": {
+                        "A": "Qo'shma so'z",
+                        "B": "Suffiks qo'shish",
+                        "C": "Prefiks qo'shish",
+                        "D": "Konversiya"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_rus_q10",
+                    "question_uz": "«Эпитет» nima?",
+                    "question_ru": "Что такое эпитет?",
+                    "question_en": "What is an epithet in Russian literary studies?",
+                    "options": {
+                        "A": "Narsa nomini almashtiruvchi so'z",
+                        "B": "Obrazni boyituvchi badiiy sifat",
+                        "C": "Mubolag'ali ifoda",
+                        "D": "Gapning bir qismi"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g8_rus_it1",
+                    "task_uz": "Chexovning «Kameleon» hikoyasini o'qib, asardagi satiraning qaysi ijtimoiy illatlarga qaratilganini rus tilida 5-6 gapda tushuntiring.",
+                    "task_ru": "Прочитав рассказ Чехова «Хамелеон», объясните в 5-6 предложениях, против каких социальных пороков направлена сатира.",
+                    "task_en": "Having read Chekhov's 'The Chameleon', explain in 5-6 Russian sentences which social vices the satire targets.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g8_rus_it2",
+                    "task_uz": "Rus tilida maktab hayotingiz haqida kichik hikoya yozing (150-180 so'z). Tasviriy vositalar va dialog ishlatib ko'ring.",
+                    "task_ru": "Напишите небольшой рассказ о своей школьной жизни на русском языке (150-180 слов). Используйте средства выразительности и диалог.",
+                    "task_en": "Write a short story in Russian about your school life (150-180 words). Try to use literary devices and dialogue.",
+                    "skill": "creativity"
+                }
+            ]
+        },
+        {
+            "subject": "Literature",
+            "questions": [
+                {
+                    "id": "g8_lit_q1",
+                    "question_uz": "\"Voyaga yetish\" romani (Bildungsroman) nima?",
+                    "question_ru": "Что такое роман воспитания (Bildungsroman)?",
+                    "question_en": "What is a 'Bildungsroman' (coming-of-age novel)?",
+                    "options": {
+                        "A": "Tarixiy roman",
+                        "B": "Qahramonning voyaga yetishini va shaxsiy rivojlanishini tasvirlovchi roman",
+                        "C": "Detektiv roman",
+                        "D": "Fantastik roman"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_lit_q2",
+                    "question_uz": "\"Jane Eyre\" kimning asari?",
+                    "question_ru": "Кто написал «Джейн Эйр»?",
+                    "question_en": "Who wrote 'Jane Eyre'?",
+                    "options": {
+                        "A": "Jane Austen",
+                        "B": "Charlotte Brontë",
+                        "C": "Emily Brontë",
+                        "D": "George Eliot"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_lit_q3",
+                    "question_uz": "Badiiy asarda \"leitmotiv\" nima?",
+                    "question_ru": "Что такое «лейтмотив» в художественном произведении?",
+                    "question_en": "What is a 'leitmotiv' in a literary work?",
+                    "options": {
+                        "A": "Asarning bosh qahramoni",
+                        "B": "Asarning takrorlanib keladigan mavzu, obraz yoki g'oyasi",
+                        "C": "Asarning bosh ziddiyati",
+                        "D": "Yakuniy xulosa"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_lit_q4",
+                    "question_uz": "\"1984\" antiutopiyasi kimning asari?",
+                    "question_ru": "Кто написал антиутопию «1984»?",
+                    "question_en": "Who wrote the dystopian novel '1984'?",
+                    "options": {
+                        "A": "Aldous Huxley",
+                        "B": "George Orwell",
+                        "C": "Ray Bradbury",
+                        "D": "Franz Kafka"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_lit_q5",
+                    "question_uz": "\"Stream of consciousness\" adabiyot texnikasi nima?",
+                    "question_ru": "Что такое «поток сознания» в литературе?",
+                    "question_en": "What is 'stream of consciousness' as a literary technique?",
+                    "options": {
+                        "A": "Tez harakatlarni tasvirlash",
+                        "B": "Qahramon ichki fikr va his-tuyg'ularini erkin oqim sifatida tasvirlash",
+                        "C": "Dialog orqali syujet rivojlantirish",
+                        "D": "Tarixiy voqealarni tasvirlash"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_lit_q6",
+                    "question_uz": "\"Hamid va Hamida\" asarining muallifi kim?",
+                    "question_ru": "Кто является автором произведения «Хамид и Хамида»?",
+                    "question_en": "Who wrote the work 'Hamid va Hamida'?",
+                    "options": {
+                        "A": "Abdulla Qodiriy",
+                        "B": "Hamid Olimjon",
+                        "C": "Oybek",
+                        "D": "Zulfiya"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_lit_q7",
+                    "question_uz": "Ironia adabiy vosita sifatida nimani anglatadi?",
+                    "question_ru": "Что означает ирония как литературный приём?",
+                    "question_en": "What does irony mean as a literary device?",
+                    "options": {
+                        "A": "To'g'ridan-to'g'ri ta'rif",
+                        "B": "Aytilganining teskari ma'nosini bildirish",
+                        "C": "Mubolag'ali tavsif",
+                        "D": "Qo'rquv uyg'otuvchi epizod"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_lit_q8",
+                    "question_uz": "\"Hayot va tafakkur\" she'riy to'plamining muallifi kim?",
+                    "question_ru": "Кто является автором сборника стихов «Жизнь и мышление»?",
+                    "question_en": "Who is the author of the poetry collection 'Hayot va tafakkur'?",
+                    "options": {
+                        "A": "Erkin Vohidov",
+                        "B": "Abdulla Oripov",
+                        "C": "Muhammad Yusuf",
+                        "D": "Zulfiya"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_lit_q9",
+                    "question_uz": "\"Antigone\" dramasi kimning asari va qaysi ziddiyatni aks ettiradi?",
+                    "question_ru": "Кому принадлежит трагедия «Антигона» и какой конфликт она отражает?",
+                    "question_en": "Who wrote 'Antigone' and what conflict does it portray?",
+                    "options": {
+                        "A": "Evripid; sevgi va urush",
+                        "B": "Sofokl; davlat qonuni bilan vijdon/din o'rtasidagi ziddiyat",
+                        "C": "Esxil; qasos va adolat",
+                        "D": "Aristotel; bilim va johillik"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_lit_q10",
+                    "question_uz": "Postmodernizm adabiyotida qanday xususiyatlar mavjud?",
+                    "question_ru": "Каковы особенности постмодернистской литературы?",
+                    "question_en": "What are the characteristics of postmodern literature?",
+                    "options": {
+                        "A": "Romantik idealizm va milliy ruh",
+                        "B": "Intertekstuallik, metafiksiya, ironia, an'anaga shubha",
+                        "C": "Voqelikni aniq tasvirlash",
+                        "D": "Milliy qahramon ko'tarib ko'rsatish"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g8_lit_it1",
+                    "task_uz": "\"1984\" asaridagi «Big Brother» obrazi bugungi zamonaviy texnologik dunyoda qanday yoshmoqda? 200 so'zlik tahlil yozing.",
+                    "task_ru": "Как образ «Большого Брата» из «1984» проявляется в современном технологическом мире? Напишите анализ на 200 слов.",
+                    "task_en": "How does the 'Big Brother' figure from '1984' manifest in today's technological world? Write a 200-word analysis.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g8_lit_it2",
+                    "task_uz": "Siz yangi antiutopiya asari yozmoqchisiz. Kelajakda sodir bo'layotgan voqealarni tasvirlab bering: qanday jamiyat, asosiy qahramon va uning kurashi.",
+                    "task_ru": "Вы пишете новый антиутопический роман. Опишите происходящее в будущем: общество, главного героя и его борьбу.",
+                    "task_en": "You are writing a new dystopian story. Describe the future setting: the society, main character, and their struggle.",
+                    "skill": "creativity"
+                }
+            ]
+        },
+        {
+            "subject": "Physics",
+            "questions": [
+                {
+                    "id": "g8_phy_q1",
+                    "question_uz": "Om qonuni nima?",
+                    "question_ru": "Что такое закон Ома?",
+                    "question_en": "What is Ohm's Law?",
+                    "options": {
+                        "A": "V = IR",
+                        "B": "F = ma",
+                        "C": "E = mc²",
+                        "D": "P = mv"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g8_phy_q2",
+                    "question_uz": "Nurning qaytish qonuni nima?",
+                    "question_ru": "Каков закон отражения света?",
+                    "question_en": "What is the law of reflection of light?",
+                    "options": {
+                        "A": "Tushish burchagi sindirish burchagiga teng",
+                        "B": "Tushish burchagi qaytish burchagiga teng",
+                        "C": "Nur har doim to'g'ri yo'naladi",
+                        "D": "Nur faqat suyuqlikda qaytadi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_phy_q3",
+                    "question_uz": "Elektromagnit induksiya qonunini kim kashf etgan?",
+                    "question_ru": "Кто открыл закон электромагнитной индукции?",
+                    "question_en": "Who discovered the law of electromagnetic induction?",
+                    "options": {
+                        "A": "Nikola Tesla",
+                        "B": "James Clerk Maxwell",
+                        "C": "Michael Faraday",
+                        "D": "André-Marie Ampère"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g8_phy_q4",
+                    "question_uz": "Gaz bosimining formula birligini tanlang.",
+                    "question_ru": "Выберите единицу измерения давления газа.",
+                    "question_en": "What is the SI unit of pressure?",
+                    "options": {
+                        "A": "Newton",
+                        "B": "Pascal",
+                        "C": "Joule",
+                        "D": "Watt"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_phy_q5",
+                    "question_uz": "Nukleosintez nima?",
+                    "question_ru": "Что такое нуклеосинтез?",
+                    "question_en": "What is nucleosynthesis?",
+                    "options": {
+                        "A": "Hujayra bo'linishi",
+                        "B": "Yulduzlarda og'ir elementlarning hosil bo'lishi",
+                        "C": "Yadro bo'linishi",
+                        "D": "Elektr energiyasi ishlab chiqarish"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_phy_q6",
+                    "question_uz": "Yorug'likning spektri nechta rangdan iborat?",
+                    "question_ru": "Из скольких цветов состоит спектр видимого света?",
+                    "question_en": "How many colours are in the visible light spectrum?",
+                    "options": {
+                        "A": "5",
+                        "B": "6",
+                        "C": "7",
+                        "D": "8"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g8_phy_q7",
+                    "question_uz": "Albert Eynshteynning mashhur tenglamasi qaysi?",
+                    "question_ru": "Какова знаменитая формула Альберта Эйнштейна?",
+                    "question_en": "What is Albert Einstein's famous equation?",
+                    "options": {
+                        "A": "F = ma",
+                        "B": "PV = nRT",
+                        "C": "E = mc²",
+                        "D": "V = IR"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g8_phy_q8",
+                    "question_uz": "Yadro reaksiyasi qanday amalga oshiriladi?",
+                    "question_ru": "Как осуществляется ядерная реакция?",
+                    "question_en": "How is a nuclear reaction carried out?",
+                    "options": {
+                        "A": "Kimyoviy moddalar orqali",
+                        "B": "Yadro bo'linishi yoki birikishi orqali katta energiya ajratiladi",
+                        "C": "Elektr toki orqali",
+                        "D": "Issiqlik ta'sirida"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_phy_q9",
+                    "question_uz": "Supernova nima?",
+                    "question_ru": "Что такое сверхновая звезда?",
+                    "question_en": "What is a supernova?",
+                    "options": {
+                        "A": "Yangi sayyora",
+                        "B": "Ulkan yulduzning portlashi",
+                        "C": "Qora tuynuk",
+                        "D": "Kometaning tushishi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_phy_q10",
+                    "question_uz": "Kvant mexanikasining asosiy printsipi qaysi?",
+                    "question_ru": "Каков основной принцип квантовой механики?",
+                    "question_en": "What is a fundamental principle of quantum mechanics?",
+                    "options": {
+                        "A": "Jismlar katta tezlikda harakat qilganda massa oshadi",
+                        "B": "Zarrachalar bir vaqtda to'lqin va zarracha xususiyatiga ega bo'lishi mumkin",
+                        "C": "Energiya saqlanish qonuni",
+                        "D": "Tortishish kuchi barcha jismlarga teng ta'sir qiladi"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g8_phy_it1",
+                    "task_uz": "Atom elektr stansiyasi qanday ishlaydi? Uning foyda va xavf-xatarlarini tahlil qiling. Muqobil energiya manbalari bilan solishtiring.",
+                    "task_ru": "Как работает атомная электростанция? Проанализируйте её преимущества и риски. Сравните с альтернативными источниками энергии.",
+                    "task_en": "How does a nuclear power plant work? Analyse its benefits and risks. Compare it with alternative energy sources.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g8_phy_it2",
+                    "task_uz": "Agar siz fazoda yangi qurilma yaratayotgan bo'lsangiz, u qanday fizik qonunlarga asoslanishi kerak? O'zingizning kosmik qurilmangizni loyihalang.",
+                    "task_ru": "Если бы вы создавали новое устройство для космоса, на каких физических законах оно должно основываться? Спроектируйте своё космическое устройство.",
+                    "task_en": "If you were designing a new device for space, what physical laws would it rely on? Design your own space device.",
+                    "skill": "creativity"
+                }
+            ]
+        },
+        {
+            "subject": "Chemistry",
+            "questions": [
+                {
+                    "id": "g8_chem_q1",
+                    "question_uz": "Organik kimyo nima?",
+                    "question_ru": "Что такое органическая химия?",
+                    "question_en": "What is organic chemistry?",
+                    "options": {
+                        "A": "Tirik organizmlardagi kimyoviy jarayonlar",
+                        "B": "Uglerod birikmalari kimyosi",
+                        "C": "Metallar kimyosi",
+                        "D": "Yadroviy kimyo"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_chem_q2",
+                    "question_uz": "Kislota va asosning pH ko'rsatkichi qaysi?",
+                    "question_ru": "Каков pH кислоты и основания?",
+                    "question_en": "What pH range indicates an acid and a base?",
+                    "options": {
+                        "A": "Kislota pH > 7, Asos pH < 7",
+                        "B": "Kislota pH < 7, Asos pH > 7",
+                        "C": "Ikkisi ham pH = 7",
+                        "D": "Kislota pH = 0, Asos pH = 14"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_chem_q3",
+                    "question_uz": "Vodorod (H) atomida nechta proton bor?",
+                    "question_ru": "Сколько протонов содержит атом водорода (H)?",
+                    "question_en": "How many protons does a hydrogen (H) atom have?",
+                    "options": {
+                        "A": "0",
+                        "B": "1",
+                        "C": "2",
+                        "D": "8"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_chem_q4",
+                    "question_uz": "Oksidlanish-qaytarilish reaksiyasida nima sodir bo'ladi?",
+                    "question_ru": "Что происходит в окислительно-восстановительной реакции?",
+                    "question_en": "What happens in an oxidation-reduction (redox) reaction?",
+                    "options": {
+                        "A": "Faqat issiqlik ajraladi",
+                        "B": "Elektronlar bir moddadan ikkinchisiga o'tadi",
+                        "C": "Faqat protonlar o'tadi",
+                        "D": "Faqat cho'kma hosil bo'ladi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_chem_q5",
+                    "question_uz": "Kimyoviy muvozanat qachon o'rnatiladi?",
+                    "question_ru": "Когда устанавливается химическое равновесие?",
+                    "question_en": "When is chemical equilibrium established?",
+                    "options": {
+                        "A": "Reaksiya to'xtaganda",
+                        "B": "To'g'ri va teskari reaksiya tezliklari tenglaganda",
+                        "C": "Temperatura o'zgarganda",
+                        "D": "Moddalar tugaganda"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_chem_q6",
+                    "question_uz": "CH₄ qaysi organik modda?",
+                    "question_ru": "Какое органическое вещество имеет формулу CH₄?",
+                    "question_en": "What organic compound has the formula CH₄?",
+                    "options": {
+                        "A": "Etanol",
+                        "B": "Metan",
+                        "C": "Propan",
+                        "D": "Glukoza"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_chem_q7",
+                    "question_uz": "Elektrolitlar nima?",
+                    "question_ru": "Что такое электролиты?",
+                    "question_en": "What are electrolytes?",
+                    "options": {
+                        "A": "Faqat metallar",
+                        "B": "Eritilganda yoki erituvchiga qo'shilganda ionlarga ajraladigan moddalar",
+                        "C": "Kompyuter qismlari",
+                        "D": "Faqat kislotalar"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_chem_q8",
+                    "question_uz": "Davriy jadvalda period nima?",
+                    "question_ru": "Что такое период в Периодической таблице?",
+                    "question_en": "What is a period in the Periodic Table?",
+                    "options": {
+                        "A": "Vertikal ustun",
+                        "B": "Gorizontal qator, bir xil elektron qavatlar soni bilan",
+                        "C": "Metallmas elementlar guruhi",
+                        "D": "Noyob metallar guruhi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_chem_q9",
+                    "question_uz": "Katalizator nima?",
+                    "question_ru": "Что такое катализатор?",
+                    "question_en": "What is a catalyst?",
+                    "options": {
+                        "A": "Reaksiya mahsuli",
+                        "B": "Reaksiya tezligini oshiruvchi, o'zi sarflanmaydigan modda",
+                        "C": "Kislota turi",
+                        "D": "Harorat o'lchagichi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g8_chem_q10",
+                    "question_uz": "Plastmassa qanday yaratiladi?",
+                    "question_ru": "Как создаётся пластик?",
+                    "question_en": "How is plastic created?",
+                    "options": {
+                        "A": "Tabiiy toshdan",
+                        "B": "Neft va gaz asosida polimerizatsiya jarayoni orqali",
+                        "C": "Metallni eritish orqali",
+                        "D": "Biologik sintez orqali"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g8_chem_it1",
+                    "task_uz": "Plastmassa zavodi yaqinidagi daryoga kimyoviy chiqindilar tushgan. Siz kimyoshi sifatida qanday tahlil o'tkazasiz va qanday xavf-xatarlarni aniqlaysiz?",
+                    "task_ru": "Вблизи завода по производству пластика в реку попали химические отходы. Как химик проведёте анализ и какие риски определите?",
+                    "task_en": "Chemical waste from a plastics factory has entered a nearby river. As a chemist, how would you analyse the situation and what risks would you identify?",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g8_chem_it2",
+                    "task_uz": "Kelajakda yangi qurilish materiali yaratish uchun kimyoviy formulasini tasvirlab berishingiz mumkinmi? Xususiyatlari, maqsadi va qanday hosil bo'lishini yozing.",
+                    "task_ru": "Можете ли вы описать химическую формулу нового строительного материала будущего? Напишите его свойства, назначение и способ получения.",
+                    "task_en": "Can you describe a chemical formula for a new building material of the future? Write its properties, purpose, and how it would be made.",
+                    "skill": "creativity"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,761 @@
+{
+    "grade": 9,
+    "part": 2,
+    "subjects": [
+        {
+            "subject": "Native Language (Uzbek)",
+            "questions": [
+                {
+                    "id": "g9_uzb_q1",
+                    "question_uz": "Uslub nima va qanday turlari bor?",
+                    "question_ru": "Что такое стиль речи и каковы его разновидности?",
+                    "question_en": "What is speech style and what are its types?",
+                    "options": {
+                        "A": "Faqat yozma nutq",
+                        "B": "Ilmiy, rasmiy, publitsistik, badiiy, so'zlashuv uslublari",
+                        "C": "Faqat she'r va nasr",
+                        "D": "Ikki tur: og'zaki va yozma"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_uzb_q2",
+                    "question_uz": "Lingvistikaning asosiy bo'limlari qaysilar?",
+                    "question_ru": "Каковы основные разделы лингвистики?",
+                    "question_en": "What are the main branches of linguistics?",
+                    "options": {
+                        "A": "Faqat grammatika va leksikologiya",
+                        "B": "Fonetika, leksika, grammatika, stilistika va boshqalar",
+                        "C": "Faqat sintaksis",
+                        "D": "Faqat morfologiya"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_uzb_q3",
+                    "question_uz": "\"Milliy istiqlol\" mavzusida inshо yozishda qanday g'oyalar ustunlik qilishi mumkin?",
+                    "question_ru": "Какие идеи могут преобладать при написании сочинения на тему «Национальная независимость»?",
+                    "question_en": "Which ideas might dominate an essay on 'National Independence'?",
+                    "options": {
+                        "A": "Faqat iqtisodiy o'sish",
+                        "B": "Ozodlik, mas'uliyat, milliy o'zlik, rivojlanish",
+                        "C": "Faqat harbiy kuch",
+                        "D": "Faqat tarix"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_uzb_q4",
+                    "question_uz": "Cho'lpon kimdir va u qanday sababdan ahamiyatli?",
+                    "question_ru": "Кто такой Чўлпон и почему он важен?",
+                    "question_en": "Who was Cho'lpon and why is he significant?",
+                    "options": {
+                        "A": "Matematiк olim",
+                        "B": "O'zbek shoiri, dramaturg, jadid; milliy adabiyot va ozodlikning timsoli",
+                        "C": "Harbiy sarkarda",
+                        "D": "Siyosatchi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_uzb_q5",
+                    "question_uz": "\"Anafora\" nima?",
+                    "question_ru": "Что такое анафора?",
+                    "question_en": "What is anaphora in literature?",
+                    "options": {
+                        "A": "Jumla oxirida takrorlash",
+                        "B": "Ketma-ket satrlarda bir xil so'z yoki birikmaning qaytarilishi",
+                        "C": "O'xshatish",
+                        "D": "Mubolag'a"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_uzb_q6",
+                    "question_uz": "\"O'tkan kunlar\" romanida Kumush obrazi nimani ifodalaydi?",
+                    "question_ru": "Что воплощает образ Кумуш в романе «Прошедшие дни»?",
+                    "question_en": "What does the character Kumush represent in 'O'tkan Kunlar'?",
+                    "options": {
+                        "A": "Zaiflik va bo'ysunish",
+                        "B": "Milliy ruh, poklik, muhabbat va fojia",
+                        "C": "Boylik va hokimiyat",
+                        "D": "Eski an'analarga qarshi kurash"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_uzb_q7",
+                    "question_uz": "Og'zaki xalq ijodiyotining asosiy janrlari?",
+                    "question_ru": "Каковы основные жанры устного народного творчества?",
+                    "question_en": "What are the main genres of Uzbek oral folk literature?",
+                    "options": {
+                        "A": "Roman va novella",
+                        "B": "Ertak, doston, maqol, topishmoq, qo'shiq",
+                        "C": "Faqat maqol",
+                        "D": "Faqat doston va ertak"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_uzb_q8",
+                    "question_uz": "\"Evfemizm\" nima?",
+                    "question_ru": "Что такое эвфемизм?",
+                    "question_en": "What is a euphemism?",
+                    "options": {
+                        "A": "So'zning aniq ma'nosi",
+                        "B": "Dag'al yoki yoqimsiz so'z o'rnida yumshoq ifodalarni qo'llash",
+                        "C": "She'r turi",
+                        "D": "Ritorik savol"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_uzb_q9",
+                    "question_uz": "O'zbek mumtoz adabiyotida \"g'azal\" janri qanday xususiyatlarga ega?",
+                    "question_ru": "Какими особенностями обладает жанр «газель» в классической узбекской литературе?",
+                    "question_en": "What are the characteristics of the 'g'azal' genre in classical Uzbek literature?",
+                    "options": {
+                        "A": "Nasr shaklidagi asar",
+                        "B": "Qofiyadosh, ko'pincha ishq mavzusida, oxirgi baytda taxallus keluvchi she'r",
+                        "C": "Hajviy asar",
+                        "D": "Epik she'r"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_uzb_q10",
+                    "question_uz": "\"Sarob\" romanida falsafiy muammo nima?",
+                    "question_ru": "Какая философская проблема поднята в романе «Мираж»?",
+                    "question_en": "What philosophical problem is explored in the novel 'Sarob'?",
+                    "options": {
+                        "A": "Boylik va qashshoqlik",
+                        "B": "Ideal va voqelik, tuyg'u va aql o'rtasidagi ziddiyat",
+                        "C": "Urush va tinchlik",
+                        "D": "Din va ilm"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g9_uzb_it1",
+                    "task_uz": "\"Yoshlik — bu imkoniyat\" mavzusida 250-300 so'zlik essе yozing. Anafora yoki boshqa badiiy vositalardan foydalaning.",
+                    "task_ru": "Напишите эссе объёмом 250-300 слов на тему «Молодость — это возможность». Используйте анафору или другие художественные приёмы.",
+                    "task_en": "Write a 250-300 word essay in Uzbek on the topic 'Youth is an Opportunity'. Use anaphora or other literary devices.",
+                    "skill": "creativity"
+                },
+                {
+                    "id": "g9_uzb_it2",
+                    "task_uz": "\"O'tkan kunlar\" romani orqali XX asr boshidagi O'zbek jamiyatidagi ijtimoiy muammolarni tahlil qiling: patriarxal tuzum, ta'lim va ayollar huquqlari.",
+                    "task_ru": "На основе романа «Прошедшие дни» проанализируйте социальные проблемы узбекского общества начала XX века: патриархальный строй, образование и права женщин.",
+                    "task_en": "Analyse the social problems of early 20th century Uzbek society through 'O'tkan Kunlar': patriarchal structure, education, and women's rights.",
+                    "skill": "analysis"
+                }
+            ]
+        },
+        {
+            "subject": "Russian",
+            "questions": [
+                {
+                    "id": "g9_rus_q1",
+                    "question_uz": "Bulgakovning «Usta va Margarita» asarida qanday mavzular ko'tarilgan?",
+                    "question_ru": "Какие темы подняты в романе Булгакова «Мастер и Маргарита»?",
+                    "question_en": "What themes are explored in Bulgakov's 'The Master and Margarita'?",
+                    "options": {
+                        "A": "Faqat muhabbat",
+                        "B": "Yaxshilik va yomonlik, erkinlik, ijodkorlik, sovet tizimi tanqidi",
+                        "C": "Tarixiy voqealar",
+                        "D": "Sarguzashtlar"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_rus_q2",
+                    "question_uz": "Rus tilida «условное наклонение» nima?",
+                    "question_ru": "Что такое условное наклонение в русском языке?",
+                    "question_en": "What is the conditional mood in Russian?",
+                    "options": {
+                        "A": "Haqiqiy voqeani ifodalaydi",
+                        "B": "Sharti bajarilsa ro'y beradigan harakatni ifodalaydi",
+                        "C": "Buyruq bildiradi",
+                        "D": "O'tgan zamonni bildiradi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_rus_q3",
+                    "question_uz": "Rus tilida «вводные слова» nima?",
+                    "question_ru": "Что такое вводные слова в русском языке?",
+                    "question_en": "What are 'introductory words' (вводные слова) in Russian?",
+                    "options": {
+                        "A": "Gap boshidagi olmoshlar",
+                        "B": "Muallif munosabatini bildiruvchi, gapning grammatik tuzilishiga kirmagan so'zlar",
+                        "C": "Kesim vazifasidagi so'zlar",
+                        "D": "Bog'lovchilar"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_rus_q4",
+                    "question_uz": "Akhmatovaning she'riy uslubi qanday?",
+                    "question_ru": "Каков поэтический стиль Ахматовой?",
+                    "question_en": "What is Anna Akhmatova's poetic style?",
+                    "options": {
+                        "A": "Romantik va lirik",
+                        "B": "Akmeizm — aniq, tasviriy, hissiy chuqurlik",
+                        "C": "Simvolizm — g'oyaviy ramzlar",
+                        "D": "Futurizm — eksperiment"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_rus_q5",
+                    "question_uz": "Rus tilida neologizm nima?",
+                    "question_ru": "Что такое неологизм в русском языке?",
+                    "question_en": "What is a neologism in the Russian language?",
+                    "options": {
+                        "A": "Eskirgan so'z",
+                        "B": "Yangi paydo bo'lgan so'z yoki ibora",
+                        "C": "Arzon so'z",
+                        "D": "Chet el so'zi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_rus_q6",
+                    "question_uz": "Rus tilida nominativ (ko'rsatuvchi) gap nima?",
+                    "question_ru": "Что такое назывное предложение в русском языке?",
+                    "question_en": "What is a nominative sentence in Russian?",
+                    "options": {
+                        "A": "Savol bildiruvchi gap",
+                        "B": "Faqat ega bo'lgan, kesim bo'lmagan gap",
+                        "C": "Faqat kesim bo'lgan gap",
+                        "D": "Qo'shma gap"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_rus_q7",
+                    "question_uz": "Turgenev «Otalar va bolalar»da qandasi g'oya ko'tarilgan?",
+                    "question_ru": "Какая идея поднята в романе Тургенева «Отцы и дети»?",
+                    "question_en": "What idea is central to Turgenev's 'Fathers and Sons'?",
+                    "options": {
+                        "A": "Tabiat sevgisi",
+                        "B": "Avlodlar ziddiyati va nihilizm",
+                        "C": "Harbiy qahramonlik",
+                        "D": "Diniy tazarru"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_rus_q8",
+                    "question_uz": "Rus tilidagi antonim juftligi qaysi?",
+                    "question_ru": "Какая из пар является антонимической в русском языке?",
+                    "question_en": "Which pair is an antonym pair in Russian?",
+                    "options": {
+                        "A": "Дом — здание",
+                        "B": "Добрый — злой",
+                        "C": "Быстрый — скорый",
+                        "D": "Большой — огромный"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_rus_q9",
+                    "question_uz": "Rus tilida «фразеологизм» nima?",
+                    "question_ru": "Что такое фразеологизм в русском языке?",
+                    "question_en": "What is a 'phraseologism' (idiomatic expression) in Russian?",
+                    "options": {
+                        "A": "Yangi so'z",
+                        "B": "Ma'nosi alohida so'zlar ma'nosidan farqlanuvchi turg'un ibora",
+                        "C": "Chet el so'zi",
+                        "D": "Grammatik atama"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_rus_q10",
+                    "question_uz": "Chekhov va Tolstoy asarlari o'rtasidagi farq qaysi?",
+                    "question_ru": "Каково различие между произведениями Чехова и Толстого?",
+                    "question_en": "What is the difference between Chekhov's and Tolstoy's literary styles?",
+                    "options": {
+                        "A": "Ular bir xil uslubda yozganlar",
+                        "B": "Chekhov — qisqa, lakonik; Tolstoy — keng, epik",
+                        "C": "Tolstoy — komediya, Chekhov — drama",
+                        "D": "Chekhov — tarixiy, Tolstoy — poetik"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g9_rus_it1",
+                    "task_uz": "«Usta va Margarita» asarida shayton Volandning Moskvaga kelishi nimani anglatadi? Bu xarakter orqali Bulgakov qanday g'oyani ifodalaydi? Rus tilida 200 so'z.",
+                    "task_ru": "Что означает приход дьявола Воланда в Москву в романе «Мастер и Маргарита»? Какую идею передаёт Булгаков через этого персонажа? 200 слов на русском.",
+                    "task_en": "What does Woland's arrival in Moscow in 'The Master and Margarita' signify? What idea does Bulgakov convey through this character? Write 200 words in Russian.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g9_rus_it2",
+                    "task_uz": "Rus tilida zamonaviy texnologiyalarning yoshlar hayotiga ta'siri haqida bahs-munozara matni yozing (PRO va CONTRA argumentlar bilan, 200 so'z).",
+                    "task_ru": "Напишите дискуссионный текст на русском языке о влиянии современных технологий на жизнь молодёжи (с аргументами ЗА и ПРОТИВ, 200 слов).",
+                    "task_en": "Write a debate text in Russian about the impact of modern technology on youth (with PRO and CONTRA arguments, 200 words).",
+                    "skill": "creativity"
+                }
+            ]
+        },
+        {
+            "subject": "Literature",
+            "questions": [
+                {
+                    "id": "g9_lit_q1",
+                    "question_uz": "Absurd teatri nima va qaysi dramaturglar bilan bog'liq?",
+                    "question_ru": "Что такое театр абсурда и с какими драматургами он связан?",
+                    "question_en": "What is the Theatre of the Absurd and which dramatists are associated with it?",
+                    "options": {
+                        "A": "Aristotel va Sofokl",
+                        "B": "Samuel Beckett, Ionesco — hayotning bemanoligi va aloqasizligini tasvirlaydi",
+                        "C": "Shakespeare va Marlowe",
+                        "D": "Bertolt Brecht va Henrik Ibsen"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_lit_q2",
+                    "question_uz": "Allegoriya nima?",
+                    "question_ru": "Что такое аллегория?",
+                    "question_en": "What is an allegory in literature?",
+                    "options": {
+                        "A": "She'riy shakllar",
+                        "B": "Mavhum g'oyalarni konkret obrazlar orqali ifodalash",
+                        "C": "Ritorik savol",
+                        "D": "Mubolag'ali tavsif"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_lit_q3",
+                    "question_uz": "\"Animal Farm\" kimning asari va u nimani allegoriya qiladi?",
+                    "question_ru": "Чьё произведение «Скотный двор» и что оно аллегорирует?",
+                    "question_en": "Who wrote 'Animal Farm' and what does it allegorise?",
+                    "options": {
+                        "A": "Aldous Huxley; kapitalizmni",
+                        "B": "George Orwell; Sovet totalitarizmini",
+                        "C": "Franz Kafka; individualizmni",
+                        "D": "Sinclair Lewis; fashistlik tizimini"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_lit_q4",
+                    "question_uz": "Ekzistentsializm adabiyotining asosiy g'oyasi qaysi?",
+                    "question_ru": "Какова главная идея экзистенциальной литературы?",
+                    "question_en": "What is the main idea of existentialist literature?",
+                    "options": {
+                        "A": "Tabiat va insonni ulug'lash",
+                        "B": "Insonning mavjudligi ma'nosizligi va erkin tanlov mas'uliyati",
+                        "C": "Ijtimoiy adolat",
+                        "D": "Ilmiy taraqqiyot"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_lit_q5",
+                    "question_uz": "Camus «Begona»da qanday falsafiy muammo ko'tarilgan?",
+                    "question_ru": "Какая философская проблема поднята в «Постороннем» Камю?",
+                    "question_en": "What philosophical problem is raised in Camus' 'The Stranger'?",
+                    "options": {
+                        "A": "Boylik va kambag'allik",
+                        "B": "Absurd — hayotning bemanoligi va insonning javobsizligi",
+                        "C": "Urush va tinchlik",
+                        "D": "Ijtimoiy adolat"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_lit_q6",
+                    "question_uz": "Muhammad Yusuf kimdir?",
+                    "question_ru": "Кто такой Мухаммад Юсуф?",
+                    "question_en": "Who was Muhammad Yusuf?",
+                    "options": {
+                        "A": "O'zbek siyosatchisi",
+                        "B": "Zamonaviy o'zbek shoiri, milliy ruh va vatanparvarlikning timsoli",
+                        "C": "O'zbek rassomi",
+                        "D": "O'zbek olimi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_lit_q7",
+                    "question_uz": "\"Moby Dick\" romanining muallifi va mavzusi?",
+                    "question_ru": "Кто автор «Моби Дика» и о чём этот роман?",
+                    "question_en": "Who wrote 'Moby Dick' and what is its main theme?",
+                    "options": {
+                        "A": "Mark Twain; erkinlik",
+                        "B": "Herman Melville; obsessiya, tabiat va inson qudrati",
+                        "C": "Jack London; sarguzasht",
+                        "D": "Edgar Allan Poe; horror"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_lit_q8",
+                    "question_uz": "\"Oʻzbek adiblari\" seriyasida kimlar bor?",
+                    "question_ru": "Кто входит в серию «Узбекские писатели»?",
+                    "question_en": "Which writers are considered the pillars of modern Uzbek literature?",
+                    "options": {
+                        "A": "Faqat Alisher Navoiy",
+                        "B": "Abdulla Qodiriy, Oybek, G'afur G'ulom, Cho'lpon, Hamid Olimjon va boshqalar",
+                        "C": "Faqat G'afur G'ulom",
+                        "D": "Faqat Erkin Vohidov"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_lit_q9",
+                    "question_uz": "Intertekstuallik nima?",
+                    "question_ru": "Что такое интертекстуальность?",
+                    "question_en": "What is intertextuality in literature?",
+                    "options": {
+                        "A": "Bir asarning ikkinchisiga muallif ta'siri",
+                        "B": "Matn ichidagi boshqa adabiy asarlar, matlar yoki manbalar bilan bog'liqlik",
+                        "C": "Muallif tarjimaholi",
+                        "D": "Asarning janr turlarga munosabati"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_lit_q10",
+                    "question_uz": "\"To Kill a Mockingbird\" kimning asari va qanday ijtimoiy muammo?",
+                    "question_ru": "Чьё произведение «Убить пересмешника» и какая социальная проблема в нём?",
+                    "question_en": "Who wrote 'To Kill a Mockingbird' and what social issue does it address?",
+                    "options": {
+                        "A": "Steinbeck; kambag'allik",
+                        "B": "Harper Lee; irqiy adolatsizlik va ma'naviy jasorat",
+                        "C": "Hemingway; urush",
+                        "D": "Faulkner; oilaviy ziddiyat"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g9_lit_it1",
+                    "task_uz": "\"Animal Farm\" asarini bugungi siyosiy voqealar bilan taqqoslang. Allegoriya hali ham dolzarb deb o'ylaysizmi? Mulohazangizni 200 so'zda yozing.",
+                    "task_ru": "Сравните «Скотный двор» с современными политическими событиями. Считаете ли вы, что аллегория всё ещё актуальна? Напишите своё мнение на 200 слов.",
+                    "task_en": "Compare 'Animal Farm' with current political events. Do you think the allegory is still relevant? Write your reflection in 200 words.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g9_lit_it2",
+                    "task_uz": "O'zingiz absurd janrida qisqa bir sahna yozing: ikki belgi muloqotda bo'lsin, ammo hech qanday mantiqiy aloqa bo'lmasin.",
+                    "task_ru": "Напишите короткую сцену в жанре абсурда: два персонажа ведут диалог, но без логической связи.",
+                    "task_en": "Write a short absurdist scene where two characters hold a conversation with no logical connection.",
+                    "skill": "creativity"
+                }
+            ]
+        },
+        {
+            "subject": "Physics",
+            "questions": [
+                {
+                    "id": "g9_phy_q1",
+                    "question_uz": "Maxsus nisbiylik nazariyasida nima deyiladi?",
+                    "question_ru": "Что утверждает специальная теория относительности?",
+                    "question_en": "What does the Special Theory of Relativity state?",
+                    "options": {
+                        "A": "Kuch massa bilan teng",
+                        "B": "Yorug'lik tezligi doimiy va vaqt tezlikka bog'liq ravishda o'zgaradi",
+                        "C": "Energiya saqlanadi",
+                        "D": "Massa doimiy"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_phy_q2",
+                    "question_uz": "Yarimo'tkazgichlar nima va qayerda qo'llaniladi?",
+                    "question_ru": "Что такое полупроводники и где они применяются?",
+                    "question_en": "What are semiconductors and where are they used?",
+                    "options": {
+                        "A": "Faqat metallarda",
+                        "B": "Elektr o'tkazuvchanlik xususiyati o'rtacha bo'lgan materiallar; mikrochiplar va elektronikada",
+                        "C": "Faqat suv va suyuqliklarda",
+                        "D": "Faqat yadroviy reaktorlarda"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_phy_q3",
+                    "question_uz": "Doppler effekti nima?",
+                    "question_ru": "Что такое эффект Доплера?",
+                    "question_en": "What is the Doppler effect?",
+                    "options": {
+                        "A": "Yorug'likning sinishi",
+                        "B": "Manba harakatlanayotganda to'lqin chastotasining o'zgarishi (masalan, ambulans tovushi)",
+                        "C": "Magnit maydoni o'zgarishi",
+                        "D": "Yadro bo'linishi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_phy_q4",
+                    "question_uz": "Entropiya nima?",
+                    "question_ru": "Что такое энтропия?",
+                    "question_en": "What is entropy in thermodynamics?",
+                    "options": {
+                        "A": "Energiya miqdori",
+                        "B": "Tizimning tartibsizlik yoki betartiblik o'lchovi",
+                        "C": "Issiqlik oʻtkazuvchanlik",
+                        "D": "Bosim o'lchovi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_phy_q5",
+                    "question_uz": "Lazer qanday ishlaydi?",
+                    "question_ru": "Как работает лазер?",
+                    "question_en": "How does a laser work?",
+                    "options": {
+                        "A": "Elektr magnit maydoni orqali",
+                        "B": "Uyg'ongan emissiya orqali bir xil fazadagi ko'p sonli fotonlar gʻoyat yo'nalishli nurga aylanadi",
+                        "C": "Nur sintezi orqali",
+                        "D": "Issiqlik radiatsi orqali"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_phy_q6",
+                    "question_uz": "Gravitatsion to'lqinlar nima?",
+                    "question_ru": "Что такое гравитационные волны?",
+                    "question_en": "What are gravitational waves?",
+                    "options": {
+                        "A": "Dengiz to'lqinlari",
+                        "B": "Fazo-zamon egriligi o'zgarishlari bo'lib, katta massali jismlar tezlashganda hosil bo'ladi",
+                        "C": "Radio to'lqinlar",
+                        "D": "Yorug'lik to'lqinlari"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_phy_q7",
+                    "question_uz": "Qora tuynuk (Black Hole) nima?",
+                    "question_ru": "Что такое чёрная дыра?",
+                    "question_en": "What is a black hole?",
+                    "options": {
+                        "A": "Kosmosda bo'sh joy",
+                        "B": "Tortishish kuchining yorug'likni ham ushlab turadigan darajada og'ir bo'lgan kosmik jism",
+                        "C": "Yulduz guruhi",
+                        "D": "Sayyora turi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_phy_q8",
+                    "question_uz": "Hozirgi zamon fizikasining ikki ustuni qaysilar?",
+                    "question_ru": "Каковы два столпа современной физики?",
+                    "question_en": "What are the two pillars of modern physics?",
+                    "options": {
+                        "A": "Mexanika va termodinamika",
+                        "B": "Kvant mexanikasi va umumiy nisbiylik nazariyasi",
+                        "C": "Optika va akustika",
+                        "D": "Elektronika va yadroviy fizika"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_phy_q9",
+                    "question_uz": "\"Higgs bozoni\" nima va nima uchun muhim?",
+                    "question_ru": "Что такое «бозон Хиггса» и почему он важен?",
+                    "question_en": "What is the 'Higgs boson' and why is it important?",
+                    "options": {
+                        "A": "Yangi sayyora",
+                        "B": "Zarrachalarga massa beradigan, standart modeldagi zarracha yaqinda LHCda kashf etilgan",
+                        "C": "Yorug'lik zarrachasi",
+                        "D": "Magnit moddasi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_phy_q10",
+                    "question_uz": "Fuziya (sintez) va fissiya (bo'linish) reaktsiyalari o'rtasidagi farq?",
+                    "question_ru": "В чём разница между реакцией синтеза и реакцией деления?",
+                    "question_en": "What is the difference between nuclear fusion and nuclear fission?",
+                    "options": {
+                        "A": "Ular bir xil",
+                        "B": "Fuziya — yadroler birikishi (quyoshdagi kabi), fissiya — yadro bo'linishi (AES)",
+                        "C": "Fissiya — birikish, fuziya — bo'linish",
+                        "D": "Ikkisi ham suyuqlikda sodir bo'ladi"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g9_phy_it1",
+                    "task_uz": "Kvant hisoblash (Quantum Computing) nima va u klassik kompyuterdan qanday farq qiladi? Kelajakda u nimalarga qodir? Tahlil yozing.",
+                    "task_ru": "Что такое квантовые вычисления и чем они отличаются от классических компьютеров? Каковы их перспективы? Напишите анализ.",
+                    "task_en": "What is quantum computing and how does it differ from classical computing? What are its future possibilities? Write an analysis.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g9_phy_it2",
+                    "task_uz": "Agar insoniyat uzoq kosmik sayohatga tayyorgarlik ko'rayotgan bo'lsa, qanday fizik muammolarga duch keladi va ularni qanday hal qilish mumkin?",
+                    "task_ru": "Если человечество готовится к дальнему космическому путешествию, с какими физическими проблемами оно столкнётся и как их можно решить?",
+                    "task_en": "If humanity is preparing for deep space travel, what physical challenges would arise and how could they be solved?",
+                    "skill": "creativity"
+                }
+            ]
+        },
+        {
+            "subject": "Chemistry",
+            "questions": [
+                {
+                    "id": "g9_chem_q1",
+                    "question_uz": "Biomassa energiyasi nima?",
+                    "question_ru": "Что такое биомассовая энергия?",
+                    "question_en": "What is biomass energy?",
+                    "options": {
+                        "A": "Quyosh energiyasi",
+                        "B": "Organik materiallardan (o'simlik, chiqindi) olinadigan energiya",
+                        "C": "Yadro energiyasi",
+                        "D": "Shamol energiyasi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_chem_q2",
+                    "question_uz": "Faradey konstanta qanday qiymatga ega (taxminan)?",
+                    "question_ru": "Какова (приблизительно) постоянная Фарадея?",
+                    "question_en": "What is the approximate value of the Faraday constant?",
+                    "options": {
+                        "A": "8.314 J/(mol·K)",
+                        "B": "96485 C/mol",
+                        "C": "6.022×10²³",
+                        "D": "6.626×10⁻³⁴ J·s"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_chem_q3",
+                    "question_uz": "Polimer nima?",
+                    "question_ru": "Что такое полимер?",
+                    "question_en": "What is a polymer?",
+                    "options": {
+                        "A": "Qisqa molekula",
+                        "B": "Ko'p sonli takrorlangan monomerlardan tuzilgan uzun zanjir molekula",
+                        "C": "Ion birikma",
+                        "D": "Kimyoviy element"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_chem_q4",
+                    "question_uz": "Qaysi gaz issiqxona effektiga eng ko'p hissa qo'shadi?",
+                    "question_ru": "Какой газ вносит наибольший вклад в парниковый эффект?",
+                    "question_en": "Which gas contributes most to the greenhouse effect?",
+                    "options": {
+                        "A": "Kislorod",
+                        "B": "Suv bug'i va CO₂",
+                        "C": "Azot",
+                        "D": "Vodorod"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_chem_q5",
+                    "question_uz": "Elektrolitik dissotsiatsiya nima?",
+                    "question_ru": "Что такое электролитическая диссоциация?",
+                    "question_en": "What is electrolytic dissociation?",
+                    "options": {
+                        "A": "Metallarning erishi",
+                        "B": "Suv yoki erituvchida ionlarga ajralish",
+                        "C": "Gaz ajralishi",
+                        "D": "Yadroviy reaktsiya"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_chem_q6",
+                    "question_uz": "Nanochemistry nima?",
+                    "question_ru": "Что такое нанохимия?",
+                    "question_en": "What is nanochemistry?",
+                    "options": {
+                        "A": "Kichik kimyo laboratoriyasida ishlash",
+                        "B": "1-100 nanometr o'lchamidagi moddalarning kimyosi",
+                        "C": "Kimyoviy ifloslanishni nazorat",
+                        "D": "Kimyo ta'limi usuli"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_chem_q7",
+                    "question_uz": "Oksidlanish holati nima?",
+                    "question_ru": "Что такое степень окисления?",
+                    "question_en": "What is oxidation state?",
+                    "options": {
+                        "A": "Kimyoviy reaksiya tezligi",
+                        "B": "Atomning birikmasidagi taxminiy zaryadini ko'rsatuvchi son",
+                        "C": "Elementning massa soni",
+                        "D": "Ionning energiyasi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_chem_q8",
+                    "question_uz": "Haber jarayoni (Haber-Bosch) nima uchun muhim?",
+                    "question_ru": "Почему важен процесс Хабера-Боша?",
+                    "question_en": "Why is the Haber-Bosch process important?",
+                    "options": {
+                        "A": "Plastmassa ishlab chiqarish uchun",
+                        "B": "Atmosfera azotidan ammiak sintezi — o'g'it ishlab chiqarish uchun",
+                        "C": "Benzin ishlab chiqarish uchun",
+                        "D": "Kislorod sof holda ajratish uchun"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_chem_q9",
+                    "question_uz": "Radioaktivlik nima?",
+                    "question_ru": "Что такое радиоактивность?",
+                    "question_en": "What is radioactivity?",
+                    "options": {
+                        "A": "Kimyoviy reaksiya",
+                        "B": "Beqaror yadrolarda zarrachalar va energiya kelishi bilan sodir bo'ladigan parchalanish",
+                        "C": "Elektr toki",
+                        "D": "Nur sinishi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_chem_q10",
+                    "question_uz": "Kimyoviy termodinamikada Gibbs energiyasi nima uchun ishlatiladi?",
+                    "question_ru": "Для чего используется энергия Гиббса в химической термодинамике?",
+                    "question_en": "What is Gibbs free energy used for in chemical thermodynamics?",
+                    "options": {
+                        "A": "Temperaturani o'lchash",
+                        "B": "Reaktsiyaning o'z-o'zidan borishini aniqlash",
+                        "C": "Massa saqlanishini hisoblash",
+                        "D": "Eritmani tayyorlash"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g9_chem_it1",
+                    "task_uz": "Iqlim o'zgarishi va kimyo o'rtasidagi aloqani tushuntiring. CO₂ ni kamaytirishning 3 ta kimyoviy usulini tavsiflang.",
+                    "task_ru": "Объясните связь между изменением климата и химией. Опишите 3 химических способа снижения CO₂.",
+                    "task_en": "Explain the connection between climate change and chemistry. Describe 3 chemical methods to reduce CO₂ emissions.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g9_chem_it2",
+                    "task_uz": "Siz yangi yoqilg'i manbai kashf etdingiz. Uning kimyoviy formulasini, hosil bo'lish jarayonini, foyda va xavf-xatarlarini tasvirlab bering.",
+                    "task_ru": "Вы открыли новый источник топлива. Опишите его химическую формулу, процесс получения, преимущества и риски.",
+                    "task_en": "You have discovered a new fuel source. Describe its chemical formula, how it is produced, its benefits and risks.",
+                    "skill": "creativity"
+                }
+            ]
+        }
+    ]
+}

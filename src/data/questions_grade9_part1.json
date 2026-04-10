@@ -1,0 +1,761 @@
+{
+    "grade": 9,
+    "part": 1,
+    "subjects": [
+        {
+            "subject": "Mathematics",
+            "questions": [
+                {
+                    "id": "g9_math_q1",
+                    "question_uz": "Trigonometrik tenglama: cos(x) = 0.5. x = ?",
+                    "question_ru": "Решите: cos(x) = 0.5. x = ?",
+                    "question_en": "Solve: cos(x) = 0.5. x = ?",
+                    "options": {
+                        "A": "30°",
+                        "B": "45°",
+                        "C": "60°",
+                        "D": "90°"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g9_math_q2",
+                    "question_uz": "Funksiyaning hosilasi: y = 3x² + 2x − 1. y' = ?",
+                    "question_ru": "Найдите производную: y = 3x² + 2x − 1. y' = ?",
+                    "question_en": "Find the derivative: y = 3x² + 2x − 1. y' = ?",
+                    "options": {
+                        "A": "6x + 2",
+                        "B": "3x + 2",
+                        "C": "6x − 1",
+                        "D": "3x² + 2"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g9_math_q3",
+                    "question_uz": "Agar f(x) = x³, f'(2) = ?",
+                    "question_ru": "Если f(x) = x³, то f'(2) = ?",
+                    "question_en": "If f(x) = x³, what is f'(2)?",
+                    "options": {
+                        "A": "6",
+                        "B": "8",
+                        "C": "12",
+                        "D": "9"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g9_math_q4",
+                    "question_uz": "n=5 uchun n! = ?",
+                    "question_ru": "При n=5 : n! = ?",
+                    "question_en": "For n=5: n! = ?",
+                    "options": {
+                        "A": "60",
+                        "B": "100",
+                        "C": "120",
+                        "D": "240"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g9_math_q5",
+                    "question_uz": "Ikkinchi darajali tenglama x²−3x+2=0 yechimlarini toping.",
+                    "question_ru": "Решите квадратное уравнение x²−3x+2=0.",
+                    "question_en": "Solve the quadratic equation x²−3x+2=0.",
+                    "options": {
+                        "A": "x=1 va x=2",
+                        "B": "x=−1 va x=−2",
+                        "C": "x=1 va x=−2",
+                        "D": "x=3 va x=1"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g9_math_q6",
+                    "question_uz": "Vektorlarning skalyar ko'paytmasi: a=(3,4), b=(1,2). a·b = ?",
+                    "question_ru": "Скалярное произведение: a=(3,4), b=(1,2). a·b = ?",
+                    "question_en": "Dot product: a=(3,4), b=(1,2). a·b = ?",
+                    "options": {
+                        "A": "10",
+                        "B": "11",
+                        "C": "12",
+                        "D": "14"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_math_q7",
+                    "question_uz": "Cheksiz geometrik progressiyaning summasi: b₁=4, q=0.5. S = ?",
+                    "question_ru": "Сумма бесконечной геометрической прогрессии: b₁=4, q=0.5. S = ?",
+                    "question_en": "Sum of infinite geometric series: b₁=4, q=0.5. S = ?",
+                    "options": {
+                        "A": "6",
+                        "B": "8",
+                        "C": "10",
+                        "D": "12"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_math_q8",
+                    "question_uz": "Qanday sharoitda integral mavjud bo'ladi?",
+                    "question_ru": "При каком условии интеграл существует?",
+                    "question_en": "Under what condition does an integral exist?",
+                    "options": {
+                        "A": "Funksiya har doim musbat",
+                        "B": "Funksiya oraliqda cheklangan va integratsiya qilinishi mumkin",
+                        "C": "Funksiya doimiy",
+                        "D": "Funksiya chiziqli"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_math_q9",
+                    "question_uz": "Ehtimollik: 6 qirrali kubik tashlanadi. Juft son tushish ehtimoli?",
+                    "question_ru": "Вероятность: кубик с 6 гранями. Какова вероятность выпадения чётного числа?",
+                    "question_en": "A 6-sided die is rolled. What is the probability of getting an even number?",
+                    "options": {
+                        "A": "1/3",
+                        "B": "1/2",
+                        "C": "2/3",
+                        "D": "1/6"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_math_q10",
+                    "question_uz": "y = |x| funksiyasi qanday grafik beradi?",
+                    "question_ru": "Какой график даёт функция y = |x|?",
+                    "question_en": "What graph does the function y = |x| produce?",
+                    "options": {
+                        "A": "Parabola",
+                        "B": "Chiziq",
+                        "C": "V-shakl",
+                        "D": "Aylana"
+                    },
+                    "correct_answer": "C"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g9_math_it1",
+                    "task_uz": "Statistik masala: 10 o'quvchining ball: 78,85,92,60,74,88,95,70,82,90. O'rtacha, median va modani hisoblang.",
+                    "task_ru": "Статистическая задача: баллы 10 учеников: 78,85,92,60,74,88,95,70,82,90. Найдите среднее, медиану и моду.",
+                    "task_en": "Statistics problem: 10 students' scores: 78,85,92,60,74,88,95,70,82,90. Find the mean, median, and mode.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g9_math_it2",
+                    "task_uz": "Ehtimollik nazariyasidan foydalanib: agar siz 100 ta biletdan 1 tani tortib chiqarsiz va 10 tasi yutadi, sizning yutish ehtimolligingiz nechchi? Bu o'yin adolatli deb hisoblanadi, nima uchun?",
+                    "task_ru": "Используя теорию вероятностей: если вы вытаскиваете 1 из 100 билетов, и 10 из них выигрышные, какова ваша вероятность выиграть? Считается ли эта игра честной? Почему?",
+                    "task_en": "Using probability theory: if you draw 1 ticket from 100 and 10 are winners, what is your probability of winning? Is this game fair? Why?",
+                    "skill": "logic"
+                }
+            ]
+        },
+        {
+            "subject": "English",
+            "questions": [
+                {
+                    "id": "g9_eng_q1",
+                    "question_uz": "\"Had she known the truth, she ___ him.\" To'g'ri javobni tanlang.",
+                    "question_ru": "Выберите правильный ответ: \"Had she known the truth, she ___ him.\"",
+                    "question_en": "\"Had she known the truth, she ___ him.\" Choose the correct form.",
+                    "options": {
+                        "A": "would help",
+                        "B": "would have helped",
+                        "C": "had helped",
+                        "D": "will help"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_eng_q2",
+                    "question_uz": "'Ubiquitous' so'zining ma'nosi qaysi?",
+                    "question_ru": "Что означает слово 'ubiquitous'?",
+                    "question_en": "What does 'ubiquitous' mean?",
+                    "options": {
+                        "A": "Kam uchraydigan",
+                        "B": "Hamma joyda mavjud bo'lgan",
+                        "C": "Noyob",
+                        "D": "Xavfli"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_eng_q3",
+                    "question_uz": "\"Not only ___ he arrive late, but he also forgot his homework.\" To'g'ri inversiya shaklini tanlang.",
+                    "question_ru": "Выберите правильную инверсию: \"Not only ___ he arrive late...\"",
+                    "question_en": "\"Not only ___ he arrive late, but he also forgot his homework.\" Choose the correct inversion.",
+                    "options": {
+                        "A": "did",
+                        "B": "has",
+                        "C": "was",
+                        "D": "had"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g9_eng_q4",
+                    "question_uz": "Academic yozishda claim va evidence farqi nima?",
+                    "question_ru": "В чём разница между утверждением и доказательством в академическом письме?",
+                    "question_en": "In academic writing, what is the difference between a claim and evidence?",
+                    "options": {
+                        "A": "Ular bir xil",
+                        "B": "Claim — fikr bildirish, evidence — dalil keltirish",
+                        "C": "Claim — xulosa, evidence — savol",
+                        "D": "Claim — raqam, evidence — misol"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_eng_q5",
+                    "question_uz": "\"Affect\" va \"effect\" o'rtasidagi farq?",
+                    "question_ru": "В чём разница между 'affect' и 'effect'?",
+                    "question_en": "What is the difference between 'affect' and 'effect'?",
+                    "options": {
+                        "A": "Ular sinonim",
+                        "B": "Affect — fe'l (ta'sir qilmoq), effect — ot (natija)",
+                        "C": "Affect — ot, effect — fe'l",
+                        "D": "Ikkalasi ravish"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_eng_q6",
+                    "question_uz": "'Pragmatic' so'zining ma'nosi?",
+                    "question_ru": "Что означает слово 'pragmatic'?",
+                    "question_en": "What does 'pragmatic' mean?",
+                    "options": {
+                        "A": "Orzuchi",
+                        "B": "Amaliy, real narsaga asoslanuvchi",
+                        "C": "Nazariy",
+                        "D": "Ijodiy"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_eng_q7",
+                    "question_uz": "Concession clause nima? Misol keltiring.",
+                    "question_ru": "Что такое concession clause? Приведите пример.",
+                    "question_en": "What is a concession clause? Choose the correct example.",
+                    "options": {
+                        "A": "\"Because it rained, we stayed in.\"",
+                        "B": "\"Although it rained, we went out.\"",
+                        "C": "\"It rained, so we stayed in.\"",
+                        "D": "\"When it rains, we stay in.\""
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_eng_q8",
+                    "question_uz": "\"The more you read, ___ smarter you become.\" To'g'ri javob?",
+                    "question_ru": "Выберите правильный ответ: \"The more you read, ___ smarter you become.\"",
+                    "question_en": "\"The more you read, ___ smarter you become.\" Fill in the blank.",
+                    "options": {
+                        "A": "more",
+                        "B": "the",
+                        "C": "a",
+                        "D": "much"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_eng_q9",
+                    "question_uz": "Irony va sarcasm o'rtasidagi farq?",
+                    "question_ru": "В чём разница между иронией и сарказмом?",
+                    "question_en": "What is the difference between irony and sarcasm?",
+                    "options": {
+                        "A": "Ular bir xil",
+                        "B": "Irony — umuman, sarcasm — zarar yetkazish maqsadida ishlatiladi",
+                        "C": "Irony — poetik, sarcasm — grammatik",
+                        "D": "Sarcasm — yozma, irony — og'zaki"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_eng_q10",
+                    "question_uz": "\"I wish I ___ more time to study.\" To'g'ri shaklni tanlang.",
+                    "question_ru": "Выберите правильную форму: \"I wish I ___ more time to study.\"",
+                    "question_en": "\"I wish I ___ more time to study.\" Choose the correct form.",
+                    "options": {
+                        "A": "have",
+                        "B": "had",
+                        "C": "will have",
+                        "D": "would have"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g9_eng_it1",
+                    "task_uz": "\"Social media is more harmful than helpful for teenagers.\" Ushbu mavzuda argumentli esse yozing (for va against) — 200 so'z.",
+                    "task_ru": "На тему «Социальные сети приносят больше вреда, чем пользы подросткам» напишите аргументированное эссе (за и против) — 200 слов.",
+                    "task_en": "Write a for-and-against essay on 'Social media is more harmful than helpful for teenagers' (200 words).",
+                    "skill": "creativity"
+                },
+                {
+                    "id": "g9_eng_it2",
+                    "task_uz": "Quyidagi akademik matnni o'qing va uning kuchli va zaif tomonlarini (argumentlar, dalillar, uslub) ingliz tilida tahlil qiling.",
+                    "task_ru": "Прочитайте следующий академический текст и проанализируйте его сильные и слабые стороны (аргументы, доказательства, стиль) на английском языке.",
+                    "task_en": "Read the provided academic text and analyse its strengths and weaknesses (arguments, evidence, style) in English.",
+                    "skill": "analysis"
+                }
+            ]
+        },
+        {
+            "subject": "Biology",
+            "questions": [
+                {
+                    "id": "g9_bio_q1",
+                    "question_uz": "Endokrin tizimning asosiy vazifalari qaysi?",
+                    "question_ru": "Каковы основные функции эндокринной системы?",
+                    "question_en": "What are the main functions of the endocrine system?",
+                    "options": {
+                        "A": "Harakatni boshqarish",
+                        "B": "Gormonlar orqali metabolizm, o'sish va reproduksiyani boshqarish",
+                        "C": "Ovqatni hazm qilish",
+                        "D": "Nafas olishni boshqarish"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_bio_q2",
+                    "question_uz": "Mendel irsiyati qonunlari nechta?",
+                    "question_ru": "Сколько законов наследственности Менделя?",
+                    "question_en": "How many Mendelian laws of inheritance are there?",
+                    "options": {
+                        "A": "1",
+                        "B": "2",
+                        "C": "3",
+                        "D": "4"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g9_bio_q3",
+                    "question_uz": "Transpirasiya nima?",
+                    "question_ru": "Что такое транспирация?",
+                    "question_en": "What is transpiration?",
+                    "options": {
+                        "A": "O'simlik nafas olishi",
+                        "B": "O'simlik barglaridan suv bug'lanishi",
+                        "C": "Ko'payish jarayoni",
+                        "D": "Oziq moddalar sintezi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_bio_q4",
+                    "question_uz": "Epidemiya va pandemiya o'rtasidagi farq?",
+                    "question_ru": "В чём разница между эпидемией и пандемией?",
+                    "question_en": "What is the difference between an epidemic and a pandemic?",
+                    "options": {
+                        "A": "Ular bir xil",
+                        "B": "Epidemiya bir hududda, pandemiya butun dunyo bo'ylab tarqaladi",
+                        "C": "Pandemiya yanada kamroq tarqaladi",
+                        "D": "Epidemiya faqat hayvonlarda"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_bio_q5",
+                    "question_uz": "Biologik xilma-xillik (biodiversitet) nega muhim?",
+                    "question_ru": "Почему важно биологическое разнообразие?",
+                    "question_en": "Why is biodiversity important?",
+                    "options": {
+                        "A": "Faqat estetik qimmat uchun",
+                        "B": "Ekotizim barqarorligi, manba va iqlim muvozanati uchun",
+                        "C": "Faqat tibbiy foyda uchun",
+                        "D": "Qishloq xo'jaligi uchun"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_bio_q6",
+                    "question_uz": "Xloroplast va mitoxondriya qanday xususiyatiga ko'ra bir-biriga o'xshaydi?",
+                    "question_ru": "В чём сходство хлоропласта и митохондрии?",
+                    "question_en": "In what way are chloroplasts and mitochondria similar?",
+                    "options": {
+                        "A": "Ikkisi ham kraxmal ishlab chiqaradi",
+                        "B": "Ikkisi ham o'z DNKiga ega va energiya jarayonlarida ishtirok etadi",
+                        "C": "Ikkisi ham animal hujayralarida bo'ladi",
+                        "D": "Ikkisi ham hujayra membranasini tuzadi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_bio_q7",
+                    "question_uz": "Biotexnologiyaning tibbiyotdagi qo'llanishi qanday?",
+                    "question_ru": "Как биотехнология применяется в медицине?",
+                    "question_en": "How is biotechnology applied in medicine?",
+                    "options": {
+                        "A": "Faqat dori ishlab chiqarish uchun",
+                        "B": "Dori, diagnostika, gen terapiyasi, vaksina yaratishda",
+                        "C": "Faqat tibbiy asboblar uchun",
+                        "D": "Faqat tadqiqot uchun"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_bio_q8",
+                    "question_uz": "Miya va nerv tizimi bo'limlarini nomlang.",
+                    "question_ru": "Назовите отделы мозга и нервной системы.",
+                    "question_en": "Name the main divisions of the nervous system.",
+                    "options": {
+                        "A": "Yurak, o'pka, jigar",
+                        "B": "Markaziy va periferik nerv tizimi",
+                        "C": "Qon, limfa, limfa tizimi",
+                        "D": "Miya, orqa miya va buyrak"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_bio_q9",
+                    "question_uz": "Karantin nima?",
+                    "question_ru": "Что такое карантин?",
+                    "question_en": "What is quarantine?",
+                    "options": {
+                        "A": "Kasalxona bo'limi",
+                        "B": "Kasallikning tarqalishini oldini olish uchun ajratib saqlash",
+                        "C": "Dori qabul qilish jarayoni",
+                        "D": "Tez yordam xizmati"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_bio_q10",
+                    "question_uz": "Fiziologiyadagi homeostaz nima?",
+                    "question_ru": "Что такое гомеостаз в физиологии?",
+                    "question_en": "What is homeostasis in physiology?",
+                    "options": {
+                        "A": "O'sish jarayoni",
+                        "B": "Organizmning ichki muhitini barqaror saqlash mexanizmi",
+                        "C": "Nerv tizimi reaktsiyasi",
+                        "D": "Ko'payish jarayoni"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g9_bio_it1",
+                    "task_uz": "COVID-19 pandemiyal jarayoni orqali epidemiologiyaning asosiy tamoyillarini tushuntiring. Kasallikning tarqalishi, oldini olish choralari va herd immunity haqida yozing.",
+                    "task_ru": "Используя пандемию COVID-19, объясните основные принципы эпидемиологии. Напишите о распространении болезни, мерах профилактики и коллективном иммунитете.",
+                    "task_en": "Using the COVID-19 pandemic, explain the main principles of epidemiology. Write about disease spread, prevention measures, and herd immunity.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g9_bio_it2",
+                    "task_uz": "Agar siz gen muxandisi bo'lsangiz va insoniyatni ta'qib qilayotgan kasallikni davolashga yordam bera oladigan gen topgan bo'lsangiz — etik muammolar haqida o'z fikringizni yozing.",
+                    "task_ru": "Если бы вы, как генный инженер, нашли ген, способный вылечить болезнь, от которой страдает человечество, — напишите о связанных с этим этических проблемах.",
+                    "task_en": "If you, as a genetic engineer, found a gene that could cure a disease affecting humanity — write about the ethical issues involved.",
+                    "skill": "creativity"
+                }
+            ]
+        },
+        {
+            "subject": "History",
+            "questions": [
+                {
+                    "id": "g9_hist_q1",
+                    "question_uz": "\"Arxipelag GULAG\" nima?",
+                    "question_ru": "Что такое «Архипелаг ГУЛАГ»?",
+                    "question_en": "What was the 'Gulag Archipelago'?",
+                    "options": {
+                        "A": "Sovet davridagi qiziqish lagerlar tizimi",
+                        "B": "Dengiz arxipelagi",
+                        "C": "Sovet harbiy bazasi",
+                        "D": "Rus she'riy to'plami"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g9_hist_q2",
+                    "question_uz": "Gʻarbiy sivilizatsiyaning «Apogeysi» deb qaysi daryi ataladigan?",
+                    "question_ru": "Как называется период расцвета западной цивилизации?",
+                    "question_en": "The 20th century is often called the 'Golden Age' of what in the Western world?",
+                    "options": {
+                        "A": "Raqamli texnologiyalar",
+                        "B": "Kapitalizm va iqtisodiy farovonlik",
+                        "C": "Imperializm",
+                        "D": "Urushlar"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_hist_q3",
+                    "question_uz": "\"Non-aligned Movement\" nima?",
+                    "question_ru": "Что такое «Движение неприсоединения»?",
+                    "question_en": "What was the Non-Aligned Movement?",
+                    "options": {
+                        "A": "Harbiy ittifoq",
+                        "B": "Sovuq urush davridagi «Uchinchi dunyo» davlatlarining bloklarga kirmaslik harakati",
+                        "C": "BMTning bir bo'limi",
+                        "D": "Kommunistik blok"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_hist_q4",
+                    "question_uz": "\"Dekolonizatsiya\" qaysi asrda faol bo'ldi?",
+                    "question_ru": "В каком веке деколонизация была наиболее активной?",
+                    "question_en": "Decolonisation was most active in which century?",
+                    "options": {
+                        "A": "XVIII",
+                        "B": "XIX",
+                        "C": "XX",
+                        "D": "XXI"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g9_hist_q5",
+                    "question_uz": "O'zbekistondagi Jadidchilik harakati nima edi?",
+                    "question_ru": "Что такое Джадидизм в Узбекистане?",
+                    "question_en": "What was the Jadidism movement in Uzbekistan?",
+                    "options": {
+                        "A": "Harbiy harakat",
+                        "B": "Ma'rifatparvarlik va islohot harakati",
+                        "C": "Diniy harakat",
+                        "D": "Savdo uyushmasi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_hist_q6",
+                    "question_uz": "Nelson Mandela kim edi?",
+                    "question_ru": "Кто такой Нельсон Мандела?",
+                    "question_en": "Who was Nelson Mandela?",
+                    "options": {
+                        "A": "Hindiston rahbari",
+                        "B": "Janubiy Afrika prezidenti, apartheid qarama-qarshi kurashchi",
+                        "C": "Amerika fuqarolik huquqlari arbobi",
+                        "D": "Zimdabve prezidenti"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_hist_q7",
+                    "question_uz": "\"Yashil inqilob\" nima edi?",
+                    "question_ru": "Что такое «Зелёная революция»?",
+                    "question_en": "What was the 'Green Revolution'?",
+                    "options": {
+                        "A": "Ekologik harakatlar",
+                        "B": "Qishloq xo'jaligida mahsuldorlikni oshirgan texnologik o'zgarishlar",
+                        "C": "O'rmonlarni tiklash",
+                        "D": "Shahar bog'larini ko'paytirish"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_hist_q8",
+                    "question_uz": "\"9/11 voqeasi\" qaysi yili bo'lib o'tdi va uning oqibatlari nima bo'ldi?",
+                    "question_ru": "В каком году произошёл теракт «9/11» и каковы его последствия?",
+                    "question_en": "In what year did 9/11 occur and what were its major consequences?",
+                    "options": {
+                        "A": "1999, Iraq urushi",
+                        "B": "2001, Afg'oniston va Iraq urushlari, global xavfsizlik o'zgarishlari",
+                        "C": "2003, Iqtisodiy inqiroz",
+                        "D": "2000, Sovuq urushning tugashi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_hist_q9",
+                    "question_uz": "\"Shanghai Hamkorlik Tashkiloti\" (ShHT) da O'zbekiston qachon a'zo bo'ldi?",
+                    "question_ru": "Когда Узбекистан стал членом Шанхайской организации сотрудничества?",
+                    "question_en": "When did Uzbekistan become a member of the Shanghai Cooperation Organisation?",
+                    "options": {
+                        "A": "2001",
+                        "B": "2003",
+                        "C": "2005",
+                        "D": "2010"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g9_hist_q10",
+                    "question_uz": "Global iqtisodiy inqiroz 2008-yilda nima sababdan yuz berdi?",
+                    "question_ru": "По каким причинам произошёл глобальный финансовый кризис 2008 года?",
+                    "question_en": "What caused the 2008 global financial crisis?",
+                    "options": {
+                        "A": "Neft narxlarining oshishi",
+                        "B": "AQSHdagi uy-joy bozori pufagi va ipoteka inqirozi",
+                        "C": "Urush natijasida",
+                        "D": "Texnologiya sanoati inqirozi"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g9_hist_it1",
+                    "task_uz": "Jadidchilik harakati O'rta Osiyoda qanday o'zgarishlarga sabab bo'ldi? Uning madaniy, ta'lim va siyosiy ta'sirini tahlil qiling.",
+                    "task_ru": "Как движение Джадидизма повлияло на изменения в Средней Азии? Проанализируйте его культурное, образовательное и политическое воздействие.",
+                    "task_en": "How did the Jadidism movement cause changes in Central Asia? Analyse its cultural, educational, and political impact.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g9_hist_it2",
+                    "task_uz": "Siz 1960-yillarda dekolonizatsiya harakatining lideri bo'lgan bo'lsangiz, yangi mustaqil davlatni qanday qurardingiz? Iqtisod, ta'lim va boshqaruv haqida yozing.",
+                    "task_ru": "Если бы вы были лидером движения за деколонизацию в 1960-х годах, как бы вы строили новое независимое государство? Напишите об экономике, образовании и управлении.",
+                    "task_en": "If you were a leader of the decolonisation movement in the 1960s, how would you build a new independent state? Write about economy, education, and governance.",
+                    "skill": "creativity"
+                }
+            ]
+        },
+        {
+            "subject": "Informatics",
+            "questions": [
+                {
+                    "id": "g9_inf_q1",
+                    "question_uz": "Machine Learning nima?",
+                    "question_ru": "Что такое машинное обучение?",
+                    "question_en": "What is Machine Learning?",
+                    "options": {
+                        "A": "Kompyuter ta'mirlash",
+                        "B": "Kompyuterlarning ma'lumotlardan o'rganib, qarorlar qabul qilish qobiliyati",
+                        "C": "Kompyuter o'yinlari",
+                        "D": "Dastur yozish usuli"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_inf_q2",
+                    "question_uz": "Blockchain texnologiyasi asosan nima uchun ishlatiladi?",
+                    "question_ru": "Для чего в основном используется технология блокчейн?",
+                    "question_en": "What is blockchain technology mainly used for?",
+                    "options": {
+                        "A": "Rasmlar saqlash",
+                        "B": "Kriptovalyuta va xavfsiz ma'lumotlar almashish",
+                        "C": "Video o'ynash",
+                        "D": "Email yuborish"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_inf_q3",
+                    "question_uz": "\"Agile\" dasturlash metodologiyasi nima?",
+                    "question_ru": "Что такое Agile-методология в разработке ПО?",
+                    "question_en": "What is the Agile methodology in software development?",
+                    "options": {
+                        "A": "Qo'shimcha dastur",
+                        "B": "Moslashuvchan, iterativ loyiha boshqaruv yondashuvi",
+                        "C": "Dasturlash tili",
+                        "D": "Sinov usuli"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_inf_q4",
+                    "question_uz": "IoT (Internet of Things) nima?",
+                    "question_ru": "Что такое IoT (Интернет вещей)?",
+                    "question_en": "What is the Internet of Things (IoT)?",
+                    "options": {
+                        "A": "O'yin platformasi",
+                        "B": "Internet orqali ulangan fizik qurilmalar tarmog'i",
+                        "C": "Ijtimoiy tarmoq",
+                        "D": "Ma'lumotlar bazasi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_inf_q5",
+                    "question_uz": "\"Kriptovakyuta\" nima?",
+                    "question_ru": "Что такое криптовалюта?",
+                    "question_en": "What is cryptocurrency?",
+                    "options": {
+                        "A": "Maxfiy til",
+                        "B": "Kriptografiya asosidagi raqamli pul",
+                        "C": "Bank kartasi",
+                        "D": "Internet protokoli"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_inf_q6",
+                    "question_uz": "REST API nima?",
+                    "question_ru": "Что такое REST API?",
+                    "question_en": "What is a REST API?",
+                    "options": {
+                        "A": "Antivirus protokoli",
+                        "B": "Veb-xizmatlar o'rtasida ma'lumot almashish uchun standart arxitektura",
+                        "C": "Ma'lumotlar bazasi turi",
+                        "D": "Tarmoq protokoli"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_inf_q7",
+                    "question_uz": "\"Deep Learning\" va \"Machine Learning\" o'rtasidagi farq?",
+                    "question_ru": "В чём разница между «глубоким обучением» и «машинным обучением»?",
+                    "question_en": "What is the difference between Deep Learning and Machine Learning?",
+                    "options": {
+                        "A": "Ular bir xil",
+                        "B": "Deep Learning — ko'p qatlamli neyron tarmoqlarini qo'llaydigan ML usuli",
+                        "C": "Deep Learning — tezroq",
+                        "D": "Machine Learning — murakkabroq"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_inf_q8",
+                    "question_uz": "VPN nima va nima uchun ishlatiladi?",
+                    "question_ru": "Что такое VPN и для чего используется?",
+                    "question_en": "What is a VPN and what is it used for?",
+                    "options": {
+                        "A": "Video pleer",
+                        "B": "Virtual shaxsiy tarmoq — xavfsiz va maxfiy internet ulanish uchun",
+                        "C": "Antivirus dastur",
+                        "D": "Ma'lumotlar bazasi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_inf_q9",
+                    "question_uz": "Version Control System (Git) nima uchun ishlatiladi?",
+                    "question_ru": "Для чего используется система контроля версий (Git)?",
+                    "question_en": "What is a Version Control System (like Git) used for?",
+                    "options": {
+                        "A": "Fayllarni o'chirib tashlash",
+                        "B": "Kodni boshqarish, tarixini saqlash va jamoaviy ishlash",
+                        "C": "Antivirusdan himoya",
+                        "D": "Ma'lumotlarni zaxiralash"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g9_inf_q10",
+                    "question_uz": "\"Metaverse\" nima?",
+                    "question_ru": "Что такое «Метавселенная» (Metaverse)?",
+                    "question_en": "What is the 'Metaverse'?",
+                    "options": {
+                        "A": "Katta ma'lumotlar to'plami",
+                        "B": "Virtual va kengaytirilgan reallik texnologiyalari asosidagi 3D raqamli dunyo",
+                        "C": "Ijtimoiy tarmoq turi",
+                        "D": "Dasturlash tili"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g9_inf_it1",
+                    "task_uz": "Sun'iy intellektning ta'limdagi roli haqida tahlil qiling: u ta'limni qanday yaxshilaydi? Xavf-xatarlari nima?",
+                    "task_ru": "Проанализируйте роль искусственного интеллекта в образовании: как он улучшает обучение? Каковы риски?",
+                    "task_en": "Analyse the role of AI in education: how does it improve learning? What are the risks?",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g9_inf_it2",
+                    "task_uz": "Siz startup yaratmoqchisiz. Texnologiyaga asoslangan biznes g'oyangizni tavsiflang: muammo, yechim, maqsadli auditoriya va daromad modeli.",
+                    "task_ru": "Вы хотите создать стартап. Опишите свою технологическую бизнес-идею: проблема, решение, целевая аудитория и модель дохода.",
+                    "task_en": "You want to create a startup. Describe your technology-based business idea: problem, solution, target audience, and revenue model.",
+                    "skill": "creativity"
+                }
+            ]
+        }
+    ]
+}

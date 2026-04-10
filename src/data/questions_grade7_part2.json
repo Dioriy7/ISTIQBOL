@@ -1,0 +1,761 @@
+{
+    "grade": 7,
+    "part": 2,
+    "subjects": [
+        {
+            "subject": "Native Language (Uzbek)",
+            "questions": [
+                {
+                    "id": "g7_uzb_q1",
+                    "question_uz": "\"Muallif\" so'zining etimologiyasi qayerdan?",
+                    "question_ru": "Откуда происходит слово «муаллиф»?",
+                    "question_en": "From which language does the Uzbek word 'muallif' (author) originate?",
+                    "options": {
+                        "A": "Rus tilidan",
+                        "B": "Arab tilidan",
+                        "C": "Fors tilidan",
+                        "D": "Ingliz tilidan"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_uzb_q2",
+                    "question_uz": "Ajratilgan so'z (undalma) gap tarkibida qanday vazifani bajaradi?",
+                    "question_ru": "Какую роль выполняет обращение в предложении?",
+                    "question_en": "What is the role of a vocative (undalma) in an Uzbek sentence?",
+                    "options": {
+                        "A": "Ega vazifasini",
+                        "B": "Murojaat qilinadigan shaxsni ko'rsatadi",
+                        "C": "Kesim vazifasini",
+                        "D": "To'ldiruvchi vazifasini"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_uzb_q3",
+                    "question_uz": "\"Mahalliy\" so'zi qaysi so'z turkumiga kiradi?",
+                    "question_ru": "К какой части речи относится слово «маҳаллий»?",
+                    "question_en": "What part of speech is 'mahalliy' (local) in Uzbek?",
+                    "options": {
+                        "A": "Ot",
+                        "B": "Fe'l",
+                        "C": "Sifat",
+                        "D": "Olmosh"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g7_uzb_q4",
+                    "question_uz": "Ishtirокchi gap (sababli gap) misoli qaysi?",
+                    "question_ru": "Какой пример является причинным придаточным предложением?",
+                    "question_en": "Which is an example of a cause-clause in Uzbek?",
+                    "options": {
+                        "A": "U o'qidi.",
+                        "B": "Yomg'ir yog'gani uchun biz uyda qoldik.",
+                        "C": "U uyga keldi.",
+                        "D": "Kim keldi?"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_uzb_q5",
+                    "question_uz": "\"Sarob\" romanining muallifi kim?",
+                    "question_ru": "Кто написал роман «Мираж» («Сароб»)?",
+                    "question_en": "Who wrote the novel 'Sarob' (Mirage)?",
+                    "options": {
+                        "A": "Abdulla Qodiriy",
+                        "B": "Oybek",
+                        "C": "Abdulla Oripov",
+                        "D": "Cho'lpon"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_uzb_q6",
+                    "question_uz": "Sifatdosh nima?",
+                    "question_ru": "Что такое причастие в узбекском языке?",
+                    "question_en": "What is a participle (sifatdosh) in Uzbek grammar?",
+                    "options": {
+                        "A": "Fe'lning bir ko'rinishi bo'lib, sifat vazifasini bajaruvchi",
+                        "B": "Ot turkumiga kiruvchi so'z",
+                        "C": "Ravish vazifasini bajaruvchi",
+                        "D": "Olmosh turi"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g7_uzb_q7",
+                    "question_uz": "O'zbek tilidagi ko'makchi nima?",
+                    "question_ru": "Что такое послелог в узбекском языке?",
+                    "question_en": "What is a postposition in Uzbek?",
+                    "options": {
+                        "A": "Gap boshi so'zi",
+                        "B": "Ot va olmoshdan keyin keluvchi, munosabat bildiruvchi so'z",
+                        "C": "Fe'lning shakli",
+                        "D": "Sifatning darajasi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_uzb_q8",
+                    "question_uz": "\"Navoiy\" she'riy asarlaridan qaysi biri \"Xamsа\"ga kiradi?",
+                    "question_ru": "Какое поэтическое произведение Навои входит в «Хамсу»?",
+                    "question_en": "Which of Navoi's works is part of his 'Khamsa' (Five Poems)?",
+                    "options": {
+                        "A": "Farhod va Shirin",
+                        "B": "O'tkan kunlar",
+                        "C": "Alpomish",
+                        "D": "Sarob"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g7_uzb_q9",
+                    "question_uz": "Ravish nima?",
+                    "question_ru": "Что такое наречие в узбекском языке?",
+                    "question_en": "What is an adverb (ravish) in Uzbek grammar?",
+                    "options": {
+                        "A": "Ish-harakatni bildiradi",
+                        "B": "Belgi-xususiyatni bildiradi",
+                        "C": "Ish-harakat, belgi yoki miqdorni izohlaydi",
+                        "D": "Shaxsni bildiradi"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g7_uzb_q10",
+                    "question_uz": "Orfoepiya nima?",
+                    "question_ru": "Что такое орфоэпия?",
+                    "question_en": "What does 'orfoepiya' (orthoepy) study?",
+                    "options": {
+                        "A": "So'zlarning to'g'ri yozilishi",
+                        "B": "So'zlarning to'g'ri talaffuz qilish qoidalari",
+                        "C": "Gap tuzilishi",
+                        "D": "Matn tuzilishi"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g7_uzb_it1",
+                    "task_uz": "Alisher Navoiyning ijodini va uning o'zbek adabiyotiga qo'shgan hissasini 5-6 gapda yozing. Uning qaysi asarlarini bilasiz?",
+                    "task_ru": "Напишите 5-6 предложений о творчестве Алишера Навои и его вкладе в узбекскую литературу. Какие его произведения вы знаете?",
+                    "task_en": "Write 5-6 sentences about Alisher Navoi's creative legacy and contribution to Uzbek literature. Which of his works do you know?",
+                    "skill": "creativity"
+                },
+                {
+                    "id": "g7_uzb_it2",
+                    "task_uz": "Quyidagi matndagi barcha olmoshlarni toping va ularga izoh bering: 'U o'z kitobini topdi. Men unga yordam berdim. Biz birga o'qidik.'",
+                    "task_ru": "Найдите все местоимения в тексте и объясните их: «У ўз китобини топди. Мен унга ёрдам бердим. Биз бирга ўқидик.»",
+                    "task_en": "Find all pronouns in the following text and explain them: 'U o'z kitobini topdi. Men unga yordam berdim. Biz birga o'qidik.'",
+                    "skill": "analysis"
+                }
+            ]
+        },
+        {
+            "subject": "Russian",
+            "questions": [
+                {
+                    "id": "g7_rus_q1",
+                    "question_uz": "Rus tilida «деепричастие» nima?",
+                    "question_ru": "Что такое деепричастие в русском языке?",
+                    "question_en": "What is a gerund (деепричастие) in Russian?",
+                    "options": {
+                        "A": "Sifat shakli",
+                        "B": "Fe'lning harakat va belgiini birlashtiruvchi shakli",
+                        "C": "Ot turi",
+                        "D": "Olmosh turi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_rus_q2",
+                    "question_uz": "\"Ветер» so'zi qaysi jinsga kiradi?",
+                    "question_ru": "Какого рода слово «ветер»?",
+                    "question_en": "What gender is the Russian word 'ветер' (wind)?",
+                    "options": {
+                        "A": "Erkak jins",
+                        "B": "Ayol jins",
+                        "C": "O'rta jins",
+                        "D": "Aniqlanmagan"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g7_rus_q3",
+                    "question_uz": "Qaysi gap to'g'ri yozilgan?",
+                    "question_ru": "Какое предложение написано правильно?",
+                    "question_en": "Which sentence is written correctly?",
+                    "options": {
+                        "A": "Я очень нравится читать.",
+                        "B": "Мне очень нравится читать.",
+                        "C": "Я очень нравлюсь читать.",
+                        "D": "Мне очень нравлюсь читать."
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_rus_q4",
+                    "question_uz": "\"Прочитав книгу\" iborasida qaysi grammatik shakl ishlatilgan?",
+                    "question_ru": "Какая грамматическая форма используется в обороте «прочитав книгу»?",
+                    "question_en": "What grammatical form is used in 'прочитав книгу' (having read the book)?",
+                    "options": {
+                        "A": "Причастие",
+                        "B": "Деепричастие",
+                        "C": "Инфинитив",
+                        "D": "Герундий"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_rus_q5",
+                    "question_uz": "Qaysi so'zni «не» bilan birgalikda yoziladi?",
+                    "question_ru": "Какое слово пишется слитно с «не»?",
+                    "question_en": "Which word is written together with 'не' (not)?",
+                    "options": {
+                        "A": "Не друг",
+                        "B": "Неправда",
+                        "C": "Не хочу",
+                        "D": "Не идёт"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_rus_q6",
+                    "question_uz": "«Синоним» nima?",
+                    "question_ru": "Что такое синоним?",
+                    "question_en": "What is a synonym in Russian?",
+                    "options": {
+                        "A": "Qarama-qarshi ma'noli so'z",
+                        "B": "Bir xil ma'noli so'z",
+                        "C": "Tarjima so'z",
+                        "D": "Ko'plikdagi so'z"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_rus_q7",
+                    "question_uz": "Qaysi variant to'g'ri imlo?",
+                    "question_ru": "Какой вариант имеет правильное написание?",
+                    "question_en": "Which option has the correct spelling?",
+                    "options": {
+                        "A": "Росийский",
+                        "B": "Российский",
+                        "C": "Расийский",
+                        "D": "Россиский"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_rus_q8",
+                    "question_uz": "«Тихо» so'zi qaysi so'z turkumiga kiradi?",
+                    "question_ru": "К какой части речи относится слово «тихо»?",
+                    "question_en": "What part of speech is 'тихо' (quietly)?",
+                    "options": {
+                        "A": "Sifat",
+                        "B": "Fe'l",
+                        "C": "Ravish",
+                        "D": "Ot"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g7_rus_q9",
+                    "question_uz": "Pushkinning mashhur asari qaysi?",
+                    "question_ru": "Какое известное произведение Пушкина?",
+                    "question_en": "Which is a famous work by Pushkin?",
+                    "options": {
+                        "A": "Voyna i mir",
+                        "B": "Evgeniy Onegin",
+                        "C": "Prestuplenie i nakazanie",
+                        "D": "Idiot"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_rus_q10",
+                    "question_uz": "«Сложное предложение» nima?",
+                    "question_ru": "Что такое «сложное предложение»?",
+                    "question_en": "What is a complex sentence in Russian?",
+                    "options": {
+                        "A": "Bitta ega va kesimli gap",
+                        "B": "Ikki va undan ortiq grammatik asosli gap",
+                        "C": "Savolga javob beruvchi gap",
+                        "D": "Buyruq ma'nosidagi gap"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g7_rus_it1",
+                    "task_uz": "Pushkinning «Evgeniy Onegin» asaridan biron-bir epizodni tasvirlab bering va qahramon haqida o'z fikringizni rus tilida 4-5 gapda yozing.",
+                    "task_ru": "Опишите один эпизод из «Евгения Онегина» Пушкина и выразите своё мнение о герое в 4-5 предложениях.",
+                    "task_en": "Describe one episode from Pushkin's 'Eugene Onegin' and express your opinion about the main character in 4-5 Russian sentences.",
+                    "skill": "creativity"
+                },
+                {
+                    "id": "g7_rus_it2",
+                    "task_uz": "Quyidagi gaplardan ot so'z birikmasi va harakat so'z birikmalarini ajrating: «Красивый закат освещал широкую реку. Птицы летели быстро.»",
+                    "task_ru": "Выделите именные и глагольные словосочетания из предложений: «Красивый закат освещал широкую реку. Птицы летели быстро.»",
+                    "task_en": "Identify nominal and verbal phrases in: 'Красивый закат освещал широкую реку. Птицы летели быстро.'",
+                    "skill": "analysis"
+                }
+            ]
+        },
+        {
+            "subject": "Literature",
+            "questions": [
+                {
+                    "id": "g7_lit_q1",
+                    "question_uz": "\"Uch musketyor\" romanini kim yozgan?",
+                    "question_ru": "Кто написал роман «Три мушкетёра»?",
+                    "question_en": "Who wrote 'The Three Musketeers'?",
+                    "options": {
+                        "A": "Victor Hugo",
+                        "B": "Alexandre Dumas",
+                        "C": "Jules Verne",
+                        "D": "Gustave Flaubert"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_lit_q2",
+                    "question_uz": "Badiiy adabiyotda tasviriy vositalardan foydalanishning asosiy maqsadi nima?",
+                    "question_ru": "Какова основная цель использования средств выразительности в художественной литературе?",
+                    "question_en": "What is the main purpose of using literary devices in fiction?",
+                    "options": {
+                        "A": "Matnni qisqartirish",
+                        "B": "Tasvirni boyitish va hissiy ta'sir kuchaytirish",
+                        "C": "Grammatik to'g'rilik",
+                        "D": "Lug'at boyligini oshirish"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_lit_q3",
+                    "question_uz": "\"Savuniyaning qo'shig'i\" asarining muallifi kim?",
+                    "question_ru": "Кто автор «Песни о Гайавате»?",
+                    "question_en": "Who wrote 'The Song of Hiawatha'?",
+                    "options": {
+                        "A": "Walt Whitman",
+                        "B": "Henry Longfellow",
+                        "C": "Edgar Allan Poe",
+                        "D": "Ralph Emerson"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_lit_q4",
+                    "question_uz": "Epik asar nima?",
+                    "question_ru": "Что такое эпическое произведение?",
+                    "question_en": "What is an epic work of literature?",
+                    "options": {
+                        "A": "Qisqa she'r",
+                        "B": "Uzoq hajmli, qahramonlik mavzusidagi asar",
+                        "C": "Komediya",
+                        "D": "Drama"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_lit_q5",
+                    "question_uz": "\"Macbeth\" dramasi kimning asari?",
+                    "question_ru": "Кому принадлежит пьеса «Макбет»?",
+                    "question_en": "Who wrote the play 'Macbeth'?",
+                    "options": {
+                        "A": "Marlowe",
+                        "B": "Jonson",
+                        "C": "Shakespeare",
+                        "D": "Chaucer"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g7_lit_q6",
+                    "question_uz": "Satira nima?",
+                    "question_ru": "Что такое сатира?",
+                    "question_en": "What is satire in literature?",
+                    "options": {
+                        "A": "Qo'rquv uyg'otuvchi asar",
+                        "B": "Ijtimoiy kamchiliklarni kulgi va kinoya orqali tanqid qilish",
+                        "C": "Sevgi haqidagi asar",
+                        "D": "Tarixiy voqealar tasviri"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_lit_q7",
+                    "question_uz": "Abdulla Oripovning mashhur she'riy to'plami qaysi?",
+                    "question_ru": "Какой известный сборник стихов Абдуллы Орипова?",
+                    "question_en": "Which is a famous poetry collection by Abdulla Oripov?",
+                    "options": {
+                        "A": "Lolazor",
+                        "B": "Yurak ko'zlari",
+                        "C": "Kecha va kunduz",
+                        "D": "O'tkan kunlar"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g7_lit_q8",
+                    "question_uz": "\"Don Kixot\" romanining muallifi kim?",
+                    "question_ru": "Кто написал роман «Дон Кихот»?",
+                    "question_en": "Who wrote 'Don Quixote'?",
+                    "options": {
+                        "A": "Lope de Vega",
+                        "B": "Miguel de Cervantes",
+                        "C": "Francisco de Quevedo",
+                        "D": "Calderón de la Barca"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_lit_q9",
+                    "question_uz": "Lirik she'rda asosan nima ifodalanadi?",
+                    "question_ru": "Что в основном выражается в лирическом стихотворении?",
+                    "question_en": "What is mainly expressed in a lyric poem?",
+                    "options": {
+                        "A": "Tarixiy voqealar",
+                        "B": "Muallif hislari va his-tuyg'ulari",
+                        "C": "Ilmiy ma'lumotlar",
+                        "D": "Qahramonlik epizodlari"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_lit_q10",
+                    "question_uz": "Erkin Vohidov kimdir?",
+                    "question_ru": "Кто такой Эркин Вохидов?",
+                    "question_en": "Who was Erkin Vohidov?",
+                    "options": {
+                        "A": "O'zbek rassomi",
+                        "B": "O'zbek shoiri va adibi",
+                        "C": "O'zbek siyosatchisi",
+                        "D": "O'zbek olimi"
+                    },
+                    "correct_answer": "B"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g7_lit_it1",
+                    "task_uz": "\"Don Kixot\" romanidagi asosiy g'oya nima deb o'ylaysiz? Orzular va haqiqat o'rtasidagi ziddiyatni o'zingizcha ifodalang.",
+                    "task_ru": "Какова, на ваш взгляд, главная идея романа «Дон Кихот»? Выразите своими словами противоречие между мечтами и реальностью.",
+                    "task_en": "What do you think is the main idea of 'Don Quixote'? Express in your own words the conflict between dreams and reality.",
+                    "skill": "creativity"
+                },
+                {
+                    "id": "g7_lit_it2",
+                    "task_uz": "Quyidagi adabiy terminlarni ta'riflang va har biriga misol keltiring: konflikt, kulminatsiya, tugama.",
+                    "task_ru": "Дайте определение следующим литературным терминам и приведите примеры: конфликт, кульминация, развязка.",
+                    "task_en": "Define the following literary terms and give examples: conflict, climax, resolution.",
+                    "skill": "analysis"
+                }
+            ]
+        },
+        {
+            "subject": "Physics",
+            "questions": [
+                {
+                    "id": "g7_phy_q1",
+                    "question_uz": "Nyutonning birinchi qonuni nima?",
+                    "question_ru": "Каков первый закон Ньютона?",
+                    "question_en": "What is Newton's First Law?",
+                    "options": {
+                        "A": "Kuch = massa × tezlanish",
+                        "B": "Har bir tana tashqi kuch ta'sirida bo'lmasa, dam olish holatida yoki tekis chiziqli harakatda bo'ladi",
+                        "C": "Har bir ta'sirga teng qaratilgan reaksiya mavjud",
+                        "D": "Energiya saqlanish qonuni"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_phy_q2",
+                    "question_uz": "Elektr qarshiligining birligi qaysi?",
+                    "question_ru": "Какова единица измерения электрического сопротивления?",
+                    "question_en": "What is the unit of electrical resistance?",
+                    "options": {
+                        "A": "Amper",
+                        "B": "Volt",
+                        "C": "Om",
+                        "D": "Watt"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g7_phy_q3",
+                    "question_uz": "Isitish quvvati formulasi:  Q = mcΔT. Bu yerda 'c' nima?",
+                    "question_ru": "В формуле Q = mcΔT что означает 'c'?",
+                    "question_en": "In the formula Q = mcΔT, what does 'c' represent?",
+                    "options": {
+                        "A": "Massa",
+                        "B": "Harorat farqi",
+                        "C": "Solishtirma issiqlik sig'imi",
+                        "D": "Yorug'lik tezligi"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g7_phy_q4",
+                    "question_uz": "Simob (Hg) termometr necha darajani o'lchay oladi?",
+                    "question_ru": "До скольки градусов может измерять ртутный термометр?",
+                    "question_en": "A mercury thermometer can measure temperatures approximately up to:",
+                    "options": {
+                        "A": "100°C",
+                        "B": "250°C",
+                        "C": "360°C",
+                        "D": "500°C"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g7_phy_q5",
+                    "question_uz": "F = ma formulasida 'a' nima?",
+                    "question_ru": "Что означает 'a' в формуле F = ma?",
+                    "question_en": "In F = ma, what does 'a' represent?",
+                    "options": {
+                        "A": "Alan",
+                        "B": "Tezlanish",
+                        "C": "Masofa",
+                        "D": "Amplituda"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_phy_q6",
+                    "question_uz": "Elektr toki qanday o'lchanadi?",
+                    "question_ru": "Как измеряется электрический ток?",
+                    "question_en": "How is electric current measured?",
+                    "options": {
+                        "A": "Voltmetr bilan",
+                        "B": "Ampermetr bilan",
+                        "C": "Termometr bilan",
+                        "D": "Manometr bilan"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_phy_q7",
+                    "question_uz": "Nima sababdan samolyot uchadi?",
+                    "question_ru": "Почему самолёт летит?",
+                    "question_en": "Why does an aeroplane fly?",
+                    "options": {
+                        "A": "Og'irlik kuchi tufayli",
+                        "B": "Qanot shakli tufayli hosil bo'lgan ko'tarilish kuchi",
+                        "C": "Reaktiv kuchlanish tufayli faqat",
+                        "D": "Havo bosimi pastligi tufayli"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_phy_q8",
+                    "question_uz": "Energiya qanday o'lchanadi?",
+                    "question_ru": "В каких единицах измеряется энергия?",
+                    "question_en": "Energy is measured in:",
+                    "options": {
+                        "A": "Newton",
+                        "B": "Watt",
+                        "C": "Joule",
+                        "D": "Pascal"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g7_phy_q9",
+                    "question_uz": "Magnitning ikkita qutbi qanday nomlanadi?",
+                    "question_ru": "Как называются два полюса магнита?",
+                    "question_en": "The two poles of a magnet are called:",
+                    "options": {
+                        "A": "Musbat va manfiy",
+                        "B": "Shimoliy va Janubiy",
+                        "C": "Ijobiy va salbiy",
+                        "D": "Yuqori va quyi"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_phy_q10",
+                    "question_uz": "Issiqlik uzatilishi usullari qanday?",
+                    "question_ru": "Каковы способы передачи тепла?",
+                    "question_en": "What are the three methods of heat transfer?",
+                    "options": {
+                        "A": "O'tkazuvchanlik, konvektsiya, nurlanish",
+                        "B": "Sıxıştırma, tortish, itarish",
+                        "C": "Yutilish, aks etish, sinish",
+                        "D": "Diffuziya, osmoz, filtratsiya"
+                    },
+                    "correct_answer": "A"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g7_phy_it1",
+                    "task_uz": "Uyingizda ko'p qo'llaniladigan 3 ta qurilmani tanlang va ulardagi energiya o'zgarishlarini (masalan, elektr → issiqlik) tasvirlab bering.",
+                    "task_ru": "Выберите 3 часто используемых устройства дома и опишите преобразования энергии в них (например, электрическая → тепловая).",
+                    "task_en": "Choose 3 common household devices and describe the energy transformations in each (e.g., electrical → heat).",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g7_phy_it2",
+                    "task_uz": "Agar siz yangi sayyora kashf etgan bo'lsangiz va unda tortishish kuchi Yernikiga nisbatan 2 barobar kichik bo'lsa, qanday fizik o'zgarishlar sodir bo'lar edi? Misollar keltiring.",
+                    "task_ru": "Если бы вы открыли новую планету, где гравитация в 2 раза меньше земной, какие физические изменения произошли бы? Приведите примеры.",
+                    "task_en": "If you discovered a new planet with gravity half that of Earth, what physical changes would occur? Give examples.",
+                    "skill": "creativity"
+                }
+            ]
+        },
+        {
+            "subject": "Chemistry",
+            "questions": [
+                {
+                    "id": "g7_chem_q1",
+                    "question_uz": "Kimyo fanining asosiy o'rganish ob'ekti nima?",
+                    "question_ru": "Что является основным объектом изучения химии?",
+                    "question_en": "What is the main subject of study in chemistry?",
+                    "options": {
+                        "A": "Tirik organizmlar",
+                        "B": "Moddalar va ularning o'zgarishlari",
+                        "C": "Kosmik jismlar",
+                        "D": "Fizik hodisalar"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_chem_q2",
+                    "question_uz": "Suvning kimyoviy formulasi qaysi?",
+                    "question_ru": "Какова химическая формула воды?",
+                    "question_en": "What is the chemical formula for water?",
+                    "options": {
+                        "A": "CO₂",
+                        "B": "NaCl",
+                        "C": "H₂O",
+                        "D": "O₂"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g7_chem_q3",
+                    "question_uz": "Atom nima?",
+                    "question_ru": "Что такое атом?",
+                    "question_en": "What is an atom?",
+                    "options": {
+                        "A": "Eng kichik, parchalanmaydi deb hisoblanadigan zarracha",
+                        "B": "Molekulaning bir qismi",
+                        "C": "Ion turi",
+                        "D": "Kimyoviy reaksiya mahsuli"
+                    },
+                    "correct_answer": "A"
+                },
+                {
+                    "id": "g7_chem_q4",
+                    "question_uz": "Elementlar davriy jadvali kim tomonidan tuzilgan?",
+                    "question_ru": "Кем была составлена Периодическая таблица элементов?",
+                    "question_en": "Who created the Periodic Table of Elements?",
+                    "options": {
+                        "A": "Albert Einstein",
+                        "B": "Isaac Newton",
+                        "C": "Dmitriy Mendeleev",
+                        "D": "Marie Curie"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g7_chem_q5",
+                    "question_uz": "Kimyoviy reaksiyaning belgisi quyidagilardan qaysi?",
+                    "question_ru": "Каков признак химической реакции?",
+                    "question_en": "Which is a sign that a chemical reaction has occurred?",
+                    "options": {
+                        "A": "Shakl o'zgarishi",
+                        "B": "Faqat rangi o'zgarishi",
+                        "C": "Gaz ajralib chiqishi, cho'kma hosil bo'lishi yoki rang o'zgarishi",
+                        "D": "Faqat harorat o'zgarishi"
+                    },
+                    "correct_answer": "C"
+                },
+                {
+                    "id": "g7_chem_q6",
+                    "question_uz": "Umumiy havosi tarkibidagi kislorod miqdori qancha?",
+                    "question_ru": "Сколько процентов кислорода содержится в воздухе?",
+                    "question_en": "Approximately what percentage of air is oxygen?",
+                    "options": {
+                        "A": "10%",
+                        "B": "21%",
+                        "C": "50%",
+                        "D": "78%"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_chem_q7",
+                    "question_uz": "NaCl — oshqozon tuzi. Uning tarkibiy elementlari qaysilar?",
+                    "question_ru": "NaCl — поваренная соль. Из каких элементов она состоит?",
+                    "question_en": "NaCl (table salt) is composed of which elements?",
+                    "options": {
+                        "A": "Azot va xlor",
+                        "B": "Natriy va xlor",
+                        "C": "Natriy va kalsiy",
+                        "D": "Magniy va xlor"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_chem_q8",
+                    "question_uz": "Kislota va asosning reaksiyasi nima hosil qiladi?",
+                    "question_ru": "Что образуется при реакции кислоты и основания?",
+                    "question_en": "What does the reaction of an acid and a base produce?",
+                    "options": {
+                        "A": "Oksid",
+                        "B": "Tuz va suv",
+                        "C": "Kislorod",
+                        "D": "Metall"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_chem_q9",
+                    "question_uz": "Davriy jadvalda elementlar qanday tartiblangan?",
+                    "question_ru": "По какому принципу расположены элементы в Периодической таблице?",
+                    "question_en": "How are elements arranged in the Periodic Table?",
+                    "options": {
+                        "A": "Alifbo tartibida",
+                        "B": "Atom massasi o'sish tartibida (va atom raqami bo'yicha)",
+                        "C": "Rangi bo'yicha",
+                        "D": "Og'irligi bo'yicha"
+                    },
+                    "correct_answer": "B"
+                },
+                {
+                    "id": "g7_chem_q10",
+                    "question_uz": "Kislorod (O) qaysi guruhga kiradi?",
+                    "question_ru": "К какой группе относится кислород (O)?",
+                    "question_en": "Oxygen (O) belongs to which group in the Periodic Table?",
+                    "options": {
+                        "A": "Metallar",
+                        "B": "Inert gazlar",
+                        "C": "Metaloidlar",
+                        "D": "Ametal"
+                    },
+                    "correct_answer": "D"
+                }
+            ],
+            "interactive_tasks": [
+                {
+                    "id": "g7_chem_it1",
+                    "task_uz": "Oshxonada sodir bo'ladigan 3 ta kimyoviy o'zgarishni aniqlang (masalan, non pishirish) va ularni fizik o'zgarishlardan farqlang.",
+                    "task_ru": "Определите 3 химических изменения на кухне (например, выпечка хлеба) и отличите их от физических изменений.",
+                    "task_en": "Identify 3 chemical changes that occur in the kitchen (e.g., baking bread) and distinguish them from physical changes.",
+                    "skill": "analysis"
+                },
+                {
+                    "id": "g7_chem_it2",
+                    "task_uz": "Mendeleevning davriy jadvali kashfiyoti qanday ahamiyatga ega? Agar bu jadval bo'lmasa, kimyo fani qanday bo'lar edi?",
+                    "task_ru": "Каково значение открытия Периодической таблицы Менделеева? Какой была бы химия без этой таблицы?",
+                    "task_en": "What is the significance of Mendeleev's discovery? What would chemistry be like without the Periodic Table?",
+                    "skill": "creativity"
+                }
+            ]
+        }
+    ]
+}
