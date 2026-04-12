@@ -1,0 +1,23 @@
+{
+    "common": {
+        "subjects": "Fanlar",
+        "results": "Natijalar",
+        "cabinet": "Kabinet",
+        "login": "Kirish",
+        "register": "Ro'yxatdan o'tish",
+        "logout": "Chiqish",
+        "istiqbol": "ISTIQBOL",
+        "welcome": "Kelajakdagi kasbingizni biz bilan toping",
+        "start_test": "Testni boshlash",
+        "hero_description": "AI yordamida qobiliyatlaringizni aniqlang va o'zingizga mos kasbni tanlang.",
+        "subjects_title": "Qaysi fandan test ishlaysiz?",
+        "subjects_subtitle_user": "Sizning sinfingizga mos maxsus savollar to'plami.",
+        "subjects_subtitle_guest": "Ro'yxatdan o'ting va sinfingizni tanlang.",
+        "russian": "Rus tili"
+    },
+    "home": {
+        "hero_title_with": "bilan",
+        "hero_title_discover": "kelajagingni kashf et",
+        "hero_description": "Maktab fanlari bo'yicha interaktiv testlar, AI tahlili va shaxsiy kasb tavsiyalari — hammasi bir joyda."
+    }
+}

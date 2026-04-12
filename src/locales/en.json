@@ -1,0 +1,23 @@
+{
+    "common": {
+        "subjects": "Subjects",
+        "results": "Results",
+        "cabinet": "Cabinet",
+        "login": "Login",
+        "register": "Register",
+        "logout": "Logout",
+        "istiqbol": "ISTIQBOL",
+        "welcome": "Find your future career with us",
+        "start_test": "Start Test",
+        "hero_description": "Discover your abilities with AI and choose the right career for you.",
+        "subjects_title": "Which subject will you take the test in?",
+        "subjects_subtitle_user": "A collection of special questions for your grade.",
+        "subjects_subtitle_guest": "Register and select your grade.",
+        "russian": "Russian language"
+    },
+    "home": {
+        "hero_title_with": "with",
+        "hero_title_discover": "discover your future",
+        "hero_description": "Interactive tests on school subjects, AI analysis, and personal career recommendations — all in one place."
+    }
+}
