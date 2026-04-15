@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { motion, AnimatePresence } from 'framer-motion';
 import { getSubjects } from '../data/dataService';
 import { getAIRecommendation } from '../data/careers';
 import { useAuth } from '../context/AuthContext';
 import RadarChart from '../components/RadarChart';
-import { RotateCcw, Trophy, Zap, Star, LayoutDashboard, ArrowRight } from 'lucide-react';
+import AICareerAdvisor from '../components/AICareerAdvisor';
+import { RotateCcw, Trophy, Zap, Star, LayoutDashboard, ArrowRight, Sparkles } from 'lucide-react';
 
 const SUBJECT_COLORS = {
     math: '#6366f1', physics: '#8b5cf6', chemistry: '#10b981',
@@ -18,8 +20,10 @@ export default function Results({ scores, onReset }) {
     const navigate = useNavigate();
     const { t } = useTranslation();
     const { user } = useAuth();
-    const [animBars, setAnimBars] = useState(false);
+    const [currentSection, setCurrentSection] = useState('home');
+    const [showAIAdvisor, setShowAIAdvisor] = useState(false);
     const [radarScores, setRadarScores] = useState({});
+    const [animBars, setAnimBars] = useState(false);
 
     const subjects = getSubjects() || [];
 
@@ -141,6 +145,22 @@ export default function Results({ scores, onReset }) {
                     </div>
                 )}
 
+                <div className="premium-ai-card" onClick={() => setShowAIAdvisor(true)}>
+                    <div className="premium-ai-glow"></div>
+                    <div className="premium-ai-content">
+                        <div className="premium-ai-icon-wrapper">
+                            <Sparkles className="premium-ai-icon" size={36} />
+                        </div>
+                        <div className="premium-ai-text">
+                            <h3>AI Karyera Maslahatchisi bilan suhbat</h3>
+                            <p>Test natijalaringiz asosida o'zingizga eng mos kelajak kasbini topish uchun sun'iy intellekt bilan yuzma-yuz maslahatlashing. Shaxsiy tavsiyalar olish uchun tugmani bosing!</p>
+                        </div>
+                    </div>
+                    <button className="premium-ai-cta btn">
+                        <Sparkles size={18} /> Maslahatlashish <ArrowRight size={18} />
+                    </button>
+                </div>
+
                 <div className="glass badges-section">
                     <h3>🏅 Nishonlar</h3>
                     <div className="badges-grid">
@@ -153,7 +173,7 @@ export default function Results({ scores, onReset }) {
                 </div>
 
                 <div style={{ gridColumn: '1 / -1', display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap', marginTop: 16 }}>
-                    <button className="btn btn-primary btn-lg" onClick={() => navigate('/subjects')}>
+                    <button className="btn btn-outline btn-lg" onClick={() => navigate('/subjects')}>
                         Keyingi fanlar <ArrowRight size={18} />
                     </button>
                     {user && (
@@ -167,6 +187,15 @@ export default function Results({ scores, onReset }) {
                 </div>
 
             </div>
+
+            <AnimatePresence>
+                {showAIAdvisor && (
+                    <AICareerAdvisor
+                        scores={scores}
+                        onClose={() => setShowAIAdvisor(false)}
+                    />
+                )}
+            </AnimatePresence>
         </div>
     );
 }
