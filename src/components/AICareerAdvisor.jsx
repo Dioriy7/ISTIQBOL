@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { GoogleGenerativeAI } from "@google/generative-ai";
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Send, Sparkles, User, Bot } from 'lucide-react';
 
-const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
+const API_KEY = import.meta.env.VITE_GROQ_API_KEY;
 
 const AICareerAdvisor = ({ scores, onClose }) => {
     const [messages, setMessages] = useState([]);
@@ -27,14 +26,11 @@ const AICareerAdvisor = ({ scores, onClose }) => {
                 if (!API_KEY) {
                     setMessages([{
                         role: 'ai',
-                        text: "API kalit topilmadi. Iltimos, VITE_GEMINI_API_KEY ni .env fayliga qo'shing."
+                        text: "API kalit topilmadi. Iltimos, VITE_GROQ_API_KEY ni .env fayliga qo'shing."
                     }]);
                     setLoading(false);
                     return;
                 }
-
-                const genAI = new GoogleGenerativeAI(API_KEY);
-                const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
                 const scoreText = Object.entries(scores)
                     .map(([subject, score]) => `${subject}: ${score}%`)
@@ -51,9 +47,25 @@ Javob oddiy, tushunarli va motivatsion bo‘lsin.`;
 
                 const prompt = `${systemPrompt}\n\nFoydalanuvchi natijalari: ${scoreText}. Iltimos, birinchi tahlilni va tavsiyalarni ber.`;
 
-                const result = await model.generateContent(prompt);
-                const response = result.response;
-                setMessages([{ role: 'ai', text: response.text() }]);
+                const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Authorization": `Bearer ${API_KEY}`
+                    },
+                    body: JSON.stringify({
+                        messages: [{ role: "user", content: prompt }],
+                        model: "llama-3.1-8b-instant"
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`API error: ${response.status}`);
+                }
+
+                const data = await response.json();
+                const text = data.choices[0].message.content;
+                setMessages([{ role: 'ai', text: text }]);
             } catch (error) {
                 console.error("AI Error:", error);
                 setMessages([{ role: 'ai', text: "Kechirasiz, tahlil qilishda xatolik yuz berdi. Iltimos, keyinroq qayta urunib ko'ring." }]);
@@ -74,19 +86,31 @@ Javob oddiy, tushunarli va motivatsion bo‘lsin.`;
         setLoading(true);
 
         try {
-            const genAI = new GoogleGenerativeAI(API_KEY);
-            const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+            const history = messages.map(m => ({
+                role: m.role === 'ai' ? 'assistant' : 'user',
+                content: m.text
+            }));
+            history.push({ role: "user", content: input });
 
-            const chat = model.startChat({
-                history: messages.map(m => ({
-                    role: m.role === 'ai' ? 'model' : 'user',
-                    parts: [{ text: m.text }]
-                })),
+            const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": `Bearer ${API_KEY}`
+                },
+                body: JSON.stringify({
+                    messages: history,
+                    model: "llama-3.1-8b-instant"
+                })
             });
 
-            const result = await chat.sendMessage(input);
-            const response = result.response;
-            setMessages(prev => [...prev, { role: 'ai', text: response.text() }]);
+            if (!response.ok) {
+                throw new Error(`API error: ${response.status}`);
+            }
+
+            const data = await response.json();
+            const text = data.choices[0].message.content;
+            setMessages(prev => [...prev, { role: 'ai', text: text }]);
         } catch (error) {
             console.error("Chat Error:", error);
             setMessages(prev => [...prev, { role: 'ai', text: "Xatolik yuz berdi. Qayta urinib ko'ring." }]);

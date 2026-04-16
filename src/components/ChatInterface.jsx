@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { GoogleGenerativeAI } from "@google/generative-ai";
 import { motion } from 'framer-motion';
 
-const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
+const API_KEY = import.meta.env.VITE_GROQ_API_KEY;
 
 const ChatInterface = ({ onFinish }) => {
     const [messages, setMessages] = useState([
@@ -32,31 +31,43 @@ const ChatInterface = ({ onFinish }) => {
             if (!API_KEY) {
                 // Fallback for demo without API key
                 setTimeout(() => {
-                    setMessages(prev => [...prev, { role: 'ai', text: "API kalit topilmadi. Iltimos, .env faylga VITE_GEMINI_API_KEY=sizning_kalitingiz ni qo'shing. Hozircha men faqat namunaviy rejimdaman." }]);
+                    setMessages(prev => [...prev, { role: 'ai', text: "API kalit topilmadi. Iltimos, .env faylga VITE_GROQ_API_KEY=sizning_kalitingiz ni qo'shing. Hozircha men faqat namunaviy rejimdaman." }]);
                     setLoading(false);
                 }, 1000);
                 return;
             }
 
-            const genAI = new GoogleGenerativeAI(API_KEY);
-            const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-
-            const chat = model.startChat({
-                history: messages.map(m => ({
-                    role: m.role === 'ai' ? 'model' : 'user',
-                    parts: [{ text: m.text }]
-                })),
-                generationConfig: {
-                    maxOutputTokens: 150,
-                },
-            });
-
             // Prompt engineering context to guide the AI
             const contextPrompt = "Sen bolalar psixologi va karyera maslahatchisisan. Bolani qiziqishlarini aniqlash uchun savol ber. Agar yetarlicha ma'lumot olsang, 'NATIJA:' deb boshlab, unga mos 3 ta kasb va qisqacha ta'rif ber.";
 
-            const result = await chat.sendMessage(contextPrompt + "\n" + input);
-            const response = result.response;
-            const text = response.text();
+            const history = [{ role: "system", content: contextPrompt }];
+            messages.forEach(m => {
+                history.push({
+                    role: m.role === 'ai' ? 'assistant' : 'user',
+                    content: m.text
+                });
+            });
+            history.push({ role: "user", content: input });
+
+            const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": `Bearer ${API_KEY}`
+                },
+                body: JSON.stringify({
+                    messages: history,
+                    model: "llama-3.1-8b-instant",
+                    max_tokens: 150,
+                })
+            });
+
+            if (!response.ok) {
+                throw new Error(`API xatosi: ${response.status}`);
+            }
+
+            const data = await response.json();
+            const text = data.choices[0].message.content;
 
             if (text.includes("NATIJA:")) {
                 onFinish(text);
