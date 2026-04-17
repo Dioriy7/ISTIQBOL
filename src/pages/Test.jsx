@@ -125,6 +125,16 @@ export default function Test({ onComplete }) {
         }
     };
 
+    // Auto-next logic: move to next question after 1.5s when answered
+    useEffect(() => {
+        if (answered && !finished) {
+            const timer = setTimeout(() => {
+                handleNext();
+            }, 1500);
+            return () => clearTimeout(timer);
+        }
+    }, [answered, finished]);
+
     const finalScore = finished ? Math.min(100, Math.round((correct / qs.length) * 100)) : 0;
 
     if (finished) {
