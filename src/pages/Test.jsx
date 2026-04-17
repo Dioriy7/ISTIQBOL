@@ -52,6 +52,43 @@ export default function Test({ onComplete }) {
         setFinished(false);
     }, [subjectId, user, navigate]); // Removed i18n.language to prevent reset on language change
 
+    const handleNext = () => {
+        if (current + 1 >= qs.length) {
+            const isLastCorrect = answered && (qs[current]?.type === 'input' ? selected === true : selected === qs[current]?.answer);
+            const actualFinalScore = Math.min(100, Math.round((correct / qs.length) * 100));
+
+            onComplete(subjectId, actualFinalScore, user.grade);
+
+            // Save to user history
+            const history = JSON.parse(localStorage.getItem(`history_${user.username}`) || '[]');
+            history.unshift({
+                subjectId,
+                score: actualFinalScore,
+                date: new Date().toISOString(),
+                grade: user.grade
+            });
+            localStorage.setItem(`history_${user.username}`, JSON.stringify(history));
+
+            // Force evaluate final finalScore using actualFinalScore because setFinished re-renders
+            setFinished(true);
+        } else {
+            setCurrent(prev => prev + 1);
+            setSelected(null);
+            setAnswered(false);
+            setInputValue('');
+        }
+    };
+
+    // Auto-next logic: move to next question after 1.5s when answered
+    useEffect(() => {
+        if (answered && !finished) {
+            const timer = setTimeout(() => {
+                handleNext();
+            }, 1500);
+            return () => clearTimeout(timer);
+        }
+    }, [answered, finished]);
+
     if (!user) return null;
     const subject = subjects.find(s => s.id === subjectId);
     if (!subject || qs.length === 0) {
@@ -98,42 +135,6 @@ export default function Test({ onComplete }) {
         }
     };
 
-    const handleNext = () => {
-        if (current + 1 >= qs.length) {
-            const isLastCorrect = answered && (q.type === 'input' ? selected === true : selected === q.answer);
-            const actualFinalScore = Math.min(100, Math.round((correct / qs.length) * 100));
-
-            onComplete(subjectId, actualFinalScore, user.grade);
-
-            // Save to user history
-            const history = JSON.parse(localStorage.getItem(`history_${user.username}`) || '[]');
-            history.unshift({
-                subjectId,
-                score: actualFinalScore,
-                date: new Date().toISOString(),
-                grade: user.grade
-            });
-            localStorage.setItem(`history_${user.username}`, JSON.stringify(history));
-
-            // Force evaluate final finalScore using actualFinalScore because setFinished re-renders
-            setFinished(true);
-        } else {
-            setCurrent(prev => prev + 1);
-            setSelected(null);
-            setAnswered(false);
-            setInputValue('');
-        }
-    };
-
-    // Auto-next logic: move to next question after 1.5s when answered
-    useEffect(() => {
-        if (answered && !finished) {
-            const timer = setTimeout(() => {
-                handleNext();
-            }, 1500);
-            return () => clearTimeout(timer);
-        }
-    }, [answered, finished]);
 
     const finalScore = finished ? Math.min(100, Math.round((correct / qs.length) * 100)) : 0;
 
