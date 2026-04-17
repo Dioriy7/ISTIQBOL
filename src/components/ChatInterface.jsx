@@ -5,7 +5,7 @@ const API_KEY = import.meta.env.VITE_GROQ_API_KEY;
 
 const ChatInterface = ({ onFinish }) => {
     const [messages, setMessages] = useState([
-        { role: 'ai', text: 'Salom! Men sening qiziqishlaringni aniqlashga yordam beraman. Senga ko\'proq nima qilish yoqadi: Odamlar bilan ishlashmi yoki kompyuterda bir o\'zing ishlashmi?' }
+        { role: 'ai', text: 'Assalomu alaykum! Sizni kelajagingiz haqida o‘ylantirayotgan savollar bormi? To‘g‘ri yo‘nalishni tanlash hozirdanoq juda muhim, chunki bu sizning kelajak hayotingizga ta’sir qiladi. Keling, birga sizga eng mos yo‘lni aniqlab chiqamiz. Sening qiziqishlaringni bilish uchun savol bersam bo\'ladimi?' }
     ]);
     const [input, setInput] = useState('');
     const [loading, setLoading] = useState(false);
@@ -38,7 +38,14 @@ const ChatInterface = ({ onFinish }) => {
             }
 
             // Prompt engineering context to guide the AI
-            const contextPrompt = "Sen bolalar psixologi va karyera maslahatchisisan. Bolani qiziqishlarini aniqlash uchun savol ber. Agar yetarlicha ma'lumot olsang, 'NATIJA:' deb boshlab, unga mos 3 ta kasb va qisqacha ta'rif ber.";
+            const contextPrompt = `Sen maktab o'quvchilari uchun mehribon psixolog va karyera maslahatchisisan. 
+
+Sening vazifang:
+1. O'quvchi bilan judayam tartibli va tushunarli tilda gaplashish.
+2. O'quvchining qiziqishlarini aniqlash uchun oddiy savollar berish.
+3. Agar o'quvchi haqida yetarli ma'lumot to'plansa, "NATIJA:" deb boshlab, unga 3 ta real kasbni tavsiya qilish.
+4. Javobing tartib bilan, punktlarga bo'lingan va chiroyli formatda bo'lsin.
+5. Murakkab atamalarni ishlatma, bolalarga mos bo'lsin.`;
 
             const history = [{ role: "system", content: contextPrompt }];
             messages.forEach(m => {
