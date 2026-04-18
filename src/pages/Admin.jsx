@@ -386,7 +386,10 @@ const QuestionsView = () => {
                                     <td style={{ maxWidth: '400px' }}>
                                         <div style={{ fontWeight: 600, marginBottom: '4px' }}>{typeof q.q === 'string' ? q.q : q.q[i18n.language] || q.q.uz}</div>
                                         <div style={{ fontSize: '0.75rem', color: 'var(--success)' }}>
-                                            To'g'ri javob: {q.type === 'input' ? q.options.uz[0] : q.options.uz[q.answer]}
+                                            {(() => {
+                                                const opts = Array.isArray(q.options) ? q.options : (q.options?.uz || []);
+                                                return `To'g'ri javob: ${q.type === 'input' ? opts[0] : opts[q.answer]}`;
+                                            })()}
                                         </div>
                                     </td>
                                     <td><span className="status-badge user" style={{ textTransform: 'uppercase', fontSize: '0.65rem' }}>{q.type || 'test'}</span></td>
