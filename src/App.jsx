@@ -12,7 +12,7 @@ import Login from './pages/Login';
 import Cabinet from './pages/Cabinet';
 import Admin from './pages/Admin';
 import { GraduationCap, BarChart2, BookOpen, User, LogOut, Settings } from 'lucide-react';
-import { getSettings } from './data/dataService';
+import { getSettings, addMessage } from './data/dataService';
 import './index.css';
 
 function Navbar() {
@@ -204,11 +204,28 @@ function Footer() {
           </ul>
         </div>
         <div>
-          <h4 style={{ marginBottom: '20px', fontFamily: 'Outfit' }}>Bog'lanish</h4>
-          <div style={{ display: 'flex', gap: '12px' }}>
-            <a href={settings.telegram} target="_blank" rel="noreferrer" className="lang-btn" style={{ padding: '8px 12px' }}>Telegram</a>
-            <a href={settings.instagram} target="_blank" rel="noreferrer" className="lang-btn" style={{ padding: '8px 12px' }}>Instagram</a>
-          </div>
+          <h4 style={{ marginBottom: '20px', fontFamily: 'Outfit' }}>Admin bilan bog'lanish</h4>
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              const msg = e.target.msg.value;
+              if (msg) {
+                addMessage('feedback', msg, user?.username || 'Anonim');
+              }
+            }}
+            style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}
+          >
+            <textarea
+              name="msg"
+              placeholder="Xabar matni..."
+              required
+              className="search-bar"
+              style={{ width: '100%', minHeight: '80px', fontSize: '0.85rem' }}
+            />
+            <button type="submit" className="btn btn-primary" style={{ fontSize: '0.85rem', padding: '8px' }}>
+              <Send size={14} style={{ marginRight: '6px' }} /> Yuborish
+            </button>
+          </form>
         </div>
       </div>
       <div style={{ maxWidth: '1200px', margin: '40px auto 0', paddingTop: '24px', borderTop: '1px solid var(--border)', textAlign: 'center', color: 'var(--text-dim)', fontSize: '0.8rem' }}>

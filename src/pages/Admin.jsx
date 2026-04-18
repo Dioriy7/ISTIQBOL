@@ -433,6 +433,132 @@ const SettingsView = () => {
     );
 };
 
+const MessagesView = () => {
+    const [messages, setMessages] = useState(getMessages());
+    const [filter, setFilter] = useState('all');
+    const [searchTerm, setSearchTerm] = useState('');
+    const [isBroadcasting, setIsBroadcasting] = useState(false);
+    const [broadcastMsg, setBroadcastMsg] = useState('');
+
+    const handleBroadcast = () => {
+        if (broadcastMsg) {
+            addMessage('broadcast', broadcastMsg, 'Administrator');
+            setMessages(getMessages());
+            setBroadcastMsg('');
+            setIsBroadcasting(false);
+            alert('E\'lon barcha foydalanuvchilarga yuborildi!');
+        }
+    };
+
+    const deleteMessage = (id) => {
+        if (confirm('Ochirish?')) {
+            const up = messages.filter(m => m.id !== id);
+            saveMessages(up);
+            setMessages(up);
+        }
+    };
+
+    const filtered = messages.filter(m => {
+        const matchCat = filter === 'all' || m.category === filter;
+        const msgContent = String(m.content || '').toLowerCase();
+        const msgSender = String(m.sender || '').toLowerCase();
+        const search = searchTerm.toLowerCase();
+        return matchCat && (msgContent.includes(search) || msgSender.includes(search));
+    });
+
+    const categories = [
+        { id: 'all', label: 'Barchasi', icon: <MessageSquare size={16} /> },
+        { id: 'feedback', label: 'Fikr-mulohaza', icon: <ThumbsUp size={16} /> },
+        { id: 'report', label: 'Xatolar', icon: <AlertTriangle size={16} /> },
+        { id: 'system', label: 'Tizim', icon: <Shield size={16} /> },
+        { id: 'broadcast', label: 'E\'lonlar', icon: <Zap size={16} /> },
+    ];
+
+    return (
+        <div className="admin-view">
+            <div className="admin-header">
+                <h2>Xabarlar va Bildirishnomalar</h2>
+                <div style={{ display: 'flex', gap: '12px' }}>
+                    <input
+                        type="text"
+                        placeholder="Izlash..."
+                        className="search-bar"
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                    />
+                    <button className="btn btn-primary" onClick={() => setIsBroadcasting(true)}>
+                        <Zap size={18} /> E'lon yuborish
+                    </button>
+                </div>
+            </div>
+
+            {isBroadcasting && (
+                <div className="glass" style={{ padding: '24px', marginBottom: '24px', border: '1px solid var(--primary)' }}>
+                    <h3 style={{ marginBottom: '12px' }}>Umumiy e'lon yuborish</h3>
+                    <textarea
+                        className="search-bar"
+                        style={{ width: '100%', minHeight: '100px', marginBottom: '16px' }}
+                        placeholder="Barcha foydalanuvchilarga ko'rinadigan xabar..."
+                        value={broadcastMsg}
+                        onChange={(e) => setBroadcastMsg(e.target.value)}
+                    />
+                    <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '12px' }}>
+                        <button className="btn btn-outline" onClick={() => setIsBroadcasting(false)}>Bekor qilish</button>
+                        <button className="btn btn-primary" onClick={handleBroadcast}>Yuborish</button>
+                    </div>
+                </div>
+            )}
+
+            <div style={{ display: 'grid', gridTemplateColumns: '240px 1fr', gap: '24px' }}>
+                <div className="glass" style={{ padding: '16px', height: 'fit-content' }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                        {categories.map(cat => (
+                            <button
+                                key={cat.id}
+                                className={`admin-nav-link ${filter === cat.id ? 'active' : ''}`}
+                                style={{ border: 'none', background: 'transparent', width: '100%', justifyContent: 'flex-start' }}
+                                onClick={() => setFilter(cat.id)}
+                            >
+                                {cat.icon}
+                                <span>{cat.label}</span>
+                            </button>
+                        ))}
+                    </div>
+                </div>
+
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                    {filtered.length === 0 ? (
+                        <div className="glass" style={{ padding: '40px', textAlign: 'center', color: 'var(--text-muted)' }}>
+                            Xabarlar topilmadi.
+                        </div>
+                    ) : (
+                        filtered.map(m => (
+                            <div key={m.id} className="glass" style={{ padding: '20px', borderLeft: `4px solid ${m.category === 'report' ? 'var(--danger)' : m.category === 'system' ? 'var(--primary)' : 'var(--accent)'}` }}>
+                                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px' }}>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                                        <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.8rem' }}>
+                                            {m.sender[0].toUpperCase()}
+                                        </div>
+                                        <div>
+                                            <div style={{ fontWeight: 700 }}>{m.sender}</div>
+                                            <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>{new Date(m.timestamp).toLocaleString()}</div>
+                                        </div>
+                                    </div>
+                                    <div style={{ display: 'flex', gap: '8px' }}>
+                                        <span className={`status-badge ${m.category}`} style={{ height: 'fit-content' }}>{m.category}</span>
+                                        <button className="btn btn-outline" style={{ padding: '4px', color: 'var(--danger)' }} onClick={() => deleteMessage(m.id)}><Trash2 size={14} /></button>
+                                    </div>
+                                </div>
+                                <p style={{ fontSize: '0.95rem', lineHeight: '1.5' }}>{m.content}</p>
+                            </div>
+                        ))
+                    )}
+                </div>
+            </div>
+        </div>
+    );
+};
+
 // --- Main Admin Layout ---
 
 export default function Admin() {
@@ -511,7 +637,7 @@ export default function Admin() {
                     <Route path="questions" element={<QuestionsView />} />
                     <Route path="careers" element={<CareersView />} />
                     <Route path="settings" element={<SettingsView />} />
-                    <Route path="messages" element={<div className="admin-view"><h2>Xabarlar</h2><p>Hozircha xabarlar yo'q.</p></div>} />
+                    <Route path="messages" element={<MessagesView />} />
                     <Route path="*" element={<Navigate to="dashboard" />} />
                 </Routes>
             </main>

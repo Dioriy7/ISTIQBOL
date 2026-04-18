@@ -50,6 +50,10 @@ export const AuthProvider = ({ children }) => {
         users.push(userData);
         localStorage.setItem('istiqbol_users', JSON.stringify(users));
 
+        import('../data/dataService').then(({ addMessage }) => {
+            addMessage('system', `Yangi foydalanuvchi ro'yxatdan o'tdi: ${userData.username}`, 'Tizim', { username: userData.username });
+        });
+
         // Automatically login after successful registration
         login(userData);
     };

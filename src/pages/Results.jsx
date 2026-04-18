@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { getSubjects } from '../data/dataService';
+import { getSubjects, addMessage } from '../data/dataService';
 import { getAIRecommendation } from '../data/careers';
 import { useAuth } from '../context/AuthContext';
 import RadarChart from '../components/RadarChart';
 import AICareerAdvisor from '../components/AICareerAdvisor';
-import { RotateCcw, Trophy, Zap, Star, LayoutDashboard, ArrowRight, Sparkles } from 'lucide-react';
+import { RotateCcw, Trophy, Zap, Star, LayoutDashboard, ArrowRight, Sparkles, ThumbsUp, ThumbsDown, AlertTriangle, Send } from 'lucide-react';
 
 const SUBJECT_COLORS = {
     math: '#6366f1', physics: '#8b5cf6', chemistry: '#10b981',
@@ -41,7 +41,25 @@ export default function Results({ scores, onReset }) {
         const animated = {};
         subjects.forEach(s => { animated[s.id] = scores[s.id] ?? 0; });
         setTimeout(() => setRadarScores(animated), 300);
+
+        // System notification
+        if (Object.keys(scores).length > 0) {
+            addMessage('system', `Test yakunlandi: ${user?.username || 'Anonim'} (${avg}%)`, 'Tizim', { scores });
+        }
     }, [scores]);
+
+    const handleFeedback = (type, response, comment = '') => {
+        addMessage('feedback', `${type}: ${response}. Izoh: ${comment}`, user?.username || 'Anonim', { type, response });
+        alert('Rahmat! Fikringiz qabul qilindi.');
+    };
+
+    const handleReport = () => {
+        const comment = window.prompt('Xatolik haqida qisqacha yozing:');
+        if (comment) {
+            addMessage('report', comment, user?.username || 'Anonim', { subjects: Object.keys(scores) });
+            alert('Xabar yuborildi. Tekshiruv uchun rahmat!');
+        }
+    };
 
     if (Object.keys(scores).length === 0) {
         return (
@@ -169,6 +187,22 @@ export default function Results({ scores, onReset }) {
                                 <span>{b.emoji}</span> {b.label}
                             </div>
                         ))}
+                    </div>
+                </div>
+
+                {/* New Feedback Sections */}
+                <div className="glass" style={{ gridColumn: '1 / -1', padding: '32px', textAlign: 'center' }}>
+                    <h3 style={{ marginBottom: '16px' }}>Natijalar sizga foydali bo'ldimi?</h3>
+                    <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
+                        <button className="btn btn-outline" onClick={() => handleFeedback('Test Natijasi', 'Ha')}>
+                            <ThumbsUp size={18} style={{ marginRight: '8px' }} /> Ha
+                        </button>
+                        <button className="btn btn-outline" onClick={() => handleFeedback('Test Natijasi', 'Yo\'q')}>
+                            <ThumbsDown size={18} style={{ marginRight: '8px' }} /> Yo'q
+                        </button>
+                        <button className="btn btn-outline" style={{ color: 'var(--danger)' }} onClick={handleReport}>
+                            <AlertTriangle size={18} style={{ marginRight: '8px' }} /> Xatolik haqida xabar berish
+                        </button>
                     </div>
                 </div>
 

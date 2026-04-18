@@ -93,6 +93,22 @@ export const saveMessages = (msgs) => {
     localStorage.setItem(STORAGE_KEY_MESSAGES, JSON.stringify(msgs));
 };
 
+export const addMessage = (category, content, sender = 'Anonim', extra = null) => {
+    const messages = getMessages();
+    const newMessage = {
+        id: Date.now(),
+        category, // feedback, report, system, broadcast
+        content,
+        sender,
+        extra, // e.g., questionId, testScore
+        timestamp: new Date().toISOString(),
+        isRead: false
+    };
+    messages.unshift(newMessage);
+    saveMessages(messages);
+    return newMessage;
+};
+
 export const getStats = () => {
     const users = getUsers();
     const questions = getQuestions();
