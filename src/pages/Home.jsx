@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { getMessages, getCareers } from '../data/dataService';
+import { api, getMessages } from '../data/dataService';
 import { motion, AnimatePresence } from 'framer-motion';
 import { BookOpen, Brain, Sparkles, Trophy, Zap, ArrowRight, MessageCircle, X } from 'lucide-react';
 
@@ -9,9 +9,24 @@ export default function Home() {
     const navigate = useNavigate();
     const { t } = useTranslation();
     const [selectedCareer, setSelectedCareer] = useState(null);
+    const [careers, setCareers] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     const broadcasts = getMessages().filter(m => m.category === 'broadcast').slice(0, 3);
-    const careers = getCareers();
+
+    useEffect(() => {
+        const loadData = async () => {
+            try {
+                const data = await api.professions.getAll();
+                setCareers(data);
+            } catch (err) {
+                console.error(err);
+            } finally {
+                setLoading(false);
+            }
+        };
+        loadData();
+    }, []);
 
     return (
         <div className="page">

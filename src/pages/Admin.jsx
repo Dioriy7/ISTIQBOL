@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, NavLink, useNavigate, Navigate } from 'react-router-dom';
 import {
-    getQuestions, saveQuestions, getSubjects, getSettings, saveSettings,
+    api, getSubjects, getSettings, saveSettings,
     getUsers, saveUsers, getCareers, saveCareers, getMessages, saveMessages, addMessage, getStats
 } from '../data/dataService';
 import { useAuth } from '../context/AuthContext';
 import {
     LayoutDashboard, Users, BookOpen, Briefcase, FileText,
-    Settings, MessageSquare, LogOut, Plus, Edit2, Trash2,
+    Settings, MessageSquare, LogOut, Plus, Edit2, Trash2, ChevronDown, GraduationCap,
     Save, X, Search, Filter, TrendingUp, Users as UsersIcon,
     CheckCircle, AlertCircle, Shield, ThumbsUp, AlertTriangle, Zap
 } from 'lucide-react';
@@ -167,22 +167,77 @@ const UsersView = () => {
     );
 };
 
+const AccordionItem = ({ title, children, isOpen, onClick, icon }) => (
+    <div className="glass" style={{ marginBottom: '12px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.05)' }}>
+        <button
+            onClick={onClick}
+            style={{
+                width: '100%',
+                padding: '16px 20px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                background: isOpen ? 'rgba(var(--primary-rgb), 0.05)' : 'transparent',
+                border: 'none',
+                color: 'var(--text)',
+                cursor: 'pointer',
+                textAlign: 'left'
+            }}
+        >
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <div style={{ color: 'var(--primary)', display: 'flex' }}>
+                    {icon}
+                </div>
+                <span style={{ fontWeight: 600, fontSize: '1rem' }}>{title}</span>
+            </div>
+            <div style={{ transform: isOpen ? 'rotate(180deg)' : 'none', transition: '0.3s' }}>
+                <ChevronDown size={18} />
+            </div>
+        </button>
+        {isOpen && (
+            <div style={{ padding: '0 20px 20px', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+                {children}
+            </div>
+        )}
+    </div>
+);
+
 const QuestionsView = () => {
+    const { t, i18n } = useTranslation();
     const [subjects, setSubjects] = useState([]);
     const [questions, setQuestions] = useState({});
+    const [selectedSubject, setSelectedSubject] = useState('');
     const [selectedGrade, setSelectedGrade] = useState('all');
     const [searchTerm, setSearchTerm] = useState('');
+    const [loading, setLoading] = useState(true);
+    const [viewMode, setViewMode] = useState('table'); // 'table' or 'bank'
+
+    const [openGrades, setOpenGrades] = useState({});
+    const [openSubjects, setOpenSubjects] = useState({});
 
     useEffect(() => {
-        const subjs = getSubjects() || [];
-        const sortedSubjs = [...subjs].sort((a, b) => (a.name || '').localeCompare(b.name || ''));
-        setSubjects(sortedSubjs);
-        setQuestions(getQuestions() || {});
-        if (sortedSubjs.length > 0) setSelectedSubject(sortedSubjs[0].id);
+        loadData();
     }, []);
 
+    const loadData = async () => {
+        setLoading(true);
+        try {
+            const subjs = getSubjects() || []; // static for now
+            const sortedSubjs = [...subjs].sort((a, b) => (a.name || '').localeCompare(b.name || ''));
+            setSubjects(sortedSubjs);
+            if (sortedSubjs.length > 0) setSelectedSubject(sortedSubjs[0].id);
+
+            const qData = await api.questions.getAll();
+            setQuestions(qData);
+        } catch (err) {
+            console.error(err);
+        } finally {
+            setLoading(false);
+        }
+    };
+
     const [isAdding, setIsAdding] = useState(false);
-    const [editingQuestion, setEditingQuestion] = useState(null);
+    const [editingId, setEditingId] = useState(null);
     const [formData, setFormData] = useState({
         grade: 5,
         type: 'test',
@@ -192,85 +247,102 @@ const QuestionsView = () => {
         answer: 0
     });
 
-    const handleSave = () => {
+    const handleSave = async () => {
         if (!selectedSubject) return alert('Iltimos, fanni tanlang');
         if (!formData.q.uz.trim()) return alert('Savol matni (UZ) bo\'sh bo\'lmasligi kerak');
 
-        const updated = { ...questions };
-        if (!updated[selectedSubject]) updated[selectedSubject] = [];
-
-        if (editingQuestion !== null) {
-            // Find the actual index in the full list for this subject
-            const fullList = updated[selectedSubject];
-            const target = filteredList[editingQuestion];
-            const globalIndex = fullList.indexOf(target);
-
-            if (globalIndex !== -1) {
-                fullList[globalIndex] = formData;
+        setLoading(true);
+        try {
+            if (editingId) {
+                await api.questions.update(selectedSubject, editingId, formData);
+            } else {
+                await api.questions.create(selectedSubject, formData);
             }
-        } else {
-            updated[selectedSubject].push(formData);
+            await loadData();
+            resetForm();
+        } catch (err) {
+            alert('Saqlashda xatolik yuz berdi');
+        } finally {
+            setLoading(false);
         }
-
-        saveQuestions(updated);
-        setQuestions(updated);
-        resetForm();
     };
 
-    const handleDelete = (index) => {
+    const handleDelete = async (id) => {
         if (window.confirm('Haqiqatdan ham o\'chirmoqchimisiz?')) {
-            const updated = { ...questions };
-            const fullList = updated[selectedSubject] || [];
-            const target = filteredList[index];
-            const globalIndex = fullList.indexOf(target);
-
-            if (globalIndex !== -1) {
-                fullList.splice(globalIndex, 1);
-                saveQuestions(updated);
-                setQuestions(updated);
+            setLoading(true);
+            try {
+                await api.questions.delete(selectedSubject, id);
+                await loadData();
+            } catch (err) {
+                alert('O\'chirishda xatolik');
+            } finally {
+                setLoading(false);
             }
         }
     };
 
     const resetForm = () => {
-        setEditingQuestion(null);
+        setEditingId(null);
         setIsAdding(false);
         setFormData({
-            grade: selectedGrade || 5, type: 'test', imageUrl: '',
+            grade: selectedGrade !== 'all' ? parseInt(selectedGrade) : 5,
+            type: 'test',
+            imageUrl: '',
             q: { uz: '', ru: '', en: '' },
             options: { uz: ['', '', '', ''], ru: ['', '', '', ''], en: ['', '', '', ''] },
             answer: 0
         });
     };
 
-    const startEdit = (index) => {
-        const filtered = (questions[selectedSubject] || []).filter(q => q.grade === selectedGrade);
-        const q = filtered[index];
-        if (!q) return;
+    const startEdit = (q) => {
         setFormData({
-            grade: q.grade || selectedGrade, type: q.type || 'test', imageUrl: q.imageUrl || '',
+            grade: q.grade,
+            type: q.type || 'test',
+            imageUrl: q.imageUrl || '',
             q: typeof q.q === 'string' ? { uz: q.q, ru: q.q, en: q.q } : q.q,
             options: Array.isArray(q.options) ? { uz: q.options, ru: q.options, en: q.options } : (q.options || { uz: ['', '', '', ''], ru: ['', '', '', ''], en: ['', '', '', ''] }),
             answer: q.answer || 0
         });
-        setEditingQuestion(index);
+        setEditingId(q.id);
         setIsAdding(true);
     };
 
     const filteredList = (questions[selectedSubject] || []).filter(q => {
         const matchGrade = selectedGrade === 'all' || q.grade === parseInt(selectedGrade);
-        const qTextUz = q.q?.uz || '';
-        const qTextRu = q.q?.ru || '';
-        const qTextEn = q.q?.en || '';
         const search = searchTerm.toLowerCase();
-        const matchSearch = qTextUz.toLowerCase().includes(search) || qTextRu.toLowerCase().includes(search) || qTextEn.toLowerCase().includes(search);
+        const matchSearch = (q.q?.uz || '').toLowerCase().includes(search) ||
+            (q.q?.ru || '').toLowerCase().includes(search) ||
+            (q.q?.en || '').toLowerCase().includes(search);
         return matchGrade && matchSearch;
     });
+
+    const toggleGrade = (grade) => setOpenGrades(p => ({ ...p, [grade]: !p[grade] }));
+    const toggleSub = (g, s) => setOpenSubjects(p => ({ ...p, [`${g}-${s}`]: !p[`${g}-${s}`] }));
+
+    if (loading && Object.keys(questions).length === 0) return <div className="admin-view">Yuklanmoqda...</div>;
 
     return (
         <div className="admin-view">
             <div className="admin-header">
-                <h2>Savollar Boshqaruvi</h2>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+                    <h2>Savollar Boshqaruvi</h2>
+                    <div className="glass" style={{ display: 'flex', padding: '4px', borderRadius: '10px' }}>
+                        <button
+                            className={`btn ${viewMode === 'table' ? 'btn-primary' : ''}`}
+                            style={{ padding: '6px 16px', fontSize: '0.8rem' }}
+                            onClick={() => setViewMode('table')}
+                        >
+                            Jadval
+                        </button>
+                        <button
+                            className={`btn ${viewMode === 'bank' ? 'btn-primary' : ''}`}
+                            style={{ padding: '6px 16px', fontSize: '0.8rem' }}
+                            onClick={() => setViewMode('bank')}
+                        >
+                            Bankni Ko'rish
+                        </button>
+                    </div>
+                </div>
                 <div style={{ display: 'flex', gap: '12px' }}>
                     <input
                         type="text"
@@ -286,153 +358,211 @@ const QuestionsView = () => {
                 </div>
             </div>
 
-            <div className="glass" style={{ padding: '16px', marginBottom: '24px', display: 'flex', gap: '20px', alignItems: 'center', flexWrap: 'wrap' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                    <span style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>Sinf:</span>
-                    <select value={selectedGrade} onChange={(e) => setSelectedGrade(e.target.value)} className="search-bar" style={{ width: '120px' }}>
-                        <option value="all">Barchasi</option>
-                        {[5, 6, 7, 8, 9, 10, 11].map(g => <option key={g} value={g}>{g}-sinf</option>)}
-                    </select>
-                </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                    <span style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>Fan:</span>
-                    <select value={selectedSubject} onChange={(e) => setSelectedSubject(e.target.value)} className="search-bar" style={{ width: '180px' }}>
-                        {subjects.map(s => <option key={s.id} value={s.id}>{s.name}</option>)}
-                    </select>
-                </div>
-                <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '10px', color: 'var(--text-muted)', fontSize: '0.85rem' }}>
-                    <Filter size={16} />
-                    Jami: {filteredList.length} ta savol
-                </div>
-            </div>
-
-            {isAdding && (
-                <div className="glass" style={{ padding: '24px', marginBottom: '24px', border: '1px solid var(--primary)' }}>
-                    <h3 style={{ marginBottom: '20px' }}>{editingQuestion !== null ? 'Savolni tahrirlash' : 'Yangi savol qo\'shish'}</h3>
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '30px' }}>
-                        <div>
-                            <div style={{ display: 'flex', gap: '12px', marginBottom: '16px' }}>
-                                <div style={{ flex: 1 }}>
-                                    <label style={{ fontSize: '0.85rem' }}>Sinf:</label>
-                                    <select value={formData.grade} onChange={(e) => setFormData({ ...formData, grade: parseInt(e.target.value) })} className="search-bar" style={{ width: '100%', marginTop: '6px' }}>
-                                        {[5, 6, 7, 8, 9, 10, 11].map(g => <option key={g} value={g}>{g}-sinf</option>)}
-                                    </select>
-                                </div>
-                                <div style={{ flex: 1 }}>
-                                    <label style={{ fontSize: '0.85rem' }}>Tur:</label>
-                                    <select value={formData.type} onChange={(e) => setFormData({ ...formData, type: e.target.value })} className="search-bar" style={{ width: '100%', marginTop: '6px' }}>
-                                        <option value="test">Test (Variantli)</option>
-                                        <option value="input">Yozma (Javob yoziladi)</option>
-                                    </select>
-                                </div>
-                            </div>
-                            {['uz', 'ru', 'en'].map(lang => (
-                                <div key={lang} style={{ marginBottom: '16px' }}>
-                                    <label style={{ fontSize: '0.85rem' }}>Savol ({lang.toUpperCase()}):</label>
-                                    <textarea
-                                        value={formData.q[lang]}
-                                        onChange={(e) => setFormData({ ...formData, q: { ...formData.q, [lang]: e.target.value } })}
-                                        className="search-bar"
-                                        style={{ width: '100%', minHeight: '80px', marginTop: '6px' }}
-                                        placeholder={`${lang.toUpperCase()} tilida savol matni...`}
-                                    />
-                                </div>
-                            ))}
+            {viewMode === 'table' ? (
+                <>
+                    <div className="glass" style={{ padding: '16px', marginBottom: '24px', display: 'flex', gap: '20px', alignItems: 'center', flexWrap: 'wrap' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                            <span style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>Sinf:</span>
+                            <select value={selectedGrade} onChange={(e) => setSelectedGrade(e.target.value)} className="search-bar" style={{ width: '120px' }}>
+                                <option value="all">Barchasi</option>
+                                {[5, 6, 7, 8, 9, 10, 11].map(g => <option key={g} value={g}>{g}-sinf</option>)}
+                            </select>
                         </div>
-                        <div>
-                            <label style={{ fontSize: '0.9rem', fontWeight: 700, display: 'block', marginBottom: '12px' }}>Javoblar va variantlar:</label>
-                            {['uz', 'ru', 'en'].map(lang => (
-                                <div key={lang} style={{ marginBottom: '16px', padding: '16px', background: 'rgba(255,255,255,0.02)', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.05)' }}>
-                                    <h4 style={{ fontSize: '0.75rem', marginBottom: '10px', color: 'var(--primary)', letterSpacing: '0.05em' }}>{lang.toUpperCase()} TILIDA</h4>
-                                    {[0, 1, 2, 3].map(i => (
-                                        <div key={i} style={{ display: formData.type === 'input' && i > 0 ? 'none' : 'flex', gap: '10px', marginBottom: '8px', alignItems: 'center' }}>
-                                            {formData.type !== 'input' && (
-                                                <input
-                                                    type="radio"
-                                                    name={`correct-${lang}`}
-                                                    checked={formData.answer === i}
-                                                    onChange={() => setFormData({ ...formData, answer: i })}
-                                                    style={{ cursor: 'pointer' }}
-                                                />
-                                            )}
-                                            <input
-                                                type="text"
-                                                value={formData.options[lang][i]}
-                                                onChange={(e) => {
-                                                    const n = JSON.parse(JSON.stringify(formData.options));
-                                                    n[lang][i] = e.target.value;
-                                                    setFormData({ ...formData, options: n });
-                                                }}
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                            <span style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>Fan:</span>
+                            <select value={selectedSubject} onChange={(e) => setSelectedSubject(e.target.value)} className="search-bar" style={{ width: '180px' }}>
+                                {subjects.map(s => <option key={s.id} value={s.id}>{s.name}</option>)}
+                            </select>
+                        </div>
+                        <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '10px', color: 'var(--text-muted)', fontSize: '0.85rem' }}>
+                            <Filter size={16} />
+                            Jami: {filteredList.length} ta savol
+                        </div>
+                    </div>
+
+                    {isAdding && (
+                        <div className="glass" style={{ padding: '24px', marginBottom: '24px', border: '1px solid var(--primary)' }}>
+                            <h3 style={{ marginBottom: '20px' }}>{editingId ? 'Savolni tahrirlash' : 'Yangi savol qo\'shish'}</h3>
+                            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '30px' }}>
+                                <div>
+                                    <div style={{ display: 'flex', gap: '12px', marginBottom: '16px' }}>
+                                        <div style={{ flex: 1 }}>
+                                            <label style={{ fontSize: '0.85rem' }}>Sinf:</label>
+                                            <select value={formData.grade} onChange={(e) => setFormData({ ...formData, grade: parseInt(e.target.value) })} className="search-bar" style={{ width: '100%', marginTop: '6px' }}>
+                                                {[5, 6, 7, 8, 9, 10, 11].map(g => <option key={g} value={g}>{g}-sinf</option>)}
+                                            </select>
+                                        </div>
+                                        <div style={{ flex: 1 }}>
+                                            <label style={{ fontSize: '0.85rem' }}>Tur:</label>
+                                            <select value={formData.type} onChange={(e) => setFormData({ ...formData, type: e.target.value })} className="search-bar" style={{ width: '100%', marginTop: '6px' }}>
+                                                <option value="test">Test (Variantli)</option>
+                                                <option value="input">Yozma (Javob yoziladi)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    {['uz', 'ru', 'en'].map(lang => (
+                                        <div key={lang} style={{ marginBottom: '16px' }}>
+                                            <label style={{ fontSize: '0.85rem' }}>Savol ({lang.toUpperCase()}):</label>
+                                            <textarea
+                                                value={formData.q[lang]}
+                                                onChange={(e) => setFormData({ ...formData, q: { ...formData.q, [lang]: e.target.value } })}
                                                 className="search-bar"
-                                                style={{ flex: 1, padding: '8px' }}
-                                                placeholder={formData.type === 'input' ? "To'g'ri javobni yozing..." : `Variant ${i + 1}`}
+                                                style={{ width: '100%', minHeight: '80px', marginTop: '6px' }}
+                                                placeholder={`${lang.toUpperCase()} tilida savol matni...`}
                                             />
                                         </div>
                                     ))}
                                 </div>
-                            ))}
+                                <div>
+                                    <label style={{ fontSize: '0.9rem', fontWeight: 700, display: 'block', marginBottom: '12px' }}>Javoblar va variantlar:</label>
+                                    {['uz', 'ru', 'en'].map(lang => (
+                                        <div key={lang} style={{ marginBottom: '16px', padding: '16px', background: 'rgba(255,255,255,0.02)', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                                            <h4 style={{ fontSize: '0.75rem', marginBottom: '10px', color: 'var(--primary)', letterSpacing: '0.05em' }}>{lang.toUpperCase()} TILIDA</h4>
+                                            {[0, 1, 2, 3].map(i => (
+                                                <div key={i} style={{ display: formData.type === 'input' && i > 0 ? 'none' : 'flex', gap: '10px', marginBottom: '8px', alignItems: 'center' }}>
+                                                    {formData.type !== 'input' && (
+                                                        <input
+                                                            type="radio"
+                                                            name={`correct-${lang}`}
+                                                            checked={formData.answer === i}
+                                                            onChange={() => setFormData({ ...formData, answer: i })}
+                                                            style={{ cursor: 'pointer' }}
+                                                        />
+                                                    )}
+                                                    <input
+                                                        type="text"
+                                                        value={formData.options[lang][i]}
+                                                        onChange={(e) => {
+                                                            const n = JSON.parse(JSON.stringify(formData.options));
+                                                            n[lang][i] = e.target.value;
+                                                            setFormData({ ...formData, options: n });
+                                                        }}
+                                                        className="search-bar"
+                                                        style={{ flex: 1, padding: '8px' }}
+                                                        placeholder={formData.type === 'input' ? "To'g'ri javobni yozing..." : `Variant ${i + 1}`}
+                                                    />
+                                                </div>
+                                            ))}
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                            <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '12px', marginTop: '24px', paddingTop: '20px', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+                                <button className="btn btn-outline" onClick={resetForm}>Bekor qilish</button>
+                                <button className="btn btn-primary" onClick={handleSave} disabled={loading}>
+                                    <Save size={18} /> {loading ? 'Saqlanmoqda...' : 'Saqlash'}
+                                </button>
+                            </div>
                         </div>
+                    )}
+
+                    <div className="admin-table-container">
+                        <table className="admin-table">
+                            <thead>
+                                <tr>
+                                    <th style={{ width: '80px' }}>Sinf</th>
+                                    <th>Savol matni</th>
+                                    <th style={{ width: '120px' }}>Turi</th>
+                                    <th style={{ width: '100px' }}>Amallar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {filteredList.length === 0 ? (
+                                    <tr>
+                                        <td colSpan="4" style={{ textAlign: 'center', padding: '40px', color: 'var(--text-muted)' }}>
+                                            Bu bo'limda savollar mavjud emas.
+                                        </td>
+                                    </tr>
+                                ) : (
+                                    filteredList.map((q) => (
+                                        <tr key={q.id}>
+                                            <td><span className="hero-badge" style={{ margin: 0, background: 'rgba(var(--primary-rgb), 0.1)' }}>{q.grade}-sinf</span></td>
+                                            <td style={{ maxWidth: '400px' }}>
+                                                <div style={{ fontWeight: 600, marginBottom: '4px' }}>{typeof q.q === 'string' ? q.q : q.q[i18n.language] || q.q.uz}</div>
+                                                <div style={{ fontSize: '0.75rem', color: 'var(--success)' }}>
+                                                    {(() => {
+                                                        const opts = Array.isArray(q.options) ? q.options : (q.options?.uz || []);
+                                                        return `To'g'ri javob: ${q.type === 'input' ? opts[0] : opts[q.answer]}`;
+                                                    })()}
+                                                </div>
+                                            </td>
+                                            <td><span className="status-badge user" style={{ textTransform: 'uppercase', fontSize: '0.65rem' }}>{q.type || 'test'}</span></td>
+                                            <td>
+                                                <div style={{ display: 'flex', gap: '8px' }}>
+                                                    <button className="btn btn-outline" style={{ padding: '8px' }} onClick={() => startEdit(q)}><Edit2 size={14} /></button>
+                                                    <button className="btn btn-outline" style={{ padding: '8px', color: '#ef4444' }} onClick={() => handleDelete(q.id)}><Trash2 size={14} /></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    ))
+                                )}
+                            </tbody>
+                        </table>
                     </div>
-                    <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '12px', marginTop: '24px', paddingTop: '20px', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
-                        <button className="btn btn-outline" onClick={resetForm}>Bekor qilish</button>
-                        <button className="btn btn-primary" onClick={handleSave}>
-                            <Save size={18} /> Saqlash
-                        </button>
-                    </div>
+                </>
+            ) : (
+                <div style={{ marginTop: '20px' }}>
+                    {[5, 6, 7, 8, 9, 10, 11].map(grade => {
+                        const gradeQuestionsCount = subjects.reduce((acc, sub) => {
+                            return acc + (questions[sub.id]?.filter(q => q.grade === grade).length || 0);
+                        }, 0);
+                        if (gradeQuestionsCount === 0) return null;
+
+                        return (
+                            <AccordionItem
+                                key={grade}
+                                title={`${grade}-sinf (${gradeQuestionsCount} ta savol)`}
+                                isOpen={openGrades[grade]}
+                                onClick={() => toggleGrade(grade)}
+                                icon={<GraduationCap size={20} />}
+                            >
+                                {subjects.map(subject => {
+                                    const subQuestions = (questions[subject.id] || []).filter(q => q.grade === grade);
+                                    if (subQuestions.length === 0) return null;
+
+                                    return (
+                                        <div key={subject.id} style={{ marginTop: '12px' }}>
+                                            <button
+                                                onClick={() => toggleSub(grade, subject.id)}
+                                                className="glass"
+                                                style={{ width: '100%', padding: '12px 16px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', border: 'none', cursor: 'pointer', marginBottom: '8px', color: 'inherit' }}
+                                            >
+                                                <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+                                                    <span>{subject.emoji}</span>
+                                                    <span>{subject.name}</span>
+                                                    <span style={{ opacity: 0.5, fontSize: '0.8rem' }}>{subQuestions.length} ta</span>
+                                                </div>
+                                                <ChevronDown size={14} style={{ transform: openSubjects[`${grade}-${subject.id}`] ? 'rotate(180deg)' : 'none', transition: '0.3s' }} />
+                                            </button>
+                                            {openSubjects[`${grade}-${subject.id}`] && (
+                                                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', paddingLeft: '12px' }}>
+                                                    {subQuestions.map((q, idx) => (
+                                                        <div key={q.id} className="glass" style={{ padding: '12px', fontSize: '0.9rem', border: '1px solid rgba(255,255,255,0.02)' }}>
+                                                            <div style={{ fontWeight: 600, marginBottom: '6px' }}>{idx + 1}. {q.q[i18n.language] || q.q.uz}</div>
+                                                            <div style={{ fontSize: '0.8rem', color: 'var(--success)' }}>
+                                                                ✓ {Array.isArray(q.options) ? q.options[q.answer] : (q.options?.uz?.[q.answer] || q.options?.uz?.[0])}
+                                                            </div>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            )}
+                                        </div>
+                                    );
+                                })}
+                            </AccordionItem>
+                        );
+                    })}
                 </div>
             )}
-
-            <div className="admin-table-container">
-                <table className="admin-table">
-                    <thead>
-                        <tr>
-                            <th style={{ width: '80px' }}>Sinf</th>
-                            <th>Savol matni</th>
-                            <th style={{ width: '120px' }}>Turi</th>
-                            <th style={{ width: '100px' }}>Amallar</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {filteredList.length === 0 ? (
-                            <tr>
-                                <td colSpan="4" style={{ textAlign: 'center', padding: '40px', color: 'var(--text-muted)' }}>
-                                    Bu bo'limda savollar mavjud emas.
-                                </td>
-                            </tr>
-                        ) : (
-                            filteredList.map((q, i) => (
-                                <tr key={i}>
-                                    <td><span className="hero-badge" style={{ margin: 0, background: 'rgba(var(--primary-rgb), 0.1)' }}>{q.grade}-sinf</span></td>
-                                    <td style={{ maxWidth: '400px' }}>
-                                        <div style={{ fontWeight: 600, marginBottom: '4px' }}>{typeof q.q === 'string' ? q.q : q.q[i18n.language] || q.q.uz}</div>
-                                        <div style={{ fontSize: '0.75rem', color: 'var(--success)' }}>
-                                            {(() => {
-                                                const opts = Array.isArray(q.options) ? q.options : (q.options?.uz || []);
-                                                return `To'g'ri javob: ${q.type === 'input' ? opts[0] : opts[q.answer]}`;
-                                            })()}
-                                        </div>
-                                    </td>
-                                    <td><span className="status-badge user" style={{ textTransform: 'uppercase', fontSize: '0.65rem' }}>{q.type || 'test'}</span></td>
-                                    <td>
-                                        <div style={{ display: 'flex', gap: '8px' }}>
-                                            <button className="btn btn-outline" style={{ padding: '8px' }} onClick={() => startEdit(i)}><Edit2 size={14} /></button>
-                                            <button className="btn btn-outline" style={{ padding: '8px', color: '#ef4444' }} onClick={() => handleDelete(i)}><Trash2 size={14} /></button>
-                                        </div>
-                                    </td>
-                                </tr>
-                            ))
-                        )}
-                    </tbody>
-                </table>
-            </div>
         </div>
     );
 };
 
 const CareersView = () => {
-    const [careers, setCareers] = useState(getCareers());
+    const [careers, setCareers] = useState([]);
     const [isAdding, setIsAdding] = useState(false);
-    const [editIdx, setEditIdx] = useState(null);
+    const [editingId, setEditingId] = useState(null);
+    const [loading, setLoading] = useState(false);
     const [formData, setFormData] = useState({
         title: { uz: '', ru: '', en: '' },
         description: { uz: '', ru: '', en: '' },
@@ -441,6 +571,22 @@ const CareersView = () => {
         category: 'it',
         subjects: []
     });
+
+    useEffect(() => {
+        loadCareers();
+    }, []);
+
+    const loadCareers = async () => {
+        setLoading(true);
+        try {
+            const data = await api.professions.getAll();
+            setCareers(data);
+        } catch (err) {
+            console.error(err);
+        } finally {
+            setLoading(false);
+        }
+    };
 
     const categories = [
         { id: 'it', label: 'IT & Texnologiya' },
@@ -452,21 +598,43 @@ const CareersView = () => {
         { id: 'law', label: 'Huquqshunoslik' },
     ];
 
-    const handleSave = () => {
+    const handleSave = async () => {
         if (!formData.title.uz.trim()) return alert('Kasb nomi (UZ) bo\'lishi shart');
         if (!formData.imageUrl.trim()) return alert('Rasm havolasi bo\'lishi shart');
 
-        let updated = [...careers];
-        if (editIdx !== null) updated[editIdx] = formData;
-        else updated.push({ ...formData, id: Date.now() });
-        saveCareers(updated);
-        setCareers(updated);
-        resetForm();
+        setLoading(true);
+        try {
+            if (editingId) {
+                await api.professions.update(editingId, formData);
+            } else {
+                await api.professions.create(formData);
+            }
+            await loadCareers();
+            resetForm();
+        } catch (err) {
+            alert('Saqlashda xatolik');
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    const handleDelete = async (id) => {
+        if (confirm('Ochirish?')) {
+            setLoading(true);
+            try {
+                await api.professions.delete(id);
+                await loadCareers();
+            } catch (err) {
+                alert('O\'chirishda xatolik');
+            } finally {
+                setLoading(false);
+            }
+        }
     };
 
     const resetForm = () => {
         setIsAdding(false);
-        setEditIdx(null);
+        setEditingId(null);
         setFormData({
             title: { uz: '', ru: '', en: '' },
             description: { uz: '', ru: '', en: '' },
@@ -476,6 +644,14 @@ const CareersView = () => {
             subjects: []
         });
     };
+
+    const startEdit = (c) => {
+        setFormData(c);
+        setEditingId(c.id);
+        setIsAdding(true);
+    };
+
+    if (loading && careers.length === 0) return <div className="admin-view">Yuklanmoqda...</div>;
 
     return (
         <div className="admin-view">
@@ -488,7 +664,7 @@ const CareersView = () => {
 
             {isAdding && (
                 <div className="glass" style={{ padding: '24px', marginBottom: '24px' }}>
-                    <h3 style={{ marginBottom: '20px' }}>{editIdx !== null ? 'Kasbni tahrirlash' : 'Yangi kasb qo\'shish'}</h3>
+                    <h3 style={{ marginBottom: '20px' }}>{editingId ? 'Kasbni tahrirlash' : 'Yangi kasb qo\'shish'}</h3>
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '30px' }}>
                         <div>
                             {['uz', 'ru', 'en'].map(l => (
@@ -559,37 +735,43 @@ const CareersView = () => {
                         </div>
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '12px', marginTop: '24px', borderTop: '1px solid rgba(255,255,255,0.05)', paddingTop: '20px' }}>
-                        <button className="btn btn-outline" onClick={resetForm}>Bekor qilish</button>
-                        <button className="btn btn-primary" onClick={handleSave}>
-                            <Save size={18} /> Saqlash
+                        <button className="btn btn-outline" onClick={resetForm} disabled={loading}>Bekor qilish</button>
+                        <button className="btn btn-primary" onClick={handleSave} disabled={loading}>
+                            <Save size={18} /> {loading ? 'Saqlanmoqda...' : 'Saqlash'}
                         </button>
                     </div>
                 </div>
             )}
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '20px' }}>
-                {careers.map((c, i) => (
-                    <div key={i} className="stat-card glass" style={{ minHeight: 'auto', display: 'flex', flexDirection: 'column', padding: '16px' }}>
-                        <div style={{ height: '140px', borderRadius: '12px', overflow: 'hidden', marginBottom: '16px', background: 'rgba(255,255,255,0.02)' }}>
-                            {c.imageUrl ? (
-                                <img src={c.imageUrl} alt={c.title.uz} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                            ) : (
-                                <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '3rem' }}>{c.icon}</div>
-                            )}
-                        </div>
-                        <div style={{ fontWeight: 800, fontSize: '1.1rem', marginBottom: '4px' }}>{c.title.uz}</div>
-                        <div style={{ fontSize: '0.75rem', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '12px' }}>
-                            {categories.find(cat => cat.id === c.category)?.label || 'Uncategorized'}
-                        </div>
-                        <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '16px', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden', lineHeight: '1.4' }}>
-                            {c.description.uz}
-                        </p>
-                        <div style={{ display: 'flex', gap: '8px', marginTop: 'auto' }}>
-                            <button className="btn btn-outline" style={{ padding: '8px', flex: 1 }} onClick={() => { setFormData(c); setEditIdx(i); setIsAdding(true); }}><Edit2 size={16} /></button>
-                            <button className="btn btn-outline" style={{ padding: '8px', color: '#ef4444', flex: 1 }} onClick={() => { if (confirm('Ochirish?')) { const n = careers.filter((_, idx) => idx !== i); setCareers(n); saveCareers(n); } }}><Trash2 size={16} /></button>
-                        </div>
+                {careers.length === 0 ? (
+                    <div className="glass" style={{ padding: '40px', textAlign: 'center', gridColumn: '1/-1', color: 'var(--text-muted)' }}>
+                        Hozircha kasblar yo'q.
                     </div>
-                ))}
+                ) : (
+                    careers.map((c) => (
+                        <div key={c.id} className="stat-card glass" style={{ minHeight: 'auto', display: 'flex', flexDirection: 'column', padding: '16px' }}>
+                            <div style={{ height: '140px', borderRadius: '12px', overflow: 'hidden', marginBottom: '16px', background: 'rgba(255,255,255,0.02)' }}>
+                                {c.imageUrl ? (
+                                    <img src={c.imageUrl} alt={c.title.uz} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                ) : (
+                                    <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '3rem' }}>{c.icon}</div>
+                                )}
+                            </div>
+                            <div style={{ fontWeight: 800, fontSize: '1.1rem', marginBottom: '4px' }}>{c.title.uz}</div>
+                            <div style={{ fontSize: '0.75rem', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '12px' }}>
+                                {categories.find(cat => cat.id === c.category)?.label || 'Uncategorized'}
+                            </div>
+                            <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '16px', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden', lineHeight: '1.4' }}>
+                                {c.description.uz}
+                            </p>
+                            <div style={{ display: 'flex', gap: '8px', marginTop: 'auto' }}>
+                                <button className="btn btn-outline" style={{ padding: '8px', flex: 1 }} onClick={() => startEdit(c)}><Edit2 size={16} /></button>
+                                <button className="btn btn-outline" style={{ padding: '8px', color: '#ef4444', flex: 1 }} onClick={() => handleDelete(c.id)}><Trash2 size={16} /></button>
+                            </div>
+                        </div>
+                    ))
+                )}
             </div>
         </div>
     );
