@@ -1,8 +1,9 @@
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { getMessages, getCareers } from '../data/dataService';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X } from 'lucide-react';
+import { BookOpen, Brain, Sparkles, Trophy, Zap, ArrowRight, MessageCircle, X } from 'lucide-react';
 
 export default function Home() {
     const navigate = useNavigate();
