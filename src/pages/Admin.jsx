@@ -181,13 +181,18 @@ const QuestionsView = () => {
     }, []);
 
     const handleSave = () => {
+        if (!selectedSubject) return alert('Iltimos, fanni tanlang');
         const updated = { ...questions };
         if (!updated[selectedSubject]) updated[selectedSubject] = [];
         if (editingQuestion !== null) {
-            // Find global index or just update by matching object if possible
-            // For simplicity in this mock, we update the filtered list back to global
-            const globalIndex = questions[selectedSubject].findIndex(q => q === questions[selectedSubject].filter(sq => sq.grade === selectedGrade)[editingQuestion]);
-            updated[selectedSubject][globalIndex] = formData;
+            const gradeList = (questions[selectedSubject] || []).filter(sq => sq.grade === selectedGrade);
+            const target = gradeList[editingQuestion];
+            const globalIndex = (questions[selectedSubject] || []).findIndex(q => q === target);
+            if (globalIndex !== -1) {
+                updated[selectedSubject][globalIndex] = formData;
+            } else {
+                updated[selectedSubject].push(formData);
+            }
         } else {
             updated[selectedSubject].push(formData);
         }
@@ -199,11 +204,13 @@ const QuestionsView = () => {
     const handleDelete = (index) => {
         if (window.confirm('Haqiqatdan ham o\'chirmoqchimisiz?')) {
             const updated = { ...questions };
-            const filtered = questions[selectedSubject].filter(q => q.grade === selectedGrade);
+            const filtered = (questions[selectedSubject] || []).filter(q => q.grade === selectedGrade);
             const target = filtered[index];
-            updated[selectedSubject] = updated[selectedSubject].filter(q => q !== target);
-            saveQuestions(updated);
-            setQuestions(updated);
+            if (target) {
+                updated[selectedSubject] = (updated[selectedSubject] || []).filter(q => q !== target);
+                saveQuestions(updated);
+                setQuestions(updated);
+            }
         }
     };
 
@@ -211,7 +218,7 @@ const QuestionsView = () => {
         setEditingQuestion(null);
         setIsAdding(false);
         setFormData({
-            grade: selectedGrade, type: 'test', imageUrl: '',
+            grade: selectedGrade || 5, type: 'test', imageUrl: '',
             q: { uz: '', ru: '', en: '' },
             options: { uz: ['', '', '', ''], ru: ['', '', '', ''], en: ['', '', '', ''] },
             answer: 0
@@ -219,8 +226,9 @@ const QuestionsView = () => {
     };
 
     const startEdit = (index) => {
-        const filtered = questions[selectedSubject].filter(q => q.grade === selectedGrade);
+        const filtered = (questions[selectedSubject] || []).filter(q => q.grade === selectedGrade);
         const q = filtered[index];
+        if (!q) return;
         setFormData({
             grade: q.grade || selectedGrade, type: q.type || 'test', imageUrl: q.imageUrl || '',
             q: typeof q.q === 'string' ? { uz: q.q, ru: q.q, en: q.q } : q.q,

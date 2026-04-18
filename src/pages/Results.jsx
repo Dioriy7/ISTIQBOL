@@ -36,6 +36,14 @@ export default function Results({ scores, onReset }) {
         { id: 'genius', label: 'Daho', emoji: '🧠', cond: (s) => Object.values(s).filter(v => v >= 80).length >= 3 },
     ];
 
+    const subjectsWithScores = subjects.filter(s => scores[s.id] !== undefined);
+    const avg = subjectsWithScores.length
+        ? Math.round(subjectsWithScores.reduce((a, s) => a + scores[s.id], 0) / subjectsWithScores.length)
+        : 0;
+
+    const ai = getAIRecommendation(scores);
+    const badges = BADGE_DEFS.map(b => ({ ...b, earned: b.cond(scores) }));
+
     useEffect(() => {
         setTimeout(() => setAnimBars(true), 200);
         const animated = {};
@@ -46,7 +54,7 @@ export default function Results({ scores, onReset }) {
         if (Object.keys(scores).length > 0) {
             addMessage('system', `Test yakunlandi: ${user?.username || 'Anonim'} (${avg}%)`, 'Tizim', { scores });
         }
-    }, [scores]);
+    }, [scores]); // avg is stable as it depends on scores
 
     const handleFeedback = (type, response, comment = '') => {
         addMessage('feedback', `${type}: ${response}. Izoh: ${comment}`, user?.username || 'Anonim', { type, response });
@@ -71,14 +79,6 @@ export default function Results({ scores, onReset }) {
             </div>
         );
     }
-
-    const ai = getAIRecommendation(scores);
-    const badges = BADGE_DEFS.map(b => ({ ...b, earned: b.cond(scores) }));
-
-    const subjectsWithScores = subjects.filter(s => scores[s.id] !== undefined);
-    const avg = subjectsWithScores.length
-        ? Math.round(subjectsWithScores.reduce((a, s) => a + scores[s.id], 0) / subjectsWithScores.length)
-        : 0;
 
     return (
         <div className="page results-page">
