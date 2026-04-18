@@ -15,6 +15,15 @@ const defaultSettings = {
     }
 };
 
+const STORAGE_KEY_USERS = 'istiqbol_users';
+const STORAGE_KEY_CAREERS = 'istiqbol_careers_v1';
+const STORAGE_KEY_MESSAGES = 'istiqbol_messages_v1';
+
+const defaultCareers = [
+    { id: 1, title: { uz: 'Software Engineer', ru: 'Программный инженер', en: 'Software Engineer' }, icon: '💻', subjects: ['math', 'english'] },
+    { id: 2, title: { uz: 'Shifokor', ru: 'Врач', en: 'Doctor' }, icon: '🩺', subjects: ['biology', 'chemistry'] }
+];
+
 // Initialize data in localStorage if not exists
 const initializeData = () => {
     if (!localStorage.getItem(STORAGE_KEY_SUBJECTS)) {
@@ -25,6 +34,9 @@ const initializeData = () => {
     }
     if (!localStorage.getItem(STORAGE_KEY_SETTINGS)) {
         localStorage.setItem(STORAGE_KEY_SETTINGS, JSON.stringify(defaultSettings));
+    }
+    if (!localStorage.getItem(STORAGE_KEY_CAREERS)) {
+        localStorage.setItem(STORAGE_KEY_CAREERS, JSON.stringify(defaultCareers));
     }
 };
 
@@ -55,4 +67,45 @@ export const getSettings = () => {
 
 export const saveSettings = (settings) => {
     localStorage.setItem(STORAGE_KEY_SETTINGS, JSON.stringify(settings));
+};
+
+export const getUsers = () => {
+    return JSON.parse(localStorage.getItem(STORAGE_KEY_USERS) || '[]');
+};
+
+export const saveUsers = (users) => {
+    localStorage.setItem(STORAGE_KEY_USERS, JSON.stringify(users));
+};
+
+export const getCareers = () => {
+    return JSON.parse(localStorage.getItem(STORAGE_KEY_CAREERS) || '[]');
+};
+
+export const saveCareers = (careers) => {
+    localStorage.setItem(STORAGE_KEY_CAREERS, JSON.stringify(careers));
+};
+
+export const getMessages = () => {
+    return JSON.parse(localStorage.getItem(STORAGE_KEY_MESSAGES) || '[]');
+};
+
+export const saveMessages = (msgs) => {
+    localStorage.setItem(STORAGE_KEY_MESSAGES, JSON.stringify(msgs));
+};
+
+export const getStats = () => {
+    const users = getUsers();
+    const questions = getQuestions();
+    const careers = getCareers();
+
+    return {
+        totalUsers: users.length,
+        totalTests: 124, // Mock
+        activeNow: 8,    // Mock
+        popularSubjects: [
+            { name: 'Matematika', count: 45 },
+            { name: 'Ingliz tili', count: 38 },
+            { name: 'Biologiya', count: 22 }
+        ]
+    };
 };

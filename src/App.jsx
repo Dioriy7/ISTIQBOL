@@ -252,22 +252,32 @@ function AppContent() {
 
   return (
     <BrowserRouter>
-      <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/subjects" element={<SubjectSelect scores={currentScores} />} />
-        <Route path="/test/:subjectId" element={<Test onComplete={handleComplete} />} />
-        <Route path="/results" element={<Results scores={currentScores} onReset={() => handleReset(currentGrade)} />} />
-        <Route path="/cabinet" element={
-          <ProtectedRoute>
-            <Cabinet />
-          </ProtectedRoute>
+        {/* Admin route without Navbar/Footer */}
+        <Route path="/admin/*" element={<Admin />} />
+
+        {/* Regular routes with Navbar/Footer */}
+        <Route path="*" element={
+          <>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/subjects" element={<SubjectSelect scores={currentScores} />} />
+              <Route path="/test/:subjectId" element={<Test onComplete={handleComplete} />} />
+              <Route path="/results" element={<Results scores={currentScores} onReset={() => handleReset(currentGrade)} />} />
+              <Route path="/cabinet" element={
+                <ProtectedRoute>
+                  <Cabinet />
+                </ProtectedRoute>
+              } />
+              <Route path="/admin" element={<Navigate to="/admin/dashboard" />} />
+            </Routes>
+            <Footer />
+          </>
         } />
-        <Route path="/admin" element={<Admin />} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }
