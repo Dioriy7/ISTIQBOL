@@ -11,6 +11,7 @@ import Register from './pages/Register';
 import Login from './pages/Login';
 import Cabinet from './pages/Cabinet';
 import Admin from './pages/Admin';
+import SupportCenter from './components/SupportCenter';
 import { GraduationCap, BarChart2, BookOpen, User, LogOut, Settings, Send } from 'lucide-react';
 import { getSettings, addMessage } from './data/dataService';
 import './index.css';
@@ -292,6 +293,7 @@ function AppContent() {
               <Route path="/admin" element={<Navigate to="/admin/dashboard" />} />
             </Routes>
             <Footer />
+            <SupportCenter />
           </>
         } />
       </Routes>

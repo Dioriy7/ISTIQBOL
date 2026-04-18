@@ -170,19 +170,8 @@ const UsersView = () => {
 const QuestionsView = () => {
     const [subjects, setSubjects] = useState([]);
     const [questions, setQuestions] = useState({});
-    const [selectedSubject, setSelectedSubject] = useState('');
-    const [editingQuestion, setEditingQuestion] = useState(null);
-    const [isAdding, setIsAdding] = useState(false);
-    const { i18n } = useTranslation();
-
-    const [formData, setFormData] = useState({
-        grade: 5,
-        type: 'test',
-        imageUrl: '',
-        q: { uz: '', ru: '', en: '' },
-        options: { uz: ['', '', '', ''], ru: ['', '', '', ''], en: ['', '', '', ''] },
-        answer: 0
-    });
+    const [selectedGrade, setSelectedGrade] = useState(5);
+    const [searchTerm, setSearchTerm] = useState('');
 
     useEffect(() => {
         const subjs = getSubjects() || [];
@@ -194,8 +183,14 @@ const QuestionsView = () => {
     const handleSave = () => {
         const updated = { ...questions };
         if (!updated[selectedSubject]) updated[selectedSubject] = [];
-        if (editingQuestion !== null) updated[selectedSubject][editingQuestion] = formData;
-        else updated[selectedSubject].push(formData);
+        if (editingQuestion !== null) {
+            // Find global index or just update by matching object if possible
+            // For simplicity in this mock, we update the filtered list back to global
+            const globalIndex = questions[selectedSubject].findIndex(q => q === questions[selectedSubject].filter(sq => sq.grade === selectedGrade)[editingQuestion]);
+            updated[selectedSubject][globalIndex] = formData;
+        } else {
+            updated[selectedSubject].push(formData);
+        }
         saveQuestions(updated);
         setQuestions(updated);
         resetForm();
@@ -204,7 +199,9 @@ const QuestionsView = () => {
     const handleDelete = (index) => {
         if (window.confirm('Haqiqatdan ham o\'chirmoqchimisiz?')) {
             const updated = { ...questions };
-            updated[selectedSubject].splice(index, 1);
+            const filtered = questions[selectedSubject].filter(q => q.grade === selectedGrade);
+            const target = filtered[index];
+            updated[selectedSubject] = updated[selectedSubject].filter(q => q !== target);
             saveQuestions(updated);
             setQuestions(updated);
         }
@@ -214,7 +211,7 @@ const QuestionsView = () => {
         setEditingQuestion(null);
         setIsAdding(false);
         setFormData({
-            grade: 5, type: 'test', imageUrl: '',
+            grade: selectedGrade, type: 'test', imageUrl: '',
             q: { uz: '', ru: '', en: '' },
             options: { uz: ['', '', '', ''], ru: ['', '', '', ''], en: ['', '', '', ''] },
             answer: 0
@@ -222,9 +219,10 @@ const QuestionsView = () => {
     };
 
     const startEdit = (index) => {
-        const q = questions[selectedSubject][index];
+        const filtered = questions[selectedSubject].filter(q => q.grade === selectedGrade);
+        const q = filtered[index];
         setFormData({
-            grade: q.grade || 5, type: q.type || 'test', imageUrl: q.imageUrl || '',
+            grade: q.grade || selectedGrade, type: q.type || 'test', imageUrl: q.imageUrl || '',
             q: typeof q.q === 'string' ? { uz: q.q, ru: q.q, en: q.q } : q.q,
             options: Array.isArray(q.options) ? { uz: q.options, ru: q.options, en: q.options } : (q.options || { uz: ['', '', '', ''], ru: ['', '', '', ''], en: ['', '', '', ''] }),
             answer: q.answer || 0
@@ -233,63 +231,125 @@ const QuestionsView = () => {
         setIsAdding(true);
     };
 
+    const filteredList = (questions[selectedSubject] || []).filter(q => {
+        const matchGrade = q.grade === selectedGrade;
+        const qText = typeof q.q === 'string' ? q.q : (q.q[i18n.language] || q.q.uz || '');
+        const matchSearch = qText.toLowerCase().includes(searchTerm.toLowerCase());
+        return matchGrade && matchSearch;
+    });
+
     return (
         <div className="admin-view">
             <div className="admin-header">
                 <h2>Savollar Boshqaruvi</h2>
                 <div style={{ display: 'flex', gap: '12px' }}>
-                    <select value={selectedSubject} onChange={(e) => setSelectedSubject(e.target.value)} className="search-bar" style={{ width: '200px' }}>
-                        {subjects.map(s => <option key={s.id} value={s.id}>{s.name}</option>)}
-                    </select>
+                    <input
+                        type="text"
+                        placeholder="Savollardan izlash..."
+                        className="search-bar"
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                        style={{ width: '250px' }}
+                    />
                     <button className="btn btn-primary" onClick={() => { resetForm(); setIsAdding(true); }}>
                         <Plus size={18} /> Yangi savol
                     </button>
                 </div>
             </div>
 
+            <div className="glass" style={{ padding: '16px', marginBottom: '24px', display: 'flex', gap: '20px', alignItems: 'center', justifyContent: 'space-between' }}>
+                <div style={{ display: 'flex', gap: '8px' }}>
+                    {[5, 6, 7, 8, 9, 10, 11].map(grade => (
+                        <button
+                            key={grade}
+                            className={`btn ${selectedGrade === grade ? 'btn-primary' : 'btn-outline'}`}
+                            onClick={() => setSelectedGrade(grade)}
+                            style={{ padding: '8px 16px', minWidth: '60px' }}
+                        >
+                            {grade}-sinf
+                        </button>
+                    ))}
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                    <span style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>Fan:</span>
+                    <select value={selectedSubject} onChange={(e) => setSelectedSubject(e.target.value)} className="search-bar" style={{ width: '180px' }}>
+                        {subjects.map(s => <option key={s.id} value={s.id}>{s.name}</option>)}
+                    </select>
+                </div>
+            </div>
+
             {isAdding && (
-                <div className="glass" style={{ padding: '24px', marginBottom: '24px' }}>
-                    <h3>{editingQuestion !== null ? 'Tahrirlash' : 'Qo\'shish'}</h3>
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', marginTop: '20px' }}>
+                <div className="glass" style={{ padding: '24px', marginBottom: '24px', border: '1px solid var(--primary)' }}>
+                    <h3 style={{ marginBottom: '20px' }}>{editingQuestion !== null ? 'Savolni tahrirlash' : 'Yangi savol qo\'shish'}</h3>
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '30px' }}>
                         <div>
-                            <div style={{ display: 'flex', gap: '12px', marginBottom: '12px' }}>
+                            <div style={{ display: 'flex', gap: '12px', marginBottom: '16px' }}>
                                 <div style={{ flex: 1 }}>
-                                    <label>Sinf:</label>
-                                    <input type="number" value={formData.grade} onChange={(e) => setFormData({ ...formData, grade: parseInt(e.target.value) })} className="search-bar" style={{ width: '100%', marginTop: '4px' }} />
+                                    <label style={{ fontSize: '0.85rem' }}>Sinf:</label>
+                                    <select value={formData.grade} onChange={(e) => setFormData({ ...formData, grade: parseInt(e.target.value) })} className="search-bar" style={{ width: '100%', marginTop: '6px' }}>
+                                        {[5, 6, 7, 8, 9, 10, 11].map(g => <option key={g} value={g}>{g}-sinf</option>)}
+                                    </select>
                                 </div>
                                 <div style={{ flex: 1 }}>
-                                    <label>Tur:</label>
-                                    <select value={formData.type} onChange={(e) => setFormData({ ...formData, type: e.target.value })} className="search-bar" style={{ width: '100%', marginTop: '4px' }}>
-                                        <option value="test">Test</option>
-                                        <option value="input">Yozma</option>
+                                    <label style={{ fontSize: '0.85rem' }}>Tur:</label>
+                                    <select value={formData.type} onChange={(e) => setFormData({ ...formData, type: e.target.value })} className="search-bar" style={{ width: '100%', marginTop: '6px' }}>
+                                        <option value="test">Test (Variantli)</option>
+                                        <option value="input">Yozma (Javob yoziladi)</option>
                                     </select>
                                 </div>
                             </div>
                             {['uz', 'ru', 'en'].map(lang => (
-                                <div key={lang} style={{ marginBottom: '12px' }}>
-                                    <label>Savol ({lang.toUpperCase()}):</label>
-                                    <textarea value={formData.q[lang]} onChange={(e) => setFormData({ ...formData, q: { ...formData.q, [lang]: e.target.value } })} className="search-bar" style={{ width: '100%', minHeight: '60px', marginTop: '4px' }} />
+                                <div key={lang} style={{ marginBottom: '16px' }}>
+                                    <label style={{ fontSize: '0.85rem' }}>Savol ({lang.toUpperCase()}):</label>
+                                    <textarea
+                                        value={formData.q[lang]}
+                                        onChange={(e) => setFormData({ ...formData, q: { ...formData.q, [lang]: e.target.value } })}
+                                        className="search-bar"
+                                        style={{ width: '100%', minHeight: '80px', marginTop: '6px' }}
+                                        placeholder={`${lang.toUpperCase()} tilida savol matni...`}
+                                    />
                                 </div>
                             ))}
                         </div>
                         <div>
-                            <label>Variantlar va Javob:</label>
+                            <label style={{ fontSize: '0.9rem', fontWeight: 700, display: 'block', marginBottom: '12px' }}>Javoblar va variantlar:</label>
                             {['uz', 'ru', 'en'].map(lang => (
-                                <div key={lang} style={{ marginBottom: '12px', padding: '12px', background: 'rgba(255,255,255,0.03)', borderRadius: '12px' }}>
-                                    <h4 style={{ fontSize: '0.8rem', marginBottom: '8px' }}>{lang.toUpperCase()} Tilida</h4>
+                                <div key={lang} style={{ marginBottom: '16px', padding: '16px', background: 'rgba(255,255,255,0.02)', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                                    <h4 style={{ fontSize: '0.75rem', marginBottom: '10px', color: 'var(--primary)', letterSpacing: '0.05em' }}>{lang.toUpperCase()} TILIDA</h4>
                                     {[0, 1, 2, 3].map(i => (
-                                        <div key={i} style={{ display: formData.type === 'input' && i > 0 ? 'none' : 'flex', gap: '8px', marginBottom: '4px' }}>
-                                            {formData.type !== 'input' && <input type="radio" checked={formData.answer === i} onChange={() => setFormData({ ...formData, answer: i })} />}
-                                            <input type="text" value={formData.options[lang][i]} onChange={(e) => { const n = JSON.parse(JSON.stringify(formData.options)); n[lang][i] = e.target.value; setFormData({ ...formData, options: n }); }} className="search-bar" style={{ flex: 1, padding: '6px' }} placeholder={`Option ${i + 1}`} />
+                                        <div key={i} style={{ display: formData.type === 'input' && i > 0 ? 'none' : 'flex', gap: '10px', marginBottom: '8px', alignItems: 'center' }}>
+                                            {formData.type !== 'input' && (
+                                                <input
+                                                    type="radio"
+                                                    name={`correct-${lang}`}
+                                                    checked={formData.answer === i}
+                                                    onChange={() => setFormData({ ...formData, answer: i })}
+                                                    style={{ cursor: 'pointer' }}
+                                                />
+                                            )}
+                                            <input
+                                                type="text"
+                                                value={formData.options[lang][i]}
+                                                onChange={(e) => {
+                                                    const n = JSON.parse(JSON.stringify(formData.options));
+                                                    n[lang][i] = e.target.value;
+                                                    setFormData({ ...formData, options: n });
+                                                }}
+                                                className="search-bar"
+                                                style={{ flex: 1, padding: '8px' }}
+                                                placeholder={formData.type === 'input' ? "To'g'ri javobni yozing..." : `Variant ${i + 1}`}
+                                            />
                                         </div>
                                     ))}
                                 </div>
                             ))}
                         </div>
                     </div>
-                    <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '12px', marginTop: '20px' }}>
+                    <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '12px', marginTop: '24px', paddingTop: '20px', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
                         <button className="btn btn-outline" onClick={resetForm}>Bekor qilish</button>
-                        <button className="btn btn-primary" onClick={handleSave}>Saqlash</button>
+                        <button className="btn btn-primary" onClick={handleSave}>
+                            <Save size={18} /> Saqlash
+                        </button>
                     </div>
                 </div>
             )}
@@ -298,26 +358,39 @@ const QuestionsView = () => {
                 <table className="admin-table">
                     <thead>
                         <tr>
-                            <th>Sinf</th>
-                            <th>Savol</th>
-                            <th>Turi</th>
-                            <th>Amallar</th>
+                            <th style={{ width: '80px' }}>Sinf</th>
+                            <th>Savol matni</th>
+                            <th style={{ width: '120px' }}>Turi</th>
+                            <th style={{ width: '100px' }}>Amallar</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {questions[selectedSubject]?.map((q, i) => (
-                            <tr key={i}>
-                                <td>{q.grade}</td>
-                                <td>{typeof q.q === 'string' ? q.q : q.q[i18n.language] || q.q.uz}</td>
-                                <td><span className="hero-badge" style={{ margin: 0 }}>{q.type || 'test'}</span></td>
-                                <td>
-                                    <div style={{ display: 'flex', gap: '8px' }}>
-                                        <button className="btn btn-outline" style={{ padding: '6px' }} onClick={() => startEdit(i)}><Edit2 size={14} /></button>
-                                        <button className="btn btn-outline" style={{ padding: '6px', color: '#ef4444' }} onClick={() => handleDelete(i)}><Trash2 size={14} /></button>
-                                    </div>
+                        {filteredList.length === 0 ? (
+                            <tr>
+                                <td colSpan="4" style={{ textAlign: 'center', padding: '40px', color: 'var(--text-muted)' }}>
+                                    Bu bo'limda savollar mavjud emas.
                                 </td>
                             </tr>
-                        ))}
+                        ) : (
+                            filteredList.map((q, i) => (
+                                <tr key={i}>
+                                    <td><span className="hero-badge" style={{ margin: 0, background: 'rgba(var(--primary-rgb), 0.1)' }}>{q.grade}-sinf</span></td>
+                                    <td style={{ maxWidth: '400px' }}>
+                                        <div style={{ fontWeight: 600, marginBottom: '4px' }}>{typeof q.q === 'string' ? q.q : q.q[i18n.language] || q.q.uz}</div>
+                                        <div style={{ fontSize: '0.75rem', color: 'var(--success)' }}>
+                                            To'g'ri javob: {q.type === 'input' ? q.options.uz[0] : q.options.uz[q.answer]}
+                                        </div>
+                                    </td>
+                                    <td><span className="status-badge user" style={{ textTransform: 'uppercase', fontSize: '0.65rem' }}>{q.type || 'test'}</span></td>
+                                    <td>
+                                        <div style={{ display: 'flex', gap: '8px' }}>
+                                            <button className="btn btn-outline" style={{ padding: '8px' }} onClick={() => startEdit(i)}><Edit2 size={14} /></button>
+                                            <button className="btn btn-outline" style={{ padding: '8px', color: '#ef4444' }} onClick={() => handleDelete(i)}><Trash2 size={14} /></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            ))
+                        )}
                     </tbody>
                 </table>
             </div>
@@ -329,7 +402,12 @@ const CareersView = () => {
     const [careers, setCareers] = useState(getCareers());
     const [isAdding, setIsAdding] = useState(false);
     const [editIdx, setEditIdx] = useState(null);
-    const [formData, setFormData] = useState({ title: { uz: '', ru: '', en: '' }, icon: '🚀', subjects: [] });
+    const [formData, setFormData] = useState({
+        title: { uz: '', ru: '', en: '' },
+        description: { uz: '', ru: '', en: '' },
+        icon: '🚀',
+        subjects: []
+    });
 
     const handleSave = () => {
         let updated = [...careers];
@@ -337,39 +415,79 @@ const CareersView = () => {
         else updated.push({ ...formData, id: Date.now() });
         saveCareers(updated);
         setCareers(updated);
+        resetForm();
+    };
+
+    const resetForm = () => {
         setIsAdding(false);
         setEditIdx(null);
-        setFormData({ title: { uz: '', ru: '', en: '' }, icon: '🚀', subjects: [] });
+        setFormData({
+            title: { uz: '', ru: '', en: '' },
+            description: { uz: '', ru: '', en: '' },
+            icon: '🚀',
+            subjects: []
+        });
     };
 
     return (
         <div className="admin-view">
             <div className="admin-header">
                 <h2>Kasblar Boshqaruvi</h2>
-                <button className="btn btn-primary" onClick={() => setIsAdding(true)}>
+                <button className="btn btn-primary" onClick={() => { resetForm(); setIsAdding(true); }}>
                     <Plus size={18} /> Yangi kasb
                 </button>
             </div>
 
             {isAdding && (
                 <div className="glass" style={{ padding: '24px', marginBottom: '24px' }}>
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+                    <h3 style={{ marginBottom: '20px' }}>{editIdx !== null ? 'Kasbni tahrirlash' : 'Yangi kasb qo\'shish'}</h3>
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '30px' }}>
                         <div>
                             {['uz', 'ru', 'en'].map(l => (
-                                <div key={l} style={{ marginBottom: '12px' }}>
-                                    <label>Sarlavha ({l.toUpperCase()}):</label>
-                                    <input type="text" value={formData.title[l]} onChange={(e) => setFormData({ ...formData, title: { ...formData.title, [l]: e.target.value } })} className="search-bar" style={{ width: '100%', marginTop: '4px' }} />
+                                <div key={l} style={{ marginBottom: '16px' }}>
+                                    <label style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Sarlavha ({l.toUpperCase()}):</label>
+                                    <input
+                                        type="text"
+                                        value={formData.title[l]}
+                                        onChange={(e) => setFormData({ ...formData, title: { ...formData.title, [l]: e.target.value } })}
+                                        className="search-bar"
+                                        style={{ width: '100%', marginTop: '6px' }}
+                                        placeholder="Kasb nomi..."
+                                    />
+                                </div>
+                            ))}
+                            <div style={{ marginTop: '20px' }}>
+                                <label style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Emoji Icon:</label>
+                                <input
+                                    type="text"
+                                    value={formData.icon}
+                                    onChange={(e) => setFormData({ ...formData, icon: e.target.value })}
+                                    className="search-bar"
+                                    style={{ width: '100%', marginTop: '6px', fontSize: '1.5rem', textAlign: 'center' }}
+                                />
+                                <p style={{ fontSize: '0.7rem', color: 'var(--text-muted)', marginTop: '4px' }}>Maslahat: Win + . (nuqta) orqali emoji tanlang</p>
+                            </div>
+                        </div>
+                        <div>
+                            {['uz', 'ru', 'en'].map(l => (
+                                <div key={l} style={{ marginBottom: '16px' }}>
+                                    <label style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Tavsif ({l.toUpperCase()}):</label>
+                                    <textarea
+                                        value={formData.description[l]}
+                                        onChange={(e) => setFormData({ ...formData, description: { ...formData.description, [l]: e.target.value } })}
+                                        className="search-bar"
+                                        style={{ width: '100%', height: '80px', marginTop: '6px', padding: '12px' }}
+                                        placeholder="Kasb haqida qisqacha ma'lumot..."
+                                    />
                                 </div>
                             ))}
                         </div>
-                        <div>
-                            <label>Emoji Icon:</label>
-                            <input type="text" value={formData.icon} onChange={(e) => setFormData({ ...formData, icon: e.target.value })} className="search-bar" style={{ width: '100%', marginTop: '4px' }} />
-                        </div>
                     </div>
-                    <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '12px', marginTop: '20px' }}>
-                        <button className="btn btn-outline" onClick={() => setIsAdding(false)}>Bekor qilish</button>
-                        <button className="btn btn-primary" onClick={handleSave}>Saqlash</button>
+                    <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '12px', marginTop: '24px', borderTop: '1px solid rgba(255,255,255,0.05)', paddingTop: '20px' }}>
+                        <button className="btn btn-outline" onClick={resetForm}>Bekor qilish</button>
+                        <button className="btn btn-primary" onClick={handleSave}>
+                            <Save size={18} /> Saqlash
+                        </button>
                     </div>
                 </div>
             )}
