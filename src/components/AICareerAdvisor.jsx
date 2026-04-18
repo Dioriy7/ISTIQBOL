@@ -66,7 +66,10 @@ Qoidalar:
                         "Authorization": `Bearer ${API_KEY}`
                     },
                     body: JSON.stringify({
-                        messages: [{ role: "user", content: prompt }],
+                        messages: [
+                            { role: "system", content: systemPrompt },
+                            { role: "user", content: prompt }
+                        ],
                         model: "llama-3.1-8b-instant"
                     })
                 });
