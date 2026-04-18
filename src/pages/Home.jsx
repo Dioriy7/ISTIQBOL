@@ -138,7 +138,13 @@ export default function Home() {
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 20 }}>
                     {getCareers().map((career, i) => (
                         <div key={career.id} className="step-card glass" style={{ cursor: 'pointer' }}>
-                            <span style={{ fontSize: '2.5rem' }}>{career.icon || '🚀'}</span>
+                            <div style={{ width: '80px', height: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 0 16px' }}>
+                                {career.imageUrl ? (
+                                    <img src={career.imageUrl} alt={career.title.uz} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '16px' }} />
+                                ) : (
+                                    <span style={{ fontSize: '3rem' }}>{career.icon || '🚀'}</span>
+                                )}
+                            </div>
                             <h3 style={{ marginTop: 12, marginBottom: 8 }}>{career.title.uz}</h3>
                             <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>{career.description?.uz || "Ushbu kasb haqida batafsil ma'lumot tez orada joylanadi."}</p>
                         </div>

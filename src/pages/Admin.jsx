@@ -175,9 +175,11 @@ const QuestionsView = () => {
 
     useEffect(() => {
         const subjs = getSubjects() || [];
-        setSubjects(subjs);
+        // Sort subjects by name
+        const sortedSubjs = [...subjs].sort((a, b) => (a.name || '').localeCompare(b.name || ''));
+        setSubjects(sortedSubjs);
         setQuestions(getQuestions() || {});
-        if (subjs.length > 0) setSelectedSubject(subjs[0].id);
+        if (sortedSubjs.length > 0) setSelectedSubject(sortedSubjs[0].id);
     }, []);
 
     const handleSave = () => {
@@ -417,6 +419,7 @@ const CareersView = () => {
         title: { uz: '', ru: '', en: '' },
         description: { uz: '', ru: '', en: '' },
         icon: '🚀',
+        imageUrl: '',
         subjects: []
     });
 
@@ -436,6 +439,7 @@ const CareersView = () => {
             title: { uz: '', ru: '', en: '' },
             description: { uz: '', ru: '', en: '' },
             icon: '🚀',
+            imageUrl: '',
             subjects: []
         });
     };
@@ -478,6 +482,18 @@ const CareersView = () => {
                                 />
                                 <p style={{ fontSize: '0.7rem', color: 'var(--text-muted)', marginTop: '4px' }}>Maslahat: Win + . (nuqta) orqali emoji tanlang</p>
                             </div>
+                            <div style={{ marginTop: '20px' }}>
+                                <label style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Rasm Havolasi (Image URL):</label>
+                                <input
+                                    type="text"
+                                    value={formData.imageUrl}
+                                    onChange={(e) => setFormData({ ...formData, imageUrl: e.target.value })}
+                                    className="search-bar"
+                                    style={{ width: '100%', marginTop: '6px' }}
+                                    placeholder="https://example.com/image.jpg"
+                                />
+                                <p style={{ fontSize: '0.7rem', color: 'var(--text-muted)', marginTop: '4px' }}>Agar rasm bo'lsa, emoji o'rniga rasm ko'rinadi.</p>
+                            </div>
                         </div>
                         <div>
                             {['uz', 'ru', 'en'].map(l => (
@@ -505,9 +521,15 @@ const CareersView = () => {
 
             <div className="stat-grid">
                 {careers.map((c, i) => (
-                    <div key={i} className="stat-card glass">
-                        <div style={{ fontSize: '2rem' }}>{c.icon}</div>
-                        <div style={{ fontWeight: 'bold' }}>{c.title.uz}</div>
+                    <div key={i} className="stat-card glass" style={{ minHeight: '200px' }}>
+                        <div style={{ width: '60px', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 15px' }}>
+                            {c.imageUrl ? (
+                                <img src={c.imageUrl} alt={c.title.uz} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }} />
+                            ) : (
+                                <div style={{ fontSize: '2.5rem' }}>{c.icon}</div>
+                            )}
+                        </div>
+                        <div style={{ fontWeight: 'bold', textAlign: 'center' }}>{c.title.uz}</div>
                         <div style={{ display: 'flex', gap: '8px', marginTop: '10px' }}>
                             <button className="btn btn-outline" style={{ padding: '6px', flex: 1 }} onClick={() => { setFormData(c); setEditIdx(i); setIsAdding(true); }}><Edit2 size={14} /></button>
                             <button className="btn btn-outline" style={{ padding: '6px', color: '#ef4444', flex: 1 }} onClick={() => { if (confirm('Ochirish?')) { const n = careers.filter((_, idx) => idx !== i); setCareers(n); saveCareers(n); } }}><Trash2 size={14} /></button>

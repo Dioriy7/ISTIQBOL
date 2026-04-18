@@ -20,8 +20,8 @@ const STORAGE_KEY_CAREERS = 'istiqbol_careers_v1';
 const STORAGE_KEY_MESSAGES = 'istiqbol_messages_v1';
 
 const defaultCareers = [
-    { id: 1, title: { uz: 'Software Engineer', ru: 'Программный инженер', en: 'Software Engineer' }, icon: '💻', subjects: ['math', 'english'] },
-    { id: 2, title: { uz: 'Shifokor', ru: 'Врач', en: 'Doctor' }, icon: '🩺', subjects: ['biology', 'chemistry'] }
+    { id: 1, title: { uz: 'Software Engineer', ru: 'Программный инженер', en: 'Software Engineer' }, icon: '💻', imageUrl: '', subjects: ['math', 'english'] },
+    { id: 2, title: { uz: 'Shifokor', ru: 'Врач', en: 'Doctor' }, icon: '🩺', imageUrl: '', subjects: ['biology', 'chemistry'] }
 ];
 
 // Initialize data in localStorage if not exists

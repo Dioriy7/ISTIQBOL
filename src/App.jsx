@@ -204,30 +204,7 @@ function Footer() {
             <li><Link to="/admin" style={{ color: 'var(--text-muted)', textDecoration: 'none', fontSize: '0.9rem' }}>Admin panel</Link></li>
           </ul>
         </div>
-        <div>
-          <h4 style={{ marginBottom: '20px', fontFamily: 'Outfit' }}>Admin bilan bog'lanish</h4>
-          <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              const msg = e.target.msg.value;
-              if (msg) {
-                addMessage('feedback', msg, user?.username || 'Anonim');
-              }
-            }}
-            style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}
-          >
-            <textarea
-              name="msg"
-              placeholder="Xabar matni..."
-              required
-              className="search-bar"
-              style={{ width: '100%', minHeight: '80px', fontSize: '0.85rem' }}
-            />
-            <button type="submit" className="btn btn-primary" style={{ fontSize: '0.85rem', padding: '8px' }}>
-              <Send size={14} style={{ marginRight: '6px' }} /> Yuborish
-            </button>
-          </form>
-        </div>
+        {/* Contact section removed as per user request */}
       </div>
       <div style={{ maxWidth: '1200px', margin: '40px auto 0', paddingTop: '24px', borderTop: '1px solid var(--border)', textAlign: 'center', color: 'var(--text-dim)', fontSize: '0.8rem' }}>
         © {new Date().getFullYear()} ISTIQBOL — AI asosida kasb yo'naltirish. Barcha huquqlar himoyalangan.

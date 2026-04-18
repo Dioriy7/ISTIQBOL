@@ -1,26 +1,26 @@
 export const careerMap = {
     math: {
         careers: [
-            { title: 'Dasturchi', icon: '💻', desc: 'Matematik algoritmlar va mantiq asosida dasturlar yaratadi.', salary: '5 mln - 25 mln so\'m', match: 98 },
-            { title: 'Muhandis', icon: '🏗️', desc: 'Aniq hisob-kitoblar asosida texnik loyihalar va inshootlar yaratadi.', salary: '4 mln - 15 mln so\'m', match: 95 },
-            { title: 'Moliyachi (Bank, buxgalteriya)', icon: '🏦', desc: 'Iqtisodiy jarayonlarni modellashtiradi va pullarni boshqaradi.', salary: '4 mln - 20 mln so\'m', match: 92 },
-            { title: 'Data bilan ishlovchi mutaxassis', icon: '📊', desc: 'Katta ma\'lumotlarni tahlil qilib, biznes uchun xulosalar beradi.', salary: '6 mln - 30 mln so\'m', match: 90 }
+            { title: 'Dasturchi', icon: '💻', imageUrl: '', desc: 'Matematik algoritmlar va mantiq asosida dasturlar yaratadi.', salary: '5 mln - 25 mln so\'m', match: 98 },
+            { title: 'Muhandis', icon: '🏗️', imageUrl: '', desc: 'Aniq hisob-kitoblar asosida texnik loyihalar va inshootlar yaratadi.', salary: '4 mln - 15 mln so\'m', match: 95 },
+            { title: 'Moliyachi (Bank, buxgalteriya)', icon: '🏦', imageUrl: '', desc: 'Iqtisodiy jarayonlarni modellashtiradi va pullarni boshqaradi.', salary: '4 mln - 20 mln so\'m', match: 92 },
+            { title: 'Data bilan ishlovchi mutaxassis', icon: '📊', imageUrl: '', desc: 'Katta ma\'lumotlarni tahlil qilib, biznes uchun xulosalar beradi.', salary: '6 mln - 30 mln so\'m', match: 90 }
         ]
     },
     physics: {
         careers: [
-            { title: 'Muhandis-fizik', icon: '⚛️', desc: 'Fizika qonunlari asosida yangi qurilmalar va tizimlar yaratadi.', salary: '5 mln - 18 mln so\'m', match: 96 },
-            { title: 'Qayta tiklanuvchi energiya mutaxassisi', icon: '☀️', desc: 'Quyosh va shamol energiyasi qurilmalarini loyihalaydi.', salary: '5 mln - 20 mln so\'m', match: 94 },
-            { title: 'Robototexnik', icon: '🤖', desc: 'Avtomatlashtirilgan aqlli mashinalar yaratadi.', salary: '6 mln - 25 mln so\'m', match: 92 },
-            { title: 'Aviatsiya muhandisi', icon: '✈️', desc: 'Uchish apparatlari va ularning tizimlari ustida ishlaydi.', salary: '7 mln - 30 mln so\'m', match: 90 }
+            { title: 'Muhandis-fizik', icon: '⚛️', imageUrl: '', desc: 'Fizika qonunlari asosida yangi qurilmalar va tizimlar yaratadi.', salary: '5 mln - 18 mln so\'m', match: 96 },
+            { title: 'Qayta tiklanuvchi energiya mutaxassisi', icon: '☀️', imageUrl: '', desc: 'Quyosh va shamol energiyasi qurilmalarini loyihalaydi.', salary: '5 mln - 20 mln so\'m', match: 94 },
+            { title: 'Robototexnik', icon: '🤖', imageUrl: '', desc: 'Avtomatlashtirilgan aqlli mashinalar yaratadi.', salary: '6 mln - 25 mln so\'m', match: 92 },
+            { title: 'Aviatsiya muhandisi', icon: '✈️', imageUrl: '', desc: 'Uchish apparatlari va ularning tizimlari ustida ishlaydi.', salary: '7 mln - 30 mln so\'m', match: 90 }
         ]
     },
     chemistry: {
         careers: [
-            { title: 'Farmatsevt', icon: '💊', desc: 'Yangi dori vositalarini yaratadi va ishlab chiqarishni nazorat qiladi.', salary: '4 mln - 15 mln so\'m', match: 96 },
-            { title: 'Kimyo-muhandis', icon: '🧪', desc: 'Sanoatda kimyoviy jarayonlarni boshqaradi (neft, gaz, oziq-ovqat).', salary: '5 mln - 20 mln so\'m', match: 94 },
-            { title: 'Laborant-tadqiqotchi', icon: '🔬', desc: 'Moddalar tarkibini o\'rganadi va laboratoriya tahlillarini o\'tkazadi.', salary: '3 mln - 10 mln so\'m', match: 92 },
-            { title: 'Oziq-ovqat texnologi', icon: '🍎', desc: 'Mahsulotlar sifatini va ishlab chiqarish tarkibini nazorat qiladi.', salary: '4 mln - 12 mln so\'m', match: 90 }
+            { title: 'Farmatsevt', icon: '💊', imageUrl: '', desc: 'Yangi dori vositalarini yaratadi va ishlab chiqarishni nazorat qiladi.', salary: '4 mln - 15 mln so\'m', match: 96 },
+            { title: 'Kimyo-muhandis', icon: '🧪', imageUrl: '', desc: 'Sanoatda kimyoviy jarayonlarni boshqaradi (neft, gaz, oziq-ovqat).', salary: '5 mln - 20 mln so\'m', match: 94 },
+            { title: 'Laborant-tadqiqotchi', icon: '🔬', imageUrl: '', desc: 'Moddalar tarkibini o\'rganadi va laboratoriya tahlillarini o\'tkazadi.', salary: '3 mln - 10 mln so\'m', match: 92 },
+            { title: 'Oziq-ovqat texnologi', icon: '🍎', imageUrl: '', desc: 'Mahsulotlar sifatini va ishlab chiqarish tarkibini nazorat qiladi.', salary: '4 mln - 12 mln so\'m', match: 90 }
         ]
     },
     biology: {
@@ -81,11 +81,11 @@ export const careerMap = {
 };
 
 const combinations = [
-    { subjects: ['math', 'physics'], career: { title: 'Arxitektor-muhandis', icon: '📐', desc: 'Fizika va matematika asosida go\'zal binolar loyihalaydi.', salary: '6 mln - 30 mln so\'m', match: 99 } },
-    { subjects: ['math', 'informatics'], career: { title: 'AI & Machine Learning Engineer', icon: '🤖', desc: 'Sun\'iy intellekt tizimlarini matematik modellar yordamida yaratadi.', salary: '10 mln - 50 mln so\'m', match: 98 } },
-    { subjects: ['biology', 'chemistry'], career: { title: 'Biotexnolog', icon: '🧪', desc: 'Tibbiyot va kimyo chorrahasida innovatsiyalar qiladi.', salary: '5 mln - 20 mln so\'m', match: 97 } },
-    { subjects: ['history', 'english'], career: { title: 'Xalqaro diplomat', icon: '🇺🇳', desc: 'Jahon siyosati va tillarni bilgan holda davlatni namoyon etadi.', salary: '8 mln - 35 mln so\'m', match: 96 } },
-    { subjects: ['informatics', 'english'], career: { title: 'Xalqaro IT mutaxassis', icon: '👨‍💻', desc: 'Global loyihalarda ingliz tilida erkin muloqot qilgan holda ishlaydi.', salary: '10 mln - 100 mln so\'m', match: 95 } }
+    { subjects: ['math', 'physics'], career: { title: 'Arxitektor-muhandis', icon: '📐', imageUrl: '', desc: 'Fizika va matematika asosida go\'zal binolar loyihalaydi.', salary: '6 mln - 30 mln so\'m', match: 99 } },
+    { subjects: ['math', 'informatics'], career: { title: 'AI & Machine Learning Engineer', icon: '🤖', imageUrl: '', desc: 'Sun\'iy intellekt tizimlarini matematik modellar yordamida yaratadi.', salary: '10 mln - 50 mln so\'m', match: 98 } },
+    { subjects: ['biology', 'chemistry'], career: { title: 'Biotexnolog', icon: '🧪', imageUrl: '', desc: 'Tibbiyot va kimyo chorrahasida innovatsiyalar qiladi.', salary: '5 mln - 20 mln so\'m', match: 97 } },
+    { subjects: ['history', 'english'], career: { title: 'Xalqaro diplomat', icon: '🇺🇳', imageUrl: '', desc: 'Jahon siyosati va tillarni bilgan holda davlatni namoyon etadi.', salary: '8 mln - 35 mln so\'m', match: 96 } },
+    { subjects: ['informatics', 'english'], career: { title: 'Xalqaro IT mutaxassis', icon: '👨‍💻', imageUrl: '', desc: 'Global loyihalarda ingliz tilida erkin muloqot qilgan holda ishlaydi.', salary: '10 mln - 100 mln so\'m', match: 95 } }
 ];
 
 export function getAIRecommendation(scores) {

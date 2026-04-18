@@ -143,7 +143,13 @@ export default function Results({ scores, onReset }) {
                                     <div className="career-card-inner">
                                         <div className="career-front glass">
                                             <div>
-                                                <div className="career-icon">{c.icon}</div>
+                                                <div className="career-icon">
+                                                    {c.imageUrl ? (
+                                                        <img src={c.imageUrl} alt={c.title} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }} />
+                                                    ) : (
+                                                        c.icon
+                                                    )}
+                                                </div>
                                                 <div className="career-title">{c.title}</div>
                                             </div>
                                             <div className="career-match">
