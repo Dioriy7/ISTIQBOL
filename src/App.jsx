@@ -11,7 +11,7 @@ import Register from './pages/Register';
 import Login from './pages/Login';
 import Cabinet from './pages/Cabinet';
 import Admin from './pages/Admin';
-import { GraduationCap, BarChart2, BookOpen, User, LogOut, Settings } from 'lucide-react';
+import { GraduationCap, BarChart2, BookOpen, User, LogOut, Settings, Send } from 'lucide-react';
 import { getSettings, addMessage } from './data/dataService';
 import './index.css';
 

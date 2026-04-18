@@ -9,7 +9,7 @@ import {
     LayoutDashboard, Users, BookOpen, Briefcase, FileText,
     Settings, MessageSquare, LogOut, Plus, Edit2, Trash2,
     Save, X, Search, Filter, TrendingUp, Users as UsersIcon,
-    CheckCircle, AlertCircle, Shield
+    CheckCircle, AlertCircle, Shield, ThumbsUp, AlertTriangle, Zap
 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
