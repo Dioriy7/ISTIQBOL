@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Send, Sparkles, User, Bot } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
 
 const API_KEY = import.meta.env.VITE_GROQ_API_KEY;
 
@@ -32,27 +33,31 @@ const AICareerAdvisor = ({ scores, onClose }) => {
                     return;
                 }
 
-                const scoreText = Object.entries(scores)
-                    .map(([subject, score]) => `${subject}: ${score}%`)
+                const topSubjects = Object.entries(scores)
+                    .sort(([, a], [, b]) => b - a)
+                    .slice(0, 3)
+                    .map(([subject]) => subject)
                     .join(', ');
 
-                const systemPrompt = `Sen 5-11 sinf o'quvchilari uchun professional karyera maslahatchisisan. 
-Sening vazifang - o'quvchining test natijalarini judayam tartibli, tushunarli va qiziqarli tilda tahlil qilish.
+                const greetingStart = `Assalomu alaykum! Siz dastlab ${topSubjects} fanlariga e’tibor qaratganingiz, aynan shu fanlar siz uchun qiziqarli va tushunarli ekanini ko‘rsatadi. Bu esa sizda ushbu yo‘nalishlarga nisbatan kuchli qiziqish va qobiliyat shakllanayotganidan dalolat beradi, shu asosda kelajakda aynan shu fanlarga bog‘liq kasblarni tanlash siz uchun eng to‘g‘ri va muvaffaqiyatli yo‘nalish bo‘lib xizmat qiladi.`;
 
-DIQQAT: Har doim javobingni aynan mana bu so'zlar bilan boshla:
-"Assalomu alaykum! Sizni kelajagingiz haqida o‘ylantirayotgan savollar bormi? To‘g‘ri yo‘nalishni tanlash hozirdanoq juda muhim, chunki bu sizning kelajak hayotingizga ta’sir qiladi. Keling, birga sizga eng mos yo‘lni aniqlab chiqamiz"
+                const systemPrompt = `Sen 5-11 sinf o'quvchilari uchun professional karyera maslahatchisisan. 
+Sening vazifang - o'quvchining test natijalarini judayam tartibli, tushunarli va mantiqiy tahlil qilish.
+
+DIQQAT: Har doim javobingni aynan mana bu gap bilan boshla:
+"${greetingStart}"
 
 Qoidalar:
-1. Juda tartibli bo'l. Ma'lumotlarni qismlarga bo'lib, punktlar (bullet points) orqali ber.
-2. O'quvchilar uchun tushunish qiyin bo'lgan murakkab so'zlarni ishlatma.
-3. Faqat real hayotda mavjud bo'lgan zamonaviy kasblarni tavsiya qil.
+1. Juda aniq va lo'nda bo'l. Tavsiyalar mantiqan to'g'ri bo'lsin.
+2. Max 3-4 ta eng mos va zamonaviy kasbni tavsiya qil.
+3. O'quvchilar uchun sodda tilda tushuntir.
 4. Har bir tavsiya etilgan kasb uchun:
    - Kasb nomi (emoji bilan)
-   - Bu kasbda nima ish qilinishi (sodda tilda)
-   - Nima uchun bu o'quvchiga mosligi (natijalardan kelib chiqib)
+   - Bu kasbda nima ish qilinishi (1-2 gapda)
+   - Nima uchun bu aynan shu o'quvchiga mos (natijalarga asoslanib)
 5. Ruhlantiruvchi va do'stona ohangda gaplash.`;
 
-                const prompt = `${systemPrompt}\n\nFoydalanuvchi natijalari: ${scoreText}. Iltimos, birinchi tahlilni va tavsiyalarni ber.`;
+                const prompt = `Foydalanuvchi natijalari: ${Object.entries(scores).map(([s, sc]) => `${s}: ${sc}%`).join(', ')}. Iltimos, tahlilni va tavsiyalarni ber.`;
 
                 const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
                     method: "POST",
@@ -93,11 +98,33 @@ Qoidalar:
         setLoading(true);
 
         try {
-            const history = messages.map(m => ({
-                role: m.role === 'ai' ? 'assistant' : 'user',
-                content: m.text
-            }));
-            history.push({ role: "user", content: input });
+            const topSubjects = Object.entries(scores)
+                .sort(([, a], [, b]) => b - a)
+                .slice(0, 3)
+                .map(([subject]) => subject)
+                .join(', ');
+
+            const systemPrompt = `Sen 5-11 sinf o'quvchilari uchun professional karyera maslahatchisisan. 
+Sening vazifang - o'quvchining test natijalarini judayam tartibli, tushunarli va mantiqiy tahlil qilish.
+
+Qoidalar:
+1. Juda aniq va lo'nda bo'l. Tavsiyalar mantiqan to'g'ri bo'lsin.
+2. Max 3-4 ta eng mos va zamonaviy kasbni tavsiya qil.
+3. O'quvchilar uchun sodda tilda tushuntir.
+4. Har bir tavsiya etilgan kasb uchun:
+   - Kasb nomi (emoji bilan)
+   - Bu kasbda nima ish qilinishi (1-2 gapda)
+   - Nima uchun bu aynan shu o'quvchiga mos (natijalarga asoslanib: ${topSubjects})
+5. Ruhlantiruvchi va do'stona ohangda gaplash.`;
+
+            const history = [
+                { role: "system", content: systemPrompt },
+                ...messages.map(m => ({
+                    role: m.role === 'ai' ? 'assistant' : 'user',
+                    content: m.text
+                })),
+                { role: "user", content: input }
+            ];
 
             const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
                 method: "POST",
@@ -163,7 +190,13 @@ Qoidalar:
                                     {msg.role === 'ai' ? <Bot size={12} /> : <User size={12} />}
                                     {msg.role === 'ai' ? 'AI Mentor' : 'Siz'}
                                 </div>
-                                {msg.text}
+                                <div className="chat-msg-text">
+                                    {msg.role === 'ai' ? (
+                                        <ReactMarkdown>{msg.text}</ReactMarkdown>
+                                    ) : (
+                                        msg.text
+                                    )}
+                                </div>
                             </motion.div>
                         ))}
                     </AnimatePresence>
