@@ -4,19 +4,30 @@ const generateId = (prefix = 'id') => `${prefix}-${Date.now()}-${Math.random().t
 
 // Internal helper for IDs
 const ensureIds = (data) => {
+    if (!data) return Array.isArray(data) ? [] : {};
+
     if (Array.isArray(data)) {
-        return data.map((item, idx) => ({
-            id: item.id || `static-${idx}-${Date.now()}`,
-            ...item
-        }));
+        return data
+            .filter(item => item && typeof item === 'object')
+            .map((item, idx) => ({
+                id: item.id || `static-${idx}-${Date.now()}`,
+                ...item
+            }));
     }
+
     if (typeof data === 'object') {
         const newData = {};
         Object.keys(data).forEach(key => {
-            newData[key] = (data[key] || []).map((item, idx) => ({
-                id: item.id || `q-${key}-${idx}-${Date.now()}`,
-                ...item
-            }));
+            if (Array.isArray(data[key])) {
+                newData[key] = data[key]
+                    .filter(item => item && typeof item === 'object')
+                    .map((item, idx) => ({
+                        id: item.id || `q-${key}-${idx}-${Date.now()}`,
+                        ...item
+                    }));
+            } else {
+                newData[key] = [];
+            }
         });
         return newData;
     }

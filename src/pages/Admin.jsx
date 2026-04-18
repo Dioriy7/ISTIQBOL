@@ -478,7 +478,7 @@ const QuestionsView = () => {
                                         <tr key={q.id}>
                                             <td><span className="hero-badge" style={{ margin: 0, background: 'rgba(var(--primary-rgb), 0.1)' }}>{q.grade}-sinf</span></td>
                                             <td style={{ maxWidth: '400px' }}>
-                                                <div style={{ fontWeight: 600, marginBottom: '4px' }}>{typeof q.q === 'string' ? q.q : q.q[i18n.language] || q.q.uz}</div>
+                                                <div style={{ fontWeight: 600, marginBottom: '4px' }}>{typeof q.q === 'string' ? q.q : (q.q?.[i18n.language] || q.q?.uz || 'Savol matni yo\'q')}</div>
                                                 <div style={{ fontSize: '0.75rem', color: 'var(--success)' }}>
                                                     {(() => {
                                                         const opts = Array.isArray(q.options) ? q.options : (q.options?.uz || []);
@@ -538,7 +538,7 @@ const QuestionsView = () => {
                                                 <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', paddingLeft: '12px' }}>
                                                     {subQuestions.map((q, idx) => (
                                                         <div key={q.id} className="glass" style={{ padding: '12px', fontSize: '0.9rem', border: '1px solid rgba(255,255,255,0.02)' }}>
-                                                            <div style={{ fontWeight: 600, marginBottom: '6px' }}>{idx + 1}. {q.q[i18n.language] || q.q.uz}</div>
+                                                            <div style={{ fontWeight: 600, marginBottom: '6px' }}>{idx + 1}. {q.q?.[i18n.language] || q.q?.uz || 'Savol matni yo\'q'}</div>
                                                             <div style={{ fontSize: '0.8rem', color: 'var(--success)' }}>
                                                                 ✓ {Array.isArray(q.options) ? q.options[q.answer] : (q.options?.uz?.[q.answer] || q.options?.uz?.[0])}
                                                             </div>
@@ -753,17 +753,17 @@ const CareersView = () => {
                         <div key={c.id} className="stat-card glass" style={{ minHeight: 'auto', display: 'flex', flexDirection: 'column', padding: '16px' }}>
                             <div style={{ height: '140px', borderRadius: '12px', overflow: 'hidden', marginBottom: '16px', background: 'rgba(255,255,255,0.02)' }}>
                                 {c.imageUrl ? (
-                                    <img src={c.imageUrl} alt={c.title.uz} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                    <img src={c.imageUrl} alt={c.title?.uz || 'Kasb'} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                                 ) : (
                                     <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '3rem' }}>{c.icon}</div>
                                 )}
                             </div>
-                            <div style={{ fontWeight: 800, fontSize: '1.1rem', marginBottom: '4px' }}>{c.title.uz}</div>
+                            <div style={{ fontWeight: 800, fontSize: '1.1rem', marginBottom: '4px' }}>{c.title?.uz || 'Noma\'lum kasb'}</div>
                             <div style={{ fontSize: '0.75rem', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '12px' }}>
                                 {categories.find(cat => cat.id === c.category)?.label || 'Uncategorized'}
                             </div>
                             <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '16px', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden', lineHeight: '1.4' }}>
-                                {c.description.uz}
+                                {c.description?.uz || ''}
                             </p>
                             <div style={{ display: 'flex', gap: '8px', marginTop: 'auto' }}>
                                 <button className="btn btn-outline" style={{ padding: '8px', flex: 1 }} onClick={() => startEdit(c)}><Edit2 size={16} /></button>
