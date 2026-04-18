@@ -1,13 +1,16 @@
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { BookOpen, Brain, Sparkles, Trophy, Zap, ArrowRight, MessageCircle } from 'lucide-react';
 import { getMessages, getCareers } from '../data/dataService';
+import { motion, AnimatePresence } from 'framer-motion';
+import { X } from 'lucide-react';
 
 export default function Home() {
     const navigate = useNavigate();
     const { t } = useTranslation();
+    const [selectedCareer, setSelectedCareer] = useState(null);
 
     const broadcasts = getMessages().filter(m => m.category === 'broadcast').slice(0, 3);
+    const careers = getCareers();
 
     return (
         <div className="page">
@@ -135,22 +138,97 @@ export default function Home() {
                 <h2 className="section-title" style={{ textAlign: 'center', marginBottom: 16 }}>Talabgir Kasblar</h2>
                 <p className="section-subtitle" style={{ textAlign: 'center', marginBottom: 40 }}>Admin panel orqali boshqariladigan real vaqtdagi ro'yxat</p>
 
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 20 }}>
-                    {getCareers().map((career, i) => (
-                        <div key={career.id} className="step-card glass" style={{ cursor: 'pointer' }}>
-                            <div style={{ width: '80px', height: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 0 16px' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 30 }}>
+                    {careers.map((career, i) => (
+                        <motion.div
+                            key={career.id}
+                            className="step-card glass"
+                            style={{ cursor: 'pointer', padding: '24px', overflow: 'hidden' }}
+                            whileHover={{ y: -10, boxShadow: '0 20px 40px rgba(var(--primary-rgb), 0.2)' }}
+                            onClick={() => setSelectedCareer(career)}
+                        >
+                            <div style={{ height: '180px', borderRadius: '16px', overflow: 'hidden', marginBottom: '20px', position: 'relative' }}>
                                 {career.imageUrl ? (
-                                    <img src={career.imageUrl} alt={career.title.uz} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '16px' }} />
+                                    <img src={career.imageUrl} alt={career.title.uz} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                                 ) : (
-                                    <span style={{ fontSize: '3rem' }}>{career.icon || '🚀'}</span>
+                                    <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '4rem', background: 'rgba(255,255,255,0.02)' }}>
+                                        {career.icon || '🚀'}
+                                    </div>
                                 )}
+                                <div style={{ position: 'absolute', top: '12px', right: '12px', background: 'var(--primary)', color: 'white', padding: '4px 12px', borderRadius: '20px', fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase' }}>
+                                    {career.category || 'IT'}
+                                </div>
                             </div>
-                            <h3 style={{ marginTop: 12, marginBottom: 8 }}>{career.title.uz}</h3>
-                            <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>{career.description?.uz || "Ushbu kasb haqida batafsil ma'lumot tez orada joylanadi."}</p>
-                        </div>
+                            <h3 style={{ fontSize: '1.4rem', marginBottom: '12px', fontFamily: 'Outfit' }}>{career.title.uz}</h3>
+                            <p style={{ fontSize: '0.9rem', opacity: 0.8, display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden', lineHeight: '1.6' }}>
+                                {career.description?.uz || "Ushbu kasb haqida batafsil ma'lumot tez orada joylanadi."}
+                            </p>
+                            <div style={{ marginTop: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.85rem', color: 'var(--primary)' }}>
+                                <span>Batafsil ma'lumot</span>
+                                <ArrowRight size={16} />
+                            </div>
+                        </motion.div>
                     ))}
                 </div>
             </section>
+
+            {/* Profession Modal */}
+            <AnimatePresence>
+                {selectedCareer && (
+                    <div className="modal-overlay" style={{ position: 'fixed', inset: 0, zIndex: 1000, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0,0,0,0.8)', backdropFilter: 'blur(8px)', padding: '20px' }} onClick={() => setSelectedCareer(null)}>
+                        <motion.div
+                            className="glass"
+                            initial={{ scale: 0.9, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            exit={{ scale: 0.9, opacity: 0 }}
+                            style={{ maxWidth: '800px', width: '100%', position: 'relative', overflow: 'hidden', borderRadius: '32px', border: '1px solid rgba(255,255,255,0.1)' }}
+                            onClick={e => e.stopPropagation()}
+                        >
+                            <button
+                                onClick={() => setSelectedCareer(null)}
+                                style={{ position: 'absolute', top: '24px', right: '24px', zIndex: 10, background: 'rgba(0,0,0,0.5)', border: 'none', color: 'white', width: '40px', height: '40px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}
+                            >
+                                <X size={24} />
+                            </button>
+
+                            <div style={{ height: '350px', width: '100%' }}>
+                                {selectedCareer.imageUrl ? (
+                                    <img src={selectedCareer.imageUrl} alt={selectedCareer.title.uz} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                ) : (
+                                    <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '6rem', background: 'rgba(255,255,255,0.03)' }}>
+                                        {selectedCareer.icon}
+                                    </div>
+                                )}
+                            </div>
+
+                            <div style={{ padding: '40px' }}>
+                                <div style={{ color: 'var(--primary)', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', fontSize: '0.8rem', marginBottom: '12px' }}>
+                                    {selectedCareer.category || 'IT & Texnologiya'}
+                                </div>
+                                <h2 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '20px', fontFamily: 'Outfit' }}>{selectedCareer.title.uz}</h2>
+                                <div style={{ display: 'flex', gap: '24px', marginBottom: '32px' }}>
+                                    <div className="glass" style={{ padding: '16px 24px', borderRadius: '16px' }}>
+                                        <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '4px' }}>Moslik darajasi</div>
+                                        <div style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--primary)' }}>95%</div>
+                                    </div>
+                                    <div className="glass" style={{ padding: '16px 24px', borderRadius: '16px' }}>
+                                        <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '4px' }}>O'rtacha maosh</div>
+                                        <div style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--success)' }}>$2,000+</div>
+                                    </div>
+                                </div>
+                                <p style={{ fontSize: '1.1rem', lineHeight: '1.8', opacity: 0.9 }}>
+                                    {selectedCareer.description?.uz}
+                                </p>
+                                <div style={{ marginTop: '40px' }}>
+                                    <button className="btn btn-primary btn-lg" onClick={() => navigate('/subjects')}>
+                                        Ushbu soha uchun test topshirish <ArrowRight size={20} />
+                                    </button>
+                                </div>
+                            </div>
+                        </motion.div>
+                    </div>
+                )}
+            </AnimatePresence>
 
             {/* Features */}
             {/* ... features list ... */}

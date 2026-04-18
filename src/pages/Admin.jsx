@@ -170,34 +170,48 @@ const UsersView = () => {
 const QuestionsView = () => {
     const [subjects, setSubjects] = useState([]);
     const [questions, setQuestions] = useState({});
-    const [selectedGrade, setSelectedGrade] = useState(5);
+    const [selectedGrade, setSelectedGrade] = useState('all');
     const [searchTerm, setSearchTerm] = useState('');
 
     useEffect(() => {
         const subjs = getSubjects() || [];
-        // Sort subjects by name
         const sortedSubjs = [...subjs].sort((a, b) => (a.name || '').localeCompare(b.name || ''));
         setSubjects(sortedSubjs);
         setQuestions(getQuestions() || {});
         if (sortedSubjs.length > 0) setSelectedSubject(sortedSubjs[0].id);
     }, []);
 
+    const [isAdding, setIsAdding] = useState(false);
+    const [editingQuestion, setEditingQuestion] = useState(null);
+    const [formData, setFormData] = useState({
+        grade: 5,
+        type: 'test',
+        imageUrl: '',
+        q: { uz: '', ru: '', en: '' },
+        options: { uz: ['', '', '', ''], ru: ['', '', '', ''], en: ['', '', '', ''] },
+        answer: 0
+    });
+
     const handleSave = () => {
         if (!selectedSubject) return alert('Iltimos, fanni tanlang');
+        if (!formData.q.uz.trim()) return alert('Savol matni (UZ) bo\'sh bo\'lmasligi kerak');
+
         const updated = { ...questions };
         if (!updated[selectedSubject]) updated[selectedSubject] = [];
+
         if (editingQuestion !== null) {
-            const gradeList = (questions[selectedSubject] || []).filter(sq => sq.grade === selectedGrade);
-            const target = gradeList[editingQuestion];
-            const globalIndex = (questions[selectedSubject] || []).findIndex(q => q === target);
+            // Find the actual index in the full list for this subject
+            const fullList = updated[selectedSubject];
+            const target = filteredList[editingQuestion];
+            const globalIndex = fullList.indexOf(target);
+
             if (globalIndex !== -1) {
-                updated[selectedSubject][globalIndex] = formData;
-            } else {
-                updated[selectedSubject].push(formData);
+                fullList[globalIndex] = formData;
             }
         } else {
             updated[selectedSubject].push(formData);
         }
+
         saveQuestions(updated);
         setQuestions(updated);
         resetForm();
@@ -206,10 +220,12 @@ const QuestionsView = () => {
     const handleDelete = (index) => {
         if (window.confirm('Haqiqatdan ham o\'chirmoqchimisiz?')) {
             const updated = { ...questions };
-            const filtered = (questions[selectedSubject] || []).filter(q => q.grade === selectedGrade);
-            const target = filtered[index];
-            if (target) {
-                updated[selectedSubject] = (updated[selectedSubject] || []).filter(q => q !== target);
+            const fullList = updated[selectedSubject] || [];
+            const target = filteredList[index];
+            const globalIndex = fullList.indexOf(target);
+
+            if (globalIndex !== -1) {
+                fullList.splice(globalIndex, 1);
                 saveQuestions(updated);
                 setQuestions(updated);
             }
@@ -242,9 +258,12 @@ const QuestionsView = () => {
     };
 
     const filteredList = (questions[selectedSubject] || []).filter(q => {
-        const matchGrade = q.grade === selectedGrade;
-        const qText = typeof q.q === 'string' ? q.q : (q.q[i18n.language] || q.q.uz || '');
-        const matchSearch = qText.toLowerCase().includes(searchTerm.toLowerCase());
+        const matchGrade = selectedGrade === 'all' || q.grade === parseInt(selectedGrade);
+        const qTextUz = q.q?.uz || '';
+        const qTextRu = q.q?.ru || '';
+        const qTextEn = q.q?.en || '';
+        const search = searchTerm.toLowerCase();
+        const matchSearch = qTextUz.toLowerCase().includes(search) || qTextRu.toLowerCase().includes(search) || qTextEn.toLowerCase().includes(search);
         return matchGrade && matchSearch;
     });
 
@@ -267,24 +286,23 @@ const QuestionsView = () => {
                 </div>
             </div>
 
-            <div className="glass" style={{ padding: '16px', marginBottom: '24px', display: 'flex', gap: '20px', alignItems: 'center', justifyContent: 'space-between' }}>
-                <div style={{ display: 'flex', gap: '8px' }}>
-                    {[5, 6, 7, 8, 9, 10, 11].map(grade => (
-                        <button
-                            key={grade}
-                            className={`btn ${selectedGrade === grade ? 'btn-primary' : 'btn-outline'}`}
-                            onClick={() => setSelectedGrade(grade)}
-                            style={{ padding: '8px 16px', minWidth: '60px' }}
-                        >
-                            {grade}-sinf
-                        </button>
-                    ))}
+            <div className="glass" style={{ padding: '16px', marginBottom: '24px', display: 'flex', gap: '20px', alignItems: 'center', flexWrap: 'wrap' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                    <span style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>Sinf:</span>
+                    <select value={selectedGrade} onChange={(e) => setSelectedGrade(e.target.value)} className="search-bar" style={{ width: '120px' }}>
+                        <option value="all">Barchasi</option>
+                        {[5, 6, 7, 8, 9, 10, 11].map(g => <option key={g} value={g}>{g}-sinf</option>)}
+                    </select>
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                     <span style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>Fan:</span>
                     <select value={selectedSubject} onChange={(e) => setSelectedSubject(e.target.value)} className="search-bar" style={{ width: '180px' }}>
                         {subjects.map(s => <option key={s.id} value={s.id}>{s.name}</option>)}
                     </select>
+                </div>
+                <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '10px', color: 'var(--text-muted)', fontSize: '0.85rem' }}>
+                    <Filter size={16} />
+                    Jami: {filteredList.length} ta savol
                 </div>
             </div>
 
@@ -420,10 +438,24 @@ const CareersView = () => {
         description: { uz: '', ru: '', en: '' },
         icon: '🚀',
         imageUrl: '',
+        category: 'it',
         subjects: []
     });
 
+    const categories = [
+        { id: 'it', label: 'IT & Texnologiya' },
+        { id: 'medical', label: 'Tibbiyot' },
+        { id: 'engineering', label: 'Muhandislik' },
+        { id: 'education', label: 'Ta\'lim' },
+        { id: 'business', label: 'Biznes & Moliya' },
+        { id: 'arts', label: 'San\'at & Madaniyat' },
+        { id: 'law', label: 'Huquqshunoslik' },
+    ];
+
     const handleSave = () => {
+        if (!formData.title.uz.trim()) return alert('Kasb nomi (UZ) bo\'lishi shart');
+        if (!formData.imageUrl.trim()) return alert('Rasm havolasi bo\'lishi shart');
+
         let updated = [...careers];
         if (editIdx !== null) updated[editIdx] = formData;
         else updated.push({ ...formData, id: Date.now() });
@@ -440,6 +472,7 @@ const CareersView = () => {
             description: { uz: '', ru: '', en: '' },
             icon: '🚀',
             imageUrl: '',
+            category: 'it',
             subjects: []
         });
     };
@@ -483,6 +516,17 @@ const CareersView = () => {
                                 <p style={{ fontSize: '0.7rem', color: 'var(--text-muted)', marginTop: '4px' }}>Maslahat: Win + . (nuqta) orqali emoji tanlang</p>
                             </div>
                             <div style={{ marginTop: '20px' }}>
+                                <label style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Kategoriya:</label>
+                                <select
+                                    value={formData.category}
+                                    onChange={(e) => setFormData({ ...formData, category: e.target.value })}
+                                    className="search-bar"
+                                    style={{ width: '100%', marginTop: '6px' }}
+                                >
+                                    {categories.map(cat => <option key={cat.id} value={cat.id}>{cat.label}</option>)}
+                                </select>
+                            </div>
+                            <div style={{ marginTop: '20px' }}>
                                 <label style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Rasm Havolasi (Image URL):</label>
                                 <input
                                     type="text"
@@ -492,7 +536,11 @@ const CareersView = () => {
                                     style={{ width: '100%', marginTop: '6px' }}
                                     placeholder="https://example.com/image.jpg"
                                 />
-                                <p style={{ fontSize: '0.7rem', color: 'var(--text-muted)', marginTop: '4px' }}>Agar rasm bo'lsa, emoji o'rniga rasm ko'rinadi.</p>
+                                {formData.imageUrl && (
+                                    <div style={{ marginTop: '10px', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border)', height: '120px' }}>
+                                        <img src={formData.imageUrl} alt="Preview" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                    </div>
+                                )}
                             </div>
                         </div>
                         <div>
@@ -519,20 +567,26 @@ const CareersView = () => {
                 </div>
             )}
 
-            <div className="stat-grid">
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '20px' }}>
                 {careers.map((c, i) => (
-                    <div key={i} className="stat-card glass" style={{ minHeight: '200px' }}>
-                        <div style={{ width: '60px', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 15px' }}>
+                    <div key={i} className="stat-card glass" style={{ minHeight: 'auto', display: 'flex', flexDirection: 'column', padding: '16px' }}>
+                        <div style={{ height: '140px', borderRadius: '12px', overflow: 'hidden', marginBottom: '16px', background: 'rgba(255,255,255,0.02)' }}>
                             {c.imageUrl ? (
-                                <img src={c.imageUrl} alt={c.title.uz} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }} />
+                                <img src={c.imageUrl} alt={c.title.uz} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             ) : (
-                                <div style={{ fontSize: '2.5rem' }}>{c.icon}</div>
+                                <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '3rem' }}>{c.icon}</div>
                             )}
                         </div>
-                        <div style={{ fontWeight: 'bold', textAlign: 'center' }}>{c.title.uz}</div>
-                        <div style={{ display: 'flex', gap: '8px', marginTop: '10px' }}>
-                            <button className="btn btn-outline" style={{ padding: '6px', flex: 1 }} onClick={() => { setFormData(c); setEditIdx(i); setIsAdding(true); }}><Edit2 size={14} /></button>
-                            <button className="btn btn-outline" style={{ padding: '6px', color: '#ef4444', flex: 1 }} onClick={() => { if (confirm('Ochirish?')) { const n = careers.filter((_, idx) => idx !== i); setCareers(n); saveCareers(n); } }}><Trash2 size={14} /></button>
+                        <div style={{ fontWeight: 800, fontSize: '1.1rem', marginBottom: '4px' }}>{c.title.uz}</div>
+                        <div style={{ fontSize: '0.75rem', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '12px' }}>
+                            {categories.find(cat => cat.id === c.category)?.label || 'Uncategorized'}
+                        </div>
+                        <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '16px', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden', lineHeight: '1.4' }}>
+                            {c.description.uz}
+                        </p>
+                        <div style={{ display: 'flex', gap: '8px', marginTop: 'auto' }}>
+                            <button className="btn btn-outline" style={{ padding: '8px', flex: 1 }} onClick={() => { setFormData(c); setEditIdx(i); setIsAdding(true); }}><Edit2 size={16} /></button>
+                            <button className="btn btn-outline" style={{ padding: '8px', color: '#ef4444', flex: 1 }} onClick={() => { if (confirm('Ochirish?')) { const n = careers.filter((_, idx) => idx !== i); setCareers(n); saveCareers(n); } }}><Trash2 size={16} /></button>
                         </div>
                     </div>
                 ))}

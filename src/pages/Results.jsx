@@ -7,7 +7,7 @@ import { getAIRecommendation } from '../data/careers';
 import { useAuth } from '../context/AuthContext';
 import RadarChart from '../components/RadarChart';
 import AICareerAdvisor from '../components/AICareerAdvisor';
-import { RotateCcw, Trophy, Zap, Star, LayoutDashboard, ArrowRight, Sparkles, ThumbsUp, ThumbsDown, AlertTriangle, Send } from 'lucide-react';
+import { RotateCcw, Trophy, Zap, Star, LayoutDashboard, ArrowRight, Sparkles, ThumbsUp, ThumbsDown, AlertTriangle, Send, X } from 'lucide-react';
 
 const SUBJECT_COLORS = {
     math: '#6366f1', physics: '#8b5cf6', chemistry: '#10b981',
@@ -22,6 +22,7 @@ export default function Results({ scores, onReset }) {
     const { user } = useAuth();
     const [currentSection, setCurrentSection] = useState('home');
     const [showAIAdvisor, setShowAIAdvisor] = useState(false);
+    const [selectedCareer, setSelectedCareer] = useState(null);
     const [radarScores, setRadarScores] = useState({});
     const [animBars, setAnimBars] = useState(false);
 
@@ -137,37 +138,98 @@ export default function Results({ scores, onReset }) {
                         <h3 style={{ fontFamily: 'Outfit', fontSize: '1.4rem', fontWeight: 800, marginBottom: 20 }}>
                             🚀 Tavsiya etilgan kasblar
                         </h3>
-                        <div className="careers-grid">
+                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
                             {ai.careers.map((c, i) => (
-                                <div className="career-card-wrapper" key={i}>
-                                    <div className="career-card-inner">
-                                        <div className="career-front glass">
-                                            <div>
-                                                <div className="career-icon">
-                                                    {c.imageUrl ? (
-                                                        <img src={c.imageUrl} alt={c.title} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px' }} />
-                                                    ) : (
-                                                        c.icon
-                                                    )}
-                                                </div>
-                                                <div className="career-title">{c.title}</div>
+                                <motion.div
+                                    key={i}
+                                    className="glass"
+                                    style={{ padding: '20px', cursor: 'pointer', borderRadius: '24px', position: 'relative', overflow: 'hidden' }}
+                                    whileHover={{ y: -8, boxShadow: '0 15px 30px rgba(var(--primary-rgb), 0.15)' }}
+                                    onClick={() => setSelectedCareer({ ...c, title: { uz: c.title }, description: { uz: c.desc } })}
+                                >
+                                    <div style={{ height: '140px', borderRadius: '16px', overflow: 'hidden', marginBottom: '16px', background: 'rgba(255,255,255,0.02)' }}>
+                                        {c.imageUrl ? (
+                                            <img src={c.imageUrl} alt={c.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                        ) : (
+                                            <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '3.5rem' }}>
+                                                {c.icon}
                                             </div>
-                                            <div className="career-match">
-                                                <div className="career-match-bar"><div className="career-match-fill" style={{ width: `${c.match}%` }} /></div>
-                                                <span className="career-match-text">{c.match}%</span>
-                                            </div>
-                                        </div>
-                                        <div className="career-back">
-                                            <div style={{ fontWeight: 700, marginBottom: 8 }}>{c.title}</div>
-                                            <p style={{ fontSize: '0.8rem' }}>{c.desc}</p>
-                                            <div className="career-salary">💰 {c.salary}</div>
-                                        </div>
+                                        )}
                                     </div>
-                                </div>
+                                    <h4 style={{ fontSize: '1.2rem', fontWeight: 800, marginBottom: '8px', fontFamily: 'Outfit' }}>{c.title}</h4>
+                                    <div className="career-match" style={{ marginBottom: '12px' }}>
+                                        <div className="career-match-bar" style={{ height: '6px' }}><div className="career-match-fill" style={{ width: `${c.match}%` }} /></div>
+                                        <span className="career-match-text" style={{ fontSize: '0.75rem' }}>{c.match}% moslik</span>
+                                    </div>
+                                    <p style={{ fontSize: '0.8rem', opacity: 0.7, marginBottom: '16px', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+                                        {c.desc}
+                                    </p>
+                                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--success)' }}>
+                                        💰 {c.salary}
+                                    </div>
+                                </motion.div>
                             ))}
                         </div>
                     </div>
                 )}
+
+                {/* Profession Modal */}
+                <AnimatePresence>
+                    {selectedCareer && (
+                        <div className="modal-overlay" style={{ position: 'fixed', inset: 0, zIndex: 1000, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(0,0,0,0.8)', backdropFilter: 'blur(8px)', padding: '20px' }} onClick={() => setSelectedCareer(null)}>
+                            <motion.div
+                                className="glass"
+                                initial={{ scale: 0.9, opacity: 0 }}
+                                animate={{ scale: 1, opacity: 1 }}
+                                exit={{ scale: 0.9, opacity: 0 }}
+                                style={{ maxWidth: '800px', width: '100%', position: 'relative', overflow: 'hidden', borderRadius: '32px', border: '1px solid rgba(255,255,255,0.1)' }}
+                                onClick={e => e.stopPropagation()}
+                            >
+                                <button
+                                    onClick={() => setSelectedCareer(null)}
+                                    style={{ position: 'absolute', top: '24px', right: '24px', zIndex: 10, background: 'rgba(0,0,0,0.5)', border: 'none', color: 'white', width: '40px', height: '40px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}
+                                >
+                                    <X size={24} />
+                                </button>
+
+                                <div style={{ height: '350px', width: '100%' }}>
+                                    {selectedCareer.imageUrl ? (
+                                        <img src={selectedCareer.imageUrl} alt={selectedCareer.title.uz} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                    ) : (
+                                        <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '6rem', background: 'rgba(255,255,255,0.03)' }}>
+                                            {selectedCareer.icon}
+                                        </div>
+                                    )}
+                                </div>
+
+                                <div style={{ padding: '40px' }}>
+                                    <div style={{ color: 'var(--primary)', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.1em', fontSize: '0.8rem', marginBottom: '12px' }}>
+                                        {selectedCareer.category || 'Tavsiya etilgan kasb'}
+                                    </div>
+                                    <h2 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '20px', fontFamily: 'Outfit' }}>{selectedCareer.title.uz}</h2>
+                                    <div style={{ display: 'flex', gap: '24px', marginBottom: '32px' }}>
+                                        <div className="glass" style={{ padding: '16px 24px', borderRadius: '16px' }}>
+                                            <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '4px' }}>Moslik darajasi</div>
+                                            <div style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--primary)' }}>{selectedCareer.match || '95'}%</div>
+                                        </div>
+                                        <div className="glass" style={{ padding: '16px 24px', borderRadius: '16px' }}>
+                                            <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)', marginBottom: '4px' }}>O'rtacha maosh</div>
+                                            <div style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--success)' }}>{selectedCareer.salary || '$2,000+'}</div>
+                                        </div>
+                                    </div>
+                                    <div style={{ fontSize: '1.1rem', lineHeight: '1.8', opacity: 0.9 }}>
+                                        {selectedCareer.description?.uz}
+                                    </div>
+                                    <div style={{ marginTop: '40px' }}>
+                                        <button className="btn btn-primary btn-lg" onClick={() => setSelectedCareer(null)}>
+                                            Yopish
+                                        </button>
+                                    </div>
+                                </div>
+                            </motion.div>
+                        </div>
+                    )}
+                </AnimatePresence>
 
                 <div className="premium-ai-card" onClick={() => setShowAIAdvisor(true)}>
                     <div className="premium-ai-glow"></div>

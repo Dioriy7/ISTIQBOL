@@ -1,10 +1,10 @@
 export const careerMap = {
     math: {
         careers: [
-            { title: 'Dasturchi', icon: '💻', imageUrl: '', desc: 'Matematik algoritmlar va mantiq asosida dasturlar yaratadi.', salary: '5 mln - 25 mln so\'m', match: 98 },
-            { title: 'Muhandis', icon: '🏗️', imageUrl: '', desc: 'Aniq hisob-kitoblar asosida texnik loyihalar va inshootlar yaratadi.', salary: '4 mln - 15 mln so\'m', match: 95 },
-            { title: 'Moliyachi (Bank, buxgalteriya)', icon: '🏦', imageUrl: '', desc: 'Iqtisodiy jarayonlarni modellashtiradi va pullarni boshqaradi.', salary: '4 mln - 20 mln so\'m', match: 92 },
-            { title: 'Data bilan ishlovchi mutaxassis', icon: '📊', imageUrl: '', desc: 'Katta ma\'lumotlarni tahlil qilib, biznes uchun xulosalar beradi.', salary: '6 mln - 30 mln so\'m', match: 90 }
+            { title: 'Dasturchi', icon: '💻', imageUrl: '', category: 'it', desc: 'Matematik algoritmlar va mantiq asosida dasturlar yaratadi.', salary: '5 mln - 25 mln so\'m', match: 98 },
+            { title: 'Muhandis', icon: '🏗️', imageUrl: '', category: 'engineering', desc: 'Aniq hisob-kitoblar asosida texnik loyihalar va inshootlar yaratadi.', salary: '4 mln - 15 mln so\'m', match: 95 },
+            { title: 'Moliyachi (Bank, buxgalteriya)', icon: '🏦', imageUrl: '', category: 'business', desc: 'Iqtisodiy jarayonlarni modellashtiradi va pullarni boshqaradi.', salary: '4 mln - 20 mln so\'m', match: 92 },
+            { title: 'Data bilan ishlovchi mutaxassis', icon: '📊', imageUrl: '', category: 'it', desc: 'Katta ma\'lumotlarni tahlil qilib, biznes uchun xulosalar beradi.', salary: '6 mln - 30 mln so\'m', match: 90 }
         ]
     },
     physics: {

@@ -11,6 +11,7 @@ import Register from './pages/Register';
 import Login from './pages/Login';
 import Cabinet from './pages/Cabinet';
 import Admin from './pages/Admin';
+import QuestionBank from './pages/QuestionBank';
 import SupportCenter from './components/SupportCenter';
 import { GraduationCap, BarChart2, BookOpen, User, LogOut, Settings, Send } from 'lucide-react';
 import { getSettings, addMessage } from './data/dataService';
@@ -49,6 +50,10 @@ function Navbar() {
         <span className="gradient-text">{t('common.istiqbol')}</span>
       </NavLink>
       <div className="navbar-links">
+        <NavLink to="/questions">
+          <GraduationCap size={15} style={{ display: 'inline', marginRight: 4, verticalAlign: 'middle' }} />
+          Savollar banki
+        </NavLink>
         <NavLink to="/subjects">
           <BookOpen size={15} style={{ display: 'inline', marginRight: 4, verticalAlign: 'middle' }} />
           {t('common.subjects')}
@@ -260,6 +265,7 @@ function AppContent() {
               <Route path="/register" element={<Register />} />
               <Route path="/login" element={<Login />} />
               <Route path="/subjects" element={<SubjectSelect scores={currentScores} />} />
+              <Route path="/questions" element={<QuestionBank />} />
               <Route path="/test/:subjectId" element={<Test onComplete={handleComplete} />} />
               <Route path="/results" element={<Results scores={currentScores} onReset={() => handleReset(currentGrade)} />} />
               <Route path="/cabinet" element={
