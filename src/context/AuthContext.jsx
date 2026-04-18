@@ -7,6 +7,19 @@ export const AuthProvider = ({ children }) => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+        // Seed default admin if no users exist
+        const users = JSON.parse(localStorage.getItem('istiqbol_users') || '[]');
+        if (users.length === 0) {
+            const defaultAdmin = {
+                username: 'admin',
+                password: 'admin123',
+                role: 'admin',
+                grade: 11
+            };
+            users.push(defaultAdmin);
+            localStorage.setItem('istiqbol_users', JSON.stringify(users));
+        }
+
         // Load user from localStorage on initial load
         const savedUser = localStorage.getItem('istiqbol_user');
         if (savedUser) {
